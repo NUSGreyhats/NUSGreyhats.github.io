@@ -1,0 +1,21 @@
+<div class="navigation-wrapper">
+	<nav class="main-nav-outer animated drop" id="site-nav"><!--main-nav-start-->
+		    <ul class="main-nav">
+		        <li class="small-logo"><a href="{{ site.url }}/../#header"><img src="{{ site.url }}/images/icon.png" alt=""></a></li>
+		        <li><a href="{{ site.url }}/">Write Ups</a></li>
+		        <li><a href="{{ site.url }}/../#security-wednesdays">Security Wednesdays</a></li>
+		        <li><a href="{{ site.url }}/../#the-ctf">The CTF</a></li>
+		        <li><a href="{{ site.url }}/../#team">Team</a></li>
+		        <li><a href="{{ site.url }}/../#contact">Contact</a></li>
+
+		        {% if site.owner.facebook %}
+		        <li class="social">
+		            <a href="https://facebook.com/{{ site.owner.facebook }}" class="facebook"><i class="fa fa-facebook"></i></a>
+		        </li>
+		        {% endif %}
+		    </ul>
+	</nav>
+</div>
+	
+{% include browser-upgrade.html %}
+<div class="js-menu-screen menu-screen"></div>

@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Site footer
+   ========================================================================== */
+
+.footer-wrapper {
+  @include clearfix;
+  margin: 2em auto;
+  text-align: center;
+  font-family: $alt-font;
+  @include font-size(14);
+  font-style: italic;
+  color: lighten($text-color,20);
+  a {
+    color: lighten($text-color,20);
+  }
+}
+
+/*
+   Social media icons
+   ========================================================================== */
+
+.social-icons {
+  text-align:center; 
+  margin: 1em 0 0em;
+  a {
+    color: $white;
+    padding: 4px 8px;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.business-talking{
+  background:url(images/section-bg2.jpg) top center no-repeat;
+  background-size:cover;
+  padding:60px 0 10px;
+  text-align:center;
+}
+.business-talking h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  padding:0;
+  margin:20px 0 70px;
+  text-transform:uppercase;
+  font-size:42px;
+  color:#fff;
+}
+
+
+.footer{
+  background:url(http://www.nusgreyhats.org/write-ups/images/pw_maze_black_2X.png) left top repeat;
+  padding:35px 0 35px;
+}
+.footer-logo{
+  margin:15px auto 35px;
+  width: 76px;
+}
+.copyright{
+  color:#cccccc;
+  font-size:14px;
+  display:block;
+  text-align:center;
+}
+.copyright a{
+  color:#7cc576;
+  font-weight:600;
+  text-decoration: none;
+  transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+}
+
+.copyright a:hover {
+  color: #fff;
+}
+
+.res-nav_click {
+  line-height:38px;
+  font-family: 'FontAwesome';
+  font-size:38px;
+  text-decoration: none !important;
+  color:#777777;
+  font-style:normal;
+  display:none;
+  width:42px;
+  height:27px;
+  margin:20px auto;
+  transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+}
+
+.res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
+  color: #7cc576 !important;
+}
+
+.portfolioContainer{
+  max-width: 1140px;
+}
