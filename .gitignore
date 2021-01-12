@@ -1,1 +1,4 @@
 _site/*
+
+# Others
+.DS_Store
