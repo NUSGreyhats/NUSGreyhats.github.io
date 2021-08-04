@@ -214,7 +214,7 @@ color: #fff;
 }
 
 .main-section{
-	padding:90px 0 110px;
+	padding:60px 0 110px;
 }
 
 
@@ -224,7 +224,8 @@ color: #fff;
 .service-list{
 	padding:0 0 0 0;
 	font-size:14px;
-	margin-bottom:40px;
+	margin-bottom:10px;
+	margin-top:10px;
 }
 .service-list-col1{
 	float:left;
@@ -240,16 +241,19 @@ color: #fff;
     color:#555; 
 }
 .service-list-col1 a:hover {
+	color: #7cc576;
     color:rgb(81,98,159);
+	text-decoration: none;
 }
 
 .service-list-col1 i{
 	font-style:normal;
 	font-size:38px;
 	display:block;
-	color:#222;
+	color: #33442f;
 	font-family: 'FontAwesome';
 	line-height:38px;
+	padding-right: 24px;
 }
 .service-list-col2{
 	overflow:hidden;	
@@ -646,6 +650,14 @@ border: 2px solid #fff;
 	text-transform:uppercase;
 	font-size:42px;
 	color:#fff;
+}
+
+/* Resources
+---------------------------------*/
+.talk-details {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	color: black;
 }
 
 /* Resources

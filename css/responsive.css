@@ -6,7 +6,7 @@
 @media only screen and (min-width: 992px) {
 	/****Ipad Landscape 1024 Container 970 ****/
 	
-	.service-list{ margin-bottom:30px;}
+	.service-list{ margin-top:20px; margin-bottom:5px;}
 	.c-logo-part ul li{ margin:0 15px;}
 	.form{ margin:0 0 0 20px}
 	.main-nav{ display:block !important; }
@@ -24,7 +24,7 @@
 	h2{ font-size:30px}
 	h6{ font-size:16px;}
 	h3{ font-size:15px;}
-	.service-list{ margin-bottom:20px; font-size:15px;}
+	.service-list{ margin-top:20px; margin-bottom:5px; font-size:15px;}
 	.featured-work p.padding-b{ padding-bottom:15px;}
 	.main-section{ padding:70px 0;}
 	.c-logo-part ul li{ margin:0 1%; float:left; width:18%;}
