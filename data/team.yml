@@ -1,0 +1,51 @@
+team:
+  - name: Logistics 🛠️
+    desc: The MVPs behind the scenes
+    members:
+      - name: Debbie Tan
+        major: Information Security
+        desc: I can access your accounts if you give me your passwords.
+        twitter: #
+        linkedin: #
+        github: #
+        personal: #
+
+  - name: Publicity 🌐
+    desc: Making sure you get the latest updates!
+    members:
+      - name: Wen Junhua
+        major: Computer Science
+        desc: ++[++++>---<]>++.[--->+++++<]>.+[++>---<]>++.++++++[->++<]>.[-->+<]>--.+++[->++<]>.-------.-[--->+<]>--.-[--->++<]>-.---------------.[--->+<]>++.-[--->++<]>+.-[-->+<]>-----..+..
+        twitter: #
+        linkedin: #
+        github: #
+        personal: #
+
+  - name: Food Heroes 🍔
+    desc: We get food so that you can leave with a full tummy!
+    members:
+      - name: Daniel Lim Wee Soong
+        major: Computer Engineering
+        desc: I'm here for the food.
+        twitter: https://twitter.com/daniellimws
+        linkedin: https://www.linkedin.com/feed/
+        github: https://github.com/daniellimws
+        personal: https://daniao.ws
+      - name: Tan Kel Zin
+        major: Computer Science
+        desc: f(x) ≡ 0 (mod n)
+        twitter: #
+        linkedin: #
+        github: #
+        personal: #
+
+  - name: Speaker Finders 🎤
+    desc: Can't have Security Wednesdays without speakers
+    members:
+      - name: Tan Weiu Cheng
+        major: Computer Science
+        desc: I don't know your description
+        twitter: #
+        linkedin: #
+        github: #
+        personal: #
