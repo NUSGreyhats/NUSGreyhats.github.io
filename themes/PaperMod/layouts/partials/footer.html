@@ -73,9 +73,11 @@
         if (document.body.className.includes("dark")) {
             document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
+            document.getElementById("logo").src = "/greyhats.png"
         } else {
             document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
+            document.getElementById("logo").src = "/greyhats-dark.png"
         }
     })
 

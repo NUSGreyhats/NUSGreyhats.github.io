@@ -46,8 +46,15 @@
             {{- if .Site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if .Site.Params.label.icon }}
-                <img src="{{- .Site.Params.label.icon -}}" alt="logo" aria-label="logo"
+                <img src="{{- .Site.Params.label.icon -}}" alt="logo" aria-label="logo" id="logo"
                     height="{{- .Site.Params.label.iconHeight | default " 30px" -}}">
+                <script>
+                if (localStorage.getItem("pref-theme") === "light") {
+                    document.getElementById("logo").src = "/greyhats.png"
+                } else {
+                    document.getElementById("logo").src = "/greyhats-dark.png"
+                }
+                </script>
                 {{- end -}}
                 {{- $label_text -}}
             </a>
