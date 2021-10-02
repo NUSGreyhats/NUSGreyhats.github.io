@@ -48,6 +48,7 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
+{{- if or (ne $.RelPermalink "/") (ne (.Param "secweds") true) }}
 <article class="{{ $class }}">
   {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
@@ -57,6 +58,7 @@
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
     </h2>
   </header>
+
   {{- if (ne (.Param "hideSummary") true) }}
   <section class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
@@ -69,6 +71,7 @@
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
+{{- end }}
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}
