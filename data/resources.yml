@@ -1,0 +1,47 @@
+resources:
+  - name: Learn2Learn Summer 2021 ☀️
+    desc: A short series of internal workshops where we share about the things we learnt during the 2021 summer break.
+    workshops:
+      - name: Group Theory in Cryptography
+        orgs: Kel Zin (@mechfrog88) and Alissa
+        desc: This video goes through the the different mathematical theories and some of their applications within the field of cryptography.
+        link: https://www.youtube.com/watch?v=fglP6Z9v3Vg&list=PLceyrQSWkM_dmovwxnlQMtgNkhRgegycX&index=1
+
+      - name: Steganography
+        orgs: Nigel and Debbie
+        link: https://www.youtube.com/watch?v=NT6aOfKI_fg&list=PLceyrQSWkM_dmovwxnlQMtgNkhRgegycX&index=2
+        desc:
+          Steganography is the art of hiding things in plain sight, in places where people do not think to look!
+
+          - In this video, we go through how LSB-Steganography works along with some technical considerations as to the     differences between theory and practice when trying to break a steganographic-ly modified image!
+
+      - name: V8 Exploitation
+        orgs: Chenglong (@Sp4d37) and Guoquan (@tygq13)
+        desc: This video goes through the steps to learn about exploiting the Javascript V8 engine.
+        link: https://www.youtube.com/watch?v=Uyrv2F6wI-E&list=PLceyrQSWkM_dmovwxnlQMtgNkhRgegycX&index=3
+
+      - name: Intro to Return-Oriented Programming
+        orgs: Daniel (@daniellimws) and David (@davidtan0527)
+        desc: In this video, we learn the basics of return-oriented programming.
+        link: https://www.youtube.com/watch?v=-xHwpc5W0Vs&list=PLceyrQSWkM_dmovwxnlQMtgNkhRgegycX&index=4
+
+      - name: Intro to Return-Oriented Programming
+        orgs: Akash (@enigmatrix) and Arun
+        desc: Strategies on writing shellcode by Akash and Arun.
+        link: https://www.youtube.com/watch?v=5FHA3cz0z1U&list=PLceyrQSWkM_dmovwxnlQMtgNkhRgegycX&index=5
+
+      - name: Memory Forensics for Noobs by Noobs
+        orgs: Jonathan Lee and Jonathan Lee
+        desc: How to approach memory forensics questions with Volatility.
+        link: https://www.youtube.com/watch?v=TAOAqKi-Ep4&list=PLceyrQSWkM_dmovwxnlQMtgNkhRgegycX&index=6
+
+  - name: Orbital Mission Control
+    desc: We hold web security workshops for [Orbital](https://orbital.comp.nus.edu.sg/) students in NUS every year.
+    workshops:
+      - name: Orbital Mission Control 2021
+        orgs: Wen Junhua
+        link: https://www.youtube.com/watch?v=yUs9zKqGJDU&list=PLceyrQSWkM_eFkbY9DvmkMN9RJnarOp55&index=1
+
+      - name: Orbital Mission Control 2019
+        orgs: Ngan Ji Cheng, Chang Hui Zhen and Lim Yan Ting
+        link: https://www.youtube.com/watch?v=VdTgwSIJZaA&list=PLceyrQSWkM_eFkbY9DvmkMN9RJnarOp55&index=2

@@ -1,0 +1,64 @@
+.resources {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    /* border-bottom: 1px solid; */
+}
+
+.resources-name {
+    width: fit-content;
+    padding-right: 0.2rem;
+    margin-top: 3rem;
+    /* padding-bottom: 0.2rem; */
+    /* border-bottom: 4px solid white; */
+}
+
+.resources-desc {
+    margin-top: 1.2rem;
+}
+
+.resources-desc a {
+    border-bottom: 2px solid var(--tertiary);
+}
+.resources-desc a:hover {
+    color: inherit;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    border-bottom: 2px solid var(--primary);
+}
+
+.workshop {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    margin: .8rem 0;
+
+    /* border: 2px solid; */
+    border-radius: 8px;
+    background: var(--tertiary);
+}
+
+.workshop-orgs {
+    font-weight: 600;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    color: var(--secondary)
+}
+
+.workshop-desc {
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 0.8rem;
+}
+
+.workshop p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.workshop ul li {
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 0.5rem;
+    list-style-type: none;
+}
