@@ -24,13 +24,6 @@ team:
   - name: Food Heroes 🍔
     desc: We get food so that you can leave with a full tummy!
     members:
-      - name: Daniel Lim Wee Soong
-        major: Computer Engineering
-        desc: I'm here for the food.
-        twitter: https://twitter.com/daniellimws
-        linkedin: https://www.linkedin.com/feed/
-        github: https://github.com/daniellimws
-        personal: https://daniao.ws
       - name: Tan Kel Zin
         major: Computer Science
         desc: f(x) ≡ 0 (mod n)
@@ -49,3 +42,14 @@ team:
         linkedin: #
         github: #
         personal: #
+
+  - name: CTF Players 🚩
+    desc: Wannabe hackers
+    members:
+      - name: Daniel Lim Wee Soong
+        major: Computer Engineering
+        desc: I'm here for the food.
+        twitter: https://twitter.com/daniellimws
+        linkedin: https://www.linkedin.com/feed/
+        github: https://github.com/daniellimws
+        personal: https://daniao.ws
