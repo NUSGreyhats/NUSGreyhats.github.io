@@ -35,6 +35,11 @@
 .secwed-entry-title {
     margin: 5px 0;
     font-weight: 400;
+
+    border-left: 3px solid var(--tertiary);
+    padding-left: 1.25rem;
+
+    margin-bottom: 0.5rem;
 }
 
 .secwed-entry-title ul li {
@@ -50,8 +55,21 @@
     font-weight: bold;
 }
 
+.secwed-talk-title {
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+.secwed-talk-speaker {
+    padding: 0.5rem 0 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
 .secwed-count,
 .secwed-meta {
     color: var(--secondary);
     font-size: 14px;
+    margin-bottom: 0.6rem;
 }

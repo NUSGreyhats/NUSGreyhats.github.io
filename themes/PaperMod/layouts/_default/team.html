@@ -16,18 +16,20 @@
 </header>
 
 <div>
-    <p>Everyone is involved to host our awesome activities!</p>
-{{ range .Site.Data.team.team }}
-    <h2 class="team-name">{{ .name }}</h2>
-    <p class="team-desc">{{ .desc }}</p>
+    <p>We are group of energetic young people (hopefully)</p>
     <div class="team">
-    {{ range .members }}
+    {{ range .Site.Data.team.team }}
         <div class="member">
             <h4>{{ .name }}</h4>
             {{- if isset . "major" }}
             <p class="member-major">{{ .major }}</p>
             {{- end}}
-            <p class="member-desc">{{ .desc }}</p>
+            <div class="member-roles">
+            {{- range .roles }}
+            <span class="member-role">{{ . | markdownify }}</span>
+            {{- end }}
+            </div>
+            <p class="member-desc">{{ .desc | markdownify }}</p>
 
             <div class="member-links">
                 {{- if isset . "twitter" }}
@@ -58,7 +60,6 @@
         </div>
     {{ end }}
     </div>
-{{ end }}
 </div>
 
 {{- end }}{{/* end main */}}

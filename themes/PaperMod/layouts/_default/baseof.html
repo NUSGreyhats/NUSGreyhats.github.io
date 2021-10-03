@@ -6,7 +6,7 @@
 </head>
 
 <body class="
-{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`) (eq .Layout `team`) (eq .Layout `secweds`) (eq .Layout `resources`)) -}}
 {{- print "list" -}}
 {{- end -}}
 {{- if eq $.Site.Params.defaultTheme `dark` -}}

@@ -29,17 +29,22 @@
       {{- range .Pages }}
       {{- if eq .Kind "page" }}
       <div class="secwed-entry">
+        {{- if not .Date.IsZero -}}
+        <div class="secwed-meta">
+          {{- .Date.Format (default "January 2, 2006" .Params.DateFormat) }}
+        </div>
+        {{- end }}
         <h3 class="secwed-entry-title">
-          <ol>
-          {{- range .Params.talkTitles }}
-            <li>{{ . | markdownify}}</li>
+          <ul>
+          {{- range .Params.talks }}
+            <li>
+              <p class="secwed-talk-title">{{ .title | markdownify}}</p>
+              <p class="secwed-talk-speaker">by {{ .speaker | markdownify}}</p>
+            </li>
           {{- end }}
-          </ol>
+          </ul>
           {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
         </h3>
-        <div class="secwed-meta">
-          {{- partial "post_meta.html" . -}}
-        </div>
         <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
       </div>
       {{- end }}

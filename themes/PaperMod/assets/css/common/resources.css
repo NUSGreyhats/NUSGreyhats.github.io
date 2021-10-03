@@ -1,8 +1,16 @@
 .resources {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
     flex-direction: column;
     margin-top: 1.25rem;
     /* border-bottom: 1px solid; */
+}
+
+@media only screen and (max-width: 768px) {
+    .resources {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
 
 .resources-name {
@@ -14,7 +22,7 @@
 }
 
 .resources-desc {
-    margin-top: 1.2rem;
+    margin: 1.2rem 0 1.6rem;
 }
 
 .resources-desc a {
@@ -31,11 +39,10 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
-    margin: .8rem 0;
 
     /* border: 2px solid; */
     border-radius: 8px;
-    background: var(--tertiary);
+    background: var(--entry);
 }
 
 .workshop-orgs {
