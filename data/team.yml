@@ -29,8 +29,7 @@ team:
       - ctf
       - crypto
       - f&b
-    desc: f(x) ≡ 0 (mod n)
-    twitter: #
+    desc: f(x) - f(y) ≡ 0 (mod n)
     linkedin: https://www.linkedin.com/in/kelzin/
     github: https://github.com/mechfrog88
     personal: https://mechfrog88.github.io/
