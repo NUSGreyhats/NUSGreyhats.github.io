@@ -8,7 +8,7 @@ team:
       - design
     desc: I can access your accounts if you give me your passwords.
     twitter: #
-    linkedin: #
+    linkedin: https://www.linkedin.com/in/debbietanjm/
     github: #
     personal: #
 
@@ -19,10 +19,9 @@ team:
       - web
       - publicity
     desc: ++[++++>---<]>++.[--->+++++<]>.+[++>---<]>++.++++++[->++<]>.[-->+<]>--.+++[->++<]>.-------.-[--->+<]>--.-[--->++<]>-.---------------.[--->+<]>++.-[--->++<]>+.-[-->+<]>-----..+..
-    twitter: #
-    linkedin: #
-    github: #
-    personal: #
+    linkedin: https://www.linkedin.com/in/junhua-wen-718880137/
+    github: https://github.com/Jh123x
+    personal: https://jh123x.github.io/
 
   - name: Tan Kel Zin
     major: Computer Science
@@ -32,9 +31,9 @@ team:
       - f&b
     desc: f(x) ≡ 0 (mod n)
     twitter: #
-    linkedin: #
-    github: #
-    personal: #
+    linkedin: https://www.linkedin.com/in/kelzin/
+    github: https://github.com/mechfrog88
+    personal: https://mechfrog88.github.io/
 
   - name: Tan Weiu Cheng
     major: Computer Science
@@ -42,9 +41,9 @@ team:
       - ctf
       - rev
       - speaker-search
-    desc: I don't know your description
+    desc: I am pro.
     twitter: #
-    linkedin: #
+    linkedin: https://www.linkedin.com/in/weiucheng-tan/
     github: #
     personal: #
 
@@ -65,7 +64,7 @@ team:
     roles:
       - pro
     desc: Log on. Hack in. Go anywhere. Steal everything.
-    twitter: https://twitter.com/daniellimws
-    linkedin: https://www.linkedin.com/feed/
-    github: https://github.com/daniellimws
-    personal: https://daniao.ws
+    twitter: #
+    linkedin: https://www.linkedin.com/in/chenglong-yang-033761168/
+    github: #
+    personal: #
