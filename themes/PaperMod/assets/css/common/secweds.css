@@ -17,6 +17,12 @@
     padding: 10px 0;
 }
 
+@media only screen and (max-width: 768px) {
+    .secwed-month {
+        flex-direction: column;
+    }
+}
+
 .secwed-month-header {
     margin: 25px 0;
     width: 200px;
