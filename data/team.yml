@@ -42,10 +42,10 @@ team:
       - rev
       - speaker-search
     desc: I am pro.
-    twitter: #
+    twitter: https://twitter.com/davidtan0527
     linkedin: https://www.linkedin.com/in/weiucheng-tan/
-    github: #
-    personal: #
+    github: https://github.com/DavidTan0527
+    personal: https://davidtan0527.github.io
 
   - name: Daniel Lim Wee Soong
     major: Computer Engineering
