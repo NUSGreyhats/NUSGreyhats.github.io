@@ -52,7 +52,7 @@
                 {{- end }}
                 {{- if isset . "personal" }}
                 <a target="_blank" rel="noopener noreferrer" aria-label="{{ .name | plainify }} on github"
-                    href="{{ trim .github " " }}">
+                    href="{{ trim .personal " " }}">
                     {{ partial "svg.html" (dict "context" . "name" "link") }}
                 </a>
                 {{- end }}
