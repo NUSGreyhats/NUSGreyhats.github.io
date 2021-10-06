@@ -89,4 +89,13 @@ team:
     twitter: https://twitter.com/qihaoooooo
     linkedin: https://www.linkedin.com/in/lee-tze-han-84b6b477/
     github: https://github.com/ltzehan
+    
+  - name: Ye Guoquan
+    major: Information Security
+    roles:
+      - ctf
+      - pwn
+    desc: "eat, sleep, pwn, repeat"
+    linkedin: https://www.linkedin.com/in/ye-guoquan-2b992b1b4/
+    github: https://github.com/tygq13
    
