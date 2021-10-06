@@ -78,3 +78,15 @@ team:
     twitter: https://twitter.com/xChanJianHao
     linkedin: https://www.linkedin.com/in/chanjianhao
     github: https://github.com/ChanJianHao
+    
+  - name: Lee Tze Han
+    major: Computer Engineering
+    roles:
+      - ctf
+      - rev
+      - afk
+    desc: "Break my own code but can't break code in CTF :("
+    twitter: https://twitter.com/qihaoooooo
+    linkedin: https://www.linkedin.com/in/lee-tze-han-84b6b477/
+    github: https://github.com/ltzehan
+   
