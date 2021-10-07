@@ -98,4 +98,15 @@ team:
     desc: "eat, sleep, pwn, repeat"
     linkedin: https://www.linkedin.com/in/ye-guoquan-2b992b1b4/
     github: https://github.com/tygq13
+
+  - name: Jonathan Lee
+    major: Computer Science
+    roles:
+      - ctf
+      - publicity
+      - noob
+    desc: "u can find me at 127.0.0.1 \n and there are two jonathan lees too, have fun guessing who is who :)"
+    linkedin: https://www.linkedin.com/in/jon-lee-jy/
+    github: https://github.com/yeppog
+    twitter: https://twitter.com/yeppog
    
