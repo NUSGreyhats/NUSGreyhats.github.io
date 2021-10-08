@@ -143,3 +143,13 @@ team:
     desc: Due today, do today.
     linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
     github: https://github.com/arnav-ag
+
+  - name: Brandon Chong
+    major: Information Security
+    roles:
+      - ctf
+      - web
+      - publicity
+    desc: will code for katsudon
+    linkedin: https://www.linkedin.com/in/brandoncjh/
+    github: https://github.com/brandoncjh
