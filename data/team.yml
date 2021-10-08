@@ -133,3 +133,15 @@ team:
     linkedin: https://www.linkedin.com/in/tan-jia-le-/
     github: https://github.com/rizemon
     personal: https://rizemon.github.io/
+
+  - name: Chandrasekaran Akash
+    major: Computer Science
+    roles:
+      - ctf
+      - pwn
+      - cant-guess
+    desc: why sleep when u can pwn?
+    twitter: https://twitter.com/Enigmatrix2000
+    linkedin: https://www.linkedin.com/in/chandrasekaran-akash-50aa34ba/
+    github: https://github.com/Enigmatrix
+    personal: https://enigmatrix.me
