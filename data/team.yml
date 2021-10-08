@@ -134,7 +134,6 @@ team:
     github: https://github.com/rizemon
     personal: https://rizemon.github.io/
     
-    
   - name: Arnav Aggarwal
     major: Computer Science
     roles:
@@ -143,6 +142,18 @@ team:
     desc: Due today, do today.
     linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
     github: https://github.com/arnav-ag
+
+  - name: Chandrasekaran Akash
+    major: Computer Science
+    roles:
+      - ctf
+      - pwn
+      - cant-guess
+    desc: why sleep when u can pwn?
+    twitter: https://twitter.com/Enigmatrix2000
+    linkedin: https://www.linkedin.com/in/chandrasekaran-akash-50aa34ba/
+    github: https://github.com/Enigmatrix
+    personal: https://enigmatrix.me
     
   - name: Teo Jia Rong
     major: Information Security
