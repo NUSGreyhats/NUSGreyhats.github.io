@@ -143,3 +143,11 @@ team:
     desc: Due today, do today.
     linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
     github: https://github.com/arnav-ag
+    
+  - name: Teo Jia Rong
+    major: Information Security
+    roles:
+      - logistics
+    desc: Will food for work.
+    linkedin: https://www.linkedin.com/in/teojiarong/
+  
