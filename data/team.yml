@@ -133,3 +133,13 @@ team:
     linkedin: https://www.linkedin.com/in/tan-jia-le-/
     github: https://github.com/rizemon
     personal: https://rizemon.github.io/
+
+  - name: Brandon Chong
+    major: Information Security
+    roles:
+      - ctf
+      - web
+      - publicity
+    desc: will code for katsudon
+    linkedin: https://www.linkedin.com/in/brandoncjh/
+    github: https://github.com/brandoncjh
