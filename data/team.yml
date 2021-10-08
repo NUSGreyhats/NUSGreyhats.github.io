@@ -154,3 +154,20 @@ team:
     linkedin: https://www.linkedin.com/in/chandrasekaran-akash-50aa34ba/
     github: https://github.com/Enigmatrix
     personal: https://enigmatrix.me
+    
+  - name: Teo Jia Rong
+    major: Information Security
+    roles:
+      - logistics
+    desc: Will food for work.
+    linkedin: https://www.linkedin.com/in/teojiarong/
+
+  - name: Brandon Chong
+    major: Information Security
+    roles:
+      - ctf
+      - web
+      - publicity
+    desc: will code for katsudon
+    linkedin: https://www.linkedin.com/in/brandoncjh/
+    github: https://github.com/brandoncjh
