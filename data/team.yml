@@ -150,4 +150,13 @@ team:
       - logistics
     desc: Will food for work.
     linkedin: https://www.linkedin.com/in/teojiarong/
-  
+
+  - name: Brandon Chong
+    major: Information Security
+    roles:
+      - ctf
+      - web
+      - publicity
+    desc: will code for katsudon
+    linkedin: https://www.linkedin.com/in/brandoncjh/
+    github: https://github.com/brandoncjh
