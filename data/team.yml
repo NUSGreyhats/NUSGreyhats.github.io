@@ -134,17 +134,6 @@ team:
     github: https://github.com/rizemon
     personal: https://rizemon.github.io/
     
-    - name: Tan Jia Le
-    major: Information Security
-    roles:
-      - ctf
-      - web
-      - pentesting
-      - speaker-email
-    desc: Just because you can, doesn't mean you should?
-    twitter: https://twitter.com/rizem0n
-    linkedin: https://www.linkedin.com/in/tan-jia-le-/
-    github: https://github.com/rizemon
     
   - name: Arnav Aggarwal
     major: Computer Science
