@@ -87,6 +87,8 @@ params:
           url: "https://www.youtube.com/channel/UCjD-uF4XXFiKUTx_gh9W5gA"
         - name: github
           url: "https://github.com/NUSGreyhats"
+        - name: email
+          url: "mailto:contact@nusgreyhats.org"
 
     analytics:
         google:
