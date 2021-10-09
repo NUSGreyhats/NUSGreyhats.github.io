@@ -1,0 +1,159 @@
+baseURL: "https://lucid-kepler-3ccdfc.netlify.app/"
+title: NUS Greyhats
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: NUS Greyhats
+    description: "NUS Greyhats"
+    keywords: [Blog, Portfolio, PaperMod]
+    author: NUS Greyhats
+    # author: ["Me", "You"] # multiple authors
+    images: ["<link or path of image for opengraph, twitter-cards>"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: dark # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "/greyhats.png"
+        favicon16x16: "/greyhats.png"
+        favicon32x32: "/greyhats.png"
+        apple_touch_icon: "/greyhats.png"
+        safari_pinned_tab: "/greyhats.png"
+
+    label:
+        text: "NUS Greyhats"
+        icon: /greyhats-dark.png
+        iconHeight: 35
+
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: NUS Greyhats
+        subtitle: "Information Security Interest Group in NUS"
+        imageUrl: "<img location>"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Tags
+              url: tags
+
+    # home-info mode
+    homeInfoParams:
+        Title: "NUS Greyhats"
+        Content: >
+          We are an **information security interest group** based in the National University of Singapore.<br/>
+
+          - We [play](https://ctftime.org/team/16740/) CTFs and organize weekly meetups we call [Security Wednesdays](https://www.youtube.com/playlist?list=PLceyrQSWkM_cRCohq7hH8CJoYi95FTk9P)!
+
+          - Do wander around our website to see what we do 👐
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/NUSGreyhats"
+        - name: telegram
+          url: "https://t.me/joinchat/-TUu64PBAHExY2Jl"
+        - name: youtube
+          url: "https://www.youtube.com/channel/UCjD-uF4XXFiKUTx_gh9W5gA"
+        - name: github
+          url: "https://github.com/NUSGreyhats"
+        - name: email
+          url: "mailto:contact@nusgreyhats.org"
+
+    analytics:
+        google:
+            SiteVerificationTag: "XYZabc"
+        bing:
+            SiteVerificationTag: "XYZabc"
+        yandex:
+            SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: "https://github.com/NUSGreyhats/NUSGreyhats.github.io/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: team
+          name: the team
+          url: /team
+          weight: 5
+        - identifier: secweds
+          name: secweds
+          url: /secweds
+          weight: 10
+        - identifier: resources
+          name: resources
+          url: /resources/
+          weight: 20
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 30
+        - identifier: search
+          name: search
+          url: /search/
+          weight: 40
+
+# https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai

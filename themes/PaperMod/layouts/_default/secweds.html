@@ -1,0 +1,59 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
+
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $secweds := where $pages "Params.secweds" true  }}
+
+{{- if .Site.Params.ShowAllPagesInArchive }}
+{{- $pages = site.RegularPages }}
+{{- end }}
+
+{{- range $secweds.GroupByPublishDate "2006" }}
+{{- if ne .Key "0001" }}
+<div class="secwed-year">
+  <h2 class="secwed-year-header">
+    {{- replace .Key "0001" "" }}<sup class="secwed-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
+  </h2>
+  {{- range .Pages.GroupByDate "January" }}
+  <div class="secwed-month">
+    <h3 class="secwed-month-header">{{- .Key }}<sup class="secwed-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
+    <div class="secwed-posts">
+      {{- range .Pages }}
+      {{- if eq .Kind "page" }}
+      <div class="secwed-entry">
+        {{- if not .Date.IsZero -}}
+        <div class="secwed-meta">
+          {{- .Date.Format (default "January 2, 2006" .Params.DateFormat) }}
+        </div>
+        {{- end }}
+        <h3 class="secwed-entry-title">
+          <ul>
+          {{- range .Params.talks }}
+            <li>
+              <p class="secwed-talk-title">{{ .title | markdownify}}</p>
+              <p class="secwed-talk-speaker">by {{ .speaker | markdownify}}</p>
+            </li>
+          {{- end }}
+          </ul>
+          {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+        </h3>
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+      </div>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
+{{- end }}{{/* end main */}}
