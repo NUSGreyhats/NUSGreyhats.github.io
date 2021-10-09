@@ -25,9 +25,12 @@
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
+{{- $pages = where $pages "Params.secweds" "!=" true }}
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.secweds" "!=" true }}
+{{ $pages }}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
