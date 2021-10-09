@@ -104,7 +104,7 @@ params:
         hiddenInSingle: true # hide on single page
 
     editPost:
-        URL: "https://github.com/NUSGreyhats/NUSGreyhats.github.io/content"
+        URL: "https://github.com/NUSGreyhats/NUSGreyhats.github.io/tree/master/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
