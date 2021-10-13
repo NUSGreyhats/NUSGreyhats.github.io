@@ -23,7 +23,7 @@ resources:
         desc: In this video, we learn the basics of return-oriented programming.
         link: https://www.youtube.com/watch?v=-xHwpc5W0Vs&list=PLceyrQSWkM_dmovwxnlQMtgNkhRgegycX&index=4
 
-      - name: Intro to Return-Oriented Programming
+      - name: Modern Shellcode
         orgs: Akash and Arun
         desc: Strategies on writing shellcode by Akash and Arun.
         link: https://www.youtube.com/watch?v=5FHA3cz0z1U&list=PLceyrQSWkM_dmovwxnlQMtgNkhRgegycX&index=5
