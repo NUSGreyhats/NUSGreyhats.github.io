@@ -1,4 +1,20 @@
 team:
+  - name: Mu Changrui  
+    major: Information Security  
+    role:
+      - ctf 
+      - crypto
+      - logistics
+      - privacy
+    desc: Anything c4n be broken, it's a matter of O(time).
+    linkedin: https://www.linkedin.com/in/%E6%98%8C%E7%91%9E-%E6%AF%8D-69628a1b8/
+    github: https://github.com/Ch40gRv1-Mu
+
+
+
+
+
+
   - name: Debbie Tan
     major: Information Security
     roles:
