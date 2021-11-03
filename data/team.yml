@@ -171,3 +171,13 @@ team:
     desc: will code for katsudon
     linkedin: https://www.linkedin.com/in/brandoncjh/
     github: https://github.com/brandoncjh
+    
+- name: Wu Changjun
+  major: Computer Science
+  roles:
+    - ctf
+    - web
+    - noob
+  desc: hello world!
+  linkedin: https://www.linkedin.com/in/changjun-wu-7a4136202/
+  github: https://github.com/Ugholaf
