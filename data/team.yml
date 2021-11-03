@@ -171,3 +171,14 @@ team:
     desc: will code for katsudon
     linkedin: https://www.linkedin.com/in/brandoncjh/
     github: https://github.com/brandoncjh
+
+  - name: Li Bailin
+    major: Computer Science
+    roles:
+      - ctf
+      - re
+    desc: reenigne esrever
+    linkedin: https://www.linkedin.com/in/li-bailin/
+    github: https://github.com/rootkie
+    personal: https://rootkiddie.com/
+
