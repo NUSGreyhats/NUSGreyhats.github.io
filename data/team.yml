@@ -171,3 +171,12 @@ team:
     desc: will code for katsudon
     linkedin: https://www.linkedin.com/in/brandoncjh/
     github: https://github.com/brandoncjh
+
+    - name: Sean
+      major: Information Security
+      roles:
+        - ctf
+        - forensics
+        - noob
+      desc: living and learning
+      github: https://github.com/seantayyy
