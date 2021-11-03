@@ -171,3 +171,12 @@ team:
     desc: will code for katsudon
     linkedin: https://www.linkedin.com/in/brandoncjh/
     github: https://github.com/brandoncjh
+
+  - name: Hubertus Adhy Pratama Setiawan
+    major: Information Security
+    roles:
+      - ctf
+      - pwn
+    desc: I pwn, therefore I am.
+    linkedin: https://www.linkedin.com/in/hubertus-adhy-pratama-setiawan/
+    github: https://github.com/adhy-p
