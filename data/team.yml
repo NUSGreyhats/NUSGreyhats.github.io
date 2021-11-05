@@ -183,6 +183,16 @@ team:
     linkedin: https://www.linkedin.com/in/brandoncjh/
     github: https://github.com/brandoncjh
 
+  - name: Ang Yong Liang
+    major: Computer Science
+    roles:
+      - ctf
+      - web
+      - newbie
+    desc: 7b 53 4c 45 45 50 49 4e 47 2e 2e 2e 53 4c 45 45 50 49 4e 47 2e 2e 2e 7d
+    linkedin: https://www.linkedin.com/in/yongliangang/
+    github: https://github.com/yl-ang
+
   - name: Hubertus Adhy Pratama Setiawan
     major: Information Security
     roles:
