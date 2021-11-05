@@ -193,6 +193,15 @@ team:
     linkedin: https://www.linkedin.com/in/changjun-wu-7a4136202/
     github: https://github.com/Ugholaf
 
+  - name: Sean
+    major: Information Security
+    roles:
+      - ctf
+      - forensics
+      - noob
+    desc: living and learning
+    github: https://github.com/seantayyy
+
   - name: Li Bailin
     major: Computer Science
     roles:
