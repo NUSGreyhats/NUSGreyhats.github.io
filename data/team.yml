@@ -1,4 +1,15 @@
 team:
+  - name: Mu Changrui  
+    major: Information Security  
+    role:
+      - ctf 
+      - crypto
+      - logistics
+      - privacy
+    desc: Anything c4n be broken, it's a matter of O(time).
+    linkedin: https://www.linkedin.com/in/%E6%98%8C%E7%91%9E-%E6%AF%8D-69628a1b8/
+    github: https://github.com/Ch40gRv1-Mu
+
   - name: Debbie Tan
     major: Information Security
     roles:
@@ -182,3 +193,29 @@ team:
     github: https://github.com/rootkie
     personal: https://rootkiddie.com/
 
+  - name: Ang Yong Liang
+    major: Computer Science
+    roles:
+      - ctf
+      - web
+      - newbie
+    desc: 7b 53 4c 45 45 50 49 4e 47 2e 2e 2e 53 4c 45 45 50 49 4e 47 2e 2e 2e 7d
+    linkedin: https://www.linkedin.com/in/yongliangang/
+    github: https://github.com/yl-ang
+
+  - name: Hubertus Adhy Pratama Setiawan
+    major: Information Security
+    roles:
+      - ctf
+      - pwn
+    desc: I pwn, therefore I am.
+    linkedin: https://www.linkedin.com/in/hubertus-adhy-pratama-setiawan/
+    github: https://github.com/adhy-p
+    
+  - name: Foong Xin Yu
+    major: Computer Engineering
+    roles:
+      - no idea yet?
+    desc: Hi
+    linkedin: https://www.linkedin.com/in/foongxinyu/
+    github: https://github.com/Uxinnn
