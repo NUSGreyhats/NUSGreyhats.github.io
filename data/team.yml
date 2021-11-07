@@ -182,6 +182,45 @@ team:
     desc: will code for katsudon
     linkedin: https://www.linkedin.com/in/brandoncjh/
     github: https://github.com/brandoncjh
+    
+  - name: Wu Changjun
+    major: Computer Science
+    roles:
+      - ctf
+      - web
+      - noob
+    desc: hello world!
+    linkedin: https://www.linkedin.com/in/changjun-wu-7a4136202/
+    github: https://github.com/Ugholaf
+
+  - name: Sean
+    major: Information Security
+    roles:
+      - ctf
+      - forensics
+      - noob
+    desc: living and learning
+    github: https://github.com/seantayyy
+
+  - name: Li Bailin
+    major: Computer Science
+    roles:
+      - ctf
+      - re
+    desc: reenigne esrever
+    linkedin: https://www.linkedin.com/in/li-bailin/
+    github: https://github.com/rootkie
+    personal: https://rootkiddie.com/
+
+  - name: Ang Yong Liang
+    major: Computer Science
+    roles:
+      - ctf
+      - web
+      - newbie
+    desc: 7b 53 4c 45 45 50 49 4e 47 2e 2e 2e 53 4c 45 45 50 49 4e 47 2e 2e 2e 7d
+    linkedin: https://www.linkedin.com/in/yongliangang/
+    github: https://github.com/yl-ang
 
   - name: Ang Yong Liang
     major: Computer Science
