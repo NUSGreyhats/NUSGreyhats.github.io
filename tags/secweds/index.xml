@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>secweds on NUS Greyhats</title>
+    <link>https://nusgreyhats.org/tags/secweds/</link>
+    <description>Recent content in secweds on NUS Greyhats</description>
+    <image>
+      <url>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 03 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SecWed #031121</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0311/</link>
+      <pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0311/</guid>
+      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZAsduygpjsvEtKjXX3Wdid5-jBLVkt1mRMw
+Talk: 7:00pm-7:45pm Title: Source Engine code auditing adventure
+Description In this talk I will talk about the Source Engine, the leaked codebase and how I audited it to find vulnerabilities. This also acts as a case study on how real life code bases are audited.
+Requirements The participants should have basic knowledge on C/C++, basic knowledge on x86 memory exploitation techniques, and how exploit mitigations (NX, ASLR, Stack Canaries) work.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #271021</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2710/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2710/</guid>
+      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZIqd-qhrzopH90kFVsa1_98fY1Yq9r-VetY
+Talk: 7:00pm-7:45pm Title: My OSCP Journey
+Description OSCP (Offensive Security Certified Professional) is an entry-level certification by Offensive Security that recognizes a person&amp;rsquo;s skills in penetration testing techniques and methodologies. In this talk, Jia Le will be sharing his experience in tackling this notoriously difficult and hands-on certification.
+Read more about the certification here: https://www.offensive-security.com/pwk-oscp/
+Speaker Bio Tan Jia Le is a Year 2 Information Security student at the National University of Singapore (NUS) and a member of NUS Greyhats.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #201021</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2010/</link>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2010/</guid>
+      <description>Talk 1: 7 PM to 7:35 PM Title: Cryptography - Diophantine equation
+Description Diophantine equation is an equation where only the integer solutions matter. This has shown up in various cryptographical schemes like RSA, Diffie Hellman Key Exchange, and Elliptic Curve Cryptography. In this talk, Kel Zin will analyze some interesting CTF problems related to diophantine equation.
+Speaker Kel Zin is a Year 2 NUS Computer Science student and a member of Greyhats.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #131021</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1310/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1310/</guid>
+      <description>Talk 1: 7:00pm-7:45pm Title: A Guide on Antivirus Evasion
+Download Slides
+Description Antivirus evasion is crucial in many cybersecurity research and operations. For example, red team exercises are often conducted in a hardened production environment. While open-source tools may help in the enumeration or exploitations of services, they are often detected and flagged by antivirus.
+In this talk, we will look into manual and partially automated ways to achieve antivirus evasion.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #061021</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0610/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0610/</guid>
+      <description>Talk: 7:00pm-8:30pm The presentation will introduce what a Security Operations Center (SOC) is, its typical mission and responsibilities, and the different roles that make up a SOC. The speakers will talk about the various components of a SOC and how they help one another effectively detect security threats.
+They will also discuss security incidents and how we respond to them. Finally, they will conclude the presentation with a show and tell how they can acquire an infected or compromised machine and what forensic artifacts they can uncover for our investigations.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #150921</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1509/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1509/</guid>
+      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: Unusual Applications of OpenAI in Cybersecurity
+One of the most prominent examples of AI-generated synthetic media’s impact on cybersecurity is in the field of social engineering and information operations. However, AI language models can still pop up in interesting places. Could we use OpenAI to convert assembly to pseudocode while reverse-engineering binaries? How about locating vulnerabilities in code? Let’s dive down the rabbit hole of OpenAI’s API, covering the latest advanced features such as fine-tunes, searches, and classifications.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #080921</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0809/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0809/</guid>
+      <description>Talk 1: 1900HRs - 1945HRs Title: Identifying Bugs in Router Firmware at Scale with Taint Analysis
+Description Taint analysis is a very useful technique in reverse engineering and bug hunting. For some common vulnerability classes such as command injection or buffer overflow, it can be tedious for a researcher to find them through manual reverse engineering. In this talk, Daniel will share about a tool that he helped develop during his internship, which uses taint analysis techniques to automate the process of finding such bugs in router firmware.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #010921</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0109/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0109/</guid>
+      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: Cyber Risk Quantification: Let&amp;rsquo;s talk cyber risk
+Cybersecurity have been growing in importance and frequently play a key role in organisations in this day and age. With the recent growth of cyber threats and implementation of new cybersecurity laws, the possibility and consequences of exploited cyber risks have increased exponentially as well. As cybersecurity specialists, how can we translate such costs and the benefits of new security controls into something that can be universally understood across the organisation?</description>
+    </item>
+    
+    <item>
+      <title>SecWed #250821</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2508/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2508/</guid>
+      <description>Talk: 1900Hrs - 2030Hrs Talk Title: Cyber threat intelligence: Winning the war on cybercrime
+In this session, Lionel Bruchez from the UBS AG Chief Information Security Office will introduce the latest cybercrime trends and how threat intelligence enables the organization to remain ahead of the game.
+Beyond traditional cyber defence, Lionel will also pave the way towards leveraging cyber intelligence to proactively identify market landscape, risks and investment opportunities to support firms’ revenue generation and growth opportunities.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #180821</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1808/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1808/</guid>
+      <description>Talk 1: 1900HRs - 1945HRs Title: Defending Singapore’s Digital Borders
+Description Cyberspace will be increasingly central to maintaining Singapore’s economic success and geopolitical relevance. As one of the most connected countries globally, Singapore’s connectivity and digitalisation will only continue to intensify under our Smart Nation initiative. At the same time, cyber threats continue to proliferate. We see a variety of cyber threats from terrorists, criminal, and state-sponsored organisations, especially as Covid-19 has forced many of us to work, learn, and play from home, on our mobile and electronic devices.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #110821</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1108/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1108/</guid>
+      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: Greyhats Introduction
+Do you find yourself wondering what the Greyhats team is often up to? Want to get to know more about the information security industry? Want to further hone your information security skills? 🖥 🚀
+Learn more about NUS&#39; first and only information security interest group and the various activities that we embark on together! Join us at our welcome tea on 11 August 2021 from 7pm to 8.</description>
+    </item>
+    
+  </channel>
+</rss>
