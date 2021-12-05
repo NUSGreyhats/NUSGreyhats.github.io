@@ -93,7 +93,7 @@ First, one must identify these symbols
 | Zmod(N)| Integer Modulo N      |Ring  |
 | GF(N)  | Finite Field of size N|Field |
 
-Note that for `GF(N)` the N must be $$p^a$$ where p is a prime.
+Note that for `GF(N)` the N must be $p^a$ where p is a prime.
 
 The main differences between a ring and a field is
 
@@ -102,8 +102,8 @@ The main differences between a ring and a field is
 
 Take integer modulo 6 ring as an example
 
-1. The number 3 does not have inverse. There is no such number $$a$$ such that $$3 \cdot a \equiv 1 \mod 6$$
-2. The number 3 and 2 is a zero divisor. $$3 \cdot 2 \equiv 0 \mod 6$$
+1. The number 3 does not have inverse. There is no such number $a$ such that $3 \cdot a \equiv 1 \mod 6$
+2. The number 3 and 2 is a zero divisor. $3 \cdot 2 \equiv 0 \mod 6$
 
 You need to be very careful for the choice of your Ring/Field as some functions are only valid for field but not for ring.
 
