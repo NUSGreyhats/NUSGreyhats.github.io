@@ -35,7 +35,7 @@ sage:
 
 You can change the color scheme by typing the command
 
-```console
+```apache
 sage: %colors Linux
 ```
 
@@ -93,7 +93,7 @@ First, one must identify these symbols
 | Zmod(N)| Integer Modulo N      |Ring  |
 | GF(N)  | Finite Field of size N|Field |
 
-Note that for `GF(N)` the N must be $p^a$ where p is a prime.
+Note that for `GF(N)` the N must be \(p^a\) where p is a prime.
 
 The main differences between a ring and a field is
 
@@ -102,8 +102,8 @@ The main differences between a ring and a field is
 
 Take integer modulo 6 ring as an example
 
-1. The number 3 does not have inverse. There is no such number $a$ such that $3 \cdot a \equiv 1 \mod 6$
-2. The number 3 and 2 is a zero divisor. $3 \cdot 2 \equiv 0 \mod 6$ 
+1. The number 3 does not have inverse. There is no such number \(a\) such that \(3 \cdot a \equiv 1 \mod 6\)
+2. The number 3 and 2 is a zero divisor. \(3 \cdot 2 \equiv 0 \mod 6\) 
 
 You need to be very careful for the choice of your Ring/Field as some functions are only valid for field but not for ring.
 
@@ -113,7 +113,7 @@ Therefore, if you are dealing with integer modulo a prime number, you should use
 
 Once you convert a number to `GF(p)` or `Zmod(p)`, you don't have to keep applying `%` operator as the modulo operation will already be done automatically.
 
-```
+```apache
 sage: a = 63283
 sage: b = 45342
 sage: a = GF(17)(a)
@@ -134,7 +134,7 @@ Opeartion `/` can be use if the element has an inverse
 
 Factor a number with the `factor()` function
 
-```
+```apache
 sage: a = 63283
 sage: a.factor()
 11^2 * 523
@@ -156,7 +156,7 @@ Let's say you want to declare a polynomial such that the coefficient can only be
 
 Then it will be `R.<x> = ZZ[]`
 
-```
+```apache
 sage: R.<x> = ZZ[]
 sage: f = 1*x + 2*x^2 + 3*x^3
 sage: g = 3*x + 10*x^2
@@ -164,7 +164,7 @@ sage: g = 3*x + 10*x^2
 
 You can use `+, -, *, /, ^` for polynomials as usual
 
-```
+```apache
 sage: f-g
 3*x^3 - 8*x^2 - 2*x
 sage: f*g
@@ -177,14 +177,14 @@ sage: g^3
 
 Factor the polynomiak with `factor()`
 
-```
+```apache
 sage: f.factor()
 x * (3*x^2 + 2*x + 1)
 ```
 
 To apply some value to the polynomial, use the syntax `f(x = 2)` or `f(2)`
 
-```
+```apache
 sage: f(2)
 34
 sage: f(x=2)
@@ -193,14 +193,14 @@ sage: f(x=2)
 
 To extract the coefficient of the polynomial, use `list()` function
 
-```
+```apache
 sage: g.list()
 [0, 3, 10]
 ```
 
 To get the roots of a polynomial, use `roots()` function
 
-```
+```apache
 f.roots()
 ```
 
@@ -212,7 +212,7 @@ Declaring the polynomial by `R.<x,y> = QQ[]`
 
 Operation `+, -, *, /, ^` are well defined as usual
 
-```
+```apache
 sage: R.<x,y> = QQ[]
 sage: f = x + y + x*y
 sage: g = x^2 + y^2
@@ -224,7 +224,7 @@ sage: f ^ -1 * g
 
 You can use `f(x = 2, y = 3)` to apply some value to the polynomial
 
-```
+```apache
 sage: f(x=3,y=5)
 23
 ```
@@ -235,7 +235,7 @@ There are 2 ways that I use to solve system of equations
 
 If the underlying ring for the polynomial is either integer ring or field, then you can use resultant to solve system of linear equations.
 
-```
+```apache
 sage: R.<x,y> = QQ[]
 sage: f = x + y + x*y
 sage: g = x^2 + y^2
@@ -246,7 +246,7 @@ y^4 + 2*y^3 + 2*y^2
 
 As `roots()` are only definied for univariate polynomial, we must change `k` to a univariate polynomial first.
 
-```
+```apache
 sage: k = k(x = 0)
 sage: k = k.univariate_polynomial()
 sage: k.roots()
@@ -259,7 +259,7 @@ Groebner basis is much slower and less consistent. It might not find a solution 
 
 But as it works on any ring, sometimes we have no choice to use it especially when we are dealing with the ring of Integer modulo n.
 
-```
+```apache
 sage: R.<x,y> = Zmod(30)[]
 sage: f = x + y + 3
 sage: g = 3 * x + y + 10
@@ -272,7 +272,7 @@ sage: I.groebner_basis()
 
 You can declare a matrix by :
 
-```
+```apache
 sage: Matrix(ZZ, [[2,2,3],[4,2,5],[3,3,3]])
 [2 2 3]
 [4 2 5]
@@ -286,7 +286,7 @@ The first parameter represents the underlying field for the entries of the matri
 
 Access the entries of the matrix with the natural way
 
-```
+```apache
 sage: A = Matrix(ZZ, [[2,2,3],[4,2,5],[3,3,3]])
 sage: A[2][1]
 3
@@ -298,7 +298,7 @@ Operation `/` is valid if the matrix is invertible
 
 Other functions for matrix includes :
 
-```
+```apache
 sage: A.rref()
 [1 0 0]
 [0 1 0]
@@ -315,14 +315,14 @@ x^3 - 7*x^2 - 16*x - 6
 
 As long as you are dealing with a finite group, you can always use `discrete_log()` to find discrete logarithm.
 
-```
+```apache
 sage: a = GF(23)(10)
 sage: b = a^13
 sage: discrete_log(b,a)
 13
 ```
 
-```
+```apache
 sage: K = GF(3^6,'x')
 sage: x = K.gen()
 sage: a = x^3 + 3*x^2 + 2 
@@ -330,7 +330,7 @@ sage: discrete_log(a, x)
 299
 ```
 
-```
+```apache
 sage: a = Matrix(GF(7), [[2,2,3],[4,2,5],[3,3,3]])
 sage: b = a^3
 sage: discrete_log(b,a)
