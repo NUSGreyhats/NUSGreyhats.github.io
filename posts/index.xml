@@ -9,7 +9,16 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 03 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SageMath guide</title>
+      <link>https://nusgreyhats.org/posts/guides/sage_note/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/guides/sage_note/</guid>
+      <description>SageMath basic usage guide</description>
+    </item>
+    
     <item>
       <title>SecWed #031121</title>
       <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0311/</link>
@@ -146,15 +155,6 @@ Description Cyberspace will be increasingly central to maintaining Singapore’s
       <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: Greyhats Introduction
 Do you find yourself wondering what the Greyhats team is often up to? Want to get to know more about the information security industry? Want to further hone your information security skills? 🖥 🚀
 Learn more about NUS&#39; first and only information security interest group and the various activities that we embark on together! Join us at our welcome tea on 11 August 2021 from 7pm to 8.</description>
-    </item>
-    
-    <item>
-      <title>SageMath guide</title>
-      <link>https://nusgreyhats.org/posts/guides/sage_note/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nusgreyhats.org/posts/guides/sage_note/</guid>
-      <description>SageMath basic usage guide</description>
     </item>
     
   </channel>

@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nusgreyhats.org/tags/guides/</loc>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nusgreyhats.org/</loc>
-    <lastmod>2021-11-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/</loc>
-    <lastmod>2021-11-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/guides/sage_note/</loc>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/</loc>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0311/</loc>
     <lastmod>2021-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/tags/secweds/</loc>
-    <lastmod>2021-11-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/</loc>
     <lastmod>2021-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/basic-lldb-scripting/</loc>
@@ -61,11 +67,7 @@
   </url><url>
     <loc>https://nusgreyhats.org/categories/</loc>
   </url><url>
-    <loc>https://nusgreyhats.org/tags/guides/</loc>
-  </url><url>
     <loc>https://nusgreyhats.org/resources/</loc>
-  </url><url>
-    <loc>https://nusgreyhats.org/posts/guides/sage_note/</loc>
   </url><url>
     <loc>https://nusgreyhats.org/search/</loc>
   </url><url>
