@@ -1,7 +1,7 @@
 ---
 author: "mechfrog88"
 title: "SageMath guide"
-date: "2021-12-5"
+date: "2021-12-05"
 description: "SageMath basic usage guide"
 tags: ["guides"]
 math: true
