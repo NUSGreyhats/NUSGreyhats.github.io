@@ -14,7 +14,7 @@ Typically, the attacker will target the server's internal only services.
 
 ## Why SSRF?
 
-<img src="./SSRF trend 2021.png">
+{{< figure src="images/SSRF trend 2021.png" title="SSRF trend" >}}
 
 Between 2017 to 2021, SSRF have been in the rise and is a new contender in the OWASP top 10. 
 
@@ -24,14 +24,14 @@ A large amount of information today is hosted on the cloud to improve deployment
 
 With the microservices architecture, big services are split up into multiple smaller microservices where each microservice is used to maintain one function of the larger services. The microservices usually communicate with each other over HTTP or other lightweight protocols.
 
-This microservices architecture provides a large surface for the attacker to attempt to exploit SSRF. Any Single vulnerable service will allow the attacked to access multiple microservices. With more services communicating with each other, the attacker will have a higher chance of finding a more impactful exploit.
+This microservices architecture provides a large surface for the attacker to attempt to exploit SSRF. Any single vulnerable service will allow the attacker to access multiple microservices. With more services communicating with each other, the attacker will have a higher chance of finding a more impactful exploit.
 
 ## General Impact
 The impact of SSRF is generally an attack on the server itself or other internal services that can be accessed from the server.
 
 ## How does SSRF work?
 
-<img src="./SSRF diagram.png">
+{{< figure src="images/SSRF diagram.png" title="SSRF" >}}
 
 Although the attacker is unable to access the internal services directly, the attacker can still reach the other internal services through the vulnerable web servers.
 
@@ -80,13 +80,23 @@ The impact of SSRF can widely vary depending on different circumstances.
 1. Denial of Service
 2. Remote Code execution
 3. Bypassing access control
-4. Service discovery
+4. Port Scanning: Reqeusts can be made to different ports and the resulting status code or result shown on the frontend allows the attacker to infer if the port is open
+5. Other internal services (Details on the attacks are given in the references below)
+   1. Redis: If Redis uses a text based protocol (RESP), the attacker can send a payload with the correct format and send commands to the redis server. 
+   2. Cloud Meta data: Metadata API base url can be given to the vulnerable server to retrieve information about the server. 
 
 
 ## Types of SSRF
 There are mainly 2 different types of SSRF vulnerabilities.
 1. Basic SSRF: The result is returned to the frontend and can be seen by the user.
 2. Blind SSRF: The result of the attack is not returned to the frontend.
+3. Semi-Blind SSRF: The attacker only knows if the payload was successful or not. No details are given.
+
+## Comparison between Different Types of SSRF
+| Criteria                                | Basic SSRF | Blind SSRF | Semi-Blind SSRF |
+| --------------------------------------- | ---------- | ---------- | --------------- |
+| Can the attacker directly view the page | Yes        | No         | No              |
+| Difficulty of exploitation (In general) | Higher     | Lower      | Medium          |
 
 ## Example of a Basic SSRF
 
@@ -112,15 +122,37 @@ Which this may seem like a good idea, a request from the server is forged in the
 Although this is harder to exploit compared to the basic SSRF, it can still lead to remote code execution under correct circumstances.
 
 
-## Comparison between Blind SSRF and Basic SSRF
-| Criteria                                | Basic SSRF | Blind SSRF |
-| --------------------------------------- | ---------- | ---------- |
-| Can the attacker directly view the page | Yes        | No         |
-| Difficulty of exploitation (In general) | Higher     | Lower      |
+## Mitigations for SSRF
+1. Input validation (Sanitization) for URLs given by the user.
+   1. This can be in the form of a whitelist or a blacklist (There is a different list of caveats for blacklists)
+   2. Verification that IP / Domain is not an internal IP address / invalid address.
+2. Do not accept complete URLs from users.
+3. Firewall filters to prevent access of unauthorised domains
 
+
+## Bypasses for Mitigations
+
+However, for each the mitigations, there might be some bypasses which can be used to reduce the effectiveness of the mitigations.
+
+1. Usage of malformed URLs
+   1. `{domain}@127.0.0.1` or `127.0.1` all redirects to `localhost`. There are multiple encodings of this url. Similar methods can be used for other urls.
+2. DNS rebinding
+   1. The attacker can make an external ip address redirect to an internal ip address. The server 
+3. Open Redirect
+   1. If there is another open redirection on the page,  the open redirection can be used to bypass restrictions on the webpage.
+4. Bypass via Redirection
+   1. There might be filtering when it comes to a URL.
+   2. This can be used to bypass url filters by registering a valid url which bypasses the various types of filtering.
+5. SSRF via Referrer header
+   1. Sometimes web applications make use of server side analytics software that tracks visitors. These software logs the referrer header in the request and actually visit the websites to analyze the contents of referrer sites.
 
 
 ## References
 1. [Port Swigger](https://portswigger.net/web-security/ssrf)
 2. [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 3. [Wallarm](https://lab.wallarm.com/blind-ssrf-exploitation/)
+4. [Attacking Redis Through SSRF](https://infosecwriteups.com/exploiting-redis-through-ssrf-attack-be625682461b)
+5. [SSRF Exposes data of technology](https://unit42.paloaltonetworks.com/server-side-request-forgery-exposes-data-of-technology-industrial-and-media-organizations/)
+6. [From SSRF to port scanner](https://cobalt.io/blog/from-ssrf-to-port-scanner)
+7. [Hacktricks - SSRF Bypasses](https://book.hacktricks.xyz/pentesting-web/ssrf-server-side-request-forgery)
+8. [SSRF Bypass Cheatsheet](https://highon.coffee/blog/ssrf-cheat-sheet/)
