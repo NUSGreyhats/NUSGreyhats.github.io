@@ -14,7 +14,7 @@ Typically, the attacker will target the server's internal only services.
 
 ## Why SSRF?
 
-{{< figure src="images/SSRF trend 2021.png" title="SSRF trend" >}}
+{{< figure src="images/ssrf/SSRF trend 2021.png" title="SSRF trend" >}}
 
 Between 2017 to 2021, SSRF have been in the rise and is a new contender in the OWASP top 10. 
 
@@ -31,7 +31,7 @@ The impact of SSRF is generally an attack on the server itself or other internal
 
 ## How does SSRF work?
 
-{{< figure src="images/SSRF diagram.png" title="SSRF" >}}
+{{< figure src="images/ssrf/SSRF diagram.png" title="SSRF" >}}
 
 Although the attacker is unable to access the internal services directly, the attacker can still reach the other internal services through the vulnerable web servers.
 
