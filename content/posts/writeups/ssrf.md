@@ -137,7 +137,10 @@ However, for each the mitigations, there might be some bypasses which can be use
 1. Usage of malformed URLs
    1. `{domain}@127.0.0.1` or `127.0.1` all redirects to `localhost`. There are multiple encodings of this url. Similar methods can be used for other urls.
 2. DNS rebinding
-   1. The attacker can make an external ip address redirect to an internal ip address. The server will resolve the domain to a local IP address and access the local domain regardless.
+   1. The attacker can register a domain and point it to a non-blacklisted website.
+   2. After the server checks that the domain is valid, the attacker can change it to point to an internal ip address.
+   3. When the server visits the domain again, the server will visit the actual website.
+   4. More information can be found below
 3. Open Redirect
    1. If there is another open redirection on the page,  the open redirection can be used to bypass restrictions on the webpage.
 4. Bypass via Redirection
@@ -156,3 +159,5 @@ However, for each the mitigations, there might be some bypasses which can be use
 6. [From SSRF to port scanner](https://cobalt.io/blog/from-ssrf-to-port-scanner)
 7. [Hacktricks - SSRF Bypasses](https://book.hacktricks.xyz/pentesting-web/ssrf-server-side-request-forgery)
 8. [SSRF Bypass Cheatsheet](https://highon.coffee/blog/ssrf-cheat-sheet/)
+9. [SSRF DNS Rebinding](https://geleta.eu/2019/my-first-ssrf-using-dns-rebinfing/)
+10. [SSRF Bypass techniques](https://bitthebyte.medium.com/popularizing-some-ssrf-techniques-for-fun-and-profit-1d11b6321744)
