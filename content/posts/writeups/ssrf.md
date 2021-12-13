@@ -14,7 +14,7 @@ Typically, the attacker will target the server's internal only services.
 
 ## Why SSRF?
 
-{{< figure src="../../../images/ssrf/SSRF trend 2021.png" title="SSRF trend" >}}
+{{< figure src="/images/ssrf/SSRF trend 2021.png" title="SSRF trend" >}}
 
 Between 2017 to 2021, SSRF have been in the rise and is a new contender in the OWASP top 10. 
 
@@ -31,7 +31,7 @@ The impact of SSRF is generally an attack on the server itself or other internal
 
 ## How does SSRF work?
 
-{{< figure src="../../../images/ssrf/SSRF diagram.png" title="SSRF" >}}
+{{< figure src="/images/ssrf/SSRF diagram.png" title="SSRF" >}}
 
 Although the attacker is unable to access the internal services directly, the attacker can still reach the other internal services through the vulnerable web servers.
 
@@ -83,7 +83,7 @@ The impact of SSRF can widely vary depending on different circumstances.
 4. Port Scanning: Reqeusts can be made to different ports and the resulting status code or result shown on the frontend allows the attacker to infer if the port is open
 5. Other internal services (Details on the attacks are given in the references below)
    1. Redis: If Redis uses a text based protocol (RESP), the attacker can send a payload with the correct format and send commands to the redis server. 
-   2. Cloud Meta data: Metadata API base url can be given to the vulnerable server to retrieve information about the server. 
+   2. Cloud metadata: Metadata API base url can be given to the vulnerable server to retrieve information about the server. 
 
 
 ## Types of SSRF
@@ -96,7 +96,7 @@ There are mainly 2 different types of SSRF vulnerabilities.
 | Criteria                                | Basic SSRF | Blind SSRF | Semi-Blind SSRF |
 | --------------------------------------- | ---------- | ---------- | --------------- |
 | Can the attacker directly view the page | Yes        | No         | No              |
-| Difficulty of exploitation (In general) | Higher     | Lower      | Medium          |
+| Difficulty of exploitation (In general) | Lower      | Higher     | Medium          |
 
 ## Example of a Basic SSRF
 
@@ -137,7 +137,7 @@ However, for each the mitigations, there might be some bypasses which can be use
 1. Usage of malformed URLs
    1. `{domain}@127.0.0.1` or `127.0.1` all redirects to `localhost`. There are multiple encodings of this url. Similar methods can be used for other urls.
 2. DNS rebinding
-   1. The attacker can make an external ip address redirect to an internal ip address. The server 
+   1. The attacker can make an external ip address redirect to an internal ip address. The server will resolve the domain to a local IP address and access the local domain regardless.
 3. Open Redirect
    1. If there is another open redirection on the page,  the open redirection can be used to bypass restrictions on the webpage.
 4. Bypass via Redirection
