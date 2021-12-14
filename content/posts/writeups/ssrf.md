@@ -139,7 +139,7 @@ However, for each the mitigations, there might be some bypasses which can be use
 2. DNS rebinding
    1. The attacker can register a domain and point it to a non-blacklisted website.
    2. After the server checks that the domain is valid, the attacker can change it to point to an internal ip address.
-   3. When the server visits the domain again, the server will visit the actual website.
+   3. When the server visits the domain again, the server will visit the internal ip address.
    4. More information can be found below
 3. Open Redirect
    1. If there is another open redirection on the page,  the open redirection can be used to bypass restrictions on the webpage.
