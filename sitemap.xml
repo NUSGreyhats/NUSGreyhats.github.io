@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nusgreyhats.org/posts/writeups/x-mas-ctf-2021-intensive-training/</loc>
+    <lastmod>2021-12-13T17:56:41+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/ctf/</loc>
+    <lastmod>2021-12-13T17:56:41+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/</loc>
+    <lastmod>2021-12-13T17:56:41+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/</loc>
+    <lastmod>2021-12-13T17:56:41+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/reverse-engineer/</loc>
+    <lastmod>2021-12-13T17:56:41+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/</loc>
+    <lastmod>2021-12-13T17:56:41+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/writeups/</loc>
+    <lastmod>2021-12-13T17:56:41+08:00</lastmod>
+  </url><url>
     <loc>https://nusgreyhats.org/tags/guides/</loc>
     <lastmod>2021-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nusgreyhats.org/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/posts/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nusgreyhats.org/posts/guides/sage_note/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/</loc>
     <lastmod>2021-12-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0311/</loc>
@@ -24,9 +36,6 @@
     <lastmod>2021-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/basic-lldb-scripting/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/writeups/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2710/</loc>
