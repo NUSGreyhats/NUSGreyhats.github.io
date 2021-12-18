@@ -72,7 +72,9 @@ team:
   - name: Yang Chenglong
     major: Information Security
     roles:
-      - pro
+      - ctf
+      - pentesting
+      - noob
     desc: Log on. Hack in. Go anywhere. Steal everything.
     twitter: https://twitter.com/5p4d37
     linkedin: https://www.linkedin.com/in/chenglong-yang-033761168/
