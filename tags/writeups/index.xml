@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Server Side Request Forgery</title>
+      <link>https://nusgreyhats.org/posts/writeups/ssrf/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/writeups/ssrf/</guid>
+      <description>An explaination on SSRF</description>
+    </item>
+    
+    <item>
       <title>Basic LLDB Scripting</title>
       <link>https://nusgreyhats.org/posts/writeups/basic-lldb-scripting/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>

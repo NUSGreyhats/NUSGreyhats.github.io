@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Server Side Request Forgery</title>
+      <link>https://nusgreyhats.org/posts/writeups/ssrf/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/writeups/ssrf/</guid>
+      <description>An explaination on SSRF</description>
+    </item>
+    
+    <item>
       <title>SageMath guide</title>
       <link>https://nusgreyhats.org/posts/guides/sage_note/</link>
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
