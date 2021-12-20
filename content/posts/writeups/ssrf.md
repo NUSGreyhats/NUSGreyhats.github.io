@@ -2,7 +2,7 @@
 author: "jh123x"
 title: "Server Side Request Forgery"
 date: "2021-12-12"
-description: "An explaination on SSRF"
+description: "An overview of SSRF"
 tags: ["writeups"]
 ShowBreadcrumbs: False
 ---
@@ -14,7 +14,7 @@ Typically, the attacker will target the server's internal only services.
 
 ## Why SSRF?
 
-{{< figure src="/images/ssrf/SSRF trend 2021.png" title="SSRF trend" >}}
+{{< figure src="/images/ssrf/SSRF Trend 2021.png" title="SSRF trend" >}}
 
 Between 2017 to 2021, SSRF have been in the rise and is a new contender in the OWASP top 10. 
 
