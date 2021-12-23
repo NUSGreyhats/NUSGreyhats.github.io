@@ -87,7 +87,7 @@ The impact of SSRF can widely vary depending on different circumstances.
 
 
 ## Types of SSRF
-There are mainly 2 different types of SSRF vulnerabilities.
+There are mainly 3 different types of SSRF vulnerabilities.
 1. Basic SSRF: The result is returned to the frontend and can be seen by the user.
 2. Blind SSRF: The result of the attack is not returned to the frontend.
 3. Semi-Blind SSRF: The attacker only knows if the payload was successful or not. No details are given.
