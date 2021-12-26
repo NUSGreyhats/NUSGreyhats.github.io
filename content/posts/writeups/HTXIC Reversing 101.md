@@ -9,7 +9,7 @@ ShowBreadcrumbs: False
 
 # Overview
 
-The HTX Investigators’ Challenge (HTXIC) 2021 was a CTF competition with about ~128 teams participating, it was held on 20 Dec 2021. This post will document a writeup on the challenge `Reversing 101` as I thought it is quite a fun to reverse a tic tac toe game and find flag.
+The HTX Investigators’ Challenge (HTXIC) 2021 was a CTF competition with about ~128 teams participating, it was held online on 20 Dec 2021. This post will document a writeup on the challenge `Reversing 101` as I thought it is quite a fun to reverse a tic tac toe game and find flag.
 
 {{< figure src="/images/HTXIC-Reversing101/photo_2021-12-20_08-11-23.jpg" >}}
 
@@ -43,16 +43,16 @@ Launching the program, we expectedly get a GUI program showing a Tic Tac Toe gam
 
 {{< figure src="/images/HTXIC-Reversing101/215948.png" >}}
 
-After some testing of the game by manually playing the tic tac toe against the 'AI', and manipulating the game with some basic [Cheat Engine](https://github.com/cheat-engine/cheat-engine), seems like high score is not something that would reveal the challenge flag. 
+After some testing of the game by manually playing the tic tac toe against the 'AI', and manipulating the game with some basic [Cheat Engine](https://github.com/cheat-engine/cheat-engine), seems like even with a high score 1 million games won is not something that would reveal the challenge flag. 
 
-Besides score, the game is pretty basic. Just click anywhere on the 3x3 game tile to play the game, after you win or lose, click next round. Alternatively, the score resets when you click on the 'Reset' button. 
+Besides testing the game score, the game is pretty basic. Just click anywhere on the 3x3 game tile to play the game, after you win or lose, click next round. Alternatively, the score resets when you click on the 'Reset' button. The game functions like how one would expect a typical tic tac toe game to, except you will never get a flag/prize even if you played beyond integer limit.
 
-Looks like the flag won't come easily, and does require some 101 reversing efforts.
+Looks like the flag won't come easily, and does require some 101 reversing efforts. So let's get started. 
 
 
 # Reversing the binary
 
-Since Detect It Easy has identified that this is a .NET application, we can make use of our handy [dnSpy](https://github.com/dnSpy/dnSpy) to deal with it. This tool is a useful debugger and .NET assembly editor and it does come with the feature to decompile .NET. This is great news, as we do not have to use tools like Ghidra or IDA Pro. 
+Since Detect It Easy has identified that this is a .NET application, we can make use of our handy [dnSpy](https://github.com/dnSpy/dnSpy) to deal with it. This tool is a useful debugger and .NET assembly editor and it does come with the feature to decompile .NET. This is great news, as we do not have to use tools like Ghidra or IDA Pro which would be more tedious to reverse and analyse. 
 
 {{< figure src="/images/HTXIC-Reversing101/220738.png" >}}
 
@@ -62,6 +62,8 @@ Upon opening it on dnSpy, we can see that the code is successfully reversed. Unf
 
 This is due to the use of Confuser by the authors, which we have identified earlier. This technique is also commonly used by malware authors if they want to hinder analysis efforts. For this challenge, more specifically, it is `ConfuserEx v1.0.0` which was used to obfuscate the binary. To solve this, we could use [de4dot](https://github.com/de4dot/de4dot) to clean up the binary. 
 
+
+Just clone the GitHub and compile it, or grab a release on the internet. Then just run the command:
 ```
 PS C:\Users\Alice\Desktop > de4dot-x64.exe .\TicTacToe.exe
 
