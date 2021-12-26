@@ -11,7 +11,7 @@ ShowBreadcrumbs: False
 
 The HTX Investigators’ Challenge (HTXIC) 2021 was a CTF competition with about ~128 teams participating, it was held on 20 Dec 2021. This post will document a writeup on the challenge `Reversing 101` as I thought it is quite a fun to reverse a tic tac toe game and find flag.
 
-![](images/HTXIC-Reversing101/photo_2021-12-20_08-11-23.jpg)
+{{< figure src="/images/HTXIC-Reversing101/photo_2021-12-20_08-11-23.jpg" >}}
 
 PS: The CTF came in a mixed reality concept where instead of the usual web portal where we submit our flags, it is done in a Unity game mirroring the HTX Office in real life. We get to see our teammates in game too in various avatars and have to hunt for 'quests' in game to unlock the CTF challenges. Other than the lack of features in-game like the ability to chat, this CTF was quite a novel one replacing the face to face physical competitions in this COVID-19 pandemic. 
 
@@ -22,13 +22,13 @@ Since the challenge title already hints that this is a reversing challenge, we c
 
 Uploading the file onto VirusTotal is a easy way to figure it, so upon upload we get the following:
 
-![](images/HTXIC-Reversing101/Image1-VT.png)
+{{< figure src="/images/HTXIC-Reversing101/Image1-VT.png" >}}
 
 Access the full VirusTotal Report [here](https://www.virustotal.com/gui/file/164153fe29038e87357c08759829b4c76bb857b715b59c2f7e2474809fc1d19b/details)
 
 Indicating that this binary is a PE32 executable for MS Windows (GUI) Intel 80386 32-bit Mono/.Net assembly.
 
-![](images/HTXIC-Reversing101/214854.png)
+{{< figure src="/images/HTXIC-Reversing101/214854.png" >}}
 
 We can verify this using local tools as well, for example on Detect It Easy, identifying it to be a .NET(v4.0.30319) binary. This would mean that we can test this binary out on a Windows VM. Interestingly, Confuser(1.X) was also identified, this will be useful later.
 
@@ -37,11 +37,11 @@ We can verify this using local tools as well, for example on Detect It Easy, ide
 
 Before going into reversing the program, let's first understand what it does. 
 
-![](images/HTXIC-Reversing101/215438.png)
+{{< figure src="/images/HTXIC-Reversing101/215438.png" >}}
 
 Launching the program, we expectedly get a GUI program showing a Tic Tac Toe game. The symbols and font of the game looks suspicious, and in the background a familiar soundtrack from the popular Squid Game Netflix drama is playing, perhaps a sign that this game is rigged and we have no way to legitimately win 😥😥. 
 
-![](images/HTXIC-Reversing101/215948.png)
+{{< figure src="/images/HTXIC-Reversing101/215948.png" >}}
 
 After some testing of the game by manually playing the tic tac toe against the 'AI', and manipulating the game with some basic Cheat Engine, seems like high score is not something that would reveal the challenge flag. 
 
@@ -54,11 +54,11 @@ Looks like the flag won't come easily, and does require some 101 reversing effor
 
 Since Detect It Easy has identified that this is a .NET application, we can make use of our handy dnSpy to deal with it. This tool is a useful debugger and .NET assembly editor and it does come with the feature to decompile .NET. This is great news, as we do not have to use tools like Ghidra or IDA Pro. 
 
-![](images/HTXIC-Reversing101/220738.png)
+{{< figure src="/images/HTXIC-Reversing101/220738.png" >}}
 
 Upon opening it on dnSpy, we can see that the code is successfully reversed. Unfortunately, we see some form of obfuscation, where things like the method names are not in plaintext. 
 
-![](images/HTXIC-Reversing101/221725.png)
+{{< figure src="/images/HTXIC-Reversing101/221725.png" >}}
 
 This is due to the use of Confuser by the authors, which we have identified earlier. This technique is also commonly used by malware authors if they want to hinder analysis efforts. For this challenge, more specifically, it is `ConfuserEx v1.0.0` which was used to obfuscate the binary. To solve this, we could use de4dot to clean up the binary. 
 
@@ -74,7 +74,7 @@ Renaming all obfuscated symbols
 Saving C:\Users\Alice\Desktop\TicTacToe-cleaned.exe
 ```
 
-![](images/HTXIC-Reversing101/222222.png)
+{{< figure src="/images/HTXIC-Reversing101/222222.png" >}}
 
 Finally, the code is cleaned and readable. The code is quite long, with about 1000++ lines in total. So I will just summarize what are the main points to solving this challenge.
 
@@ -112,7 +112,7 @@ Tracing the click events, we see that for each tile of the tic tac toe clicked b
 	}
 ```
 
-![](images/HTXIC-Reversing101/223058.png)
+{{< figure src="/images/HTXIC-Reversing101/223058.png" >}}
 
 In method_8, it does a series of if else conditions to check if the player has won the game, lost it, or if it ended in a draw, and displays the message box accordingly. 
 
@@ -142,7 +142,7 @@ if (this.int_0 == 3 && this.int_1 == 2)
 
 Turns out that this is referring to the player score. So let's go back to the binary and give it a play.
 
-![](images/HTXIC-Reversing101/224141.png)
+{{< figure src="/images/HTXIC-Reversing101/224141.png" >}}
 
 To speed things up a little, as the AI was too dumb to win me, I edited the memory to give it the desired scores of 3 and 2 for myself and the AI. This could be played manually too, though time consuming.
 
@@ -152,7 +152,7 @@ Clearly, this is also hinting to us that we are closer to the flag now.
 
 # Hidden Locker (Secret Stage?!) in the bianry
 
-![](images/HTXIC-Reversing101/224607.png)
+{{< figure src="/images/HTXIC-Reversing101/224607.png" >}}
 
 Now, the GUI of the .NET binary has changed. This is no longer a tic tac toe game but we have a PIN pad. 
 
@@ -168,7 +168,7 @@ if (this.string_0.Length == 9)
 ```
 
 
-![](images/HTXIC-Reversing101/224935.png)
+{{< figure src="/images/HTXIC-Reversing101/224935.png" >}}
 
 From here, we see that it uses the PIN along with strings in the method `Y0uSh0uldPr3ssth`, `3butt0ns` and `TtH/04xZb79By/VnbPZlBgO/D96vRmqPk0QT50gbdi8=` for AesCrypto. Now this is the crypto part of the reversing challenge. 
 
@@ -229,7 +229,7 @@ Running the z3 solver would provide us the PIN, after doing some rearrangement:
 ```
 
 
-![](images/HTXIC-Reversing101/225839.png)
+{{< figure src="/images/HTXIC-Reversing101/225839.png" >}}
 
 Finally, with the PIN cracked, we can just enter it in the game using the GUI and a message box will appear giving us the flag!
 
