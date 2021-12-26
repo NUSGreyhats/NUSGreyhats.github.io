@@ -178,7 +178,7 @@ But firstly, we have to ensure we pass the lengthy if condition for our PIN to e
 if (num % num9 == 0 && num9 * 3 == num2 && num2 * 3 == num4 && num5 % num2 == 2 && num6 * 4 == num5 && num2 % num4 == num3 && num2 - num6 == num && num7 % num3 == num && num7 / 2 == num6 && num8 % num2 == num9 && num8 % num7 == num2)
 ```
 
-Since this is something very painful to be done manually, I have decided to use some python scripting help along with [z3](https://github.com/Z3Prover/z3) black magic. 
+Since this is something very painful (and perhaps impossible to do within the CTF 12 hours) to be done manually, I have decided to use some python scripting help along with [z3](https://github.com/Z3Prover/z3) black magic. 
 
 To install, we can simply use pip.
 ```cmd
@@ -262,3 +262,5 @@ https://labs.f-secure.com/assets/BlogFiles/mwri-hacklu-2018-samdb-z3-final.pdf
 https://github.com/dnSpy/dnSpy
 
 https://github.com/de4dot/de4dot
+
+https://www.youtube.com/watch?v=TpdDq56KH1I
