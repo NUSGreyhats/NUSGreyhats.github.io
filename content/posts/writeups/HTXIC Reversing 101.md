@@ -1,6 +1,6 @@
 ---
 author: "Chan Jian Hao"
-title: "HTXIC Reversing 101 Writeup"
+title: "HTXIC CTF Reversing 101 Writeup"
 date: "2021-12-27"
 description: "Writeup/Walkthrough to reversing a unwinnable tic-tac-toe CTF game"
 tags: ["writeups", "ctf", "reverse engineer"]
@@ -13,7 +13,7 @@ The HTX Investigators’ Challenge (HTXIC) 2021 was a CTF competition with about
 
 {{< figure src="/images/HTXIC-Reversing101/photo_2021-12-20_08-11-23.jpg" >}}
 
-PS: The CTF came in a mixed reality concept where instead of the usual web portal where we submit our flags, it is done in a Unity game mirroring the HTX Office in real life. We get to see our teammates in game too in various avatars and have to hunt for 'quests' in game to unlock the CTF challenges. Other than the lack of features in-game like the ability to chat, this CTF was quite a novel one replacing the face to face physical competitions in this COVID-19 pandemic. 
+PS: The CTF came in a mixed reality/game world concept where instead of the usual web portal where we submit our flags, it is done in a Unity game mirroring the HTX Office in real life. We get to see our teammates in game too in various avatars and have to uncover/hunt for 'quests' in game to unlock the CTF challenges. Other than the lack of features in-game like the ability to chat, this CTF was quite a novel one replacing the face to face physical competitions in this COVID-19 pandemic. 
 
 
 # Understanding the binary
@@ -43,7 +43,7 @@ Launching the program, we expectedly get a GUI program showing a Tic Tac Toe gam
 
 {{< figure src="/images/HTXIC-Reversing101/215948.png" >}}
 
-After some testing of the game by manually playing the tic tac toe against the 'AI', and manipulating the game with some basic Cheat Engine, seems like high score is not something that would reveal the challenge flag. 
+After some testing of the game by manually playing the tic tac toe against the 'AI', and manipulating the game with some basic [Cheat Engine](https://github.com/cheat-engine/cheat-engine), seems like high score is not something that would reveal the challenge flag. 
 
 Besides score, the game is pretty basic. Just click anywhere on the 3x3 game tile to play the game, after you win or lose, click next round. Alternatively, the score resets when you click on the 'Reset' button. 
 
@@ -52,7 +52,7 @@ Looks like the flag won't come easily, and does require some 101 reversing effor
 
 # Reversing the binary
 
-Since Detect It Easy has identified that this is a .NET application, we can make use of our handy dnSpy to deal with it. This tool is a useful debugger and .NET assembly editor and it does come with the feature to decompile .NET. This is great news, as we do not have to use tools like Ghidra or IDA Pro. 
+Since Detect It Easy has identified that this is a .NET application, we can make use of our handy [dnSpy](https://github.com/dnSpy/dnSpy) to deal with it. This tool is a useful debugger and .NET assembly editor and it does come with the feature to decompile .NET. This is great news, as we do not have to use tools like Ghidra or IDA Pro. 
 
 {{< figure src="/images/HTXIC-Reversing101/220738.png" >}}
 
@@ -60,7 +60,7 @@ Upon opening it on dnSpy, we can see that the code is successfully reversed. Unf
 
 {{< figure src="/images/HTXIC-Reversing101/221725.png" >}}
 
-This is due to the use of Confuser by the authors, which we have identified earlier. This technique is also commonly used by malware authors if they want to hinder analysis efforts. For this challenge, more specifically, it is `ConfuserEx v1.0.0` which was used to obfuscate the binary. To solve this, we could use de4dot to clean up the binary. 
+This is due to the use of Confuser by the authors, which we have identified earlier. This technique is also commonly used by malware authors if they want to hinder analysis efforts. For this challenge, more specifically, it is `ConfuserEx v1.0.0` which was used to obfuscate the binary. To solve this, we could use [de4dot](https://github.com/de4dot/de4dot) to clean up the binary. 
 
 ```
 PS C:\Users\Alice\Desktop > de4dot-x64.exe .\TicTacToe.exe
@@ -178,7 +178,15 @@ But firstly, we have to ensure we pass the lengthy if condition for our PIN to e
 if (num % num9 == 0 && num9 * 3 == num2 && num2 * 3 == num4 && num5 % num2 == 2 && num6 * 4 == num5 && num2 % num4 == num3 && num2 - num6 == num && num7 % num3 == num && num7 / 2 == num6 && num8 % num2 == num9 && num8 % num7 == num2)
 ```
 
-Since this is something very painful to be done manually, I have decided to use some python scripting help along with z3 black magic. Please pardon me for my amateur z3 code, I am still learning it.
+Since this is something very painful to be done manually, I have decided to use some python scripting help along with [z3](https://github.com/Z3Prover/z3) black magic. 
+
+To install, we can simply use pip.
+```cmd
+ pip install z3-solver
+```
+
+
+Z3 is basically a theorem prover from Microsoft Research, this would help us to solve the equations given the amount of constraints imposed by the game. Please pardon me for my amateur z3 code, I am still learning it.
 
 
 ```python
@@ -233,6 +241,8 @@ Running the z3 solver would provide us the PIN, after doing some rearrangement:
 
 Finally, with the PIN cracked, we can just enter it in the game using the GUI and a message box will appear giving us the flag!
 
+`You have obtained the flag! HTX{R3v3rsingCSh4rplsE4sy}`
+
 Ggwp.
 
 
@@ -245,3 +255,10 @@ https://github.com/ViRb3/z3-python-ctf
 
 https://rolandsako.wordpress.com/2016/02/17/playing-with-z3-hacking-the-serial-check/
 
+https://wiki.bi0s.in/reversing/analysis/dynamic/linux/z3/
+
+https://labs.f-secure.com/assets/BlogFiles/mwri-hacklu-2018-samdb-z3-final.pdf
+
+https://github.com/dnSpy/dnSpy
+
+https://github.com/de4dot/de4dot
