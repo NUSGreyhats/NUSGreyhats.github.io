@@ -162,11 +162,33 @@ The code does something along the lines of:
 - Checking the length of the PIN to be 9
 - Calling method 12, which checks our PIN
 
-```
-if (this.string_0.Length == 9)
+```csharp
+private void buttonX_Click(object sender, EventArgs e)
+	{
+		if (!this.bool_0)
+		{
+			if (this.list_0.Contains('1'))
+			{
+				this.button1.ForeColor = Color.Lime;
+				this.button1.Text = "O";
+				this.list_0.Remove('1');
+				this.method_8();
+			}
+		}
+		else
+		{
+			this.method_10('1');
+			this.method_11();
+		}
+	}
+	
+public void method_11()
+	{
+		if (this.string_0.Length == 9)
 		{
 			this.method_12();
 		}
+	}
 ```
 
 
