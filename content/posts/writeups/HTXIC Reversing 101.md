@@ -64,7 +64,7 @@ This is due to the use of Confuser by the authors, which we have identified earl
 
 
 Just clone the GitHub and compile it, or grab a release on the internet. Then just run the command:
-```
+```ps
 PS C:\Users\Alice\Desktop > de4dot-x64.exe .\TicTacToe.exe
 
 de4dot v3.1.41592.3405 Copyright (C) 2011-2015 de4dot@gmail.com
@@ -119,7 +119,7 @@ Tracing the click events, we see that for each tile of the tic tac toe clicked b
 In method_8, it does a series of if else conditions to check if the player has won the game, lost it, or if it ended in a draw, and displays the message box accordingly. 
 
 This can be confirmed by base64 decoding:
-```
+```ps
 echo WW91IHdpbiEgUHJlc3MgTmV4dCBSb3VuZCB0byBjb250aW51ZS4= | base64 --decode
 
 You win! Press Next Round to continue.
@@ -135,7 +135,7 @@ Draw! Press Next Round to continue.
 
 However, there is an additional if statement after the checks for win/lose/draw condition, checking if 2 integers are 3 and 2 respectively.
 
-```
+```csharp
 if (this.int_0 == 3 && this.int_1 == 2)
 		{
 			this.method_9();
@@ -198,14 +198,14 @@ From here, we see that it uses the PIN along with strings in the method `Y0uSh0u
 
 But firstly, we have to ensure we pass the lengthy if condition for our PIN to even trigger the decryption routine. As it would be used for decryption, there is no point patching this binary to skip the statement as it would not give us the flag even if we manipulated the if condition.
 
-```
+```csharp
 if (num % num9 == 0 && num9 * 3 == num2 && num2 * 3 == num4 && num5 % num2 == 2 && num6 * 4 == num5 && num2 % num4 == num3 && num2 - num6 == num && num7 % num3 == num && num7 / 2 == num6 && num8 % num2 == num9 && num8 % num7 == num2)
 ```
 
 Since this is something very painful (and perhaps impossible to do within the CTF 12 hours) to be done manually, I have decided to use some python scripting help along with [z3](https://github.com/Z3Prover/z3) black magic. 
 
 To install, we can simply use pip.
-```cmd
+```ps
  pip install z3-solver
 ```
 
@@ -246,7 +246,7 @@ else:
 
 Running the z3 solver would provide us the PIN, after doing some rearrangement:
  
-```
+```python
  x__3 = 9
  x__4 = 8
  x__1 = 3
