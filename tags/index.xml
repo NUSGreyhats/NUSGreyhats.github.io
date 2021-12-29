@@ -9,20 +9,11 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>writeups</title>
-      <link>https://nusgreyhats.org/tags/writeups/</link>
-      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://nusgreyhats.org/tags/writeups/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ctf</title>
       <link>https://nusgreyhats.org/tags/ctf/</link>
-      <pubDate>Mon, 13 Dec 2021 17:56:41 +0800</pubDate>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/tags/ctf/</guid>
       <description></description>
@@ -31,9 +22,18 @@
     <item>
       <title>reverse engineer</title>
       <link>https://nusgreyhats.org/tags/reverse-engineer/</link>
-      <pubDate>Mon, 13 Dec 2021 17:56:41 +0800</pubDate>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/tags/reverse-engineer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writeups</title>
+      <link>https://nusgreyhats.org/tags/writeups/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/tags/writeups/</guid>
       <description></description>
     </item>
     
