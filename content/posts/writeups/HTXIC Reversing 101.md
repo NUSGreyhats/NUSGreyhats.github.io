@@ -84,34 +84,34 @@ Firstly, at the entry point, it runs Form1 which is the main Tic Tac Toe game in
 
 ```csharp
 private static void Main()
-	{
-		Application.EnableVisualStyles();
-		Application.SetCompatibleTextRenderingDefault(false);
-		Application.Run(new Form1());
-	}
+{
+	Application.EnableVisualStyles();
+	Application.SetCompatibleTextRenderingDefault(false);
+	Application.Run(new Form1());
+}
 ```
 
 Tracing the click events, we see that for each tile of the tic tac toe clicked by the user, the code is as follows:
 
 ```csharp
-	private void button1_Click(object sender, EventArgs e)
+private void button1_Click(object sender, EventArgs e)
+{
+	if (!this.bool_0)
 	{
-		if (!this.bool_0)
+		if (this.list_0.Contains('1'))
 		{
-			if (this.list_0.Contains('1'))
-			{
-				this.button1.ForeColor = Color.Lime;
-				this.button1.Text = "O";
-				this.list_0.Remove('1');
-				this.method_8();
-			}
-		}
-		else
-		{
-			this.method_10('1');
-			this.method_11();
+			this.button1.ForeColor = Color.Lime;
+			this.button1.Text = "O";
+			this.list_0.Remove('1');
+			this.method_8();
 		}
 	}
+	else
+	{
+		this.method_10('1');
+		this.method_11();
+	}
+}
 ```
 
 {{< figure src="/images/HTXIC-Reversing101/223058.png" >}}
@@ -137,9 +137,9 @@ However, there is an additional if statement after the checks for win/lose/draw 
 
 ```csharp
 if (this.int_0 == 3 && this.int_1 == 2)
-		{
-			this.method_9();
-		}
+{
+	this.method_9();
+}
 ```
 
 Turns out that this is referring to the player score. So let's go back to the binary and give it a play.
@@ -152,7 +152,7 @@ Upon clicking any tiles with the score, the condition is met and a message box p
 
 Clearly, this is also hinting to us that we are closer to the flag now. 
 
-# Hidden Locker (Secret Stage?!) in the bianry
+# Hidden Locker (Secret Stage?!) in the binary
 
 {{< figure src="/images/HTXIC-Reversing101/224607.png" >}}
 
@@ -164,31 +164,31 @@ The code does something along the lines of:
 
 ```csharp
 private void buttonX_Click(object sender, EventArgs e)
+{
+	if (!this.bool_0)
 	{
-		if (!this.bool_0)
+		if (this.list_0.Contains('1'))
 		{
-			if (this.list_0.Contains('1'))
-			{
-				this.button1.ForeColor = Color.Lime;
-				this.button1.Text = "O";
-				this.list_0.Remove('1');
-				this.method_8();
-			}
-		}
-		else
-		{
-			this.method_10('1');
-			this.method_11();
+			this.button1.ForeColor = Color.Lime;
+			this.button1.Text = "O";
+			this.list_0.Remove('1');
+			this.method_8();
 		}
 	}
-	
+	else
+	{
+		this.method_10('1');
+		this.method_11();
+	}
+}
+
 public void method_11()
+{
+	if (this.string_0.Length == 9)
 	{
-		if (this.string_0.Length == 9)
-		{
-			this.method_12();
-		}
+		this.method_12();
 	}
+}
 ```
 
 
