@@ -158,15 +158,20 @@ Similar to hiding a string, files can also be hidden in images. They are typical
 ### Least Significant Bit (LSB)
 As you know, files are made up of bytes. 1 byte is equal to 8 bits. If the least significant bit of a byte is changed, it will not change the overall value by too much. 
 
-Using this idea, we can potentially hide messages in binary in images by altering the LSB of all the bytes. This will not make any significant change to the image, and will practically go unnoticed by humans.  
+Using this idea, we can potentially hide messages in binary in images by altering the LSB of all the pixel values. This will not make any significant change to the image, and will practically go unnoticed by humans.  
 
 To extract the hidden information, simply go through all the bytes, take the LSB, and append it to the string of extracted LSBs. Then, convert the final binary string into a readable message or even a file.
+
+To learn more about LSB Steganography, [this tutorial](https://ctf101.org/forensics/what-is-stegonagraphy) provides a more in-depth explanation of how it works.
 
 ## Audio Forensics
 
 ### Binary or Morse Code
 
-A higher amplitude in a soundwave may denote a 1, while a lower amplitude may denote a 0. This is a simple way to hide messages encoded in binary or Morse code in an audio file. 
+A peak in a soundwave may denote a 1, while a trough may denote a 0. This is a simple way to hide messages encoded in binary or Morse code in an audio file. 
+
+![Binary hidden in Morse Code](https://ctf-wiki.mahaloz.re/misc/audio/figure/3.png)
+> Screenshot of a Forensics challenge, where the high represents 1, and the low represents 0.
 
 For challenges like this, a visual aid might be useful. I recommend opening the file in [Audacity](https://www.audacityteam.org/) first before conducting further analysis. 
 
@@ -208,7 +213,7 @@ A file signature is a unique group of bytes located at the beginning of a file. 
 
 [Here is a list of file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) you can use to figure out what type of file you are dealing with.
 
-Alternatively, you may also run [binwalk](https://github.com/ReFirmLabs/binwalk) on the unknown file to identify it automatically. 
+Alternatively, you may also run [file](https://linux.die.net/man/1/file) or [binwalk](https://github.com/ReFirmLabs/binwalk) on the unknown file to identify it automatically. 
 
 ### Broken file signatures
 
@@ -245,7 +250,7 @@ In Windows' File Explorer, check that `View -> Hidden Items` is enabled. This al
 In Linux machines, files and folders may be renamed to begin with `.`, which will be ignored by the `ls` command. To show these hidden items, use `ls -a` instead.
 
 # Conclusion
-There are many more aspects of digital forensics that were not covered in this writeup, as it was meant to be a brief introduction for beginners. I personally recommend trying the challenges over at [ctflearn.com](ctflearn.com) for beginner-level ones. I hope you've enjoyed reading and have hopefully learnt something new! :) 
+There are many more aspects of digital forensics that were not covered in this writeup, as it was meant to be a brief introduction for beginners. I personally recommend trying the challenges over at [ctflearn.com](https://ctflearn.com) for beginner-level ones. I hope you've enjoyed reading and have hopefully learnt something new! :) 
 
 # References
 **File system forensics:**
@@ -257,6 +262,9 @@ There are many more aspects of digital forensics that were not covered in this w
 **Network Forensics:**
 -  https://en.wikipedia.org/wiki/Network_forensics
 - http://testphp.vulnweb.com/login.php
+
+**Audio Forensics:**
+- https://ctf-wiki.mahaloz.re/misc/audio/introduction/
 
 
 
@@ -274,3 +282,4 @@ There are many more aspects of digital forensics that were not covered in this w
 - https://www.easytechjunkie.com/what-is-a-file-signature.htm
 - https://www.kali.org/tools/binwalk/
 	
+
