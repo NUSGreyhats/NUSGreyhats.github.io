@@ -1,4 +1,11 @@
 resources:
+  - name: Study Notes
+    desc: Notes by our members from their classes.
+    workshops:
+      - name: Cute Cryptography Learning Notes
+        orgs: Mu Changrui
+        desc: Notes for the materials in NUS's CS3230 and CS4236. It is also extended to include the contents of Cryptography I on Coursera by Dan Boneh, along with some academic papers.
+        link: /notes/Cute-Cryptography-Learning-Notes.pdf
   - name: Learn2Learn Summer 2021 ☀️
     desc: A short series of internal workshops where we share about the things we learnt during the 2021 summer break.
     workshops:
