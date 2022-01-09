@@ -4,7 +4,7 @@ author: "erythr0"
 title: "Introduction to Digital Forensics"
 date: "2022-01-07"
 description: "A beginner's guide to Digital Forensics"
-tags: ["writeups"]
+tags: ["writeups", "forensics"]
 ShowBreadcrumbs: False
 ---
 
