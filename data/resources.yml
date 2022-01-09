@@ -1,5 +1,5 @@
 resources:
-  - name: Study Notes
+  - name: Study Notes 📚
     desc: Notes by our members from their classes.
     workshops:
       - name: Cute Cryptography Learning Notes
