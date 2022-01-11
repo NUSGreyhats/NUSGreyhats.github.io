@@ -1,7 +1,7 @@
 ---
 author: "Uxinnn"
 title: "Simple ML models to predict CVSS scores"
-date: "2022-01-10"
+date: "2022-01-14"
 description: "An simple exploration on predicting CVSS scores using CVE descriptions"
 tags: ["writeups", "cyberAI"]
 ShowBreadcrumbs: False
