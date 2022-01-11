@@ -12,7 +12,7 @@ ShowBreadcrumbs: False
 This writeup details the construction of rudimentary machine learning models that use the descriptions of CVEs to predict their corresponding base CVSS scores. 
 A brief illustration is shown below.
 
-![](/images/cvss-prediction/data-after-extraction.png)
+![](/images/cvss-prediction/model-overview.png)
 
 The original idea originates from an internship that I have done, and this personal project is an attempt on my own to improve and expand on what I done previously. 
 The project is still a work in progress.
