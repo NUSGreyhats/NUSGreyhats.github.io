@@ -12,7 +12,7 @@ ShowBreadcrumbs: False
 This writeup details the construction of rudimentary machine learning models that use the descriptions of CVEs to predict their corresponding base CVSS scores. 
 A brief illustration is shown below.
 
-![](../../images/cvss-prediction/model-overview.png)
+![](/images/cvss-prediction/data-after-extraction.png)
 
 The original idea originates from an internship that I have done, and this personal project is an attempt on my own to improve and expand on what I done previously. 
 The project is still a work in progress.
@@ -29,7 +29,7 @@ As the JSON data feeds are quite complex, they cannot be easily parsed into a da
 Thus, I decided to just extract the essential data (CVE description, base CVSS V2 score, and base CVSS V3 score) that will be needed from the data feeds instead of trying to parse all data into a nice dataframe. 
 Since not every CVE has an associated CVSS V2 or V3 score, missing scores are temporarily replaced with a `None` when extracting these data. 
 The function used is shown here:
-```
+```py
 def get_useful_features(raw_cve_entry):
     entry = dict()
     try:
@@ -49,10 +49,10 @@ def get_useful_features(raw_cve_entry):
 
 The extracted essential data can be seen below.
 
-![](../../images/cvss-prediction/data-after-extraction.png)
+![](/images/cvss-prediction/data-after-extraction.png)
 
 After extracting the data, a quick look at the data will show that there are many unusable CVEs that are included in the data (See row 177474 in the figure above). 
-The different reasons for the CVEs to be usuable is shown below, along with the number of CVEs that is tagged with that reason.
+The different reasons for the CVEs to be not usable is shown below, along with the number of CVEs that is tagged with that reason.
 
 |Reason for not being used|Number of CVEs|
 |:---|:---|
@@ -65,7 +65,7 @@ The different reasons for the CVEs to be usuable is shown below, along with the 
 |SPLIT|1|
 
 Since they all had a description that starts with `** <REASON> **`, a quick regex matching was done to filter out and remove these unneeded data.
-```
+```py
 df = df[~(df.description.str.contains('^\\*\\*\\s+[A-Z]+\\s+\\*\\*\\s+'))]  # Remove unneeded CVEs
 ```
 
@@ -73,16 +73,16 @@ df = df[~(df.description.str.contains('^\\*\\*\\s+[A-Z]+\\s+\\*\\*\\s+'))]  # Re
 Initially, I thought of using both base CVSS V2 and V3 scores in the project, simply to see which score can be better predicted. 
 However, after looking at the counts of each metric, I realised that the number of CVEs with base CVSS V2 scores (165904) vastly outnumbered the number of CVEs with base CVSS V3 scores (92983). 
 As such, I then decided to remove all CVEs that do not have a base CVSS V2 score and just focus on predicting base CVSS V2 scores, simply as that would allow me more data to work with.
-```
+```py
 df.dropna(inplace=True, subset=["baseScoreV2"])
 ```
 
 After the removal of unusable CVEs and CVEs that do not have an associated base CVSS V2 score, I was left with a total of 165904 rows of CVE entries, shown below.
 
-![](../../images/cvss-prediction/data-after-filtering.png)
+![](/images/cvss-prediction/data-after-filtering.png)
 
 The CVE entries are then split into train and test data.
-```
+```py
 X = df["description"]
 y = df["baseScoreV2"]
 
@@ -91,7 +91,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
 The distribution of base CVSS V2 scores of the training data is shown below.
 
-![](../../images/cvss-prediction/cvss-score-distribution.png)
+![](/images/cvss-prediction/cvss-score-distribution.png)
 
 # ML Pipeline Construction
 
@@ -107,7 +107,7 @@ The pipelines will consists of 3 steps:
 Firstly, I chose the easy way out and used the Bag-of-Words (BoW) and TF-IDF models to vectorize the descriptions. These 2 models can be invoked by simply using Sklearn's CountVectorizer and TfidfVectorizer. 
 To augment these vectorizers, I used SpaCy to write a custom tokenizer function to do basic NLP processing on these descriptions which can be fed into Sklearn's vectorizers. 
 The Python library SpaCy is used for this purpose since it contains pretrained NLP pipelines which simplifies this processing step immensely.
-```
+```py
 # Create custom tokenizer
 def tokenizer(desc):
     tokens = nlp(desc)
@@ -116,14 +116,14 @@ def tokenizer(desc):
     return tokens
 ```
 
-The function first feed each description into SpaCy's *en_core_web_lg* pretrained pipeline, where they are tokenized. 
+The function first feeds each description into SpaCy's *en_core_web_lg* pretrained pipeline, where they are tokenized. 
 Then, each token is stripped off leading and trailing whitespaces, before being converted to lowercase and lemmatized. 
 If the token is a punctuation or a stop word, it is removed too. 
 The result is then a list of tokens that will be used by Sklearn's vectorizers to fit the BoW and TF-IDF models. 
 The output of the vectorizers will then be a word vector that represents the CVE description that was fed in.
 
 The vectorizers and parameters used are shown below:
-```
+```py
 CountVectorizer(tokenizer=tokenizer,
                 ngram_range=(1,2),
                 max_df=0.5,
@@ -141,7 +141,7 @@ TfidfVectorizer(tokenizer=tokenizer,
 
 As the dimensions of the word vectors are very large due to the large vocabulary accumulated from all the training CVE descriptions, PCA is used reduce the number of dimensions of the word vectors. 
 However, as including this step increases the computational time by a lot, this step is ommitted in most of the pipelines that I created.
-```
+```py
 TruncatedSVD(n_components=10000, n_iter=7, random_state=42)
 ```
 
@@ -157,7 +157,7 @@ Models chosen were:
 
 With the exception of Linear Regression which was fitted on transformed features from both BoW and TF-IDF vectorizers, the other 3 models were only fitted on transformed data from the TF-IDF vectorizer. 
 
-```
+```py
 linear_regr = LinearRegression()
 
 knn_regr = KNeighborsRegressor()
@@ -171,7 +171,7 @@ xgboost_regr = GradientBoostingRegressor()
 
 To score results of the models, Mean Square Error was chosen as the evaluation metric, since I want to penalized models more for larger errors. 
 As the target base CVSS V2 score only ranges from 0 to 10, the predicted values of the models are further fed into a function that constrains the predicted values to this range (predicted values that are less than 0 to 0, and all predicted values more than 10 to 10). 
-```
+```py
 y_pred = np.clip(pipeline.predict(X_test), 0, 10)
 mse = mean_squared_error(y_test, y_pred)
 ```
