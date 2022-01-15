@@ -169,7 +169,7 @@ xgboost_regr = GradientBoostingRegressor()
 
 # Results
 
-To score results of the models, Mean Square Error was chosen as the evaluation metric, since I want to penalized models more for larger errors. 
+To score results of the models, Mean Square Error was chosen as the evaluation metric, since I want to penalize models more for larger errors. 
 As the target base CVSS V2 score only ranges from 0 to 10, the predicted values of the models are further fed into a function that constrains the predicted values to this range (predicted values that are less than 0 to 0, and all predicted values more than 10 to 10). 
 ```py
 y_pred = np.clip(pipeline.predict(X_test), 0, 10)
