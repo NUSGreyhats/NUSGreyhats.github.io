@@ -150,8 +150,6 @@ Following the steps from the previous walk-though, we will setup and interact wi
 
 ![droids1 main page](/images/intro-android-reversing/droids1_app_main_page.jpg)
 
-Similar UI compared to the previous challenge except that this time round it has a user form for us to input data.
-
 ![droids1 main page](/images/intro-android-reversing/droids1_app_main_page_button_pressed.jpg)
 
 It seems like the application is asking us for a password, if the wrong password is provided, it will output to us "NOPE"
