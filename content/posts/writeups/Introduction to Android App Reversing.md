@@ -83,7 +83,7 @@ The shortcut method is a direct method that will decompile the apk into its sour
 # CTF walkthrough
 
 Let's take a look at 2 apk reversing challenges from picoGym, we will apply the shortcut method and any additional steps to capture the flags.
-For the challenges, I will be running the apks in an android emulator **Pixel_3a_API_30_x86** via Android Studio.  For more information, check out [android studio setup](https://developer.android.com/studio/install) and [install android emulator](https://developer.android.com/studio/run/managing-avds). Alternatively, if you have an android device, you could also connect to your computer via USB cable. 
+For the challenges, I will be running the apks in an android emulator **Pixel_3a_API_30_x86** via Android Studio.  For more information, check out [android studio setup](https://developer.android.com/studio/install) and [install android emulator](https://developer.android.com/studio/run/managing-avds). Alternatively, if you have an android device, you could also connect to your computer via USB cable and launch it with android studio following this [guide](https://developer.android.com/studio/run/device).
 
 ## droids0
 
