@@ -1,7 +1,7 @@
 ---
 author: "tensor"
 title: "Introduction to Android App Reversing"
-date: "2021-01-16"
+date: "2022-01-16"
 description: "A beginner's guide on reversing android applications"
 tags: ["writeups", "ctf"]
 ShowBreadcrumbs: False
