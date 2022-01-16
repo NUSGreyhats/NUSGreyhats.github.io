@@ -104,7 +104,7 @@ We can interact with the UI of the app, such as pressing the buttons and check f
 
 It seems like we triggered an event but we don't get any flag output. Let's decompile the apk.
 
-### Decompile the apk and undersatnding the code
+### Decompile the apk and understanding the code
 
 Using the shortcut method via [decompile.com](decompile.com), we can obtain the source code of the apk:
 
