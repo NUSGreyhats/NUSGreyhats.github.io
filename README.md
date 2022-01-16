@@ -1,6 +1,6 @@
 # NUSGreyhats.github.io
 
-Here is where our website lives.
+This is where our website lives.
 
 We use Hugo so that we don't need to mess with any HTML when we add more content.
 
