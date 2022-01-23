@@ -9,7 +9,19 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 03 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SecWed #012622</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0126/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0126/</guid>
+      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz
+Talk: 7:00pm-7:45pm Title: An introduction to container hacking
+Description Now that containers, Docker and Kubernetes are everywhere, we have to ask the most important question &amp;lsquo;how do we hack them!&amp;rsquo; . This talk will take a look at some of the underpinnings of how these systems work, to give you ideas on where to start and then look at some classic container hacking techniques.
+Speaker Bio Rory has worked in the Information and IT Security arena for the last 21 years in a variety of roles.</description>
+    </item>
+    
     <item>
       <title>SecWed #031121</title>
       <link>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0311/</link>
