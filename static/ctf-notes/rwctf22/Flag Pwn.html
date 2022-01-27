@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Flag Pwn - CodiMD
+    </title>
+    <link rel="icon" type="image/png" href="http://157.245.54.211:3000/favicon.png">
+    <link rel="apple-touch-icon" href="http://157.245.54.211:3000/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha256-H0KfTigpUV+0/5tn2HXC0CPwhhDhWgSawJdnFd0CGCo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.3/css/fork-awesome.min.css" integrity="sha256-ZhApazu+kejqTYhMF+1DzNKjIzP7KXu6AzyXcC1gMus=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" integrity="sha256-tAflq+ymku3Khs+I/WcAneIlafYgDiOQ9stIHH985Wo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300italic,300|Source+Serif+Pro|Source+Code+Pro:400,300,500&subset=latin,latin-ext);.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{padding:0 1em;color:#777;border-left:.25em solid #ddd}.night .markdown-body blockquote{color:#bcbcbc}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.night .markdown-body h1,.night .markdown-body h2,.night .markdown-body h3,.night .markdown-body h4,.night .markdown-body h5,.night .markdown-body h6{color:#ddd}.markdown-body h1 .fa-link,.markdown-body h2 .fa-link,.markdown-body h3 .fa-link,.markdown-body h4 .fa-link,.markdown-body h5 .fa-link,.markdown-body h6 .fa-link{color:#000;vertical-align:middle;visibility:hidden;font-size:16px}.night .markdown-body h1 .fa-link,.night .markdown-body h2 .fa-link,.night .markdown-body h3 .fa-link,.night .markdown-body h4 .fa-link,.night .markdown-body h5 .fa-link,.night .markdown-body h6 .fa-link{color:#fff}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .fa-link,.markdown-body h2:hover .anchor .fa-link,.markdown-body h3:hover .anchor .fa-link,.markdown-body h4:hover .anchor .fa-link,.markdown-body h5:hover .anchor .fa-link,.markdown-body h6:hover .anchor .fa-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.night .markdown-body table tr{background-color:#5f5f5f}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.night .markdown-body table tr:nth-child(2n){background-color:#4f4f4f}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.night .markdown-body code,.night .markdown-body tt{color:#eee;background-color:hsla(0,0%,90.2%,.36)}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\A0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body pre{border:inherit!important}.night .markdown-body pre{filter:invert(100%)}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-webkit-inline-flex;display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.night .markdown-body .gist table tr:nth-child(2n){background-color:#ddd}.markdown-body code[data-gist-id]{background:none;padding:0;filter:invert(100%)}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.geo,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.night .markdown-body pre.graphviz .graph>polygon{fill:#333}.night .markdown-body pre.mermaid .sectionTitle,.night .markdown-body pre.mermaid .titleText,.night .markdown-body pre.mermaid text{fill:#fff}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.night .markdown-body .abc path{fill:#eee}.night .markdown-body .abc path.note_selected{fill:##4DD0E1}.night tspan{fill:#fefefe}.night pre rect{fill:transparent}.night pre.flow-chart path,.night pre.flow-chart rect{stroke:#fff}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body img{background-color:transparent}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;-webkit-transition:opacity .2s;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;-webkit-transition:opacity .2s;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.geo-map{width:100%;height:250px}.markmap-container{height:300px}.markmap-container>svg{width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.9;background-color:#ccc;border:none}.ui-toc-label,.ui-toc .open .ui-toc-label{-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#5f5f5f}.ui-toc-label:focus{opacity:1;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.night .ui-toc-dropdown .nav>li>a:focus,.night .ui-toc-dropdown .nav>li>a:hover{color:#fff;border-left-color:#fff}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.night .ui-toc-dropdown .nav>.active:focus>a,.night .ui-toc-dropdown .nav>.active:hover>a,.night .ui-toc-dropdown .nav>.active>a{color:#fff;border-left:2px solid #fff}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.night .ui-toc-dropdown .nav>li>a{color:#aaa}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,"\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3",Osaka,Meiryo,"\30E1\30A4\30EA\30AA",MS Gothic,"\FF2D\FF33   \30B4\30B7\30C3\30AF",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,"\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF",sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,"\5FAE\8EDF\6B63\9ED1",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,"\5FAE\8EDF\6B63\9ED1UI",sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,"\5FAE\8F6F\96C5\9ED1UI",sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:rgba(0,0,0,.85)}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}small span{line-height:22px}small .dropdown{display:inline-block}small .dropdown a:focus,small .dropdown a:hover{text-decoration:none}.unselectable{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}.night .navbar{background:#333;border-bottom-color:#333;color:#eee}.night .navbar a{color:#eee}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="Flag-Pwn"><a class="anchor hidden-xs" href="#Flag-Pwn" title="Flag-Pwn"><i class="fa fa-link"></i></a>Flag Pwn</h1><p><a href="http://157.245.54.211:49153/index.html" target="_blank" rel="noopener">http://157.245.54.211:49153/index.html</a></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span>
+<span data-linenumber="29"></span>
+<span data-linenumber="30"></span>
+<span data-linenumber="31"></span>
+<span data-linenumber="32"></span>
+<span data-linenumber="33"></span>
+<span data-linenumber="34"></span></div><div class="code"><span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">import</span> time
+
+url = <span class="hljs-string">"http://localhost:5555/action/backdoor"</span>
+
+flag_path = <span class="hljs-string">"/mnt/flag.txt"</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_flag</span><span class="hljs-params">(path: str)</span>:</span>
+    <span class="hljs-keyword">with</span> open(path, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> fp:
+        <span class="hljs-keyword">return</span> fp.read().strip()
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check_backdoor</span><span class="hljs-params">()</span>:</span>
+    r = requests.get(url)
+    <span class="hljs-keyword">if</span> r.status_code == <span class="hljs-number">200</span>:
+        resp = r.json()
+        <span class="hljs-keyword">if</span> <span class="hljs-string">"status"</span> <span class="hljs-keyword">in</span> resp <span class="hljs-keyword">and</span> resp[<span class="hljs-string">'status'</span>] == <span class="hljs-string">"success"</span>:
+            r.close()
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+    r.close()
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_flag</span><span class="hljs-params">(flag: str)</span>:</span>
+    params = {<span class="hljs-string">"flag"</span>: flag}
+    r = requests.get(url, params=params)
+    r.close()
+
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">if</span> check_backdoor():
+        f = get_flag(flag_path)
+        post_flag(f)
+<span class="hljs-keyword">except</span> Exception:
+    exit(<span class="hljs-number">1</span>)
+</div></div></code></pre><p>Getting a shell into the docker container, and running qemu manually, I get this</p><pre><code>root@greyhats-1:~/FLAG_pwn# docker exec -it flag_pwn_flag_1 bash
+root@6e18678005d4:/# qemu-system-arm -m 64 -nographic -machine vexpress-a9 -net user,hostfwd=tcp::5556-:80 -net nic -kernel /mnt/flag.bin
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+alsa: Could not initialize DAC
+alsa: Failed to open `default':
+alsa: Reason: No such file or directory
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+alsa: Could not initialize DAC
+alsa: Failed to open `default':
+alsa: Reason: No such file or directory
+audio: Failed to create voice `lm4549.out'
+                      ^\    ^
+                      / \\  / \
+                     /.  \\/   \      |\___/|
+  *----*           / / |  \\    \  __/  O  O\
+  |   /          /  /  |   \\    \_\/  \     \
+ / /\/         /   /   |    \\   _\/    '@___@
+/  /         /    /    |     \\ _\/       |U
+|  |       /     /     |      \\\/        |
+\  |     /_     /      |       \\  )   \ _|_
+\   \       ~-./_ _    |    .- ; (  \_ _ _,\'
+~    ~.           .-~-.|.-*      _        {-,
+ \      ~-. _ .-~                 \      /\'
+  \                   }            {   .*
+   ~.                 '-/        /.-~----.
+     ~- _             /        &gt;..----.\\\
+         ~ - - - - ^}_ _ _ _ _ _ _.-\\\
+__________              .__     __      __            .__       .___ _______________________________
+\______   \ ____ _____  |  |   /  \    /  \___________|  |    __| _/ \_   ___ \__    ___/\_   _____/
+ |       _// __ \\__  \ |  |   \   \/\/   /  _ \_  __ \  |   / __ |  /    \  \/ |    |    |    __)
+ |    |   \  ___/ / __ \|  |__  \        (  &lt;_&gt; )  | \/  |__/ /_/ |  \     \____|    |    |     \
+ |____|_  /\___  &gt;____  /____/   \__/\  / \____/|__|  |____/\____ |   \______  /|____|    \___  /
+        \/     \/     \/              \/                         \/          \/               \/
+lwIP-2.1.3 initialized!
+</code></pre><h3 id="Loading-the-binary"><a class="anchor hidden-xs" href="#Loading-the-binary" title="Loading-the-binary"><i class="fa fa-link"></i></a>Loading the binary</h3><p>References:</p><ul>
+<li><a href="https://www.cnblogs.com/pengdonglin137/p/5023961.html" target="_blank" rel="noopener">https://www.cnblogs.com/pengdonglin137/p/5023961.html</a></li>
+<li><a href="https://blog.3or.de/starting-embedded-reverse-engineering-freertos-libopencm3-on-stm32f103c8t6.html" target="_blank" rel="noopener">https://blog.3or.de/starting-embedded-reverse-engineering-freertos-libopencm3-on-stm32f103c8t6.html</a></li>
+<li><a href="https://recon.cx/2017/brussels/resources/slides/RECON-BRX-2017-FreeRTOS_Embedded_Reversing.pdf" target="_blank" rel="noopener">https://recon.cx/2017/brussels/resources/slides/RECON-BRX-2017-FreeRTOS_Embedded_Reversing.pdf</a></li>
+</ul><p><code>qemu-system-arm</code> is set to use <code>vexpress-a9</code> as machine. It looks like the base ROM address for this machine is <code>60000000</code>.</p><p>Load <code>flag.bin</code> into Ghidra with ARMv7, 32 bit, little endian, base address <code>60000000</code>, there are some usable results. But this might not be the correct mapping yet.</p><p>Looking through the possible xrefs to <code>lwIP-%d.%d.%d initialized!</code><br>
+change the base to <code>60010000</code>* change the base to <code>60010000</code></p><ul>
+<li>there’s an intersting one at <code>600128cc</code> (after rebase, <code>600228cc</code>)</li>
+<li>it’s like a <code>printf</code></li>
+<li>and the args match the output i get from qemu -<code>lwIP-2.1.3 initialized!</code></li>
+</ul><p>So it is confirmed, set base as <code>60010000</code>.</p><p>Just based on the strings (that are referenced by <code>a_assert</code>), it is possible to infer the function names by cross-referencing with goAhead’s source code.</p><p>Symbols from goahead:</p><ul>
+<li><code>600577c4</code> (<code>websGetVar</code>) - get param from querystring/post data
+<ul>
+<li><a href="https://github.com/zodiac1111/goahead/blob/master/webs.c#L1404" target="_blank" rel="noopener">https://github.com/zodiac1111/goahead/blob/master/webs.c#L1404</a></li>
+</ul>
+</li>
+<li><code>600669dc</code> (<code>a_assert</code>) - based on the <code>websGetVar</code> definition</li>
+<li><code>6004d28c</code> (<code>websFormDefine</code>)
+<ul>
+<li><a href="https://github.com/zodiac1111/goahead/blob/master/form.c#L95" target="_blank" rel="noopener">https://github.com/zodiac1111/goahead/blob/master/form.c#L95</a></li>
+</ul>
+</li>
+<li><code>600666e4</code> (<code>valueInteger</code>)</li>
+<li><code>60066744</code> (<code>valueString</code>)</li>
+<li><code>60069508</code> (<code>symEnter</code>)</li>
+<li><code>6006984c</code> (<code>symDelete</code>)</li>
+<li><code>60069ad0</code> (<code>hashIndex</code>)</li>
+<li><code>60021a50</code> (<code>gstrcmp</code>)</li>
+<li><code>600667dc</code> (<code>valueFree</code>)</li>
+<li><code>6004d4ec</code> (<code>wfree</code>)</li>
+<li><code>60069380</code> (<code>symLookup</code>)</li>
+<li><code>60069a60</code> (<code>hash</code>)</li>
+<li><code>6004d488</code> (<code>walloc</code>)</li>
+<li><code>60058034</code> (<code>websRedirectByStatus</code>)</li>
+<li><code>6005ca90</code> (<code>websError</code>)</li>
+<li><code>6006a764</code> (<code>sncaselesscmp</code>)</li>
+<li><code>6006a5b4</code> (<code>sncmp</code>) - Case sensitive string comparison. Limited by length</li>
+<li><code>6006a204</code> (<code>scmp</code>)</li>
+<li><code>6006a150</code> (<code>smatch</code>) - Returns true if the strings are equivalent, otherwise false.</li>
+<li><code>6005bf30</code> (<code>websGetSession</code>)</li>
+<li><code>6005c414</code> (<code>websGetSessionID</code>)</li>
+<li><code>6005c13c</code> (<code>websParseCookie</code>)</li>
+<li><code>6005b1e4</code> (<code>websSetCookie</code>)</li>
+<li><code>60066968</code> (<code>error</code>)</li>
+<li><code>6005bd10</code> (<code>websAllocSession</code>)</li>
+<li><code>60022008</code> (<code>time</code>)</li>
+<li><code>6005c574</code> (<code>websRemoveSessionVar</code>)</li>
+<li><code>6005bc48</code> (<code>websDestroySession</code>)</li>
+<li><code>6005bea4</code> (<code>freeSession</code>)</li>
+<li><code>60068f54</code> (<code>hashFree</code>)</li>
+<li><code>6004e860</code> (<code>websLogoutUser</code>)</li>
+<li><code>60069e34</code> (<code>sclone</code>)</li>
+<li><code>6004e680</code> (<code>websLoginUser</code>)</li>
+<li><code>60066b10</code> (<code>trace</code>)</li>
+<li><code>6005bcdc</code> (<code>websCreateSession</code>)</li>
+<li><code>6005c62c</code> (<code>websSetSessionVar</code>)</li>
+<li><code>60066ba8</code> (<code>websGetLogLevel</code>)</li>
+<li><code>6005c490</code> (<code>websGetSessionVar</code>)</li>
+<li><code>60021c54</code> (<code>strchr</code>)</li>
+<li><code>60057c0c</code> (<code>websRedirect</code>)</li>
+<li><code>600215a8</code> (<code>atoi</code>)</li>
+<li><code>6005496c</code> (<code>websDone</code>)</li>
+<li><code>6005987c</code> (<code>websWriteBlock</code>)</li>
+<li><code>60058d30</code> (<code>websWriteEndHeaders</code>)</li>
+</ul><p>(actually this github repo doesnt have the full goahead source, it’s pretty old, download from <a href="https://s3.amazonaws.com/embedthis.public/goahead-5.1.5-src.tgz" target="_blank" rel="noopener">https://s3.amazonaws.com/embedthis.public/goahead-5.1.5-src.tgz</a> instead)</p><p>(I gave up on updating the list above, there are too many)</p><p>The route/form handlers:</p><ul>
+<li><code>6004e934</code> (<code>login_handler</code>)
+<ul>
+<li>passes to <code>websLoginUser</code></li>
+</ul>
+</li>
+<li><code>6004eaa8</code> (<code>logout_handler</code>)
+<ul>
+<li>passes to <code>websLogoutUser</code></li>
+</ul>
+</li>
+<li><code>600101e4</code> (<code>submit_handler</code>)
+<ul>
+<li>defined by the challenge using <code>websDefineAction</code></li>
+<li>takes a <code>word</code> param and stores the value as a string</li>
+</ul>
+</li>
+<li><code>6001015c</code> (<code>get_user_comment_handler</code>)
+<ul>
+<li>defined by the challenge using <code>websDefineJst</code></li>
+<li>some template injection thing using the <code>word</code> given through <code>submit</code></li>
+</ul>
+</li>
+</ul><h3 id="Challenge-Objective"><a class="anchor hidden-xs" href="#Challenge-Objective" title="Challenge-Objective"><i class="fa fa-link"></i></a>Challenge Objective</h3><p>Bruh I spent 1 hr making pow script <img class="emoji" alt=":angry:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/angry.png"></p><p>When running the <code>nc</code> command as told, it will spin up an instance of the challenge.</p><pre><code class="shell hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code">root@greyhats-1:~# python3 pow.py 8.210.44.156 31337
+[+] Opening connection to 8.210.44.156 on port 31337: Done
+b'CHkOD9jkrL' b'26' b'\x00\x00\x00\x00\x00\x00\x00~\x00=\n'
+[*] Switching to interactive mode
+: The server is starting...
+you server start success at: 0.0.0.0:49184
+login account is admin:uyFOzj4k3Y
+</div></div></code></pre><p>Looking at the <code>flag.py</code> and <code>docker-compose.yml</code> given, it looks like the goal is to create a route <code>action/backdoor</code> to get the flag.</p><p><code>docker-compose.yml</code></p><pre><code class="yaml hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code"><span class="hljs-attr">version:</span> <span class="hljs-string">'3'</span>
+<span class="hljs-attr">services:</span>
+<span class="hljs-attr">    flag:</span>
+<span class="hljs-attr">        image:</span> <span class="hljs-string">"flag"</span>
+<span class="hljs-attr">        ports:</span>
+<span class="hljs-bullet">            -</span> <span class="hljs-string">"5555"</span>
+<span class="hljs-attr">        volumes:</span>
+<span class="hljs-bullet">            -</span> <span class="hljs-string">"./flag.txt:/mnt/flag.txt"</span>
+<span class="hljs-bullet">            -</span> <span class="hljs-string">"./flag.bin:/mnt/flag.bin"</span>
+<span class="hljs-attr">        healthcheck:</span>
+<span class="hljs-attr">            test:</span> <span class="hljs-string">["CMD",</span> <span class="hljs-string">"python3"</span><span class="hljs-string">,</span> <span class="hljs-string">"/flag.py"</span><span class="hljs-string">]</span>
+<span class="hljs-attr">            start_period:</span> <span class="hljs-string">"30s"</span>
+</div></div></code></pre><p>(See line 11-12 above)</p><h3 id="Surface"><a class="anchor hidden-xs" href="#Surface" title="Surface"><i class="fa fa-link"></i></a>Surface</h3><p>I think it is quite obvious we need to attack <code>submit</code> and <code>get_user_comment</code>. It kinda looks like XSS or template injection as an attack surface but I’m not completely sure yet.</p><p>Problem is I can’t even access the endpoint. Don’t know how.</p><p>I found out. To access <code>/action/submit</code>, must use POST and include username/password.</p><pre><code class="shell hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span></div><div class="code">curl -L 'http://157.245.54.211:49155/action/submit' \
+  -H 'Cookie: connect.sid=s%3AIlijBGkxF0K8ivnH6rgsBG1QPTKTAMAC.YElL%2BLICg8u0BisJ5eUcsLmyMcl3Akue5wwSfw5Um%2FI; loginstate=true; userid=df289877-ddc7-4b22-943d-993172983e61; -goahead-session-=::webs.session::0c65de52d6d14e8931c6ee7044b1c290;' \
+  --data-raw 'username=admin&amp;password=admin&amp;word=&lt;script&gt;alert(1)&lt;/script&gt;'
+</div></div></code></pre><p>Then to access the jst thing, it’s at <a href="http://157.245.54.211:49155/submit.jst" target="_blank" rel="noopener">http://157.245.54.211:49155/submit.jst</a></p><p>It will append whatever <code>word</code> was set in the <code>curl</code> request.</p><p><img src="uploads/upload_0cd757884bb8686c678f38f23d9b5ab6.png" alt="" class="md-image md-image"></p><p>Continue in da morning.</p><p>I found this interesting page, not sure if there’s anything useful <a href="http://157.245.54.211:49155/src/extraSettings.js" target="_blank" rel="noopener">http://157.245.54.211:49155/src/extraSettings.js</a></p><pre><code class="jsx hljs"><span class="token comment">// ä¿®æ”¹ç½‘é¡µæ ‡é¢˜ï¼šå°† "åˆæˆå¤§è¥¿ç“œ" è¿›è¡Œæ›¿æ¢</span>
+document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"title"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>innerText <span class="token operator">=</span> <span class="token string">'Little gameï¼šSynthetic Vulnerabilities'</span><span class="token punctuation">;</span>
+</code></pre><h3 id="Vulnerabilities"><a class="anchor hidden-xs" href="#Vulnerabilities" title="Vulnerabilities"><i class="fa fa-link"></i></a>Vulnerabilities</h3><p>Here’s the jst handler for <code>get_user_comment</code></p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span></div><div class="code"><span class="hljs-function">undefined *
+<span class="hljs-title">get_user_comment_handler</span>
+          <span class="hljs-params">(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)</span>
+
+</span>{
+  undefined *comment;
+  
+  comment = (undefined *)
+            websGetSessionVar(param_2,s___comment___6006fc90,<span class="hljs-number">0</span>,param_4,param_4,param_3,param_2,
+                              param_1);
+  <span class="hljs-keyword">if</span> (comment == (undefined *)<span class="hljs-number">0x0</span>) {
+    comment = PTR_s_&lt;h1&gt;&lt;font_color=<span class="hljs-string">"#ff0000"</span>&gt;I_can_e_60079e48;
+    websWrite(param_2,s_%s_6006fc9c,PTR_s_&lt;h1&gt;&lt;font_color=<span class="hljs-string">"#ff0000"</span>&gt;I_can_e_60079e48);
+  }
+  <span class="hljs-keyword">else</span> {
+    websWrite(param_2,s_%s_6006fc9c,comment);
+  }
+  <span class="hljs-keyword">return</span> comment;
+}
+
+</div></div></code></pre><p>It calls <code>websWriteBlock</code> which the source is below:</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span>
+<span data-linenumber="29"></span>
+<span data-linenumber="30"></span>
+<span data-linenumber="31"></span>
+<span data-linenumber="32"></span>
+<span data-linenumber="33"></span>
+<span data-linenumber="34"></span>
+<span data-linenumber="35"></span>
+<span data-linenumber="36"></span>
+<span data-linenumber="37"></span>
+<span data-linenumber="38"></span>
+<span data-linenumber="39"></span>
+<span data-linenumber="40"></span>
+<span data-linenumber="41"></span>
+<span data-linenumber="42"></span>
+<span data-linenumber="43"></span>
+<span data-linenumber="44"></span>
+<span data-linenumber="45"></span></div><div class="code"><span class="hljs-comment">/*
+    Write a block of data of length to the user's browser. Output is buffered and flushed via websFlush.
+    This routine will never return "short". i.e. it will return the requested size to write or -1.
+    Buffer data. Will flush as required. May return -1 on write errors.
+ */</span>
+<span class="hljs-function">PUBLIC ssize <span class="hljs-title">websWriteBlock</span><span class="hljs-params">(Webs *wp, cchar *buf, ssize size)</span>
+</span>{
+    WebsBuf     *op;
+    ssize       written, thisWrite, len, room;
+
+    assert(wp);
+    assert(websValid(wp));
+    assert(buf);
+    assert(size &gt;= <span class="hljs-number">0</span>);
+
+    <span class="hljs-keyword">if</span> (wp-&gt;state &gt;= WEBS_COMPLETE) {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+    }
+    op = (wp-&gt;flags &amp; WEBS_CHUNKING) ? &amp;wp-&gt;chunkbuf : &amp;wp-&gt;output;
+    written = len = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">while</span> (size &gt; <span class="hljs-number">0</span> &amp;&amp; wp-&gt;state &lt; WEBS_COMPLETE) {
+        <span class="hljs-keyword">if</span> (bufRoom(op) &lt; size) {
+            <span class="hljs-comment">/*
+                This will do a blocking I/O write. Will only ever fail for I/O errors.
+             */</span>
+            <span class="hljs-keyword">if</span> (websFlush(wp, <span class="hljs-number">1</span>) &lt; <span class="hljs-number">0</span>) {
+                <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+            }
+        }
+        <span class="hljs-keyword">if</span> ((room = bufRoom(op)) == <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">break</span>;
+        }
+        thisWrite = min(room, size);
+        bufPutBlk(op, buf, thisWrite);
+        size -= thisWrite;
+        buf += thisWrite;
+        written += thisWrite;
+    }
+    bufAddNull(op);
+    <span class="hljs-keyword">if</span> (wp-&gt;state &gt;= WEBS_COMPLETE &amp;&amp; written == <span class="hljs-number">0</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+    }
+    <span class="hljs-keyword">return</span> written;
+}
+</div></div></code></pre><p>Besides that, goAhead’s jst handlers supposedly spawns a JS engine so might be good to find out if that’s related. JS pwn? I doubt so tho.</p><p>I highly suspect <code>websWriteBlock</code> is vulnerable.</p><p>lwip 2.1.3 <a href="https://git.savannah.nongnu.org/cgit/lwip.git/snapshot/lwip-STABLE-2_1_3_RELEASE.tar.gz" target="_blank" rel="noopener">https://git.savannah.nongnu.org/cgit/lwip.git/snapshot/lwip-STABLE-2_1_3_RELEASE.tar.gz</a></p><p>Symbols:</p><ul>
+<li><code>600471b0</code> (<code>lwip_recvfrom</code>)</li>
+<li><code>600473ac</code> (<code>lwip_read</code>)</li>
+</ul><p>I see that <code>6006c4a8</code> (<code>socketRead</code>), there is a call to <code>lwip_recv</code>, while it is supposed to be just <code>recv</code> based on goAhead socket.c:820. Now to see whether they modified stuff other than this.</p><p>The call chain from <code>web_server_task</code> (<code>6001028c</code>) to <code>lwip_recvfrom</code> (<code>600471b0</code>)</p><ul>
+<li><code>web_server_task</code></li>
+<li><code>websListen</code></li>
+<li><code>websAccept</code></li>
+<li><code>socketEvent</code></li>
+<li><code>readEvent</code></li>
+<li><code>websRead</code></li>
+<li><code>socketRead</code></li>
+<li><code>lwip_recv</code></li>
+<li><code>lwip_recvfrom</code></li>
+</ul></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Flag-Pwn" title="Flag Pwn">Flag Pwn</a><ul class="nav">
+<li><a href="#Loading-the-binary" title="Loading the binary">Loading the binary</a></li>
+<li><a href="#Challenge-Objective" title="Challenge Objective">Challenge Objective</a></li>
+<li><a href="#Surface" title="Surface">Surface</a></li>
+<li><a href="#Vulnerabilities" title="Vulnerabilities">Vulnerabilities</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Flag-Pwn" title="Flag Pwn">Flag Pwn</a><ul class="nav">
+<li><a href="#Loading-the-binary" title="Loading the binary">Loading the binary</a></li>
+<li><a href="#Challenge-Objective" title="Challenge Objective">Challenge Objective</a></li>
+<li><a href="#Surface" title="Surface">Surface</a></li>
+<li><a href="#Vulnerabilities" title="Vulnerabilities">Vulnerabilities</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha256-kJrlY+s09+QoWjpkOrXXwhxeaoDz9FW5SaxF8I0DibQ=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
