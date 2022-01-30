@@ -9,7 +9,16 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/writeups/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/writeups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Burp Suite</title>
+      <link>https://nusgreyhats.org/posts/writeups/intro-to-burp/</link>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/writeups/intro-to-burp/</guid>
+      <description>What, why, and how of Burp</description>
+    </item>
+    
     <item>
       <title>Simple ML models to predict CVSS scores</title>
       <link>https://nusgreyhats.org/posts/writeups/simple-ml-models-to-predict-cvss-scores/</link>

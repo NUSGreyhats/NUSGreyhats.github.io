@@ -2,11 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nusgreyhats.org/posts/writeups/intro-to-burp/</loc>
+    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nusgreyhats.org/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/</loc>
+    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/writeups/</loc>
+    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0126/</loc>
     <lastmod>2022-01-26T00:00:00+00:00</lastmod>
@@ -14,16 +23,10 @@
     <loc>https://nusgreyhats.org/tags/secweds/</loc>
     <lastmod>2022-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nusgreyhats.org/tags/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nusgreyhats.org/tags/cyberai/</loc>
     <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/simple-ml-models-to-predict-cvss-scores/</loc>
-    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/writeups/</loc>
     <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/tags/forensics/</loc>
