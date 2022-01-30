@@ -1,7 +1,7 @@
 ---
 author: "tensor"
 title: "Introduction to Android App Reversing"
-date: "2022-01-16"
+date: "2022-02-04"
 description: "A beginner's guide on reversing android applications"
 tags: ["writeups", "ctf"]
 ShowBreadcrumbs: False
@@ -23,7 +23,7 @@ This writeup will cover some of the basic techniques and methodologies that one 
 
 Recommended tools to follow through this writeup:
 - [Android Studio](https://developer.android.com/studio)
-- [decompile.com](https://www.decompiler.com)
+- [decompiler.com](https://www.decompiler.com)
 - [Android Debug Bridge](https://developer.android.com/studio/command-line/adb)
 - [vscode & vscode plugin -- APKLab](https://marketplace.visualstudio.com/items?itemName=Surendrajat.apklab)
 - [dex2jar](https://github.com/pxb1988/dex2jar)
@@ -75,7 +75,7 @@ A reverse engineer will do the opposite to restore back the source code. There a
 
 The normal method will reverse the DEX bytecode into SMALI instructions using dex2jar, you can think of it like the assembly language which is between the high level code and the bytecode. With the Smali code, we could either continue to reverse using jd-gui and obtain the decompiled java source code but we could also modify the smali code and patch the apk to access hidden information. 
 
-The shortcut method is a direct method that will decompile the apk into its source code using decompile.com. This method allows us to quickly obtain the apk source code and its package contents. This is the method that we will mainly rely on for the CTF challenge walk-through.
+The shortcut method is a direct method that will decompile the apk into its source code using decompiler.com. This method allows us to quickly obtain the apk source code and its package contents. This is the method that we will mainly rely on for the CTF challenge walk-through.
 
 ![Reverse Engineer flowchart](/images/intro-android-reversing/Reverse_engineer.jpg)
 > 2 approaches the reverse engineer could take to reverse apks
@@ -106,9 +106,9 @@ It seems like we triggered an event but we don't get any flag output. Let's deco
 
 ### Decompile the apk and understanding the code
 
-Using the shortcut method via [decompile.com](decompile.com), we can obtain the source code of the apk:
+Using the shortcut method via [decompiler.com](https://decompiler.com), we can obtain the source code of the apk:
 
-one of the file that stands out is **sources/com/helloccmu/picoctf/FlagstaffHill.java** and with the following code:
+one of the files that stands out is **sources/com/helloccmu/picoctf/FlagstaffHill.java** and with the following code:
 
 ```java
 package com.hellocmu.picoctf;
@@ -126,15 +126,15 @@ public class FlagstaffHill {
 }
 ```
 
-The getFlag() function when invoked will log the output of paprika(input) and return "Not Today..." which corresponds to what we observed earlier on, it seems like the flag 
-has been passed into the Log.i() function invocation.
+The `getFlag()` function when invoked will log the output of `paprika(input)` and return `"Not Today..."` which corresponds to what we observed earlier on, it seems like the flag 
+has been passed into the `Log.i()` function invocation.
 
-Where do the output of Log.i go?
-The Log represents the [Logger class](https://developer.android.com/reference/android/util/Log) for android development, and serves as API for sending log output. There are different levels of problems and information that the developer could tag the log messages. The output can be captured via android studios or via CLI [logcat](https://developer.android.com/studio/command-line/logcat). 
+Where does the output of `Log.i` go?
+`Log` represents the [Logger class](https://developer.android.com/reference/android/util/Log) for Android development, and serves as API for sending log output. There are different levels of problems and information that the developer could tag the log messages. The output can be captured via Android Studio or via CLI [logcat](https://developer.android.com/studio/command-line/logcat). 
 
 ### Get flag
 
-So, to get the flag, we could inspect the log outputs in our android studios. We can apply the **info** filter to filter out the irrelevant stuff. 
+So, to get the flag, we could inspect the log outputs in our Android Studio instance. We can apply the **info** filter to filter out the irrelevant stuff. 
 
 ![droids0 main page](/images/intro-android-reversing/logcat_android_studios_info.jpg)
 
@@ -156,9 +156,9 @@ It seems like the application is asking us for a password, if the wrong password
 
 ### Decompile the apk and understanding the code
 
-Using the shortcut method via [decompile.com](decompile.com), we can obtain the source code of the apk:
+Using the shortcut method via [decompiler.com](decompiler.com), we can obtain the source code of the apk:
 
-one of the file that stands out is **sources/com/helloccmu/picoctf/FlagstaffHill.java** and with the following code:
+one of the files that stands out is **sources/com/helloccmu/picoctf/FlagstaffHill.java** and with the following code:
 
 ```java
 package com.hellocmu.picoctf;
@@ -177,9 +177,9 @@ public class FlagstaffHill {
 }
 ```
 
-The getFlag() function when invoked will check our input with a password string. If the strings are not equal, the function will output "NOPE".
+The `getFlag()` function when invoked will check our input with a password string. If the strings are not equal, the function will output "NOPE".
 
-Our aim is to locate the password at **ctx.getString(R.string.password))** and some searching within the decompiled apk, there is a suspicious file 
+Our aim is to locate the password at `ctx.getString(R.string.password))` and after some searching within the decompiled apk, there is a suspicious file 
 **/resources/res/values/strings.xml** and it contains a password field with the following data:
 
 ![strings.xml](/images/intro-android-reversing/strings_xml.jpg)
@@ -192,7 +192,7 @@ Try out the password that we restored and obtained the flag!
 
 # Conclusion
 
-There are definitely more areas to cover in android reversing such as apk patching, dynamic debugging & native function hooking and I hoped that you've enjoyed reading and learnt something new. If you want to learn more, I recommend trying out different kinds of challenges from [picoGym](https://play.picoctf.org), [past ctf challenges](https://ctftime.org/) and reading up cyber security articles and papers.
+There are definitely more areas to cover in Android reversing such as apk patching, dynamic debugging & native function hooking and I hoped that you've enjoyed reading and learnt something new. If you want to learn more, I recommend trying out different kinds of challenges from [picoGym](https://play.picoctf.org), [past ctf challenges](https://ctftime.org/) and reading up cyber security articles and papers.
 
 # References
 
