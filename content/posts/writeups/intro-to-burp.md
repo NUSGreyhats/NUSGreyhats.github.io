@@ -1,7 +1,7 @@
 ---
 author: "adhy-p"
 title: "Introduction to Burp Suite"
-date: "2022-01-15"
+date: "2022-01-30"
 description: "What, why, and how of Burp"
 tags: ["writeups"]
 ShowBreadcrumbs: False
@@ -51,11 +51,11 @@ If you don't know what a proxy server is, [Wikipedia](https://en.wikipedia.org/w
 ![proxy](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Proxy_concept_en.svg/416px-Proxy_concept_en.svg.png)
 
 First, open burp and go to the `Proxy` tab. You will see something like this:
-![first-landing](../../images/intro-to-burp/first-landing.png)
+![first-landing](/images/intro-to-burp/first-landing.png)
 You can click `Open Browser` to use Burp's built-in browser, or open your own browser if you have configured the proxy settings. Make sure the `intercept` option is on.
 
 Now, try to go to any website. Your browser should hang and you can see this in your Burp:
-![intercept](../../images/intro-to-burp/intercepted-request.png)
+![intercept](/images/intro-to-burp/intercepted-request.png)
 Here, the browser sent a GET request to Burp, but we have not forwarded the request. That's why we don't see anything loaded in our browser. At this stage, we can try to tinker around and change the request header to `OPTIONS` or `POST`, or we can change the cookie and add new data inside the request body. After we are done editing the request, we can press `Forward` and the request will be sent to the target.
 
 Note:
@@ -69,23 +69,23 @@ Note:
 To begin, turn off the intercept option from the previos section and go to https://portswigger.net/web-security/os-command-injection/lab-simple to access the lab. Note that even when our intercept is turned off, burp will still record all HTTP requests it forwarded.
 
 According to the lab description, the application contains an OS command injection vulnerability in the product stock checker. Let's try to see a product and check its stock:
-![stock](../../images/intro-to-burp/stock.png)
+![stock](/images/intro-to-burp/stock.png)
 
 After we clicked the button, we can see the stock of the product, but nothing more. Now, turn on the intercept option and try to check the stock again. We can see that our browser is actually sending a `POST` request to the app.
-![post-req](../../images/intro-to-burp/post-req.png)
+![post-req](/images/intro-to-burp/post-req.png)
 We can play with the store ID. We can put `whoami`, `123456`, etc. But, this process of going to the page, intercepting the request, changing the request, and then forwarding the request is very cumbersome. Let's find another way.
 
 Let's see the HTTP history:
-![history](../../images/intro-to-burp/history.png)
+![history](/images/intro-to-burp/history.png)
 Now, right click on the request, then select `Send to repeater`.
 
-![send-to-repeater](../../images/intro-to-burp/send-to-repeater.png)
+![send-to-repeater](/images/intro-to-burp/send-to-repeater.png)
 
-![whoami](../../images/intro-to-burp/whoami.png)
+![whoami](/images/intro-to-burp/whoami.png)
 Here, we can send the `POST` request to the server again and again by changing the request and clicking `Send`. There's no need for us to go to the page, intercept the request, change the request, and forward the request again and again.
 
 To solve the lab, close the current command with a semicolon and inject `whoami`. The username will be printed on the Response tab.
-![whoami-res](../../images/intro-to-burp/whoami-res.png)
+![whoami-res](/images/intro-to-burp/whoami-res.png)
 
 ### Intruder
 
@@ -96,37 +96,37 @@ To demonstrate this feature, we will try to solve https://portswigger.net/web-se
 We are given a list of possible usernames and passwords, and our job is to login to the platform.
 
 Of course, we can try to manually try every single combination from the web page, or use the repeater to directly edit the HTTP request. But, it will take a lot of time if we have to do this manually.
-![admin-password](../../images/intro-to-burp/admin:password.png)
+![admin-password](/images/intro-to-burp/admin:password.png)
 
 What we can do, is to right click on the login request and send it to intruder.
-![send-to-intruder](../../images/intro-to-burp/send-to-intruder.png)
+![send-to-intruder](/images/intro-to-burp/send-to-intruder.png)
 There are four different modes of intruder: `sniper`, `Battering ram`, `Pitchfork`, and `Cluster bomb`. We will use `sniper` mode for this example and will not cover the difference between those attack types, but you can read more [here](https://www.sjoerdlangkemper.nl/2017/08/02/burp-intruder-attack-types/) if you want to know more.
 
 First, go to `Positions` tab and clear all markers. Then, add a marker on the `username` field.
-![clear-marker](../../images/intro-to-burp/clear-marker.png)
-![add-marker](../../images/intro-to-burp/add-marker.png)
+![clear-marker](/images/intro-to-burp/clear-marker.png)
+![add-marker](/images/intro-to-burp/add-marker.png)
 Next, go to the `Payload` tab and paste the wordlist from the lab website.
-![paste-usernames](../../images/intro-to-burp/paste-usernames.png)
+![paste-usernames](/images/intro-to-burp/paste-usernames.png)
 Finally, click `Start attack` to initiate the attack. This will take a while if you are using the free (community) version.
 
 After the attack is finished, sort the response according to its length, and we can see that one response has different length. Indeed, this is the correct username we are looking for.
-![intruder-result](../../images/intro-to-burp/intruder-result.png)
+![intruder-result](/images/intro-to-burp/intruder-result.png)
 Now, we put the correct username, add a marker for the password tab, and repeat the process again to get the password.
 
 ### Turbo Intruder
 
 If you are using Burp community edition, you will realize that the intruder is really slow. Its rate is limited to around one request per second. So, if you have thousands of requests to be sent, it can take forever. Luckily, we have an alternative called Turbo Intruder. To use it, we must first install it from the BApp store under the `Extender` tab.
-![bapp](../../images/intro-to-burp/bapp-turbo-intruder.png)
+![bapp](/images/intro-to-burp/bapp-turbo-intruder.png)
 
 Then, from our HTTP history tab, instead of sending the packet to intruder, we select `Extensions` and `Send to Turbo Intruder`
-![send-to-turbo](../../images/intro-to-burp/send-to-turbo.png)
+![send-to-turbo](/images/intro-to-burp/send-to-turbo.png)
 
 Turbo intruder uses python, so you can really customize your own code if you understand Python's syntax. We save the wordlist from the lab website locally, and then we put a format string specifier `%s` to indicate the string we want to change.
-![turbo-python](../../images/intro-to-burp/turbo-python.png)
+![turbo-python](/images/intro-to-burp/turbo-python.png)
 You can change the number of threads used to send the requests, as well as the number of requests for each connection. A word of caution, if you set these numbers wrongly, you can overload and crash the server and/or crash your own computer (most probably your computer will crash before the server does though). Also, in some cases, you want to keep these numbers low because the server may reject the connection if it has a rate limiting algorithm in place.
 
 Setting the number of threads to be 5 and the number of connections to be 1, we can achieve around 9 requests per second, which is 9 times better than the original burp intruder.
-![turbo-result](../../images/intro-to-burp/turbo-result.png)
+![turbo-result](/images/intro-to-burp/turbo-result.png)
 
 ## Moving forward
 
