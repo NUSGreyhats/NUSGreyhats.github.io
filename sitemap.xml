@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nusgreyhats.org/posts/writeups/intro-to-burp/</loc>
-    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
+    <loc>https://nusgreyhats.org/tags/ctf/</loc>
+    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/writeups/introduction-to-android-app-reversing/</loc>
+    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/</loc>
-    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/</loc>
-    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/tags/</loc>
-    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/tags/writeups/</loc>
+    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/writeups/intro-to-burp/</loc>
     <lastmod>2022-01-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0126/</loc>
@@ -34,9 +40,6 @@
   </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/introduction-to-digital-forensics/</loc>
     <lastmod>2022-01-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/ctf/</loc>
-    <lastmod>2021-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/htxic-reversing-101/</loc>
     <lastmod>2021-12-27T00:00:00+00:00</lastmod>
