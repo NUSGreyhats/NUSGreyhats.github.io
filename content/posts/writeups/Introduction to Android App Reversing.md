@@ -17,7 +17,7 @@ This writeup will cover some of the basic techniques and methodologies that one 
 3. [Developer vs reverse engineer](#developer-vs-reverse-engineer)
 4. [CTF walk-through](#CTF-walkthrough)
 6. [Conclusion](#conclusion)
-7. [Refernces](#references)
+7. [References](#references)
 
 # Tools and programming requirements
 
