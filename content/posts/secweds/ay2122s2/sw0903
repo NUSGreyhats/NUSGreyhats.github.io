@@ -1,0 +1,40 @@
+---
+author: "NUS Greyhats"
+title: "SecWed #090322"
+talks:
+    - title: How to build an automated Incident Response and Forensics Readiness Framework on AWS
+      speaker: Lucas Kauffman
+    - title: (Worst) day in the life of a security engineer?
+      speaker: Yeo Quan Yang
+date: 2022-03-09
+
+# don't change these
+tags: ["secweds"]
+ShowBreadcrumbs: False
+HideSummary: True
+secweds: True
+---
+
+### Talk 1: 1900Hrs - 1945Hrs
+**Talk Title: How to build an automated Incident Response and Forensics Readiness Framework on AWS**
+
+This talk aims to provide insights into how you can build and automate incident response and forensics on AWS. This talk aims to show some of the problems our customers were facing and how we helped solve them. This use-case was developed for a customer operating a large set of accounts. Their problems were:
+Incident Response and Forensics was a manual process prone to mistakes
+Time-consuming process with many steps
+Hard to perform by non-trained personnel
+To address this we created the Automated Incident Response and Forensics framework. The framework aims to facilitate automated steps for incident response and forensics based on the AWS Incident Response White Paper. (https://d1.awsstatic.com/whitepapers/aws_security_incident_response.pdf) The goal is to provide a set of processes.
+
+#### Speaker
+
+Lucas Kauffman is a security consultant within the AWS Proserve security team in ASEAN, he focuses on DevSecOps and security automation.
+
+---
+
+### Talk 2: 1945Hrs - 2030Hrs
+**Talk Title: (Worst) day in the life of a security engineer?**
+
+For many, log4shell was the worst security incident to have happened since the internet-age. Come hear it from someone involved first hand and learn some interesting facts and takeaway from the incident.
+
+#### Speaker
+
+Yeo Quan Yang (Security Engineer, Snapchat; NUS Greyhats Alumni): Quan Yang is a Security Engineer at Snapchat. He is a NUS alumnus and cofounded NUS Greyhats in 2013. He is mildly interested in security and CTFs and have no certifications.
