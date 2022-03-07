@@ -3,8 +3,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Introduction to Burp Suite | NUS Greyhats</title>
-<meta name=keywords content="writeups">
+<title>Introduction to Burp Suite | NUS Greyhats</title><meta name=keywords content="writeups">
 <meta name=description content="What, why, and how of Burp">
 <meta name=author content="adhy-p">
 <link rel=canonical href=https://nusgreyhats.org/posts/writeups/intro-to-burp/>
@@ -17,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel=stylesheet>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.b268fb3bd1950526ba32df2898e8dfc3171f0fecdf09cd6945557b277f0eecf8.css integrity="sha256-smj7O9GVBSa6Mt8omOjfwxcfD+zfCc1pRVV7J38O7Pg=" rel="preload stylesheet" as=style>
 <link rel=preload href=/greyhats-dark.png as=image>
-<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://nusgreyhats.org/greyhats.png>
 <link rel=icon type=image/png sizes=16x16 href=https://nusgreyhats.org/greyhats.png>
 <link rel=icon type=image/png sizes=32x32 href=https://nusgreyhats.org/greyhats.png>
@@ -25,11 +24,9 @@
 <link rel=mask-icon href=https://nusgreyhats.org/greyhats.png>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.2">
+<meta name=generator content="Hugo 0.93.2">
 <noscript>
-<style>#theme-toggle,.top-link{display:none}</style>
-</noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Introduction to Burp Suite">
+<style>#theme-toggle,.top-link{display:none}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,o,i,a,t,n,s){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,n=o.createElement(i),s=o.getElementsByTagName(i)[0],n.async=1,n.src=a,s.parentNode.insertBefore(n,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="Introduction to Burp Suite">
 <meta property="og:description" content="What, why, and how of Burp">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://nusgreyhats.org/posts/writeups/intro-to-burp/"><meta property="og:image" content="https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
@@ -41,9 +38,8 @@
 <meta name=twitter:description content="What, why, and how of Burp">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://nusgreyhats.org/posts/"},{"@type":"ListItem","position":2,"name":"Introduction to Burp Suite","item":"https://nusgreyhats.org/posts/writeups/intro-to-burp/"}]}</script>
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Introduction to Burp Suite","name":"Introduction to Burp Suite","description":"What, why, and how of Burp","keywords":["writeups"],"articleBody":"What is Burp Suite? Burp is all-in-one platform for website security testing. It has a variety of tools, such as:\n Proxy to intercept, inspect, and modify HTTP requests A repeater to easily edit and re-send HTTP requests An “intruder” to send multiple requests (one use case is to brute-force a login page) Text encoder/decoder (HTML, URL, Base64, etc.)  Why Burp Suite? When we are doing security testing, we want to give the application (lots of) unusual inputs. When we are dealing with website, these inputs are in the form of HTTP requests, be it GET, POST, or other type of requests. Burp allows us to easily modify and send these HTTP requests.\nBurp also has a lot of advanced features (e.g. automatically scan the website for vulnerabilities), but that is a different topic and will not be covered in this writeup.\nSetting Up You can download burp from here.\nBurp has its own built-in chromium browser, but you can also configure it to work with external browsers like Chrome and Firefox. You may need to configure your browser proxy setting to use burp, and you can find out how by going to this link. Additionally, you may want to install FoxyProxy so you can easily change your browser’s proxy setting.\n*In this writeup, we will try to attack online labs by PortSwigger. You may want to create an account first before continuing.\nUsing Burp Suite In this writeup, we will cover the following:\n Proxy Repeater Intruder (and Turbo Intruder)  To do that, we will try to perform OS Comand Injection attack and login bruteforce attack.\nProxy  Burp Proxy is a web proxy server between your browser and target applications, and lets you intercept, inspect, and modify the raw traffic passing in both directions.\n If you don’t know what a proxy server is, Wikipedia gives a pretty good explanation. Instead of sending HTTP request directly to the target, your browser will send the request to the proxy server and the proxy server will forward (or edit/drop) the request to the target.\nFirst, open burp and go to the Proxy tab. You will see something like this: You can click Open Browser to use Burp’s built-in browser, or open your own browser if you have configured the proxy settings. Make sure the intercept option is on.\nNow, try to go to any website. Your browser should hang and you can see this in your Burp: Here, the browser sent a GET request to Burp, but we have not forwarded the request. That’s why we don’t see anything loaded in our browser. At this stage, we can try to tinker around and change the request header to OPTIONS or POST, or we can change the cookie and add new data inside the request body. After we are done editing the request, we can press Forward and the request will be sent to the target.\nNote:\n If you are trying to access sites like Yahoo or Youtube, you can get hundreds of HTTP requests, and manually clicking Forward can be tiring. You can turn off the intercept option and all requests will be forwarded automatically. You can always review the requests you have sent from the HTTP History tab.\n Repeater  Burp Repeater is a simple tool for manually manipulating and reissuing individual HTTP and WebSocket messages, and analyzing the application’s responses. You can use Repeater for all kinds of purposes, such as changing parameter values to test for input-based vulnerabilities, issuing requests in a specific sequence to test for logic flaws, and reissuing requests from Burp Scanner issues to manually verify reported issues.\n To begin, turn off the intercept option from the previos section and go to https://portswigger.net/web-security/os-command-injection/lab-simple to access the lab. Note that even when our intercept is turned off, burp will still record all HTTP requests it forwarded.\nAccording to the lab description, the application contains an OS command injection vulnerability in the product stock checker. Let’s try to see a product and check its stock: After we clicked the button, we can see the stock of the product, but nothing more. Now, turn on the intercept option and try to check the stock again. We can see that our browser is actually sending a POST request to the app. We can play with the store ID. We can put whoami, 123456, etc. But, this process of going to the page, intercepting the request, changing the request, and then forwarding the request is very cumbersome. Let’s find another way.\nLet’s see the HTTP history: Now, right click on the request, then select Send to repeater.\nHere, we can send the POST request to the server again and again by changing the request and clicking Send. There’s no need for us to go to the page, intercept the request, change the request, and forward the request again and again.\nTo solve the lab, close the current command with a semicolon and inject whoami. The username will be printed on the Response tab. Intruder  Burp Intruder is a tool for automating customized attacks against web applications. It is extremely powerful and configurable, and can be used to perform a huge range of tasks, from simple brute-force guessing of web directories through to active exploitation of complex blind SQL injection vulnerabilities.\n To demonstrate this feature, we will try to solve https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses.\nWe are given a list of possible usernames and passwords, and our job is to login to the platform.\nOf course, we can try to manually try every single combination from the web page, or use the repeater to directly edit the HTTP request. But, it will take a lot of time if we have to do this manually. What we can do, is to right click on the login request and send it to intruder. There are four different modes of intruder: sniper, Battering ram, Pitchfork, and Cluster bomb. We will use sniper mode for this example and will not cover the difference between those attack types, but you can read more here if you want to know more.\nFirst, go to Positions tab and clear all markers. Then, add a marker on the username field. Next, go to the Payload tab and paste the wordlist from the lab website. Finally, click Start attack to initiate the attack. This will take a while if you are using the free (community) version.\nAfter the attack is finished, sort the response according to its length, and we can see that one response has different length. Indeed, this is the correct username we are looking for. Now, we put the correct username, add a marker for the password tab, and repeat the process again to get the password.\nTurbo Intruder If you are using Burp community edition, you will realize that the intruder is really slow. Its rate is limited to around one request per second. So, if you have thousands of requests to be sent, it can take forever. Luckily, we have an alternative called Turbo Intruder. To use it, we must first install it from the BApp store under the Extender tab. Then, from our HTTP history tab, instead of sending the packet to intruder, we select Extensions and Send to Turbo Intruder Turbo intruder uses python, so you can really customize your own code if you understand Python’s syntax. We save the wordlist from the lab website locally, and then we put a format string specifier %s to indicate the string we want to change. You can change the number of threads used to send the requests, as well as the number of requests for each connection. A word of caution, if you set these numbers wrongly, you can overload and crash the server and/or crash your own computer (most probably your computer will crash before the server does though). Also, in some cases, you want to keep these numbers low because the server may reject the connection if it has a rate limiting algorithm in place.\nSetting the number of threads to be 5 and the number of connections to be 1, we can achieve around 9 requests per second, which is 9 times better than the original burp intruder. Moving forward Now that you know the basic, the next thing to do is to practice :)\nYou can start by solving the challenges in these websites:\n DVWA WebGoat PortSwigger Academy  Then, if you are interested with pentesting real sites, you can read Web Hacking 101 by Peter Yaworski and go to Hackerone and try to find some real vulnerabilities. Have fun!\nReferences  https://portswigger.net/burp https://portswigger.net/burp/documentation/desktop/tools/proxy/getting-started https://en.wikipedia.org/wiki/Proxy_server https://portswigger.net/burp/documentation/desktop/tools/repeater/using https://portswigger.net/burp/documentation/desktop/tools/intruder/using Burp intruder attack types Turbo Intruder  ","wordCount":"1432","inLanguage":"en","datePublished":"2022-01-30T00:00:00Z","dateModified":"2022-01-30T00:00:00Z","author":{"@type":"Person","name":"adhy-p"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nusgreyhats.org/posts/writeups/intro-to-burp/"},"publisher":{"@type":"Organization","name":"NUS Greyhats","logo":{"@type":"ImageObject","url":"https://nusgreyhats.org/greyhats.png"}}}</script>
-</head>
-<body class=dark id=top>
-<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
+</head><body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -54,170 +50,82 @@
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
 </span>
-</div>
-<ul id=menu>
+</div><ul id=menu>
 <li>
 <a href=https://nusgreyhats.org/team title="the team">
 <span>the team</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://nusgreyhats.org/secweds title=secweds>
 <span>secweds</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://nusgreyhats.org/resources/ title=resources>
 <span>resources</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://nusgreyhats.org/tags/ title=tags>
 <span>tags</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://nusgreyhats.org/search/ title="search (Alt + /)" accesskey=/>
 <span>search</span>
 </a>
-</li>
-</ul>
-</nav>
-</header>
-<main class=main>
+</li></ul></nav></header><main class=main>
 <article class=post-single>
 <header class=post-header>
 <h1 class=post-title>
 Introduction to Burp Suite
-</h1>
-<div class=post-description>
+</h1><div class=post-description>
 What, why, and how of Burp
-</div>
-<div class=post-meta>January 30, 2022&nbsp;·&nbsp;7 min&nbsp;·&nbsp;adhy-p&nbsp;|&nbsp;<a href=https://github.com/NUSGreyhats/NUSGreyhats.github.io/tree/master/content/posts/writeups/intro-to-burp.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
-</div>
-</header>
-<div class=post-content><h2 id=what-is-burp-suite>What is Burp Suite?<a hidden class=anchor aria-hidden=true href=#what-is-burp-suite>#</a></h2>
-<p>Burp is all-in-one platform for website security testing. It has a variety of tools, such as:</p>
-<ul>
-<li>Proxy to intercept, inspect, and modify HTTP requests</li>
-<li>A repeater to easily edit and re-send HTTP requests</li>
-<li>An &ldquo;intruder&rdquo; to send multiple requests (one use case is to brute-force a login page)</li>
-<li>Text encoder/decoder (HTML, URL, Base64, etc.)</li>
-</ul>
-<h2 id=why-burp-suite>Why Burp Suite?<a hidden class=anchor aria-hidden=true href=#why-burp-suite>#</a></h2>
-<p>When we are doing security testing, we want to give the application (lots of) unusual inputs. When we are dealing with website, these inputs are in the form of HTTP requests, be it <code>GET</code>, <code>POST</code>, or other type of requests. Burp allows us to easily modify and send these HTTP requests.</p>
-<p>Burp also has a lot of advanced features (e.g. automatically scan the website for vulnerabilities), but that is a different topic and will not be covered in this writeup.</p>
-<h2 id=setting-up>Setting Up<a hidden class=anchor aria-hidden=true href=#setting-up>#</a></h2>
-<p>You can download burp from <a href=https://portswigger.net/burp>here</a>.</p>
-<p>Burp has its own built-in chromium browser, but you can
+</div><div class=post-meta>January 30, 2022&nbsp;·&nbsp;7 min&nbsp;·&nbsp;adhy-p&nbsp;|&nbsp;<a href=https://github.com/NUSGreyhats/NUSGreyhats.github.io/tree/master/content/posts/writeups/intro-to-burp.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div></header><div class=post-content><h2 id=what-is-burp-suite>What is Burp Suite?<a hidden class=anchor aria-hidden=true href=#what-is-burp-suite>#</a></h2><p>Burp is all-in-one platform for website security testing. It has a variety of tools, such as:</p><ul>
+<li>Proxy to intercept, inspect, and modify HTTP requests</li><li>A repeater to easily edit and re-send HTTP requests</li><li>An &ldquo;intruder&rdquo; to send multiple requests (one use case is to brute-force a login page)</li><li>Text encoder/decoder (HTML, URL, Base64, etc.)</li></ul><h2 id=why-burp-suite>Why Burp Suite?<a hidden class=anchor aria-hidden=true href=#why-burp-suite>#</a></h2><p>When we are doing security testing, we want to give the application (lots of) unusual inputs. When we are dealing with website, these inputs are in the form of HTTP requests, be it <code>GET</code>, <code>POST</code>, or other type of requests. Burp allows us to easily modify and send these HTTP requests.</p><p>Burp also has a lot of advanced features (e.g. automatically scan the website for vulnerabilities), but that is a different topic and will not be covered in this writeup.</p><h2 id=setting-up>Setting Up<a hidden class=anchor aria-hidden=true href=#setting-up>#</a></h2><p>You can download burp from <a href=https://portswigger.net/burp>here</a>.</p><p>Burp has its own built-in chromium browser, but you can
 also configure it to work with external browsers like Chrome and Firefox. You may need to configure your browser proxy setting to
-use burp, and you can find out how by going to <a href=https://portswigger.net/burp/documentation/desktop/external-browser-config>this link</a>. Additionally, you may want to install <a href=https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/>FoxyProxy</a> so you can easily change your browser&rsquo;s proxy setting.</p>
-<p>*In this writeup, we will try to attack online <a href=https://portswigger.net/web-security/>labs</a> by PortSwigger. You may want to <a href=https://portswigger.net/users/register>create an account</a> first before continuing.</p>
-<h2 id=using-burp-suite>Using Burp Suite<a hidden class=anchor aria-hidden=true href=#using-burp-suite>#</a></h2>
-<p>In this writeup, we will cover the following:</p>
-<ul>
-<li>Proxy</li>
-<li>Repeater</li>
-<li>Intruder (and Turbo Intruder)</li>
-</ul>
-<p>To do that, we will try to perform OS Comand Injection attack and login bruteforce attack.</p>
-<h2 id=proxy>Proxy<a hidden class=anchor aria-hidden=true href=#proxy>#</a></h2>
-<blockquote>
-<p>Burp Proxy is a web proxy server between your browser and target applications, and lets you intercept, inspect, and modify the raw traffic passing in both directions.</p>
-</blockquote>
-<p>If you don&rsquo;t know what a proxy server is, <a href=https://en.wikipedia.org/wiki/Proxy_server>Wikipedia</a> gives a pretty good explanation. Instead of sending HTTP request directly to the target, your browser will send the request to the proxy server and the proxy server will forward (or edit/drop) the request to the target.</p>
-<p><img loading=lazy src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Proxy_concept_en.svg/416px-Proxy_concept_en.svg.png alt=proxy>
-</p>
-<p>First, open burp and go to the <code>Proxy</code> tab. You will see something like this:
+use burp, and you can find out how by going to <a href=https://portswigger.net/burp/documentation/desktop/external-browser-config>this link</a>. Additionally, you may want to install <a href=https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/>FoxyProxy</a> so you can easily change your browser&rsquo;s proxy setting.</p><p>*In this writeup, we will try to attack online <a href=https://portswigger.net/web-security/>labs</a> by PortSwigger. You may want to <a href=https://portswigger.net/users/register>create an account</a> first before continuing.</p><h2 id=using-burp-suite>Using Burp Suite<a hidden class=anchor aria-hidden=true href=#using-burp-suite>#</a></h2><p>In this writeup, we will cover the following:</p><ul>
+<li>Proxy</li><li>Repeater</li><li>Intruder (and Turbo Intruder)</li></ul><p>To do that, we will try to perform OS Comand Injection attack and login bruteforce attack.</p><h2 id=proxy>Proxy<a hidden class=anchor aria-hidden=true href=#proxy>#</a></h2><blockquote>
+<p>Burp Proxy is a web proxy server between your browser and target applications, and lets you intercept, inspect, and modify the raw traffic passing in both directions.</p></blockquote><p>If you don&rsquo;t know what a proxy server is, <a href=https://en.wikipedia.org/wiki/Proxy_server>Wikipedia</a> gives a pretty good explanation. Instead of sending HTTP request directly to the target, your browser will send the request to the proxy server and the proxy server will forward (or edit/drop) the request to the target.</p><p><img loading=lazy src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Proxy_concept_en.svg/416px-Proxy_concept_en.svg.png alt=proxy>
+</p><p>First, open burp and go to the <code>Proxy</code> tab. You will see something like this:
 <img loading=lazy src=/images/intro-to-burp/first-landing.png alt=first-landing>
-You can click <code>Open Browser</code> to use Burp&rsquo;s built-in browser, or open your own browser if you have configured the proxy settings. Make sure the <code>intercept</code> option is on.</p>
-<p>Now, try to go to any website. Your browser should hang and you can see this in your Burp:
+You can click <code>Open Browser</code> to use Burp&rsquo;s built-in browser, or open your own browser if you have configured the proxy settings. Make sure the <code>intercept</code> option is on.</p><p>Now, try to go to any website. Your browser should hang and you can see this in your Burp:
 <img loading=lazy src=/images/intro-to-burp/intercepted-request.png alt=intercept>
-Here, the browser sent a GET request to Burp, but we have not forwarded the request. That&rsquo;s why we don&rsquo;t see anything loaded in our browser. At this stage, we can try to tinker around and change the request header to <code>OPTIONS</code> or <code>POST</code>, or we can change the cookie and add new data inside the request body. After we are done editing the request, we can press <code>Forward</code> and the request will be sent to the target.</p>
-<p>Note:</p>
-<blockquote>
-<p>If you are trying to access sites like Yahoo or Youtube, you can get hundreds of HTTP requests, and manually clicking <code>Forward</code> can be tiring. You can turn off the <code>intercept</code> option and all requests will be forwarded automatically. You can always review the requests you have sent from the <code>HTTP History</code> tab.</p>
-</blockquote>
-<h3 id=repeater>Repeater<a hidden class=anchor aria-hidden=true href=#repeater>#</a></h3>
-<blockquote>
-<p>Burp Repeater is a simple tool for manually manipulating and reissuing individual HTTP and WebSocket messages, and analyzing the application&rsquo;s responses. You can use Repeater for all kinds of purposes, such as changing parameter values to test for input-based vulnerabilities, issuing requests in a specific sequence to test for logic flaws, and reissuing requests from Burp Scanner issues to manually verify reported issues.</p>
-</blockquote>
-<p>To begin, turn off the intercept option from the previos section and go to <a href=https://portswigger.net/web-security/os-command-injection/lab-simple>https://portswigger.net/web-security/os-command-injection/lab-simple</a> to access the lab. Note that even when our intercept is turned off, burp will still record all HTTP requests it forwarded.</p>
-<p>According to the lab description, the application contains an OS command injection vulnerability in the product stock checker. Let&rsquo;s try to see a product and check its stock:
+Here, the browser sent a GET request to Burp, but we have not forwarded the request. That&rsquo;s why we don&rsquo;t see anything loaded in our browser. At this stage, we can try to tinker around and change the request header to <code>OPTIONS</code> or <code>POST</code>, or we can change the cookie and add new data inside the request body. After we are done editing the request, we can press <code>Forward</code> and the request will be sent to the target.</p><p>Note:</p><blockquote>
+<p>If you are trying to access sites like Yahoo or Youtube, you can get hundreds of HTTP requests, and manually clicking <code>Forward</code> can be tiring. You can turn off the <code>intercept</code> option and all requests will be forwarded automatically. You can always review the requests you have sent from the <code>HTTP History</code> tab.</p></blockquote><h3 id=repeater>Repeater<a hidden class=anchor aria-hidden=true href=#repeater>#</a></h3><blockquote>
+<p>Burp Repeater is a simple tool for manually manipulating and reissuing individual HTTP and WebSocket messages, and analyzing the application&rsquo;s responses. You can use Repeater for all kinds of purposes, such as changing parameter values to test for input-based vulnerabilities, issuing requests in a specific sequence to test for logic flaws, and reissuing requests from Burp Scanner issues to manually verify reported issues.</p></blockquote><p>To begin, turn off the intercept option from the previos section and go to <a href=https://portswigger.net/web-security/os-command-injection/lab-simple>https://portswigger.net/web-security/os-command-injection/lab-simple</a> to access the lab. Note that even when our intercept is turned off, burp will still record all HTTP requests it forwarded.</p><p>According to the lab description, the application contains an OS command injection vulnerability in the product stock checker. Let&rsquo;s try to see a product and check its stock:
 <img loading=lazy src=/images/intro-to-burp/stock.png alt=stock>
-</p>
-<p>After we clicked the button, we can see the stock of the product, but nothing more. Now, turn on the intercept option and try to check the stock again. We can see that our browser is actually sending a <code>POST</code> request to the app.
+</p><p>After we clicked the button, we can see the stock of the product, but nothing more. Now, turn on the intercept option and try to check the stock again. We can see that our browser is actually sending a <code>POST</code> request to the app.
 <img loading=lazy src=/images/intro-to-burp/post-req.png alt=post-req>
-We can play with the store ID. We can put <code>whoami</code>, <code>123456</code>, etc. But, this process of going to the page, intercepting the request, changing the request, and then forwarding the request is very cumbersome. Let&rsquo;s find another way.</p>
-<p>Let&rsquo;s see the HTTP history:
+We can play with the store ID. We can put <code>whoami</code>, <code>123456</code>, etc. But, this process of going to the page, intercepting the request, changing the request, and then forwarding the request is very cumbersome. Let&rsquo;s find another way.</p><p>Let&rsquo;s see the HTTP history:
 <img loading=lazy src=/images/intro-to-burp/history.png alt=history>
-Now, right click on the request, then select <code>Send to repeater</code>.</p>
-<p><img loading=lazy src=/images/intro-to-burp/send-to-repeater.png alt=send-to-repeater>
-</p>
-<p><img loading=lazy src=/images/intro-to-burp/whoami.png alt=whoami>
-Here, we can send the <code>POST</code> request to the server again and again by changing the request and clicking <code>Send</code>. There&rsquo;s no need for us to go to the page, intercept the request, change the request, and forward the request again and again.</p>
-<p>To solve the lab, close the current command with a semicolon and inject <code>whoami</code>. The username will be printed on the Response tab.
+Now, right click on the request, then select <code>Send to repeater</code>.</p><p><img loading=lazy src=/images/intro-to-burp/send-to-repeater.png alt=send-to-repeater>
+</p><p><img loading=lazy src=/images/intro-to-burp/whoami.png alt=whoami>
+Here, we can send the <code>POST</code> request to the server again and again by changing the request and clicking <code>Send</code>. There&rsquo;s no need for us to go to the page, intercept the request, change the request, and forward the request again and again.</p><p>To solve the lab, close the current command with a semicolon and inject <code>whoami</code>. The username will be printed on the Response tab.
 <img loading=lazy src=/images/intro-to-burp/whoami-res.png alt=whoami-res>
-</p>
-<h3 id=intruder>Intruder<a hidden class=anchor aria-hidden=true href=#intruder>#</a></h3>
-<blockquote>
-<p>Burp Intruder is a tool for automating customized attacks against web applications. It is extremely powerful and configurable, and can be used to perform a huge range of tasks, from simple brute-force guessing of web directories through to active exploitation of complex blind SQL injection vulnerabilities.</p>
-</blockquote>
-<p>To demonstrate this feature, we will try to solve <a href=https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses>https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses</a>.</p>
-<p>We are given a list of possible usernames and passwords, and our job is to login to the platform.</p>
-<p>Of course, we can try to manually try every single combination from the web page, or use the repeater to directly edit the HTTP request. But, it will take a lot of time if we have to do this manually.
+</p><h3 id=intruder>Intruder<a hidden class=anchor aria-hidden=true href=#intruder>#</a></h3><blockquote>
+<p>Burp Intruder is a tool for automating customized attacks against web applications. It is extremely powerful and configurable, and can be used to perform a huge range of tasks, from simple brute-force guessing of web directories through to active exploitation of complex blind SQL injection vulnerabilities.</p></blockquote><p>To demonstrate this feature, we will try to solve <a href=https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses>https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses</a>.</p><p>We are given a list of possible usernames and passwords, and our job is to login to the platform.</p><p>Of course, we can try to manually try every single combination from the web page, or use the repeater to directly edit the HTTP request. But, it will take a lot of time if we have to do this manually.
 <img loading=lazy src=/images/intro-to-burp/admin:password.png alt=admin-password>
-</p>
-<p>What we can do, is to right click on the login request and send it to intruder.
+</p><p>What we can do, is to right click on the login request and send it to intruder.
 <img loading=lazy src=/images/intro-to-burp/send-to-intruder.png alt=send-to-intruder>
-There are four different modes of intruder: <code>sniper</code>, <code>Battering ram</code>, <code>Pitchfork</code>, and <code>Cluster bomb</code>. We will use <code>sniper</code> mode for this example and will not cover the difference between those attack types, but you can read more <a href=https://www.sjoerdlangkemper.nl/2017/08/02/burp-intruder-attack-types/>here</a> if you want to know more.</p>
-<p>First, go to <code>Positions</code> tab and clear all markers. Then, add a marker on the <code>username</code> field.
+There are four different modes of intruder: <code>sniper</code>, <code>Battering ram</code>, <code>Pitchfork</code>, and <code>Cluster bomb</code>. We will use <code>sniper</code> mode for this example and will not cover the difference between those attack types, but you can read more <a href=https://www.sjoerdlangkemper.nl/2017/08/02/burp-intruder-attack-types/>here</a> if you want to know more.</p><p>First, go to <code>Positions</code> tab and clear all markers. Then, add a marker on the <code>username</code> field.
 <img loading=lazy src=/images/intro-to-burp/clear-marker.png alt=clear-marker>
 <img loading=lazy src=/images/intro-to-burp/add-marker.png alt=add-marker>
 Next, go to the <code>Payload</code> tab and paste the wordlist from the lab website.
 <img loading=lazy src=/images/intro-to-burp/paste-usernames.png alt=paste-usernames>
-Finally, click <code>Start attack</code> to initiate the attack. This will take a while if you are using the free (community) version.</p>
-<p>After the attack is finished, sort the response according to its length, and we can see that one response has different length. Indeed, this is the correct username we are looking for.
+Finally, click <code>Start attack</code> to initiate the attack. This will take a while if you are using the free (community) version.</p><p>After the attack is finished, sort the response according to its length, and we can see that one response has different length. Indeed, this is the correct username we are looking for.
 <img loading=lazy src=/images/intro-to-burp/intruder-result.png alt=intruder-result>
-Now, we put the correct username, add a marker for the password tab, and repeat the process again to get the password.</p>
-<h3 id=turbo-intruder>Turbo Intruder<a hidden class=anchor aria-hidden=true href=#turbo-intruder>#</a></h3>
-<p>If you are using Burp community edition, you will realize that the intruder is really slow. Its rate is limited to around one request per second. So, if you have thousands of requests to be sent, it can take forever. Luckily, we have an alternative called Turbo Intruder. To use it, we must first install it from the BApp store under the <code>Extender</code> tab.
+Now, we put the correct username, add a marker for the password tab, and repeat the process again to get the password.</p><h3 id=turbo-intruder>Turbo Intruder<a hidden class=anchor aria-hidden=true href=#turbo-intruder>#</a></h3><p>If you are using Burp community edition, you will realize that the intruder is really slow. Its rate is limited to around one request per second. So, if you have thousands of requests to be sent, it can take forever. Luckily, we have an alternative called Turbo Intruder. To use it, we must first install it from the BApp store under the <code>Extender</code> tab.
 <img loading=lazy src=/images/intro-to-burp/bapp-turbo-intruder.png alt=bapp>
-</p>
-<p>Then, from our HTTP history tab, instead of sending the packet to intruder, we select <code>Extensions</code> and <code>Send to Turbo Intruder</code>
+</p><p>Then, from our HTTP history tab, instead of sending the packet to intruder, we select <code>Extensions</code> and <code>Send to Turbo Intruder</code>
 <img loading=lazy src=/images/intro-to-burp/send-to-turbo.png alt=send-to-turbo>
-</p>
-<p>Turbo intruder uses python, so you can really customize your own code if you understand Python&rsquo;s syntax. We save the wordlist from the lab website locally, and then we put a format string specifier <code>%s</code> to indicate the string we want to change.
+</p><p>Turbo intruder uses python, so you can really customize your own code if you understand Python&rsquo;s syntax. We save the wordlist from the lab website locally, and then we put a format string specifier <code>%s</code> to indicate the string we want to change.
 <img loading=lazy src=/images/intro-to-burp/turbo-python.png alt=turbo-python>
-You can change the number of threads used to send the requests, as well as the number of requests for each connection. A word of caution, if you set these numbers wrongly, you can overload and crash the server and/or crash your own computer (most probably your computer will crash before the server does though). Also, in some cases, you want to keep these numbers low because the server may reject the connection if it has a rate limiting algorithm in place.</p>
-<p>Setting the number of threads to be 5 and the number of connections to be 1, we can achieve around 9 requests per second, which is 9 times better than the original burp intruder.
+You can change the number of threads used to send the requests, as well as the number of requests for each connection. A word of caution, if you set these numbers wrongly, you can overload and crash the server and/or crash your own computer (most probably your computer will crash before the server does though). Also, in some cases, you want to keep these numbers low because the server may reject the connection if it has a rate limiting algorithm in place.</p><p>Setting the number of threads to be 5 and the number of connections to be 1, we can achieve around 9 requests per second, which is 9 times better than the original burp intruder.
 <img loading=lazy src=/images/intro-to-burp/turbo-result.png alt=turbo-result>
-</p>
-<h2 id=moving-forward>Moving forward<a hidden class=anchor aria-hidden=true href=#moving-forward>#</a></h2>
-<p>Now that you know the basic, the next thing to do is to practice :)</p>
-<p>You can start by solving the challenges in these websites:</p>
-<ul>
-<li><a href=https://github.com/digininja/DVWA>DVWA</a></li>
-<li><a href=https://owasp.org/www-project-webgoat/>WebGoat</a></li>
-<li><a href=https://portswigger.net/web-security>PortSwigger Academy</a></li>
-</ul>
-<p>Then, if you are interested with pentesting real sites, you can read <a href=http://leanpub.com/web-hacking-101>Web Hacking 101</a> by Peter Yaworski and go to <a href=https://www.hackerone.com/>Hackerone</a> and try to find some real vulnerabilities. Have fun!</p>
-<h2 id=references>References<a hidden class=anchor aria-hidden=true href=#references>#</a></h2>
-<ul>
-<li><a href=https://portswigger.net/burp>https://portswigger.net/burp</a></li>
-<li><a href=https://portswigger.net/burp/documentation/desktop/tools/proxy/getting-started>https://portswigger.net/burp/documentation/desktop/tools/proxy/getting-started</a></li>
-<li><a href=https://en.wikipedia.org/wiki/Proxy_server>https://en.wikipedia.org/wiki/Proxy_server</a></li>
-<li><a href=https://portswigger.net/burp/documentation/desktop/tools/repeater/using>https://portswigger.net/burp/documentation/desktop/tools/repeater/using</a></li>
-<li><a href=https://portswigger.net/burp/documentation/desktop/tools/intruder/using>https://portswigger.net/burp/documentation/desktop/tools/intruder/using</a></li>
-<li><a href=https://www.sjoerdlangkemper.nl/2017/08/02/burp-intruder-attack-types/>Burp intruder attack types</a></li>
-<li><a href=https://portswigger.net/bappstore/9abaa233088242e8be252cd4ff534988>Turbo Intruder</a></li>
-</ul>
-</div>
-<footer class=post-footer>
+</p><h2 id=moving-forward>Moving forward<a hidden class=anchor aria-hidden=true href=#moving-forward>#</a></h2><p>Now that you know the basic, the next thing to do is to practice :)</p><p>You can start by solving the challenges in these websites:</p><ul>
+<li><a href=https://github.com/digininja/DVWA>DVWA</a></li><li><a href=https://owasp.org/www-project-webgoat/>WebGoat</a></li><li><a href=https://portswigger.net/web-security>PortSwigger Academy</a></li></ul><p>Then, if you are interested with pentesting real sites, you can read <a href=http://leanpub.com/web-hacking-101>Web Hacking 101</a> by Peter Yaworski and go to <a href=https://www.hackerone.com/>Hackerone</a> and try to find some real vulnerabilities. Have fun!</p><h2 id=references>References<a hidden class=anchor aria-hidden=true href=#references>#</a></h2><ul>
+<li><a href=https://portswigger.net/burp>https://portswigger.net/burp</a></li><li><a href=https://portswigger.net/burp/documentation/desktop/tools/proxy/getting-started>https://portswigger.net/burp/documentation/desktop/tools/proxy/getting-started</a></li><li><a href=https://en.wikipedia.org/wiki/Proxy_server>https://en.wikipedia.org/wiki/Proxy_server</a></li><li><a href=https://portswigger.net/burp/documentation/desktop/tools/repeater/using>https://portswigger.net/burp/documentation/desktop/tools/repeater/using</a></li><li><a href=https://portswigger.net/burp/documentation/desktop/tools/intruder/using>https://portswigger.net/burp/documentation/desktop/tools/intruder/using</a></li><li><a href=https://www.sjoerdlangkemper.nl/2017/08/02/burp-intruder-attack-types/>Burp intruder attack types</a></li><li><a href=https://portswigger.net/bappstore/9abaa233088242e8be252cd4ff534988>Turbo Intruder</a></li></ul></div><footer class=post-footer>
 <ul class=post-tags>
-<li><a href=https://nusgreyhats.org/tags/writeups/>writeups</a></li>
-</ul>
-<nav class=paginav>
+<li><a href=https://nusgreyhats.org/tags/writeups/>writeups</a></li></ul><nav class=paginav>
 <a class=prev href=https://nusgreyhats.org/posts/writeups/introduction-to-android-app-reversing/>
 <span class=title>« Prev Page</span>
 <br>
@@ -228,8 +136,7 @@ You can change the number of threads used to send the requests, as well as the n
 <br>
 <span>SecWed #260122</span>
 </a>
-</nav>
-<div class=share-buttons>
+</nav><div class=share-buttons>
 <a target=_blank rel="noopener noreferrer" aria-label="share Introduction to Burp Suite on twitter" href="https://twitter.com/intent/tweet/?text=Introduction%20to%20Burp%20Suite&url=https%3a%2f%2fnusgreyhats.org%2fposts%2fwriteups%2fintro-to-burp%2f&hashtags=writeups"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg>
 </a>
 <a target=_blank rel="noopener noreferrer" aria-label="share Introduction to Burp Suite on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fnusgreyhats.org%2fposts%2fwriteups%2fintro-to-burp%2f&title=Introduction%20to%20Burp%20Suite&summary=Introduction%20to%20Burp%20Suite&source=https%3a%2f%2fnusgreyhats.org%2fposts%2fwriteups%2fintro-to-burp%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg>
@@ -242,22 +149,16 @@ You can change the number of threads used to send the requests, as well as the n
 </a>
 <a target=_blank rel="noopener noreferrer" aria-label="share Introduction to Burp Suite on telegram" href="https://telegram.me/share/url?text=Introduction%20to%20Burp%20Suite&url=https%3a%2f%2fnusgreyhats.org%2fposts%2fwriteups%2fintro-to-burp%2f"><svg viewBox="2 2 28 28"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg>
 </a>
-</div>
-</footer>
-</article>
-</main>
-<footer class=footer>
+</div></footer></article></main><footer class=footer>
 <span>&copy; 2022 <a href=https://nusgreyhats.org/>NUS Greyhats</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
 </span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
-<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>let menu=document.getElementById("menu");menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light'),document.getElementById("logo").src="/greyhats.png"):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'),document.getElementById("logo").src="/greyhats-dark.png")})</script>
-</body>
-</html>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light"),document.getElementById("logo").src="/greyhats.png"):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"),document.getElementById("logo").src="/greyhats-dark.png")})</script>
+</body></html>
