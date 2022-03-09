@@ -9,7 +9,38 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SecWed #060422</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0604/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0604/</guid>
+      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZ0udeCgqDsoGN2Cm1ujlyxZfFrqYhrramAQ
+Talk 1: 1900Hrs - 1945Hrs Talk 2: 1945Hrs - 2030Hrs </description>
+    </item>
+    
+    <item>
+      <title>SecWed #090322</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0903/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0903/</guid>
+      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZMldeupqD0jHNxJAMT96CIwT1fP84Q-xjGo
+Talk 1: 1900Hrs - 1945Hrs Talk Title: How to build an automated Incident Response and Forensics Readiness Framework on AWS
+This talk aims to provide insights into how you can build and automate incident response and forensics on AWS. This talk aims to show some of the problems our customers were facing and how we helped solve them. This use-case was developed for a customer operating a large set of accounts.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #230322</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</guid>
+      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZ0udeCgqDsoGN2Cm1ujlyxZfFrqYhrramAQ
+SecWed Mini-CTF We&amp;rsquo;ve prepared a few challenges to demonstrate some vulnerable code patterns. Join us to try them out!</description>
+    </item>
+    
     <item>
       <title>SecWed #090222</title>
       <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0902/</link>
@@ -18,8 +49,8 @@
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0902/</guid>
       <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz
 Talk: 7:00pm-7:45pm Title: Breach and Attack Simulation (Security Validation)
-Description How sure are we if our cyber security investments is improving the actual security effectiveness? Find out how Breach and Attack Simulation (Security Validation) continuously validate and measures the effectiveness of cybersecurity controls.
-Speaker Bio Ragavan is a Cyber Security Presales Engineer since 2014. He focuses on cyber solutioning in government space and recently joined Mandiant. Ragavan has involved in different stages of IT/Cyber Security lifecycle throughout his past experience, from developing application, IT administration, operating cyber tools, proposing designing and deploying cyber solutions.</description>
+  Description How sure are we if our cyber security investments is improving the actual security effectiveness? Find out how Breach and Attack Simulation (Security Validation) continuously validate and measures the effectiveness of cybersecurity controls.
+Speaker Bio Ragavan is a Cyber Security Presales Engineer since 2014. He focuses on cyber solutioning in government space and recently joined Mandiant.</description>
     </item>
     
     <item>
