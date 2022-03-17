@@ -21,6 +21,16 @@ Talk 1: 1900Hrs - 1945Hrs Talk 2: 1945Hrs - 2030Hrs </description>
     </item>
     
     <item>
+      <title>SecWed #230322</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</guid>
+      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZ0udeCgqDsoGN2Cm1ujlyxZfFrqYhrramAQ
+SecWed Mini-CTF We&amp;rsquo;ve prepared a few challenges to demonstrate some vulnerable code patterns. Join us to try them out!</description>
+    </item>
+    
+    <item>
       <title>SecWed #090322</title>
       <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0903/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
@@ -29,16 +39,6 @@ Talk 1: 1900Hrs - 1945Hrs Talk 2: 1945Hrs - 2030Hrs </description>
       <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZMldeupqD0jHNxJAMT96CIwT1fP84Q-xjGo
 Talk 1: 1900Hrs - 1945Hrs Talk Title: How to build an automated Incident Response and Forensics Readiness Framework on AWS
 This talk aims to provide insights into how you can build and automate incident response and forensics on AWS. This talk aims to show some of the problems our customers were facing and how we helped solve them. This use-case was developed for a customer operating a large set of accounts.</description>
-    </item>
-    
-    <item>
-      <title>SecWed #230322</title>
-      <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</guid>
-      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZ0udeCgqDsoGN2Cm1ujlyxZfFrqYhrramAQ
-SecWed Mini-CTF We&amp;rsquo;ve prepared a few challenges to demonstrate some vulnerable code patterns. Join us to try them out!</description>
     </item>
     
     <item>
