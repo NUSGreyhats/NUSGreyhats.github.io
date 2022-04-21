@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nusgreyhats.org/posts/writeups/tamuctf-2022-obsessive-checking/</loc>
+    <lastmod>2022-04-18T12:38:31+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/ctf/</loc>
+    <lastmod>2022-04-18T12:38:31+08:00</lastmod>
+  </url><url>
     <loc>https://nusgreyhats.org/</loc>
-    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-18T12:38:31+08:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/</loc>
-    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-18T12:38:31+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/reverse-engineer/</loc>
+    <lastmod>2022-04-18T12:38:31+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/</loc>
+    <lastmod>2022-04-18T12:38:31+08:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/writeups/</loc>
+    <lastmod>2022-04-18T12:38:31+08:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0604/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/tags/secweds/</loc>
-    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</loc>
@@ -26,13 +38,7 @@
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0902/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nusgreyhats.org/tags/ctf/</loc>
-    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/introduction-to-android-app-reversing/</loc>
-    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/writeups/</loc>
     <lastmod>2022-02-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/intro-to-burp/</loc>
@@ -54,9 +60,6 @@
     <lastmod>2022-01-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/htxic-reversing-101/</loc>
-    <lastmod>2021-12-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/reverse-engineer/</loc>
     <lastmod>2021-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/a-not-so-deep-dive-in-to-grafana-cve-2021-43798/</loc>

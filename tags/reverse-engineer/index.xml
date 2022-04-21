@@ -9,7 +9,16 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/reverse-engineer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Apr 2022 12:38:31 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/reverse-engineer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TamuCTF 2022] Obsessive Checking</title>
+      <link>https://nusgreyhats.org/posts/writeups/tamuctf-2022-obsessive-checking/</link>
+      <pubDate>Mon, 18 Apr 2022 12:38:31 +0800</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/writeups/tamuctf-2022-obsessive-checking/</guid>
+      <description>Reverse engineering using proxy, static and dynamic analysis</description>
+    </item>
+    
     <item>
       <title>HTXIC CTF Reversing 101 Writeup</title>
       <link>https://nusgreyhats.org/posts/writeups/htxic-reversing-101/</link>
