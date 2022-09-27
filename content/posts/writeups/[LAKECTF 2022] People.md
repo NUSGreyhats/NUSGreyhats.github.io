@@ -154,7 +154,7 @@ As we can see from the template, most of the variables are loaded into the templ
 
 ![Burp Suit Track Request](/images/lakectf-people/burp%20edit%20page.png)
 
-Using [Burp Suite](https://portswigger.net/burp), I manage to trace down the request to edit the page. Bu sending it to the repeater, we can edit the request later to edit our profile at will.
+Using [Burp Suite](https://portswigger.net/burp), I manage to trace down the request to edit the page. By sending it to the repeater, we can edit the request later to edit our profile at will.
 
 ![Burp Suit Repeater page](/images/lakectf-people/burp%20repeater%20page.png)
 
