@@ -1,7 +1,7 @@
 ---
 author: "Wen Junhua"
 title: "[LAKECTF 2022] People"
-date: 2022-09-27T12:00:03+08:00
+date: 2022-09-27T11:00:03+08:00
 description: "Reverse engineering using proxy, static and dynamic analysis"
 tags: ["writeups", "ctf", "reverse engineer"]
 ShowBreadcrumbs: False
