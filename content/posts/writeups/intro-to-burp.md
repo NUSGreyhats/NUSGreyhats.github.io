@@ -96,7 +96,7 @@ To demonstrate this feature, we will try to solve https://portswigger.net/web-se
 We are given a list of possible usernames and passwords, and our job is to login to the platform.
 
 Of course, we can try to manually try every single combination from the web page, or use the repeater to directly edit the HTTP request. But, it will take a lot of time if we have to do this manually.
-![admin-password](/images/intro-to-burp/admin:password.png)
+![admin-password](/images/intro-to-burp/admin-password.png)
 
 What we can do, is to right click on the login request and send it to intruder.
 ![send-to-intruder](/images/intro-to-burp/send-to-intruder.png)
