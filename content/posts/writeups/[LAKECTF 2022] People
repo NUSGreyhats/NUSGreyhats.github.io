@@ -2,7 +2,7 @@
 author: "Wen Junhua"
 title: "[LAKECTF 2022] People"
 date: 2022-09-26T11:00:03+08:00
-description: ""
+description: "A Walkthrough of the LakeCTF 2022 on Web: People"
 tags: ["writeups", "ctf", "web", "base injection"]
 ShowBreadcrumbs: False
 ---
