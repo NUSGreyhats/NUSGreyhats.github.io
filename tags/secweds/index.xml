@@ -51,8 +51,8 @@ This talk aims to provide insights into how you can build and automate incident 
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0902/</guid>
       <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz
 Talk: 7:00pm-7:45pm Title: Breach and Attack Simulation (Security Validation)
-  Description How sure are we if our cyber security investments is improving the actual security effectiveness? Find out how Breach and Attack Simulation (Security Validation) continuously validate and measures the effectiveness of cybersecurity controls.
-Speaker Bio Ragavan is a Cyber Security Presales Engineer since 2014. He focuses on cyber solutioning in government space and recently joined Mandiant.</description>
+Description How sure are we if our cyber security investments is improving the actual security effectiveness? Find out how Breach and Attack Simulation (Security Validation) continuously validate and measures the effectiveness of cybersecurity controls.
+Speaker Bio Ragavan is a Cyber Security Presales Engineer since 2014. He focuses on cyber solutioning in government space and recently joined Mandiant. Ragavan has involved in different stages of IT/Cyber Security lifecycle throughout his past experience, from developing application, IT administration, operating cyber tools, proposing designing and deploying cyber solutions.</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@ Speaker Bio Ragavan is a Cyber Security Presales Engineer since 2014. He focuses
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2601/</guid>
       <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz
 Talk: 7:00pm-7:45pm Title: An introduction to container hacking
-  Description Now that containers, Docker and Kubernetes are everywhere, we have to ask the most important question &amp;lsquo;how do we hack them!&amp;rsquo; . This talk will take a look at some of the underpinnings of how these systems work, to give you ideas on where to start and then look at some classic container hacking techniques.
+Description Now that containers, Docker and Kubernetes are everywhere, we have to ask the most important question &amp;lsquo;how do we hack them!&amp;rsquo; . This talk will take a look at some of the underpinnings of how these systems work, to give you ideas on where to start and then look at some classic container hacking techniques.
 Speaker Bio Rory has worked in the Information and IT Security arena for the last 21 years in a variety of roles.</description>
     </item>
     
