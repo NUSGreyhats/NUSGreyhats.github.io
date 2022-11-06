@@ -9,7 +9,16 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 18 Apr 2022 12:38:31 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/writeups/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Sep 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/writeups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[LAKECTF 2022] People</title>
+      <link>https://nusgreyhats.org/posts/writeups/lakectf-2022-people/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/writeups/lakectf-2022-people/</guid>
+      <description>A Walkthrough of the LakeCTF 2022 on Web: People</description>
+    </item>
+    
     <item>
       <title>[TamuCTF 2022] Obsessive Checking</title>
       <link>https://nusgreyhats.org/posts/writeups/tamuctf-2022-obsessive-checking/</link>
