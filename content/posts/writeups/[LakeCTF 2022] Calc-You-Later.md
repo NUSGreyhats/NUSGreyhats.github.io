@@ -1,7 +1,7 @@
 ---
 author: "Jh123x"
 title: "[LakeCTF Finals 2022] Calc-You-Later"
-date: 2022-11-07T12:38:31+08:00
+date: 2022-11-07T00:00:00+08:00
 description: "LakeCTF Finals 2022: Calc-You-Later (Web) writeup."
 tags: ["writeups", "ctf", "web"]
 ShowBreadcrumbs: False
