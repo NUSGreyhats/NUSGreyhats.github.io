@@ -9,20 +9,11 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 27 Sep 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>base injection</title>
-      <link>https://nusgreyhats.org/tags/base-injection/</link>
-      <pubDate>Tue, 27 Sep 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://nusgreyhats.org/tags/base-injection/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ctf</title>
       <link>https://nusgreyhats.org/tags/ctf/</link>
-      <pubDate>Tue, 27 Sep 2022 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0800</pubDate>
       
       <guid>https://nusgreyhats.org/tags/ctf/</guid>
       <description></description>
@@ -31,7 +22,7 @@
     <item>
       <title>web</title>
       <link>https://nusgreyhats.org/tags/web/</link>
-      <pubDate>Tue, 27 Sep 2022 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0800</pubDate>
       
       <guid>https://nusgreyhats.org/tags/web/</guid>
       <description></description>
@@ -40,9 +31,18 @@
     <item>
       <title>writeups</title>
       <link>https://nusgreyhats.org/tags/writeups/</link>
-      <pubDate>Tue, 27 Sep 2022 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0800</pubDate>
       
       <guid>https://nusgreyhats.org/tags/writeups/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>base injection</title>
+      <link>https://nusgreyhats.org/tags/base-injection/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://nusgreyhats.org/tags/base-injection/</guid>
       <description></description>
     </item>
     
