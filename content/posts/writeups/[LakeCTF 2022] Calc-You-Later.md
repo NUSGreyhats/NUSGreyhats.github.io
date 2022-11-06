@@ -11,7 +11,7 @@ ShowBreadcrumbs: False
 
 Last weekend was LakeCTF finals. This was my first time participating in a CTF finals overseas and had lots of fun!
 
-This is a writeup for the Web: `Calc-You-Later` challenge which was solved together by Devesh and I from NUS Greyhats.
+This is a writeup for the Web: `Calc-You-Later` challenge which was solved together by [Devesh](https://linkedin.com/in/devesh-logendran) and I from NUS Greyhats.
 
 This is an adaptation from the original post [here](http://jh123x.com/blog/2022/lakectf-finals-web-calc-you-later/)
 
