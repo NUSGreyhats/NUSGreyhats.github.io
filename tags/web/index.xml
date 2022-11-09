@@ -9,7 +9,16 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[LakeCTF Finals 2022] CarbonCredit Suisse</title>
+      <link>https://nusgreyhats.org/posts/writeups/lakectf-finals-2022-carboncredit-suisse/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/writeups/lakectf-finals-2022-carboncredit-suisse/</guid>
+      <description>LakeCTF Finals 2022: CarbonCredit Suisse (Web) writeup</description>
+    </item>
+    
     <item>
       <title>[LakeCTF Finals 2022] Calc-You-Later</title>
       <link>https://nusgreyhats.org/posts/writeups/lakectf-finals-2022-calc-you-later/</link>
