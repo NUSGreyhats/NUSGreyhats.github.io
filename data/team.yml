@@ -260,3 +260,26 @@ team:
     linkedin: https://www.linkedin.com/in/halimfelix/
     github: https://github.com/felixhalim
     personal: http://felixhalim.com
+
+  - name: Verity Lim
+    major: Information Security
+    roles:
+      - noob
+      - sysadmin
+      - ctf
+    desc: 1 + 1 = 10
+    linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
+    github: https://github.com/xihzs
+
+  - name: Jin Kai
+    major: Information Security
+    roles:
+      - total noob
+      - pwn
+      - ctf
+    desc: AAAAAAAAAAAAAAAAAAAAAAA
+    twitter: https://twitter.com/elma_ios
+    linkedin: https://www.linkedin.com/in/jin-kai-9a7368120/
+    github: https://github.com/xihzs
+    personal: https://caprinux.com
+
