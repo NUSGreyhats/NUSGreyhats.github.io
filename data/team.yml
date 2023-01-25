@@ -283,3 +283,12 @@ team:
     github: https://github.com/xihzs
     personal: https://caprinux.com
 
+  - name: Devesh Logendran
+    major: Information Security
+    roles:
+      - web
+      - ctf
+      - sleep
+    desc: I hate when SHELLS die
+    linkedin: https://www.linkedin.com/in/devesh-logendran/
+    personal: https://deveshl.github.io/
