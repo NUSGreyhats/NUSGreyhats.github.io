@@ -1,45 +1,9 @@
 team:
-  - name: Mu Changrui
-    major: Information Security
-    role:
-      - ctf
-      - crypto
-      - logistics
-      - privacy
-    desc: Anything c4n be broken, it's a matter of O(time).
-    linkedin: https://www.linkedin.com/in/%E6%98%8C%E7%91%9E-%E6%AF%8D-69628a1b8/
-    github: https://github.com/Ch40gRv1-Mu
-
-  - name: Debbie Tan
-    major: Information Security
-    roles:
-      - ctf
-      - stego
-      - logistics
-      - design
-    desc: I can access your accounts if you give me your passwords.
-    twitter: #
-    linkedin: https://www.linkedin.com/in/debbietanjm/
-    github: #
-    personal: #
-
-  - name: Wen Junhua
-    major: Computer Science
-    roles:
-      - ctf
-      - web
-      - publicity
-    desc: ++[++++>---<]>++.[--->+++++<]>.+[++>---<]>++.++++++[->++<]>.[-->+<]>--.+++[->++<]>.-------.-[--->+<]>--.-[--->++<]>-.---------------.[--->+<]>++.-[--->++<]>+.-[-->+<]>-----..+..
-    linkedin: https://www.linkedin.com/in/junhua-wen-718880137/
-    github: https://github.com/Jh123x
-    personal: https://jh123x.github.io/
-
   - name: Tan Kel Zin
     major: Computer Science
     roles:
-      - ctf
       - crypto
-      - f&b
+      - exco
     desc: f(x) - f(y) ≡ 0 (mod n)
     linkedin: https://www.linkedin.com/in/kelzin/
     github: https://github.com/mechfrog88
@@ -48,74 +12,79 @@ team:
   - name: Tan Weiu Cheng
     major: Computer Science
     roles:
-      - ctf
       - rev
-      - speaker-search
+      - exco
     desc: I am pro.
     twitter: https://twitter.com/davidtan0527
     linkedin: https://www.linkedin.com/in/weiucheng-tan/
     github: https://github.com/DavidTan0527
     personal: https://davidtan0527.github.io
 
+  - name: Sean
+    major: Information Security
+    roles:
+      - forensics
+      - noob
+      - exco
+    desc: living and learning
+    github: https://github.com/seantayyy
+
+  - name: Wu Changjun
+    major: Computer Science
+    roles:
+      - web
+      - noob
+      - exco
+    desc: hello world!
+    linkedin: https://www.linkedin.com/in/changjun-wu-7a4136202/
+    github: https://github.com/Ugholaf
+
+  - name: Arnav Aggarwal
+    major: Computer Science
+    roles:
+      - web
+      - exco
+    desc: Due today, do today.
+    linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
+    github: https://github.com/arnav-ag
+
+  - name: Chandrasekaran Akash
+    major: Computer Science
+    roles:
+      - pwn
+      - cant-guess
+      - exco
+    desc: why sleep when u can pwn?
+    twitter: https://twitter.com/Enigmatrix2000
+    linkedin: https://www.linkedin.com/in/chandrasekaran-akash-50aa34ba/
+    github: https://github.com/Enigmatrix
+    personal: https://enigmatrix.me
+
+  - name: Wen Junhua
+    major: Computer Science
+    roles:
+      - web
+      - exco
+    desc: ++[++++>---<]>++.[--->+++++<]>.+[++>---<]>++.++++++[->++<]>.[-->+<]>--.+++[->++<]>.-------.-[--->+<]>--.-[--->++<]>-.---------------.[--->+<]>++.-[--->++<]>+.-[-->+<]>-----..+..
+    linkedin: https://www.linkedin.com/in/junhua-wen-718880137/
+    github: https://github.com/Jh123x
+    personal: https://jh123x.github.io/
+
   - name: Daniel Lim Wee Soong
     major: Computer Engineering
     roles:
-      - ctf
       - rev
       - cant-guess
+      - exco
     desc: Hello, friend.
     twitter: https://twitter.com/daniellimws
     linkedin: https://www.linkedin.com/feed/
     github: https://github.com/daniellimws
     personal: https://daniao.ws
 
-  - name: Yang Chenglong
-    major: Information Security
-    roles:
-      - ctf
-      - pentesting
-      - noob
-    desc: Log on. Hack in. Go anywhere. Steal everything.
-    twitter: https://twitter.com/5p4d37
-    linkedin: https://www.linkedin.com/in/chenglong-yang-033761168/
-    github: https://github.com/A11riseforme
-    personal: https://d.oulove.me
-
-  - name: Chan Jian Hao
-    major: Information Security
-    roles:
-      - ctf
-      - publicity
-      - hungry
-    desc: (づ ◕‿◕ )づ
-    twitter: https://twitter.com/xChanJianHao
-    linkedin: https://www.linkedin.com/in/chanjianhao
-    github: https://github.com/ChanJianHao
-
-  - name: Lee Tze Han
-    major: Computer Engineering
-    roles:
-      - ctf
-      - rev
-      - afk
-    desc: "Break my own code but can't break code in CTF :("
-    twitter: https://twitter.com/qihaoooooo
-    linkedin: https://www.linkedin.com/in/lee-tze-han-84b6b477/
-    github: https://github.com/ltzehan
-
-  - name: Ye Guoquan
-    major: Information Security
-    roles:
-      - ctf
-      - pwn
-    desc: "eat, sleep, pwn, repeat"
-    linkedin: https://www.linkedin.com/in/ye-guoquan-2b992b1b4/
-    github: https://github.com/tygq13
-
   - name: Jonathan Lee
     major: Computer Science
     roles:
-      - ctf
       - publicity
       - noob
     desc: "u can find me at 127.0.0.1 \n and there are two jonathan lees too, have fun guessing who is who :)"
@@ -126,9 +95,7 @@ team:
   - name: Alissa
     major: Computer Science
     roles:
-      - ctf
       - stego
-      - publicity
     desc: (ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧
     twitter: https://twitter.com/yarmantho
     linkedin: https://www.linkedin.com/in/alissayarmantho/
@@ -137,97 +104,26 @@ team:
   - name: Tan Jia Le
     major: Information Security
     roles:
-      - ctf
       - web
       - pentesting
-      - speaker-email
     desc: Just because you can, doesn't mean you should?
     twitter: https://twitter.com/rizem0n
     linkedin: https://www.linkedin.com/in/tan-jia-le-/
     github: https://github.com/rizemon
     personal: https://rizemon.github.io/
 
-  - name: Arnav Aggarwal
-    major: Computer Science
-    roles:
-      - ctf
-      - web
-    desc: Due today, do today.
-    linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
-    github: https://github.com/arnav-ag
-
-  - name: Chandrasekaran Akash
-    major: Computer Science
-    roles:
-      - ctf
-      - pwn
-      - cant-guess
-    desc: why sleep when u can pwn?
-    twitter: https://twitter.com/Enigmatrix2000
-    linkedin: https://www.linkedin.com/in/chandrasekaran-akash-50aa34ba/
-    github: https://github.com/Enigmatrix
-    personal: https://enigmatrix.me
-
-  - name: Teo Jia Rong
-    major: Information Security
-    roles:
-      - logistics
-    desc: Will food for work.
-    linkedin: https://www.linkedin.com/in/teojiarong/
-
-  - name: Brandon Chong
-    major: Information Security
-    roles:
-      - ctf
-      - web
-      - publicity
-    desc: will code for katsudon
-    linkedin: https://www.linkedin.com/in/brandoncjh/
-    github: https://github.com/brandoncjh
-
-  - name: Wu Changjun
-    major: Computer Science
-    roles:
-      - ctf
-      - web
-      - noob
-    desc: hello world!
-    linkedin: https://www.linkedin.com/in/changjun-wu-7a4136202/
-    github: https://github.com/Ugholaf
-
-  - name: Sean
-    major: Information Security
-    roles:
-      - ctf
-      - forensics
-      - noob
-    desc: living and learning
-    github: https://github.com/seantayyy
-
   - name: Li Bailin
     major: Computer Science
     roles:
-      - ctf
       - re
     desc: reenigne esrever
     linkedin: https://www.linkedin.com/in/li-bailin/
     github: https://github.com/rootkie
     personal: https://rootkiddie.com/
 
-  - name: Ang Yong Liang
-    major: Computer Science
-    roles:
-      - ctf
-      - web
-      - newbie
-    desc: 7b 53 4c 45 45 50 49 4e 47 2e 2e 2e 53 4c 45 45 50 49 4e 47 2e 2e 2e 7d
-    linkedin: https://www.linkedin.com/in/yongliangang/
-    github: https://github.com/yl-ang
-
   - name: Hubertus Adhy Pratama Setiawan
     major: Information Security
     roles:
-      - ctf
       - pwn
     desc: I pwn, therefore I am.
     linkedin: https://www.linkedin.com/in/hubertus-adhy-pratama-setiawan/
@@ -241,21 +137,10 @@ team:
     linkedin: https://www.linkedin.com/in/foongxinyu/
     github: https://github.com/Uxinnn
 
-  - name: Teo Chuan Kai
-    major: Information Security
-    roles:
-      - not sure?
-    desc: Life on autopilot
-    linkedin: https://www.linkedin.com/in/teochuankai/
-    github: https://github.com/exetr
-    personal: https://ckteo.com
-
   - name: Felix Halim
     major: Information Security
     roles:
-      - ctf
       - forensics
-      - logistics
     desc: never settle
     linkedin: https://www.linkedin.com/in/halimfelix/
     github: https://github.com/felixhalim
@@ -266,7 +151,6 @@ team:
     roles:
       - noob
       - sysadmin
-      - ctf
     desc: 1 + 1 = 10
     linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
     github: https://github.com/xihzs
@@ -276,7 +160,6 @@ team:
     roles:
       - total noob
       - pwn
-      - ctf
     desc: AAAAAAAAAAAAAAAAAAAAAAA
     twitter: https://twitter.com/elma_ios
     linkedin: https://www.linkedin.com/in/jin-kai-9a7368120/
@@ -287,7 +170,6 @@ team:
     major: Information Security
     roles:
       - web
-      - ctf
       - sleep
     desc: I hate when SHELLS die
     linkedin: https://www.linkedin.com/in/devesh-logendran/
