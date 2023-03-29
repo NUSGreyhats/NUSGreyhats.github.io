@@ -174,3 +174,13 @@ team:
     desc: I hate when SHELLS die
     linkedin: https://www.linkedin.com/in/devesh-logendran/
     personal: https://deveshl.github.io/
+
+  - name: Nguyen Quang Vinh
+    major: Computer Science
+    roles:
+      - crypto
+      - noob 
+    desc: Xin chao moi nguoi!
+    linkedin: https://www.linkedin.com/in/vinh-nguyen-447755130/
+    personal: https://icewizard4902.github.io/ 
+  
