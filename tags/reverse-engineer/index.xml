@@ -9,6 +9,7 @@
       <link>https://nusgreyhats.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Mon, 18 Apr 2022 12:38:31 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/reverse-engineer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[TamuCTF 2022] Obsessive Checking</title>
