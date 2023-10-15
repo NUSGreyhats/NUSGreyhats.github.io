@@ -10,7 +10,83 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SecWed #111023</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1110/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1110/</guid>
+      <description>Talk Title: Hacking IoT devices: A story of stealing fingerprints
+Description IoT devices are often resource-constrained, so we may forego certain security features because they aren&amp;rsquo;t essential to the use-case. But what if the authentication mechanisms in these devices are used in other, more critical scenarios as well? Discover how smart devices can be turned into wireless biometric thieves in this talk which explores a combination of cryptography, hardware hacking and reverse engineering.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #200923</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2324s1/sw2009/</link>
+      <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2324s1/sw2009/</guid>
+      <description>Talk Title: ARM Confidential Compute Architecture (ARM CCA)
+Description ARM CCA represents the latest effort of ARM in pursuing general confidential computing. While ARM has provided a Formal Security Verification (FSV) simulation platform to help develop and test applications on ARMv9 platform, there lacks a Quick Emulator (QEMU) based simulation platform for better debugging. Upon this request, we developed a QEMU-based CCA simulation platform to more easily identify design faults in Realm applications.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #050423</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0504/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0504/</guid>
+      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: SQLancer and Intramorphic Testing
+Speaker Dr Manuel Rigger is an Assistant Professor leading the TEST Lab at NUS. He works on software reliability, data-centric systems, and programming language implementation. Prior to joining NUS, Manuel was a postdoc at ETH Zurich, Switzerland. He completed his PhD at Johannes Kepler University Linz, Austria.
+Talk 2: 1945Hrs - 2030Hrs Talk Title: The IKIGAI of Cyber Security Research</description>
+    </item>
+    
+    <item>
+      <title>SecWed #150323</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1603/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1603/</guid>
+      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: EDGe PS (Enterprise Data Platforms, GIS and Engineering &amp;amp; Production Services)
+Description We will cover below horizontal programs that support Cybersecurity organizations. Please note that we are a supporting function to GIS. So our focus is more on how we enable our GIS partners to do their job.
+Portfolio Management Vulnerability Risk Management. Data Center Resiliency Infrastructure Engagement, Services &amp;amp; Infrastructure Delivery GIS Application and Infrastructure production services Speaker Uma Telidevara</description>
+    </item>
+    
+    <item>
+      <title>SecWed #160223</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1602/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1602/</guid>
+      <description>Title: Intermediate Web Hacking Techniques
+Description In this workshop, we&amp;rsquo;ll look at three classes of web vulnerabilities:
+Server-side Template Injection Insecure Deserialization JavaScript Prototype Pollution Demos and mini-challenges will be provided for you to try your hand at exploiting these vulnerabilities.
+Setup A browser Docker (optional, if you would like to run demos locally) </description>
+    </item>
+    
+    <item>
+      <title>SecWed #090223</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0902/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0902/</guid>
+      <description>Title: Introduction to Computer Networking &amp;amp; Wireshark workshop.
+Description Ever wondered how information travels from your computer to the internet and back?
+Join us in this beginner-level session, where we will share the basics of computer networking! Using a program called Wireshark, you will be able to see firsthand what happens when you send some data to the internet. Additionally, we will also be doing some fun networking forensics-related activities!</description>
+    </item>
+    
+    <item>
+      <title>SecWed #010223</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0102/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0102/</guid>
+      <description>Title: Tricks to RE fast
+Description In this workshop, we will look at some commonly seen patterns in decompiler-generated C pseudocode. By being familiar with these patterns, we can very quickly predict what a piece of code does when we see something similar the next time.
+Setup: Please download Ghidra (needs Java to run). If you wish to use other decompilers (e.g. IDA), feel free to do so. However, there might be slight differences in the decompiler output.</description>
+    </item>
+    
     <item>
       <title>SecWed #260123</title>
       <link>https://nusgreyhats.org/posts/secweds/ay2223s2/sw2601/</link>
