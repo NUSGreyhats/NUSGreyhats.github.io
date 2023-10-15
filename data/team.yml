@@ -171,4 +171,13 @@ team:
     linkedin: https://www.linkedin.com/in/halimfelix/
     github: https://github.com/felixhalim
     personal: http://felixhalim.com
+    
+  - name: Chua Yao Xuan
+    major: Computer Science
+    roles:
+      - exco
+      - publicity
+      - noob
+    desc: I like cats
+    github: https://github.com/cyaoxuan
   
