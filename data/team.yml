@@ -98,16 +98,6 @@ team:
     github: https://github.com/Enigmatrix
     personal: https://enigmatrix.me
 
-  - name: Wen Junhua
-    major: Computer Science
-    roles:
-      - web
-      - exco
-    desc: ++[++++>---<]>++.[--->+++++<]>.+[++>---<]>++.++++++[->++<]>.[-->+<]>--.+++[->++<]>.-------.-[--->+<]>--.-[--->++<]>-.---------------.[--->+<]>++.-[--->++<]>+.-[-->+<]>-----..+..
-    linkedin: https://www.linkedin.com/in/junhua-wen-718880137/
-    github: https://github.com/Jh123x
-    personal: https://jh123x.github.io/
-
   - name: Daniel Lim Wee Soong
     major: Computer Engineering
     roles:
@@ -147,17 +137,6 @@ team:
     twitter: https://twitter.com/yarmantho
     linkedin: https://www.linkedin.com/in/alissayarmantho/
     github: https://github.com/alissayarmantho
-
-  - name: Tan Jia Le
-    major: Information Security
-    roles:
-      - web
-      - pentesting
-    desc: Just because you can, doesn't mean you should?
-    twitter: https://twitter.com/rizem0n
-    linkedin: https://www.linkedin.com/in/tan-jia-le-/
-    github: https://github.com/rizemon
-    personal: https://rizemon.github.io/
 
   - name: Li Bailin
     major: Computer Science
