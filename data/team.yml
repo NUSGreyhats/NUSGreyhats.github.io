@@ -1,24 +1,31 @@
 team:
-  - name: Tan Kel Zin
-    major: Computer Science
+  - name: Devesh Logendran
+    major: Information Security
     roles:
-      - crypto
       - exco
-    desc: f(x) - f(y) ≡ 0 (mod n)
-    linkedin: https://www.linkedin.com/in/kelzin/
-    github: https://github.com/mechfrog88
-    personal: https://mechfrog88.github.io/
+      - web
+      - sleep
+    desc: I hate when SHELLS die
+    linkedin: https://www.linkedin.com/in/devesh-logendran/
+    personal: https://deveshl.github.io/
 
-  - name: Tan Weiu Cheng
-    major: Computer Science
+  - name: Ariana Goh
+    major: Communications & New Media
     roles:
-      - rev
       - exco
-    desc: I am pro.
-    twitter: https://twitter.com/davidtan0527
-    linkedin: https://www.linkedin.com/in/weiucheng-tan/
-    github: https://github.com/DavidTan0527
-    personal: https://davidtan0527.github.io
+      - 🍸
+    desc: who free wednesday night
+    personal: https://ariana1729.github.io/
+
+  - name: Verity Lim
+    major: Information Security
+    roles:
+      - noob
+      - sysadmin
+      - 📢
+    desc: 1 + 1 = 10
+    linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
+    github: https://github.com/xihzs
 
   - name: Sean
     major: Information Security
@@ -39,6 +46,27 @@ team:
     linkedin: https://www.linkedin.com/in/changjun-wu-7a4136202/
     github: https://github.com/Ugholaf
 
+  - name: Jin Kai
+    major: Information Security
+    roles:
+      - exco
+      - total noob
+      - pwn
+    desc: AAAAAAAAAAAAAAAAAAAAAAA
+    twitter: https://twitter.com/elma_ios
+    linkedin: https://www.linkedin.com/in/jin-kai-9a7368120/
+    github: https://github.com/xihzs
+    personal: https://caprinux.com
+
+  - name: Nguyen Quang Vinh
+    major: Computer Science
+    roles:
+      - crypto
+      - noob 
+    desc: Xin chao moi nguoi!
+    linkedin: https://www.linkedin.com/in/vinh-nguyen-447755130/
+    personal: https://icewizard4902.github.io/ 
+
   - name: Arnav Aggarwal
     major: Computer Science
     roles:
@@ -47,7 +75,17 @@ team:
     desc: Due today, do today.
     linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
     github: https://github.com/arnav-ag
-
+    
+  - name: Tan Kel Zin
+    major: Computer Science
+    roles:
+      - crypto
+      - exco
+    desc: f(x) - f(y) ≡ 0 (mod n)
+    linkedin: https://www.linkedin.com/in/kelzin/
+    github: https://github.com/mechfrog88
+    personal: https://mechfrog88.github.io/
+    
   - name: Chandrasekaran Akash
     major: Computer Science
     roles:
@@ -75,13 +113,22 @@ team:
     roles:
       - rev
       - cant-guess
-      - exco
     desc: Hello, friend.
     twitter: https://twitter.com/daniellimws
     linkedin: https://www.linkedin.com/feed/
     github: https://github.com/daniellimws
     personal: https://daniao.ws
 
+  - name: Tan Weiu Cheng
+    major: Computer Science
+    roles:
+      - rev
+    desc: I am pro.
+    twitter: https://twitter.com/davidtan0527
+    linkedin: https://www.linkedin.com/in/weiucheng-tan/
+    github: https://github.com/DavidTan0527
+    personal: https://davidtan0527.github.io
+    
   - name: Jonathan Lee
     major: Computer Science
     roles:
@@ -145,42 +192,4 @@ team:
     linkedin: https://www.linkedin.com/in/halimfelix/
     github: https://github.com/felixhalim
     personal: http://felixhalim.com
-
-  - name: Verity Lim
-    major: Information Security
-    roles:
-      - noob
-      - sysadmin
-    desc: 1 + 1 = 10
-    linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
-    github: https://github.com/xihzs
-
-  - name: Jin Kai
-    major: Information Security
-    roles:
-      - total noob
-      - pwn
-    desc: AAAAAAAAAAAAAAAAAAAAAAA
-    twitter: https://twitter.com/elma_ios
-    linkedin: https://www.linkedin.com/in/jin-kai-9a7368120/
-    github: https://github.com/xihzs
-    personal: https://caprinux.com
-
-  - name: Devesh Logendran
-    major: Information Security
-    roles:
-      - web
-      - sleep
-    desc: I hate when SHELLS die
-    linkedin: https://www.linkedin.com/in/devesh-logendran/
-    personal: https://deveshl.github.io/
-
-  - name: Nguyen Quang Vinh
-    major: Computer Science
-    roles:
-      - crypto
-      - noob 
-    desc: Xin chao moi nguoi!
-    linkedin: https://www.linkedin.com/in/vinh-nguyen-447755130/
-    personal: https://icewizard4902.github.io/ 
   
