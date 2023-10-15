@@ -10,7 +10,51 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SecWed #260123</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s2/sw2601/</link>
+      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw2601/</guid>
+      <description>Title: Intro to Heap Pwn (Part 2)
+Description This is a continuation of the Heap Pwn 1 workshop. We will be going through how to setup a Dockerized environment for heap pwn so that we can target different libcs. We will also cover some tricks we can use to defeat mitigations and how our foundational knowledge can be used to solve more complicated heap problems. There will be more hands-on sessions :)</description>
+    </item>
+    
+    <item>
+      <title>SecWed #180123</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1801/</link>
+      <pubDate>Wed, 18 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1801/</guid>
+      <description>Title: Intro to Heap Pwn (Part 1)
+Description How often do you use new in C++, and malloc in C? The heap is used for dynamically allocated memory supporting those operations, and we will be breaking the heap in this workshop. We will cover the basic mechanics of how the glibc malloc/free works, and various underlying structures that are used to track memory.
+We will also cover some basic attacks against vulnerable applications, aided by pwndbg.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #021122</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s1/sw0211/</link>
+      <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s1/sw0211/</guid>
+      <description>Talk 1: 1900Hrs - 1945Hrs Title: Introduction to System Defence as discipline
+Speaker Bio Kalai is an engineering graduate and Masters in Business Administration with 18 years of work experience. She worked as a software developer before transitioning to Cyber Security and is SME for Application Monitoring and Response function in APAC.
+Talk 2: 1945Hrs - 2030Hrs Title: Vulnerability Assessment and Penetration Testing (VAPT) in the Software Development Lifecycle – Why it is important to have VAPT programs</description>
+    </item>
+    
+    <item>
+      <title>SecWed #191022</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2223s1/sw1910/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2223s1/sw1910/</guid>
+      <description>Description The workshop will cover:
+SQL Injection (SQLi) Cross-Site Scripting (XSS) Local File Injection (LFI) OS Command Injection (If there is time) There will be 3 main components for each section:
+What is the vulnerability At least 1 CTF challenge for you to try out. How to mitigate the vulnerability Requirements before you come for the workshop
+Burp Suite Docker (If you want to host the challenge locally) </description>
+    </item>
+    
     <item>
       <title>SecWed #060422</title>
       <link>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0604/</link>

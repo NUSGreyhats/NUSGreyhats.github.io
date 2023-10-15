@@ -2,19 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nusgreyhats.org/</loc>
+    <lastmod>2023-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/</loc>
+    <lastmod>2023-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/secweds/ay2223s2/sw2601/</loc>
+    <lastmod>2023-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/secweds/</loc>
+    <lastmod>2023-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/</loc>
+    <lastmod>2023-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1801/</loc>
+    <lastmod>2023-01-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/lakectf-finals-2022-carboncredit-suisse/</loc>
     <lastmod>2022-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/tags/ctf/</loc>
-    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/</loc>
-    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/posts/</loc>
-    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/</loc>
     <lastmod>2022-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/tags/web/</loc>
@@ -32,6 +41,12 @@
     <loc>https://nusgreyhats.org/posts/writeups/lakectf-finals-2022-calc-you-later/</loc>
     <lastmod>2022-11-07T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://nusgreyhats.org/posts/secweds/ay2223s1/sw0211/</loc>
+    <lastmod>2022-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/secweds/ay2223s1/sw1910/</loc>
+    <lastmod>2022-10-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/lakectf-quals-2022-people/</loc>
     <lastmod>2022-09-27T00:00:00+08:00</lastmod>
   </url><url>
@@ -45,9 +60,6 @@
     <lastmod>2022-04-18T12:38:31+08:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0604/</loc>
-    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/secweds/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</loc>
