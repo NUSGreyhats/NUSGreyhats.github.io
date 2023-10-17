@@ -172,3 +172,11 @@ team:
     github: https://github.com/felixhalim
     personal: http://felixhalim.com
   
+  - name: Jules Poon
+    major: beep boop
+    roles:
+      - crypto
+      - resident ghost
+    desc: "Remember: it's memcpy(src, dst, sz)"
+    github: https://github.com/JuliaPoo/
+    personal: https://juliapoo.github.io/
