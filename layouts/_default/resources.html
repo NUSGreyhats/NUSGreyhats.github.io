@@ -1,0 +1,37 @@
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+        {{- partial "translation_list.html" . -}}
+    </div>
+    {{- end }}
+</header>
+
+<div>
+    <p>Our own content! 😎</p>
+{{ range .Site.Data.resources.resources }}
+    <h2 class="resources-name">{{ .name | markdownify }}</h2>
+    <p class="resources-desc">{{ .desc | markdownify }}</p>
+    <div class="resources">
+    {{ range .workshops }}
+        <a class="workshop" href="{{ .link }}" target="_blank">
+            <h4>{{ .name }}</h4>
+            <span class="workshop-orgs">{{ .orgs | markdownify }}</span>
+            {{- if isset . "desc" }}
+            <p class="workshop-desc">{{ .desc | markdownify }}</p>
+            {{ end }}
+        </a>
+    {{ end }}
+    </div>
+{{ end }}
+</div>
+
+{{- end }}{{/* end main */}}
