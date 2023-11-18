@@ -1,4 +1,25 @@
 team:
+  - name: Daniel Lim Wee Soong
+    major: Computer Engineering
+    roles:
+      - rev
+      - cant-guess
+    desc: Hello, friend.
+    twitter: https://twitter.com/daniellimws
+    linkedin: https://www.linkedin.com/feed/
+    github: https://github.com/daniellimws
+    personal: https://daniao.ws
+    
+  - name: Wen Junhua
+    major: Computer Science
+    roles:
+      - web
+      - exco
+    desc: ++[++++>---<]>++.[--->+++++<]>.+[++>---<]>++.++++++[->++<]>.[-->+<]>--.+++[->++<]>.-------.-[--->+<]>--.-[--->++<]>-.---------------.[--->+<]>++.-[--->++<]>+.-[-->+<]>-----..+..
+    linkedin: https://www.linkedin.com/in/junhua-wen-718880137/
+    github: https://github.com/Jh123x
+    personal: https://jh123x.github.io/
+
   - name: Mu Changrui
     major: Information Security
     role:
@@ -57,17 +78,6 @@ team:
     linkedin: https://www.linkedin.com/in/lee-tze-han-84b6b477/
     github: https://github.com/ltzehan
 
-  - name: Jonathan Lee
-    major: Computer Science
-    roles:
-      - ctf
-      - publicity
-      - noob
-    desc: "u can find me at 127.0.0.1 \n and there are two jonathan lees too, have fun guessing who is who :)"
-    linkedin: https://www.linkedin.com/in/jon-lee-jy/
-    github: https://github.com/yeppog
-    twitter: https://twitter.com/yeppog
-
   - name: Teo Jia Rong
     major: Information Security
     roles:
@@ -85,16 +95,6 @@ team:
     linkedin: https://www.linkedin.com/in/brandoncjh/
     github: https://github.com/brandoncjh
 
-  - name: Ang Yong Liang
-    major: Computer Science
-    roles:
-      - ctf
-      - web
-      - newbie
-    desc: 7b 53 4c 45 45 50 49 4e 47 2e 2e 2e 53 4c 45 45 50 49 4e 47 2e 2e 2e 7d
-    linkedin: https://www.linkedin.com/in/yongliangang/
-    github: https://github.com/yl-ang
-
   - name: Teo Chuan Kai
     major: Information Security
     roles:
@@ -104,22 +104,21 @@ team:
     github: https://github.com/exetr
     personal: https://ckteo.com
 
-  - name: Wen Junhua
+  - name: Li Bailin
     major: Computer Science
     roles:
-      - web
-      - exco
-    desc: ++[++++>---<]>++.[--->+++++<]>.+[++>---<]>++.++++++[->++<]>.[-->+<]>--.+++[->++<]>.-------.-[--->+<]>--.-[--->++<]>-.---------------.[--->+<]>++.-[--->++<]>+.-[-->+<]>-----..+..
-    linkedin: https://www.linkedin.com/in/junhua-wen-718880137/
-    github: https://github.com/Jh123x
-    personal: https://jh123x.github.io/
+      - re
+    desc: reenigne esrever
+    linkedin: https://www.linkedin.com/in/li-bailin/
+    github: https://github.com/rootkie
+    personal: https://rootkiddie.com/
 
-  - name: Wen Junhua
-    major: Computer Science
+  - name: Felix Halim
+    major: Information Security
     roles:
-      - web
-      - exco
-    desc: ++[++++>---<]>++.[--->+++++<]>.+[++>---<]>++.++++++[->++<]>.[-->+<]>--.+++[->++<]>.-------.-[--->+<]>--.-[--->++<]>-.---------------.[--->+<]>++.-[--->++<]>+.-[-->+<]>-----..+..
-    linkedin: https://www.linkedin.com/in/junhua-wen-718880137/
-    github: https://github.com/Jh123x
-    personal: https://jh123x.github.io/
+      - forensics
+    desc: never settle
+    linkedin: https://www.linkedin.com/in/halimfelix/
+    github: https://github.com/felixhalim
+    personal: http://felixhalim.com
+
