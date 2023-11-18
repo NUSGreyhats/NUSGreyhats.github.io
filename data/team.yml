@@ -114,27 +114,6 @@ team:
     github: https://github.com/Enigmatrix
     personal: https://enigmatrix.me
 
-  - name: Daniel Lim Wee Soong
-    major: Computer Engineering
-    roles:
-      - rev
-      - cant-guess
-    desc: Hello, friend.
-    twitter: https://twitter.com/daniellimws
-    linkedin: https://www.linkedin.com/feed/
-    github: https://github.com/daniellimws
-    personal: https://daniao.ws
-
-  - name: Tan Weiu Cheng
-    major: Computer Science
-    roles:
-      - rev
-    desc: I am pro.
-    twitter: https://twitter.com/davidtan0527
-    linkedin: https://www.linkedin.com/in/weiucheng-tan/
-    github: https://github.com/DavidTan0527
-    personal: https://davidtan0527.github.io
-    
   - name: Jonathan Lee
     major: Computer Science
     roles:
@@ -145,6 +124,16 @@ team:
     github: https://github.com/yeppog
     twitter: https://twitter.com/yeppog
 
+  - name: Tan Weiu Cheng
+    major: Computer Science
+    roles:
+      - rev
+    desc: I am pro.
+    twitter: https://twitter.com/davidtan0527
+    linkedin: https://www.linkedin.com/in/weiucheng-tan/
+    github: https://github.com/DavidTan0527
+    personal: https://davidtan0527.github.io
+
   - name: Alissa
     major: Computer Science
     roles:
@@ -153,40 +142,6 @@ team:
     twitter: https://twitter.com/yarmantho
     linkedin: https://www.linkedin.com/in/alissayarmantho/
     github: https://github.com/alissayarmantho
-
-  - name: Li Bailin
-    major: Computer Science
-    roles:
-      - re
-    desc: reenigne esrever
-    linkedin: https://www.linkedin.com/in/li-bailin/
-    github: https://github.com/rootkie
-    personal: https://rootkiddie.com/
-
-  - name: Hubertus Adhy Pratama Setiawan
-    major: Information Security
-    roles:
-      - pwn
-    desc: I pwn, therefore I am.
-    linkedin: https://www.linkedin.com/in/hubertus-adhy-pratama-setiawan/
-    github: https://github.com/adhy-p
-
-  - name: Foong Xin Yu
-    major: Computer Engineering
-    roles:
-      - cyberai
-    desc: Hi
-    linkedin: https://www.linkedin.com/in/foongxinyu/
-    github: https://github.com/Uxinnn
-
-  - name: Felix Halim
-    major: Information Security
-    roles:
-      - forensics
-    desc: never settle
-    linkedin: https://www.linkedin.com/in/halimfelix/
-    github: https://github.com/felixhalim
-    personal: http://felixhalim.com
 
   - name: Jules Poon
     major: beep boop
