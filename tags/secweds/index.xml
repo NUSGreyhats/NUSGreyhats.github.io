@@ -10,7 +10,28 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/secweds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SecWed #151123</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1511/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1511/</guid>
+      <description>Talk Title: Practical Application of Fuzzing &amp;ndash; Finding CVE-2021-3376
+Download Slides
+Description Yi Tian is a current member of NUS Greyhats, and a former intern of Star Labs. During his internship with Star Labs, he wrote fuzzers and harnesses and found an information disclosure vulnerability in Windows Media Foundation, CVE-2021-33760. Fuzzing is often misunderstood and through this presentation, we hope to enlighten you on just what goes into building a harness and running a fuzzer.</description>
+    </item>
+    
+    <item>
+      <title>SecWed #181023</title>
+      <link>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1810/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1810/</guid>
+      <description>Talk Title: From Software Engineer to Security Leadership, sharing insights and perspectives from my career journey to help you with yours
+Description Leading up to his current post as Global Head of Cyber Security Services at Crypto.com, Mr Tim Yip has had an impressive career serving in global banks, fortune 500 technology companies, the public service and the military. Some of his past roles include Vice President, Global Head of Intrusion Forensics at JP Morgan.</description>
+    </item>
+    
     <item>
       <title>SecWed #111023</title>
       <link>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1110/</link>

@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nusgreyhats.org/</loc>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/</loc>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1511/</loc>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/secweds/</loc>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/tags/</loc>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1810/</loc>
+    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nusgreyhats.org/posts/writeups/ductf-2023-encrypted-mail/</loc>
     <lastmod>2023-10-17T00:00:00+08:00</lastmod>
   </url><url>
@@ -11,22 +29,10 @@
     <loc>https://nusgreyhats.org/tags/ctf/</loc>
     <lastmod>2023-10-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://nusgreyhats.org/</loc>
-    <lastmod>2023-10-17T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/posts/</loc>
-    <lastmod>2023-10-17T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/</loc>
-    <lastmod>2023-10-17T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://nusgreyhats.org/tags/writeups/</loc>
     <lastmod>2023-10-17T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1110/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nusgreyhats.org/tags/secweds/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nusgreyhats.org/posts/secweds/ay2324s1/sw2009/</loc>

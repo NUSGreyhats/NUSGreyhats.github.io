@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Oct 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>secweds</title>
+      <link>https://nusgreyhats.org/tags/secweds/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nusgreyhats.org/tags/secweds/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>crypto</title>
       <link>https://nusgreyhats.org/tags/crypto/</link>
@@ -35,15 +44,6 @@
       <pubDate>Tue, 17 Oct 2023 00:00:00 +0800</pubDate>
       
       <guid>https://nusgreyhats.org/tags/writeups/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>secweds</title>
-      <link>https://nusgreyhats.org/tags/secweds/</link>
-      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://nusgreyhats.org/tags/secweds/</guid>
       <description></description>
     </item>
     
