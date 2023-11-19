@@ -37,10 +37,12 @@
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
+{{- $pages = where $pages "Params.secweds" "!=" true }}
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- $pages = where $pages "Params.secweds" "!=" true }}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
@@ -61,6 +63,7 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
+{{- if or (ne $.RelPermalink "/") (ne (.Param "secweds") true) }}
 <article class="{{ $class }}">
   {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
@@ -82,6 +85,7 @@
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
+{{- end }}
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}
