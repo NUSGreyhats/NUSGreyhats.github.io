@@ -43,6 +43,7 @@
     /* border: 2px solid; */
     border-radius: 8px;
     background: var(--entry);
+    background-color: var(--tertiary);
 }
 
 .workshop-orgs {
