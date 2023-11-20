@@ -42,7 +42,7 @@ date: <session date> # e.g. "2021-09-15"
 tags: ["secweds"]
 ShowBreadcrumbs: False
 HideSummary: True
-secweds: True
+hiddenInHomeList: True
 ---
 
 ### Talk 1: 1900Hrs - 1945Hrs

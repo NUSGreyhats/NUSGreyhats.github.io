@@ -10,7 +10,7 @@
 </header>
 
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $secweds := where $pages "Params.secweds" true  }}
+{{- $secweds := where $pages "Params.tags" "intersect" (slice "secweds")  }}
 
 {{- if .Site.Params.ShowAllPagesInArchive }}
 {{- $pages = site.RegularPages }}
