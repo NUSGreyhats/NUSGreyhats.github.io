@@ -62,10 +62,10 @@ team:
     major: Computer Science
     roles:
       - crypto
-      - noob 
+      - noob
     desc: Xin chao moi nguoi!
     linkedin: https://www.linkedin.com/in/vinh-nguyen-447755130/
-    personal: https://icewizard4902.github.io/ 
+    personal: https://icewizard4902.github.io/
 
   - name: Arnav Aggarwal
     major: Computer Science
@@ -75,7 +75,7 @@ team:
     desc: Due today, do today.
     linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
     github: https://github.com/arnav-ag
-    
+
   - name: Tan Kel Zin
     major: Computer Science
     roles:
@@ -85,7 +85,7 @@ team:
     linkedin: https://www.linkedin.com/in/kelzin/
     github: https://github.com/mechfrog88
     personal: https://mechfrog88.github.io/
-    
+
   - name: Chua Yao Xuan
     major: Computer Science
     roles:
@@ -94,7 +94,7 @@ team:
       - noob
     desc: I like cats
     github: https://github.com/cyaoxuan
-    
+
   - name: Cai Ting
     major: Information Security
     roles:
@@ -102,7 +102,7 @@ team:
       - exco
     desc: 🪱
     github: https://github.com/lctxct
-    
+
   - name: Chandrasekaran Akash
     major: Computer Science
     roles:
@@ -162,3 +162,14 @@ team:
     linkedin: https://www.linkedin.com/in/yongliangang/
     github: https://github.com/yl-ang
 
+  - name: Elijah Chia
+    major: Computer Science
+    roles:
+      - ctf
+      - pwn
+      - rev
+      - crypto
+    desc: from pwn import *
+    linkedin: https://www.linkedin.com/in/elijah-chia
+    github: https://github.com/Elijah5399
+    personal: https://elijahchia.gitbook.io/ctf-blog
