@@ -18,9 +18,10 @@
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1511/</guid>
-      <description>Talk Title: Practical Application of Fuzzing &amp;ndash; Finding CVE-2021-3376
-Download Slides
-Description Yi Tian is a current member of NUS Greyhats, and a former intern of Star Labs. During his internship with Star Labs, he wrote fuzzers and harnesses and found an information disclosure vulnerability in Windows Media Foundation, CVE-2021-33760. Fuzzing is often misunderstood and through this presentation, we hope to enlighten you on just what goes into building a harness and running a fuzzer.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Talk Title: Practical Application of Fuzzing &amp;ndash; Finding CVE-2021-3376&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://nusgreyhats.org/secwed-slides/ay2324s1/practical%20application%20of%20fuzzing.pdf&#34;&gt;Download Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Yi Tian is a current member of NUS Greyhats, and a former intern of Star Labs. During his internship with Star Labs, he wrote fuzzers and harnesses and found an information disclosure vulnerability in Windows Media Foundation, CVE-2021-33760. Fuzzing is often misunderstood and through this presentation, we hope to enlighten you on just what goes into building a harness and running a fuzzer. We&amp;rsquo;ll also take a quick look at a real-world CVE discovered using a fuzzer, shedding light on the practical application of fuzzers.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,8 +30,9 @@ Description Yi Tian is a current member of NUS Greyhats, and a former intern of 
       <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1810/</guid>
-      <description>Talk Title: From Software Engineer to Security Leadership, sharing insights and perspectives from my career journey to help you with yours
-Description Leading up to his current post as Global Head of Cyber Security Services at Crypto.com, Mr Tim Yip has had an impressive career serving in global banks, fortune 500 technology companies, the public service and the military. Some of his past roles include Vice President, Global Head of Intrusion Forensics at JP Morgan.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Talk Title: From Software Engineer to Security Leadership, sharing insights and perspectives from my career journey to help you with yours&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Leading up to his current post as Global Head of Cyber Security Services at Crypto.com, Mr Tim Yip has had an impressive career serving in global banks, fortune 500 technology companies, the public service and the military. Some of his past roles include Vice President, Global Head of Intrusion Forensics at JP Morgan. Join us this SecWed to hear more about his career journey!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,8 +50,9 @@ Description Leading up to his current post as Global Head of Cyber Security Serv
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1110/</guid>
-      <description>Talk Title: Hacking IoT devices: A story of stealing fingerprints
-Description IoT devices are often resource-constrained, so we may forego certain security features because they aren&amp;rsquo;t essential to the use-case. But what if the authentication mechanisms in these devices are used in other, more critical scenarios as well? Discover how smart devices can be turned into wireless biometric thieves in this talk which explores a combination of cryptography, hardware hacking and reverse engineering.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Talk Title: Hacking IoT devices: A story of stealing fingerprints&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;IoT devices are often resource-constrained, so we may forego certain security features because they aren&amp;rsquo;t essential to the use-case. But what if the authentication mechanisms in these devices are used in other, more critical scenarios as well? Discover how smart devices can be turned into wireless biometric thieves in this talk which explores a combination of cryptography, hardware hacking and reverse engineering.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,8 +61,9 @@ Description IoT devices are often resource-constrained, so we may forego certain
       <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2324s1/sw2009/</guid>
-      <description>Talk Title: ARM Confidential Compute Architecture (ARM CCA)
-Description ARM CCA represents the latest effort of ARM in pursuing general confidential computing. While ARM has provided a Formal Security Verification (FSV) simulation platform to help develop and test applications on ARMv9 platform, there lacks a Quick Emulator (QEMU) based simulation platform for better debugging. Upon this request, we developed a QEMU-based CCA simulation platform to more easily identify design faults in Realm applications.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Talk Title: ARM Confidential Compute Architecture (ARM CCA)&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;ARM CCA represents the latest effort of ARM in pursuing general confidential computing. While ARM has provided a Formal Security Verification (FSV) simulation platform to help develop and test applications on ARMv9 platform, there lacks a Quick Emulator (QEMU) based simulation platform for better debugging. Upon this request, we developed a QEMU-based CCA simulation platform to more easily identify design faults in Realm applications. The source code is made available for public access.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,9 +72,13 @@ Description ARM CCA represents the latest effort of ARM in pursuing general conf
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0504/</guid>
-      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: SQLancer and Intramorphic Testing
-Speaker Dr Manuel Rigger is an Assistant Professor leading the TEST Lab at NUS. He works on software reliability, data-centric systems, and programming language implementation. Prior to joining NUS, Manuel was a postdoc at ETH Zurich, Switzerland. He completed his PhD at Johannes Kepler University Linz, Austria.
-Talk 2: 1945Hrs - 2030Hrs Talk Title: The IKIGAI of Cyber Security Research</description>
+      <description>&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900Hrs - 1945Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talk Title: SQLancer and Intramorphic Testing&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;speaker&#34;&gt;Speaker&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://manuelrigger.at/&#34;&gt;Dr Manuel Rigger&lt;/a&gt; is an Assistant Professor leading the &lt;a href=&#34;https://nus-test.github.io/&#34;&gt;TEST Lab&lt;/a&gt; at NUS. He works on software reliability, data-centric systems, and programming language implementation. Prior to joining NUS, Manuel was a postdoc at ETH Zurich, Switzerland. He completed his PhD at Johannes Kepler University Linz, Austria.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;talk-2-1945hrs---2030hrs&#34;&gt;Talk 2: 1945Hrs - 2030Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talk Title: The IKIGAI of Cyber Security Research&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,9 +87,20 @@ Talk 2: 1945Hrs - 2030Hrs Talk Title: The IKIGAI of Cyber Security Research</des
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1603/</guid>
-      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: EDGe PS (Enterprise Data Platforms, GIS and Engineering &amp;amp; Production Services)
-Description We will cover below horizontal programs that support Cybersecurity organizations. Please note that we are a supporting function to GIS. So our focus is more on how we enable our GIS partners to do their job.
-Portfolio Management Vulnerability Risk Management. Data Center Resiliency Infrastructure Engagement, Services &amp;amp; Infrastructure Delivery GIS Application and Infrastructure production services Speaker Uma Telidevara</description>
+      <description>&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900Hrs - 1945Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talk Title: EDGe PS (Enterprise Data Platforms, GIS and Engineering &amp;amp; Production Services)&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;We will cover below horizontal programs that support Cybersecurity organizations. Please note that we are a supporting function to GIS. So our focus is more on how we enable our GIS partners to do their job.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Portfolio Management&lt;/li&gt;
+&lt;li&gt;Vulnerability&lt;/li&gt;
+&lt;li&gt;Risk Management.&lt;/li&gt;
+&lt;li&gt;Data Center Resiliency&lt;/li&gt;
+&lt;li&gt;Infrastructure Engagement, Services &amp;amp; Infrastructure Delivery&lt;/li&gt;
+&lt;li&gt;GIS Application and Infrastructure production services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;speaker&#34;&gt;Speaker&lt;/h4&gt;
+&lt;p&gt;Uma Telidevara&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,10 +109,21 @@ Portfolio Management Vulnerability Risk Management. Data Center Resiliency Infra
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1602/</guid>
-      <description>Title: Intermediate Web Hacking Techniques
-Description In this workshop, we&amp;rsquo;ll look at three classes of web vulnerabilities:
-Server-side Template Injection Insecure Deserialization JavaScript Prototype Pollution Demos and mini-challenges will be provided for you to try your hand at exploiting these vulnerabilities.
-Setup A browser Docker (optional, if you would like to run demos locally) </description>
+      <description>&lt;p&gt;&lt;strong&gt;Title: Intermediate Web Hacking Techniques&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;In this workshop, we&amp;rsquo;ll look at three classes of web vulnerabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server-side Template Injection&lt;/li&gt;
+&lt;li&gt;Insecure Deserialization&lt;/li&gt;
+&lt;li&gt;JavaScript Prototype Pollution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Demos and mini-challenges will be provided for you to try your hand at exploiting these vulnerabilities.&lt;/p&gt;
+&lt;h4 id=&#34;setup&#34;&gt;Setup&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;A browser&lt;/li&gt;
+&lt;li&gt;Docker (optional, if you would like to run demos locally)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
     </item>
     
     <item>
@@ -102,9 +132,10 @@ Setup A browser Docker (optional, if you would like to run demos locally) </desc
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0902/</guid>
-      <description>Title: Introduction to Computer Networking &amp;amp; Wireshark workshop.
-Description Ever wondered how information travels from your computer to the internet and back?
-Join us in this beginner-level session, where we will share the basics of computer networking! Using a program called Wireshark, you will be able to see firsthand what happens when you send some data to the internet. Additionally, we will also be doing some fun networking forensics-related activities!</description>
+      <description>&lt;p&gt;&lt;strong&gt;Title:  Introduction to Computer Networking &amp;amp; Wireshark workshop.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Ever wondered how information travels from your computer to the internet and back?&lt;/p&gt;
+&lt;p&gt;Join us in this beginner-level session, where we will share the basics of computer networking! Using a program called Wireshark, you will be able to see firsthand what happens when you send some data to the internet. Additionally, we will also be doing some fun networking forensics-related activities!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -113,9 +144,11 @@ Join us in this beginner-level session, where we will share the basics of comput
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw0102/</guid>
-      <description>Title: Tricks to RE fast
-Description In this workshop, we will look at some commonly seen patterns in decompiler-generated C pseudocode. By being familiar with these patterns, we can very quickly predict what a piece of code does when we see something similar the next time.
-Setup: Please download Ghidra (needs Java to run). If you wish to use other decompilers (e.g. IDA), feel free to do so. However, there might be slight differences in the decompiler output.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Title: Tricks to RE fast&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;In this workshop, we will look at some commonly seen patterns in decompiler-generated C pseudocode. By being familiar with these patterns, we can very quickly predict what a piece of code does when we see something similar the next time.&lt;/p&gt;
+&lt;h4 id=&#34;setup&#34;&gt;Setup:&lt;/h4&gt;
+&lt;p&gt;Please download Ghidra (needs Java to run). If you wish to use other decompilers (e.g. IDA), feel free to do so. However, there might be slight differences in the decompiler output.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -124,8 +157,11 @@ Setup: Please download Ghidra (needs Java to run). If you wish to use other deco
       <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw2601/</guid>
-      <description>Title: Intro to Heap Pwn (Part 2)
-Description This is a continuation of the Heap Pwn 1 workshop. We will be going through how to setup a Dockerized environment for heap pwn so that we can target different libcs. We will also cover some tricks we can use to defeat mitigations and how our foundational knowledge can be used to solve more complicated heap problems. There will be more hands-on sessions :)</description>
+      <description>&lt;p&gt;&lt;strong&gt;Title: Intro to Heap Pwn (Part 2)&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This is a continuation of the Heap Pwn 1 workshop. We will be going through how to setup a Dockerized environment for heap pwn so that we can target different &lt;code&gt;libc&lt;/code&gt;s. We will also
+cover some tricks we can use to defeat mitigations and how our foundational knowledge can
+be used to solve more complicated heap problems. There will be more hands-on sessions :)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -134,9 +170,10 @@ Description This is a continuation of the Heap Pwn 1 workshop. We will be going 
       <pubDate>Wed, 18 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s2/sw1801/</guid>
-      <description>Title: Intro to Heap Pwn (Part 1)
-Description How often do you use new in C++, and malloc in C? The heap is used for dynamically allocated memory supporting those operations, and we will be breaking the heap in this workshop. We will cover the basic mechanics of how the glibc malloc/free works, and various underlying structures that are used to track memory.
-We will also cover some basic attacks against vulnerable applications, aided by pwndbg.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Title: Intro to Heap Pwn (Part 1)&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;How often do you use new in C++, and malloc in C? The heap is used for dynamically allocated memory supporting those operations, and we will be breaking the heap in this workshop. We will cover the basic mechanics of how the glibc malloc/free works, and various underlying structures that are used to track memory.&lt;/p&gt;
+&lt;p&gt;We will also cover some basic attacks against vulnerable applications, aided by pwndbg.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -172,9 +209,13 @@ We will also cover some basic attacks against vulnerable applications, aided by 
       <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s1/sw0211/</guid>
-      <description>Talk 1: 1900Hrs - 1945Hrs Title: Introduction to System Defence as discipline
-Speaker Bio Kalai is an engineering graduate and Masters in Business Administration with 18 years of work experience. She worked as a software developer before transitioning to Cyber Security and is SME for Application Monitoring and Response function in APAC.
-Talk 2: 1945Hrs - 2030Hrs Title: Vulnerability Assessment and Penetration Testing (VAPT) in the Software Development Lifecycle – Why it is important to have VAPT programs</description>
+      <description>&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900Hrs - 1945Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Introduction to System Defence as discipline&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;speaker-bio&#34;&gt;Speaker Bio&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Kalai&lt;/strong&gt; is an engineering graduate and Masters in Business Administration with 18 years of work experience. She worked as a software developer before transitioning to Cyber Security and is SME for Application Monitoring and Response function in APAC.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;talk-2-1945hrs---2030hrs&#34;&gt;Talk 2: 1945Hrs - 2030Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Vulnerability Assessment and Penetration Testing (VAPT) in the Software Development Lifecycle – Why it is important to have VAPT programs&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -183,10 +224,26 @@ Talk 2: 1945Hrs - 2030Hrs Title: Vulnerability Assessment and Penetration Testin
       <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2223s1/sw1910/</guid>
-      <description>Description The workshop will cover:
-SQL Injection (SQLi) Cross-Site Scripting (XSS) Local File Injection (LFI) OS Command Injection (If there is time) There will be 3 main components for each section:
-What is the vulnerability At least 1 CTF challenge for you to try out. How to mitigate the vulnerability Requirements before you come for the workshop
-Burp Suite Docker (If you want to host the challenge locally) </description>
+      <description>&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The workshop will cover:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SQL Injection (SQLi)&lt;/li&gt;
+&lt;li&gt;Cross-Site Scripting (XSS)&lt;/li&gt;
+&lt;li&gt;Local File Injection (LFI)&lt;/li&gt;
+&lt;li&gt;OS Command Injection (If there is time)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There will be 3 main components for each section:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the vulnerability&lt;/li&gt;
+&lt;li&gt;At least 1 CTF challenge for you to try out.&lt;/li&gt;
+&lt;li&gt;How to mitigate the vulnerability&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Requirements before you come for the workshop&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Burp Suite&lt;/li&gt;
+&lt;li&gt;Docker (If you want to host the challenge locally)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;</description>
     </item>
     
     <item>
@@ -213,10 +270,12 @@ Burp Suite Docker (If you want to host the challenge locally) </description>
       <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0604/</guid>
-      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZUpcuirrDsuG9DISlW-hwaCL2-bhpr9--A5
-Slides and materials can be found here.
-Talk 1: 1900Hrs - 1945Hrs Title: A Quick Introduction to Manual Source Code Review
-Description If you are new to web security, or wish to look at open source codebases for 0-days but is unsure of how to, feel free to attend and gain some insights to get started on your own. This sharing is about my experience and bugs discovery while looking at Chamilo LMS.</description>
+      <description>&lt;p&gt;Zoom Link: &lt;a href=&#34;https://nus-sg.zoom.us/meeting/register/tZUpcuirrDsuG9DISlW-hwaCL2-bhpr9--A5&#34;&gt;https://nus-sg.zoom.us/meeting/register/tZUpcuirrDsuG9DISlW-hwaCL2-bhpr9--A5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Slides and materials can be found &lt;a href=&#34;https://github.com/star-sg/Presentations/tree/main/NUS%20GreyHats%20SecWed%20Apr%202021&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900Hrs - 1945Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: A Quick Introduction to Manual Source Code Review&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;If you are new to web security, or wish to look at open source codebases for 0-days but is unsure of how to, feel free to attend and gain some insights to get started on your own. This sharing is about my experience and bugs discovery while looking at &lt;a href=&#34;https://github.com/chamilo/chamilo-lms&#34;&gt;Chamilo LMS&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -225,8 +284,9 @@ Description If you are new to web security, or wish to look at open source codeb
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2303/</guid>
-      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZ0udeCgqDsoGN2Cm1ujlyxZfFrqYhrramAQ
-SecWed Mini-CTF We&amp;rsquo;ve prepared a few challenges to demonstrate some vulnerable code patterns. Join us to try them out!</description>
+      <description>&lt;p&gt;Zoom Link: &lt;a href=&#34;https://nus-sg.zoom.us/meeting/register/tZ0udeCgqDsoGN2Cm1ujlyxZfFrqYhrramAQ&#34;&gt;https://nus-sg.zoom.us/meeting/register/tZ0udeCgqDsoGN2Cm1ujlyxZfFrqYhrramAQ&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;secwed-mini-ctf&#34;&gt;SecWed Mini-CTF&lt;/h3&gt;
+&lt;p&gt;We&amp;rsquo;ve prepared a few challenges to demonstrate some vulnerable code patterns. Join us to try them out!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -235,9 +295,10 @@ SecWed Mini-CTF We&amp;rsquo;ve prepared a few challenges to demonstrate some vu
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0903/</guid>
-      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZMldeupqD0jHNxJAMT96CIwT1fP84Q-xjGo
-Talk 1: 1900Hrs - 1945Hrs Talk Title: How to build an automated Incident Response and Forensics Readiness Framework on AWS
-This talk aims to provide insights into how you can build and automate incident response and forensics on AWS. This talk aims to show some of the problems our customers were facing and how we helped solve them. This use-case was developed for a customer operating a large set of accounts.</description>
+      <description>&lt;p&gt;Zoom Link: &lt;a href=&#34;https://nus-sg.zoom.us/meeting/register/tZMldeupqD0jHNxJAMT96CIwT1fP84Q-xjGo&#34;&gt;https://nus-sg.zoom.us/meeting/register/tZMldeupqD0jHNxJAMT96CIwT1fP84Q-xjGo&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900Hrs - 1945Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talk Title: How to build an automated Incident Response and Forensics Readiness Framework on AWS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This talk aims to provide insights into how you can build and automate incident response and forensics on AWS. This talk aims to show some of the problems our customers were facing and how we helped solve them. This use-case was developed for a customer operating a large set of accounts.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -246,10 +307,19 @@ This talk aims to provide insights into how you can build and automate incident 
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw0902/</guid>
-      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz
-Talk: 7:00pm-7:45pm Title: Breach and Attack Simulation (Security Validation)
-Description How sure are we if our cyber security investments is improving the actual security effectiveness? Find out how Breach and Attack Simulation (Security Validation) continuously validate and measures the effectiveness of cybersecurity controls.
-Speaker Bio Ragavan is a Cyber Security Presales Engineer since 2014. He focuses on cyber solutioning in government space and recently joined Mandiant. Ragavan has involved in different stages of IT/Cyber Security lifecycle throughout his past experience, from developing application, IT administration, operating cyber tools, proposing designing and deploying cyber solutions.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Zoom Link:&lt;/strong&gt; &lt;a href=&#34;https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz&#34;&gt;https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;talk-700pm-745pm&#34;&gt;Talk: 7:00pm-7:45pm&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Breach and Attack Simulation (Security Validation)&lt;/strong&gt;&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/7PZSLcjtfJw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;How sure are we if our cyber security investments is improving the actual security effectiveness? Find out how Breach and Attack Simulation (Security Validation) continuously validate and measures the effectiveness of cybersecurity controls.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -276,10 +346,19 @@ Speaker Bio Ragavan is a Cyber Security Presales Engineer since 2014. He focuses
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s2/sw2601/</guid>
-      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz
-Talk: 7:00pm-7:45pm Title: An introduction to container hacking
-Description Now that containers, Docker and Kubernetes are everywhere, we have to ask the most important question &amp;lsquo;how do we hack them!&amp;rsquo; . This talk will take a look at some of the underpinnings of how these systems work, to give you ideas on where to start and then look at some classic container hacking techniques.
-Speaker Bio Rory has worked in the Information and IT Security arena for the last 21 years in a variety of roles.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Zoom Link:&lt;/strong&gt; &lt;a href=&#34;https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz&#34;&gt;https://nus-sg.zoom.us/meeting/register/tZAqf-qgpzsqE9QRODBP6oPRA0PzkPAaTFFz&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;talk-700pm-745pm&#34;&gt;Talk: 7:00pm-7:45pm&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: An introduction to container hacking&lt;/strong&gt;&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/udT99u-rTOQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Now that containers, Docker and Kubernetes are everywhere, we have to ask the most important question &amp;lsquo;how do we hack them!&amp;rsquo; . This talk will take a look at some of the underpinnings of how these systems work, to give you ideas on where to start and then look at some classic container hacking techniques.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -351,10 +430,13 @@ Speaker Bio Rory has worked in the Information and IT Security arena for the las
       <pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0311/</guid>
-      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZAsduygpjsvEtKjXX3Wdid5-jBLVkt1mRMw
-Talk: 7:00pm-7:45pm Title: Source Engine code auditing adventure
-Description In this talk I will talk about the Source Engine, the leaked codebase and how I audited it to find vulnerabilities. This also acts as a case study on how real life code bases are audited.
-Requirements The participants should have basic knowledge on C/C++, basic knowledge on x86 memory exploitation techniques, and how exploit mitigations (NX, ASLR, Stack Canaries) work.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Zoom Link:&lt;/strong&gt; &lt;a href=&#34;https://nus-sg.zoom.us/meeting/register/tZAsduygpjsvEtKjXX3Wdid5-jBLVkt1mRMw&#34;&gt;https://nus-sg.zoom.us/meeting/register/tZAsduygpjsvEtKjXX3Wdid5-jBLVkt1mRMw&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;talk-700pm-745pm&#34;&gt;Talk: 7:00pm-7:45pm&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Source Engine code auditing adventure&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;In this talk I will talk about the Source Engine, the leaked codebase and how I audited it to find vulnerabilities. This also acts as a case study on how real life code bases are audited.&lt;/p&gt;
+&lt;h4 id=&#34;requirements&#34;&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;The participants should have basic knowledge on C/C++, basic knowledge on x86 memory exploitation techniques, and how exploit mitigations (NX, ASLR, Stack Canaries) work.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -372,11 +454,14 @@ Requirements The participants should have basic knowledge on C/C++, basic knowle
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2710/</guid>
-      <description>Zoom Link: https://nus-sg.zoom.us/meeting/register/tZIqd-qhrzopH90kFVsa1_98fY1Yq9r-VetY
-Talk: 7:00pm-7:45pm Title: My OSCP Journey
-Description OSCP (Offensive Security Certified Professional) is an entry-level certification by Offensive Security that recognizes a person&amp;rsquo;s skills in penetration testing techniques and methodologies. In this talk, Jia Le will be sharing his experience in tackling this notoriously difficult and hands-on certification.
-Read more about the certification here: https://www.offensive-security.com/pwk-oscp/
-Speaker Bio Tan Jia Le is a Year 2 Information Security student at the National University of Singapore (NUS) and a member of NUS Greyhats.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Zoom Link:&lt;/strong&gt; &lt;a href=&#34;https://nus-sg.zoom.us/meeting/register/tZIqd-qhrzopH90kFVsa1_98fY1Yq9r-VetY&#34;&gt;https://nus-sg.zoom.us/meeting/register/tZIqd-qhrzopH90kFVsa1_98fY1Yq9r-VetY&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;talk-700pm-745pm&#34;&gt;Talk: 7:00pm-7:45pm&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: My OSCP Journey&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;OSCP (Offensive Security Certified Professional) is an entry-level certification by Offensive Security that recognizes a person&amp;rsquo;s skills in penetration testing techniques and methodologies. In this talk, Jia Le will be sharing his experience in tackling this notoriously difficult and hands-on certification.&lt;/p&gt;
+&lt;p&gt;Read more about the certification here: &lt;a href=&#34;https://www.offensive-security.com/pwk-oscp/&#34;&gt;https://www.offensive-security.com/pwk-oscp/&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;speaker-bio&#34;&gt;Speaker Bio&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Tan Jia Le&lt;/strong&gt; is a Year 2 Information Security student at the National University of Singapore (NUS) and a member of NUS Greyhats. He has a keen passion for penetration testing and had obtained the Offensive Security Certified Professional (OSCP) certification earlier this year. During his free time, he enjoys following security trends on Twitter and reading about security research findings. He also participates in Capture-The-Flag (CTF) competitions and focuses towards web challenges.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -385,9 +470,15 @@ Speaker Bio Tan Jia Le is a Year 2 Information Security student at the National 
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2010/</guid>
-      <description>Talk 1: 7 PM to 7:35 PM Title: Cryptography - Diophantine equation
-Description Diophantine equation is an equation where only the integer solutions matter. This has shown up in various cryptographical schemes like RSA, Diffie Hellman Key Exchange, and Elliptic Curve Cryptography. In this talk, Kel Zin will analyze some interesting CTF problems related to diophantine equation.
-Speaker Kel Zin is a Year 2 NUS Computer Science student and a member of Greyhats.</description>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/qTwdWuPBRjQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;talk-1-7-pm-to-735-pm&#34;&gt;Talk 1: 7 PM to 7:35 PM&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Cryptography - Diophantine equation&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Diophantine equation is an equation where only the integer solutions matter. This has shown up in various cryptographical schemes like RSA, Diffie Hellman Key Exchange, and Elliptic Curve Cryptography. In this talk, Kel Zin will analyze some interesting CTF problems related to diophantine equation.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -396,10 +487,16 @@ Speaker Kel Zin is a Year 2 NUS Computer Science student and a member of Greyhat
       <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1310/</guid>
-      <description>Talk 1: 7:00pm-7:45pm Title: A Guide on Antivirus Evasion
-Download Slides
-Description Antivirus evasion is crucial in many cybersecurity research and operations. For example, red team exercises are often conducted in a hardened production environment. While open-source tools may help in the enumeration or exploitations of services, they are often detected and flagged by antivirus.
-In this talk, we will look into manual and partially automated ways to achieve antivirus evasion.</description>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/iVEqlKigk5s?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;talk-1-700pm-745pm&#34;&gt;Talk 1: 7:00pm-7:45pm&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: A Guide on Antivirus Evasion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://nusgreyhats.org/secwed-slides/ay2122s1/NUS%20Greyhats%20-%20AV%20Evasion%20Final.pdf&#34;&gt;Download Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Antivirus evasion is crucial in many cybersecurity research and operations. For example, red team exercises are often conducted in a hardened production environment. While open-source tools may help in the enumeration or exploitations of services, they are often detected and flagged by antivirus.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -408,8 +505,9 @@ In this talk, we will look into manual and partially automated ways to achieve a
       <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0610/</guid>
-      <description>Talk: 7:00pm-8:30pm The presentation will introduce what a Security Operations Center (SOC) is, its typical mission and responsibilities, and the different roles that make up a SOC. The speakers will talk about the various components of a SOC and how they help one another effectively detect security threats.
-They will also discuss security incidents and how we respond to them. Finally, they will conclude the presentation with a show and tell how they can acquire an infected or compromised machine and what forensic artifacts they can uncover for our investigations.</description>
+      <description>&lt;h3 id=&#34;talk-700pm-830pm&#34;&gt;Talk: 7:00pm-8:30pm&lt;/h3&gt;
+&lt;p&gt;The presentation will introduce what a Security Operations Center (SOC) is, its typical mission and responsibilities, and the different roles that make up a SOC. The speakers will talk about the various components of a SOC and how they help one another effectively detect security threats.&lt;/p&gt;
+&lt;p&gt;They will also discuss security incidents and how we respond to them. Finally, they will conclude the presentation with a show and tell how they can acquire an infected or compromised machine and what forensic artifacts they can uncover for our investigations.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -427,8 +525,14 @@ They will also discuss security incidents and how we respond to them. Finally, t
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1509/</guid>
-      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: Unusual Applications of OpenAI in Cybersecurity
-One of the most prominent examples of AI-generated synthetic media’s impact on cybersecurity is in the field of social engineering and information operations. However, AI language models can still pop up in interesting places. Could we use OpenAI to convert assembly to pseudocode while reverse-engineering binaries? How about locating vulnerabilities in code? Let’s dive down the rabbit hole of OpenAI’s API, covering the latest advanced features such as fine-tunes, searches, and classifications.</description>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/4gw7zvm28RU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900Hrs - 1945Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talk Title: Unusual Applications of OpenAI in Cybersecurity&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One of the most prominent examples of AI-generated synthetic media’s impact on cybersecurity is in the field of social engineering and information operations. However, AI language models can still pop up in interesting places. Could we use OpenAI to convert assembly to pseudocode while reverse-engineering binaries? How about locating vulnerabilities in code? Let’s dive down the rabbit hole of OpenAI’s API, covering the latest advanced features such as fine-tunes, searches, and classifications.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -437,8 +541,15 @@ One of the most prominent examples of AI-generated synthetic media’s impact on
       <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0809/</guid>
-      <description>Talk 1: 1900HRs - 1945HRs Title: Identifying Bugs in Router Firmware at Scale with Taint Analysis
-Description Taint analysis is a very useful technique in reverse engineering and bug hunting. For some common vulnerability classes such as command injection or buffer overflow, it can be tedious for a researcher to find them through manual reverse engineering. In this talk, Daniel will share about a tool that he helped develop during his internship, which uses taint analysis techniques to automate the process of finding such bugs in router firmware.</description>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/D2jHvjeFQCM?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900HRs - 1945HRs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Identifying Bugs in Router Firmware at Scale with Taint Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Taint analysis is a very useful technique in reverse engineering and bug hunting. For some common vulnerability classes such as command injection or buffer overflow, it can be tedious for a researcher to find them through manual reverse engineering. In this talk, Daniel will share about a tool that he helped develop during his internship, which uses taint analysis techniques to automate the process of finding such bugs in router firmware.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -447,8 +558,14 @@ Description Taint analysis is a very useful technique in reverse engineering and
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw0109/</guid>
-      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: Cyber Risk Quantification: Let&amp;rsquo;s talk cyber risk
-Cybersecurity have been growing in importance and frequently play a key role in organisations in this day and age. With the recent growth of cyber threats and implementation of new cybersecurity laws, the possibility and consequences of exploited cyber risks have increased exponentially as well. As cybersecurity specialists, how can we translate such costs and the benefits of new security controls into something that can be universally understood across the organisation?</description>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/_OthjwiiebQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900Hrs - 1945Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talk Title: Cyber Risk Quantification: Let&amp;rsquo;s talk cyber risk&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Cybersecurity have been growing in importance and frequently play a key role in organisations in this day and age. With the recent growth of cyber threats and implementation of new cybersecurity laws, the possibility and consequences of exploited cyber risks have increased exponentially as well. As cybersecurity specialists, how can we translate such costs and the benefits of new security controls into something that can be universally understood across the organisation? In this talk, Debbie will be giving a brief introduction into quantifying cyber risks and discuss how we, as cybersecurity specialists, can help our organisations make smarter cybersecurity investments.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -457,9 +574,10 @@ Cybersecurity have been growing in importance and frequently play a key role in 
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw2508/</guid>
-      <description>Talk: 1900Hrs - 2030Hrs Talk Title: Cyber threat intelligence: Winning the war on cybercrime
-In this session, Lionel Bruchez from the UBS AG Chief Information Security Office will introduce the latest cybercrime trends and how threat intelligence enables the organization to remain ahead of the game.
-Beyond traditional cyber defence, Lionel will also pave the way towards leveraging cyber intelligence to proactively identify market landscape, risks and investment opportunities to support firms’ revenue generation and growth opportunities.</description>
+      <description>&lt;h3 id=&#34;talk-1900hrs---2030hrs&#34;&gt;Talk: 1900Hrs - 2030Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talk Title: Cyber threat intelligence: Winning the war on cybercrime&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this session, Lionel Bruchez from the UBS AG Chief Information Security Office will introduce the latest cybercrime trends and how threat intelligence enables the organization to remain ahead of the game.&lt;/p&gt;
+&lt;p&gt;Beyond traditional cyber defence, Lionel will also pave the way towards leveraging cyber intelligence to proactively identify market landscape, risks and investment opportunities to support firms’ revenue generation and growth opportunities.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -468,8 +586,10 @@ Beyond traditional cyber defence, Lionel will also pave the way towards leveragi
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1808/</guid>
-      <description>Talk 1: 1900HRs - 1945HRs Title: Defending Singapore’s Digital Borders
-Description Cyberspace will be increasingly central to maintaining Singapore’s economic success and geopolitical relevance. As one of the most connected countries globally, Singapore’s connectivity and digitalisation will only continue to intensify under our Smart Nation initiative. At the same time, cyber threats continue to proliferate. We see a variety of cyber threats from terrorists, criminal, and state-sponsored organisations, especially as Covid-19 has forced many of us to work, learn, and play from home, on our mobile and electronic devices.</description>
+      <description>&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900HRs - 1945HRs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Defending Singapore’s Digital Borders&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Cyberspace will be increasingly central to maintaining Singapore’s economic success and geopolitical relevance. As one of the most connected countries globally, Singapore’s connectivity and digitalisation will only continue to intensify under our Smart Nation initiative. At the same time, cyber threats continue to proliferate. We see a variety of cyber threats from terrorists, criminal, and state-sponsored organisations, especially as Covid-19 has forced many of us to work, learn, and play from home, on our mobile and electronic devices.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -478,9 +598,15 @@ Description Cyberspace will be increasingly central to maintaining Singapore’s
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://nusgreyhats.org/posts/secweds/ay2122s1/sw1108/</guid>
-      <description>Talk 1: 1900Hrs - 1945Hrs Talk Title: Greyhats Introduction
-Do you find yourself wondering what the Greyhats team is often up to? Want to get to know more about the information security industry? Want to further hone your information security skills? 🖥 🚀
-Learn more about NUS&amp;rsquo; first and only information security interest group and the various activities that we embark on together! Join us at our welcome tea on 11 August 2021 from 7pm to 8.</description>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Tukt5SeiLtU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;talk-1-1900hrs---1945hrs&#34;&gt;Talk 1: 1900Hrs - 1945Hrs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talk Title: Greyhats Introduction&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Do you find yourself wondering what the Greyhats team is often up to? Want to get to know more about the information security industry? Want to further hone your information security skills? 🖥 🚀&lt;/p&gt;
+&lt;p&gt;Learn more about NUS&amp;rsquo; first and only information security interest group and the various activities that we embark on together! Join us at our welcome tea on 11 August 2021 from 7pm to 8.30pm, and get to know some of us and our team&amp;rsquo;s work first hand! 👨‍💻👨‍💻👨‍💻👨‍💻&lt;/p&gt;</description>
     </item>
     
     <item>
