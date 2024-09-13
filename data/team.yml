@@ -173,3 +173,15 @@ team:
     linkedin: https://www.linkedin.com/in/elijah-chia
     github: https://github.com/Elijah5399
     personal: https://elijahchia.gitbook.io/ctf-blog
+
+  - name: Jovan Tan
+    major: Computer Science
+    roles:
+      - forensics
+      - network
+      - web?
+    desc: sudo systemctl poweroff
+    linkedin: https://www.linkedin.com/in/jovan-tan-07b387176/
+    github: https://github.com/jovantanyk 
+    personal: https://jovantanyk.dev
+    
