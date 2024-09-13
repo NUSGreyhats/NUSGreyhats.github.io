@@ -162,10 +162,10 @@ team:
     linkedin: https://www.linkedin.com/in/yongliangang/
     github: https://github.com/yl-ang
   - name: Aloysius Goo
-  major: Computer Science
-  roles:
-    - Events
-  desc: <script>alert(1);</script>
-  linkedin: https://www.linkedin.com/in/aloysius-goo/
-  github: https://github.com/mug1wara26
+    major: Computer Science
+    roles:
+      - Events
+    desc: <script>alert(1);</script>
+    linkedin: https://www.linkedin.com/in/aloysius-goo/
+    github: https://github.com/mug1wara26
 
