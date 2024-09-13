@@ -165,7 +165,7 @@ team:
     major: Computer Science
     roles:
       - Events
-    desc: <script>alert(1);</script>
+    desc: &lt;script&gt;alert(1);&lt;/script&gt;
     linkedin: https://www.linkedin.com/in/aloysius-goo/
     github: https://github.com/mug1wara26
 
