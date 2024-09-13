@@ -164,7 +164,10 @@ team:
   - name: Aloysius Goo
     major: Computer Science
     roles:
-      - Events
+      - ctf
+      - events
+      - web
+      - skill issue
     desc: skill issue
     linkedin: https://www.linkedin.com/in/aloysius-goo/
     github: https://github.com/mug1wara26
