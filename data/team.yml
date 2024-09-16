@@ -98,3 +98,14 @@ team:
     linkedin: https://www.linkedin.com/in/jovan-tan-07b387176/
     github: https://github.com/jovantanyk
     personal: https://jovantanyk.dev
+    
+  - name: Aloysius Goo
+    major: Computer Science
+    roles:
+      - ctf
+      - events
+      - web
+      - skill issue
+    desc: skill issue
+    linkedin: https://www.linkedin.com/in/aloysius-goo/
+    github: https://github.com/mug1wara26
