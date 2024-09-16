@@ -123,3 +123,87 @@ team:
     github: https://github.com/felixhalim
     personal: http://felixhalim.com
 
+  - name: Sean
+    major: Information Security
+    roles:
+      - forensics
+      - noob
+      - exco
+    desc: living and learning
+    github: https://github.com/seantayyy
+
+  - name: Wu Changjun
+    major: Computer Science
+    roles:
+      - web
+      - noob
+      - exco
+    desc: hello world!
+    linkedin: https://www.linkedin.com/in/changjun-wu-7a4136202/
+    github: https://github.com/Ugholaf
+
+  - name: Nguyen Quang Vinh
+    major: Computer Science
+    roles:
+      - crypto
+      - noob
+    desc: Xin chao moi nguoi!
+    linkedin: https://www.linkedin.com/in/vinh-nguyen-447755130/
+    personal: https://icewizard4902.github.io/
+
+  - name: Tan Kel Zin
+    major: Computer Science
+    roles:
+      - crypto
+      - exco
+    desc: f(x) - f(y) ≡ 0 (mod n)
+    linkedin: https://www.linkedin.com/in/kelzin/
+    github: https://github.com/mechfrog88
+    personal: https://mechfrog88.github.io/
+
+  - name: Cai Ting
+    major: Information Security
+    roles:
+      - noob
+      - exco
+    desc: 🪱
+    github: https://github.com/lctxct
+
+  - name: Jonathan Lee
+    major: Computer Science
+    roles:
+      - publicity
+      - noob
+    desc: "u can find me at 127.0.0.1 \n and there are two jonathan lees too, have fun guessing who is who :)"
+    linkedin: https://www.linkedin.com/in/jon-lee-jy/
+    github: https://github.com/yeppog
+    twitter: https://twitter.com/yeppog
+
+  - name: Tan Weiu Cheng
+    major: Computer Science
+    roles:
+      - rev
+    desc: I am pro.
+    twitter: https://twitter.com/davidtan0527
+    linkedin: https://www.linkedin.com/in/weiucheng-tan/
+    github: https://github.com/DavidTan0527
+    personal: https://davidtan0527.github.io
+
+  - name: Alissa
+    major: Computer Science
+    roles:
+      - stego
+    desc: (ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧
+    twitter: https://twitter.com/yarmantho
+    linkedin: https://www.linkedin.com/in/alissayarmantho/
+    github: https://github.com/alissayarmantho
+
+  - name: Ang Yong Liang
+    major: Computer Science
+    roles:
+      - ctf
+      - web
+      - newbie
+    desc: 7b 53 4c 45 45 50 49 4e 47 2e 2e 2e 53 4c 45 45 50 49 4e 47 2e 2e 2e 7d
+    linkedin: https://www.linkedin.com/in/yongliangang/
+    github: https://github.com/yl-ang

@@ -1,8 +1,30 @@
 team:
-  - name: Devesh Logendran
+  - name: Verity Lim
     major: Information Security
     roles:
       - exco
+      - noob
+      - sysadmin
+      - 📢
+    desc: 1 + 1 = 10
+    linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
+    github: https://github.com/xihzs
+
+  - name: Jin Kai
+    major: Information Security
+    roles:
+      - exco
+      - total noob
+      - pwn
+    desc: catching flags in my sleep
+    twitter: https://twitter.com/elma_ios
+    linkedin: https://www.linkedin.com/in/jin-kai/
+    github: https://github.com/caprinux
+    personal: https://blog.elmo.sg/
+
+  - name: Devesh Logendran
+    major: Information Security
+    roles:
       - web
       - sleep
     desc: I hate when SHELLS die
@@ -12,60 +34,9 @@ team:
   - name: Ariana Goh
     major: Communications & New Media
     roles:
-      - exco
       - 🍸
     desc: who free wednesday night
     personal: https://ariana1729.github.io/
-
-  - name: Verity Lim
-    major: Information Security
-    roles:
-      - noob
-      - sysadmin
-      - 📢
-    desc: 1 + 1 = 10
-    linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
-    github: https://github.com/xihzs
-
-  - name: Sean
-    major: Information Security
-    roles:
-      - forensics
-      - noob
-      - exco
-    desc: living and learning
-    github: https://github.com/seantayyy
-
-  - name: Wu Changjun
-    major: Computer Science
-    roles:
-      - web
-      - noob
-      - exco
-    desc: hello world!
-    linkedin: https://www.linkedin.com/in/changjun-wu-7a4136202/
-    github: https://github.com/Ugholaf
-
-  - name: Jin Kai
-    major: Information Security
-    roles:
-      - exco
-      - total noob
-      - pwn
-    desc: AAAAAAAAAAAAAAAAAAAAAAA
-    twitter: https://twitter.com/elma_ios
-    linkedin: https://www.linkedin.com/in/jin-kai-9a7368120/
-    github: https://github.com/xihzs
-    personal: https://caprinux.com
-
-  - name: Nguyen Quang Vinh
-    major: Computer Science
-    roles:
-      - crypto
-      - noob 
-    desc: Xin chao moi nguoi!
-    linkedin: https://www.linkedin.com/in/vinh-nguyen-447755130/
-    personal: https://icewizard4902.github.io/ 
 
   - name: Arnav Aggarwal
     major: Computer Science
@@ -75,17 +46,7 @@ team:
     desc: Due today, do today.
     linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
     github: https://github.com/arnav-ag
-    
-  - name: Tan Kel Zin
-    major: Computer Science
-    roles:
-      - crypto
-      - exco
-    desc: f(x) - f(y) ≡ 0 (mod n)
-    linkedin: https://www.linkedin.com/in/kelzin/
-    github: https://github.com/mechfrog88
-    personal: https://mechfrog88.github.io/
-    
+
   - name: Chua Yao Xuan
     major: Computer Science
     roles:
@@ -94,15 +55,7 @@ team:
       - noob
     desc: I like cats
     github: https://github.com/cyaoxuan
-    
-  - name: Cai Ting
-    major: Information Security
-    roles:
-      - noob
-      - exco
-    desc: 🪱
-    github: https://github.com/lctxct
-    
+
   - name: Chandrasekaran Akash
     major: Computer Science
     roles:
@@ -114,35 +67,6 @@ team:
     github: https://github.com/Enigmatrix
     personal: https://enigmatrix.me
 
-  - name: Jonathan Lee
-    major: Computer Science
-    roles:
-      - publicity
-      - noob
-    desc: "u can find me at 127.0.0.1 \n and there are two jonathan lees too, have fun guessing who is who :)"
-    linkedin: https://www.linkedin.com/in/jon-lee-jy/
-    github: https://github.com/yeppog
-    twitter: https://twitter.com/yeppog
-
-  - name: Tan Weiu Cheng
-    major: Computer Science
-    roles:
-      - rev
-    desc: I am pro.
-    twitter: https://twitter.com/davidtan0527
-    linkedin: https://www.linkedin.com/in/weiucheng-tan/
-    github: https://github.com/DavidTan0527
-    personal: https://davidtan0527.github.io
-
-  - name: Alissa
-    major: Computer Science
-    roles:
-      - stego
-    desc: (ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧
-    twitter: https://twitter.com/yarmantho
-    linkedin: https://www.linkedin.com/in/alissayarmantho/
-    github: https://github.com/alissayarmantho
-
   - name: Jules Poon
     major: beep boop
     roles:
@@ -152,15 +76,29 @@ team:
     github: https://github.com/JuliaPoo/
     personal: https://juliapoo.github.io/
 
-  - name: Ang Yong Liang
+  - name: Elijah Chia
     major: Computer Science
     roles:
       - ctf
-      - web
-      - newbie
-    desc: 7b 53 4c 45 45 50 49 4e 47 2e 2e 2e 53 4c 45 45 50 49 4e 47 2e 2e 2e 7d
-    linkedin: https://www.linkedin.com/in/yongliangang/
-    github: https://github.com/yl-ang
+      - pwn
+      - rev
+      - crypto
+    desc: from pwn import *
+    linkedin: https://www.linkedin.com/in/elijah-chia
+    github: https://github.com/Elijah5399
+    personal: https://elijahchia.gitbook.io/ctf-blog
+
+  - name: Jovan Tan
+    major: Computer Science
+    roles:
+      - forensics
+      - network
+      - web?
+    desc: sudo systemctl poweroff
+    linkedin: https://www.linkedin.com/in/jovan-tan-07b387176/
+    github: https://github.com/jovantanyk
+    personal: https://jovantanyk.dev
+    
   - name: Aloysius Goo
     major: Computer Science
     roles:
@@ -171,4 +109,3 @@ team:
     desc: skill issue
     linkedin: https://www.linkedin.com/in/aloysius-goo/
     github: https://github.com/mug1wara26
-
