@@ -119,3 +119,13 @@ team:
     desc: yorm
     linkedin: https://www.linkedin.com/in/kai-xuan-lee/
     github: https://github.com/TheMythologist
+
+  - name: Joshua Foo
+    major: Information Security
+    roles:
+      - noob
+      - rev
+    desc: slaving away
+    twitter: https://x.com/sg_incognito
+    linkedin: https://www.linkedin.com/in/sg-incognito/
+    github: https://github.com/sg-incognito
