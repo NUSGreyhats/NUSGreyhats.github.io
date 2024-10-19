@@ -129,3 +129,13 @@ team:
     twitter: https://x.com/sg_incognito
     linkedin: https://www.linkedin.com/in/sg-incognito/
     github: https://github.com/sg-incognito
+
+  - name: Wong Yu Zhang
+    major: Information Security 
+    roles:
+      - logs
+      - goon 
+    desc: flag{9271d6eecedd55fcfa6143a33029d496}
+    linkedin: https://www.linkedin.com/in/wong-yu-zhang-646136172/
+    github: https://github.com/fieash
+    personal: https://fieash.github.io
