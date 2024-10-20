@@ -78,7 +78,6 @@ params:
 
           - Do wander around our website to see what we do 👐
 
-    social: true
     socialIcons:
         - name: twitter
           url: "https://twitter.com/NUSGreyhats"
