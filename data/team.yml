@@ -21,7 +21,7 @@ team:
     linkedin: https://www.linkedin.com/in/jin-kai/
     github: https://github.com/caprinux
     personal: https://blog.elmo.sg/
-    
+
   - name: Daniel Goh
     major: Information Security
     roles:
@@ -31,7 +31,19 @@ team:
     desc: huh?
     linkedin: https://www.linkedin.com/in/daniel-goh-chin-hao-013149167/
     github: https://github.com/danplatypus30
-    
+
+  - name: Jonathan Loh
+    major: Computer Science
+    roles:
+      - exco
+      - guesser
+      - dev
+      - 🐋
+    desc: emergency tech support
+    linkedin: https://www.linkedin.com/in/jonathan-loh-junhao/
+    github: https://github.com/jloh02
+    personal: https://blog.jloh02.dev/ctf/
+
   - name: Devesh Logendran
     major: Information Security
     roles:
@@ -52,7 +64,6 @@ team:
     major: Computer Science
     roles:
       - web
-      - exco
     desc: Due today, do today.
     linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
     github: https://github.com/arnav-ag
@@ -60,7 +71,6 @@ team:
   - name: Chua Yao Xuan
     major: Computer Science
     roles:
-      - exco
       - publicity
       - noob
     desc: I like cats
@@ -108,7 +118,7 @@ team:
     linkedin: https://www.linkedin.com/in/jovan-tan-07b387176/
     github: https://github.com/jovantanyk
     personal: https://jovantanyk.dev
-    
+
   - name: Aloysius Goo
     major: Computer Science
     roles:
@@ -141,10 +151,10 @@ team:
     github: https://github.com/sg-incognito
 
   - name: Wong Yu Zhang
-    major: Information Security 
+    major: Information Security
     roles:
       - logs
-      - goon 
+      - goon
     desc: flag{9271d6eecedd55fcfa6143a33029d496}
     linkedin: https://www.linkedin.com/in/wong-yu-zhang-646136172/
     github: https://github.com/fieash
