@@ -120,6 +120,10 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
+        - identifier: about
+          name: about us
+          url: https://slf.nusgreyhats.org
+          weight: 1
         - identifier: team
           name: the team
           url: /team
