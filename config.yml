@@ -1,6 +1,7 @@
 baseURL: "https://nusgreyhats.org/"
 title: NUS Greyhats
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
