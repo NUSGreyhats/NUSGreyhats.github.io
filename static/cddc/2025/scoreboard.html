@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en" class="history svg video supports boxshadow csstransforms3d csstransitions backgroundcliptext gecko mac js sticky-header-enabled history svg video supports boxshadow csstransforms3d csstransitions backgroundcliptext webkit chrome win js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<!-- Basic -->
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<title>CDDC Finals Writeup 2025 | NUS Greyhats</title>	
+		<meta name="keywords" content="brainhack">
+		<meta name="description" content="CDDC">
+		<meta name="author" content="cddc">
+		<meta name="referrer" content="strict-origin">
+
+
+		<!-- Favicon -->
+		<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+		<link rel="icon" type="image/png" href="/greyhats.png" sizes="32x32">
+		<link rel="apple-touch-icon" href="/greyhats.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link href="./files/css2.css" rel="stylesheet">
+		<link id="googleFonts" href="./files/css.css" rel="stylesheet" type="text/css">
+		<style>
+div.body, #header .header-body, #footer, div.footer-copyright{
+	background: none;
+}
+		div.body, #footer, div.footer-copyright{
+			background: none !important;
+		}
+		html body {
+			/* background-color: #1B1B38; */
+			background-color: #13162b !important;
+			background-image:
+				url('./files/CDDC 2025_top.png'),
+			url('./files/CDDC 2025_bottom.png');
+		background-position: top center, bottom center;
+		background-size: contain, contain;
+		background-repeat: no-repeat, no-repeat;
+		}
+		html .btn-primary {
+			background-color: #262B49 !important
+		}
+
+
+		html:not(.sticky-header-active) #header .header-body {
+			background:none !important;
+		}
+		html.sticky-header-active #header .header-body {
+			background:#1B1B38 !important;
+		}
+
+		.cbox5, div.modal-content {
+			background-image:
+			url('./files/1.png'),
+			url('./files/2.png'),
+			url('./files/3.png'),
+			url('./files/4.png');
+		background-position:
+			top left,
+		top right,
+		bottom left,
+		bottom right;
+	background-size: auto;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+		}
+
+		html .badge-default {
+			background-color: #00F9FF;
+			font-size: 1.2rem;
+			color: black;
+		}
+		html .btn-secondary {
+			background-color: transparent !important;
+		}
+
+		html .alert-default {
+			background-color: #535A82 !important;
+			color: #FFFFFF !important;
+		}
+		html .alert-success {
+			background-color: #00F9FF !important;
+		}
+		html .alert-danger {
+			background-color: #fa7676 !important;
+			color: white !important;
+		}
+		.modal-title {
+			color: #F7840E !important;
+		}
+		.nav-link.active {
+			color: #00F9FF !important;
+		}
+		.orange {
+			color: #F7840E !important;
+		}
+		.badge-quaternary {
+			background-color: #ececec !important;
+			color: black !important;
+		}
+		html .badge-primary {
+			background-color: #1F2057 !important;
+		}
+		html .badge-secondary {
+			background-color: #00f9ff !important;
+			color: #000 !important;
+		}
+
+		div.dataTables_paginate {
+			float: none !important;
+			text-align: center !important;
+		}
+
+		div.progress-bar-secondary {
+			background-color: #F7840E !important;
+		}
+		a.paginate_button {
+			background-color:transparent !important;
+			padding:1px !important;
+			font-size: 19px !important;
+		}
+		a.paginate_button:hover {
+			color: #00f9ff;
+		}
+		.tdov{white-space: nowrap; text-overflow: ellipsis; overflow: hidden; max-width: 556px;width: 90%;}
+		table {
+			max-width:1140px; table-layout:fixed;
+		}
+
+		#mainNav a {
+			font-size: 1rem !important;
+		}
+
+		td img {
+			max-width:800px;
+		}
+		</style>
+
+		<!-- Vendor CSS -->	
+		<link rel="stylesheet" href="./files/bootstrap.min.css">
+		<link rel="stylesheet" href="./files/all.min.css">		
+		<link rel="stylesheet" href="./files/animate.compat.css">		
+		<link rel="stylesheet" href="./files/simple-line-icons.min.css">		
+		<link rel="stylesheet" href="./files/owl.carousel.min.css">		
+		<link rel="stylesheet" href="./files/owl.theme.default.min.css">		
+		<link rel="stylesheet" href="./files/magnific-popup.min.css">
+		<link rel="stylesheet" href="./files/jquery.dataTables.min.css">
+
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="./files/theme.css">
+		<link rel="stylesheet" href="./files/theme-elements.css">
+		<link rel="stylesheet" href="./files/theme-blog.css">
+		<link rel="stylesheet" href="./files/theme-shop.css">
+
+		<!-- Skin CSS -->	
+		<link id="skinCSS" rel="stylesheet" href="./files/default.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="./files/custom.css">
+
+		<!-- Head Libs -->
+		<script src="./files/modernizr.min.js.download"></script>
+		<script>
+			var ol = [];
+		</script>
+
+	</head>
+	<body data-plugin-page-transition="">
+		<div class="body min-vh-100">
+			<header id="header" class="header-effect-shrink" data-plugin-options="{&#39;stickyEnabled&#39;: true, &#39;stickyEffect&#39;: &#39;shrink&#39;, &#39;stickyEnableOnBoxed&#39;: true, &#39;stickyEnableOnMobile&#39;: false, &#39;stickyChangeLogo&#39;: true, &#39;stickyStartAt&#39;: 30, &#39;stickyHeaderContainerHeight&#39;: 70}" style="height: 100.8px;">
+				<div class="header-body border-top-0" style="position: fixed;">
+					<div class="header-container container" style="height: 100px;">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo" style="width: 60px; height: 60px;">
+										<a href="./index.html">
+											<img alt="cddc" width="60" height="60" src="./files/CDDC_logo_WHITE.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-links justify-content-center">
+										<div class="header-nav-main header-nav-main-square header-nav-main-font-alternative header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+
+													<li class="">
+														<a href="/">Home</a>
+													</li>
+													<!-- <li class=""> -->
+													<!-- 	<a href="#">Notice</a> -->
+													<!-- </li> -->
+													<li class="">
+														<a href="./index.html">Challenge</a>
+													</li>
+													<li class="active">
+														<a href="./scoreboard.html">Scoreboard (Day 1)</a>
+													</li>
+
+
+
+												</ul>
+											</nav>
+										</div>
+										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+									<div class="header-nav header-nav-links justify-content-end">
+										<div class="header-nav-main header-nav-main-square header-nav-main-font-alternative header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills">
+
+													<!-- #################################### -->
+													<li class="nav-item dropdown">
+														<a class="dropdown-toggle" href="./" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="true" onclick="$(&#39;#headbb&#39;).css(&#39;inset&#39;,&#39;&#39;);">
+															<img src="./files/ic_profile.png" style="width:40px;">
+															<i class="fas fa-chevron-down"></i><i class="fas fa-chevron-down"></i></a>
+														<div class="dropdown-menu dropdown-menu-end animated bounceInDown headbox text-center" style="border-radius:10px !important; inset:false !important;" id="headbb">
+															<div class="text-center" style="padding: 1.25rem !important;">
+																<p style="font-size:150%;" class="font-weight-bold">NUS Greyhats</p>
+																<p style="font-size:110%;" class="font-weight-bold"></p>
+																<p></p>
+																<hr style="border:0.1px solid #fff;">
+																<p><img src="./files/ic_profile_medal.png" style="width:30px;"> Overall Ranking <span class="maincolor" style="float:none;">?</span> / 102</p>
+																<p><img src="./files/ic_profile_medal.png" style="width:30px;"> Group Ranking <span class="maincolor" style="float:none;">?</span> / 59</p>
+															</div>
+														</div>
+													</li>
+													<!-- #################################### -->
+
+
+												</ul>
+											</nav>
+										</div>
+									</div>
+									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+										<div class="header-nav-feature header-nav-features-search d-inline-flex">
+											<button onclick="window.location.href='/'" class="btn btn-primary btn-md btn-block">Go Back</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<hr class="mt-0 mb-5">
+			<div role="main" class="main">
+
+<style>
+    .nav-badge {
+        position:relative;
+        top : -5px;
+        right: -5px;
+    }
+	.headbox {
+		box-sizing: border-box;
+
+		width: 372px;
+		left: 1000px;
+		top: 120px;
+
+		/* Theme/Background */
+
+		background: #1B1F38;
+		/* Theme/Point Color */
+
+		border: 2px solid #00F9FF !important;
+	}
+	#headbb {
+		inset: false !important;
+	}
+    #headbb p {
+        margin-bottom: 10px;
+    }
+    #header .header-nav.header-nav-links nav > ul li.active > a,
+    #header .header-nav.header-nav-links nav > ul li:hover > a {
+        color: white;
+        text-shadow: 0px 1px 15px #00F9FF;
+    }
+
+    #mainNav li a {
+        font-weight:600 !important;
+    }
+</style>
+<script>
+</script>
+<div class="container">
+	<div class="row align-items-center">
+		<div class="col-12 text-center mt-3">
+			<div>
+				<span class="headex">Scoreboard</span>
+			</div>
+			<div class="mt-3">
+				<span>Check Statistics and Rankings.</span>
+			</div>
+		</div>
+	</div>
+
+<div class="row pt-5">
+
+
+	<div class="col-12 p-3 mt-5">
+                <div class="scoretopbox p-3 pl-4">
+            <h4>User Count :</h4>
+            <div class="row">
+                <div class="col-6 text-center">
+                    <h1 class="userCount">102</h1>
+                    <p class="p2">Teams</p>
+                </div>
+                <div class="col-6 text-center">
+                    <h1 class="userCount">369</h1>
+                    <p class="p2">Players</p>
+                </div>
+            </div>
+        </div>
+        	</div>
+			<div class="col-6 p-3">
+		<div class="scoretopbox p3">
+			<h4>Most Solved :</h4>
+			<div class="p2" style="font-size:17px;">
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">1.</span>
+                    <span>Sanity Check </span>
+                </div>
+                <div style="display:inline-block; float:right;">98%</div>
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">2.</span>
+                    <span>Shell-Shock (2014)</span>
+                </div>
+                <div style="display:inline-block; float:right;">93.1%</div>
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">3.</span>
+                    <span>HeartBleed (2014)</span>
+                </div>
+                <div style="display:inline-block; float:right;">52%</div>
+                			</div>
+		</div>
+	</div>
+		<div class="col-6 p-3">
+		<div class="scoretopbox p3">
+			<h4>Most Incorrects :</h4>
+			<div class="p2" style="font-size:17px;">
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">1.</span>
+                    <span>PyJsJail</span>
+                </div>
+                <div style="display:inline-block; float:right;">19.8%</div>
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">2.</span>
+                    <span>HeartBleed (2014)</span>
+                </div>
+                <div style="display:inline-block; float:right;">15.6%</div>
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">3.</span>
+                    <span>HTTP Request Smuggling (2019)</span>
+                </div>
+                <div style="display:inline-block; float:right;">14.6%</div>
+                			</div>
+		</div>
+	</div>
+		<div class="col-6 p-3">
+		<div class="scoretopbox p3">
+			<h4>Most Views :</h4>
+			<div class="p2" style="font-size:17px;">
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">1.</span>
+                    <span>Looney Tunable (2023)</span>
+                </div>
+                <div style="display:inline-block; float:right;">2185</div>
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">2.</span>
+                    <span>Log4shell (2021)</span>
+                </div>
+                <div style="display:inline-block; float:right;">2067</div>
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">3.</span>
+                    <span>HeartBleed (2014)</span>
+                </div>
+                <div style="display:inline-block; float:right;">1913</div>
+                			</div>
+		</div>
+	</div>
+		<div class="col-6 p-3">
+		<div class="scoretopbox p3">
+			<h4>Most Hint Unlocks :</h4>
+			<div class="p2" style="font-size:17px;">
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">1.</span>
+                    <span>Shell-Shock (2014)</span>
+                </div>
+                <div style="display:inline-block; float:right;">4</div>
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">2.</span>
+                    <span>HTTP Request Smuggling (2019)</span>
+                </div>
+                <div style="display:inline-block; float:right;">4</div>
+                			    <div style="display:inline-block; overflow:hidden; width:350px; white-space:nowrap; text-overflow:ellipsis;">
+                    <span class="maincolor" style="font-weight:600; font-size:18px;">3.</span>
+                    <span>Looney Tunable (2023)</span>
+                </div>
+                <div style="display:inline-block; float:right;">2</div>
+                			</div>
+		</div>
+	</div>
+	</div>
+
+<div class="row mt-5 pt-5">
+	<div class="col-12">
+		<div class="tabs ranktabs">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a class="nav-link active" onclick="createChartA(&#39;All&#39;)" href="./scoreboard.html#rank0" data-bs-toggle="tab">ALL</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./scoreboard.html#rank1" onclick="createChartA(&#39;Uni&#39;)" data-bs-toggle="tab">UNI</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./scoreboard.html#rank2" onclick="createChartA(&#39;PRE-UNI&#39;)" data-bs-toggle="tab">PRE-UNI</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+            							<div id="rank0" class="tab-pane active">
+                                        <div class="row mb-5">
+                        <div class="col-12 mt-3">
+                            <h3 class="font-weight-bold">Top 10 Teams</h3>
+                        </div>
+                    </div>
+                    					<div class="row mt-5">
+																		<div class="col-4 text-center">
+							<p class="headex" style="font-size:20px;">2nd</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank1.png"></p>
+							<p style="font-size:20px;">wulixuebucunzai</p>
+							<p><span class="maincolor">11</span> Solved <span class="maincolor">1050</span> pts</p>
+						</div>
+												<div class="col-4 text-center">
+							<p class="headex" style="font-size:30px;">1st</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank2.png"></p>
+							<p style="font-size:20px;">NUS Greyhats</p>
+							<p><span class="maincolor">11</span> Solved <span class="maincolor">1050</span> pts</p>
+						</div>
+												<div class="col-4 text-center">
+							<p class="headex" style="font-size:20px;">3rd</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank3.png"></p>
+							<p style="font-size:20px;">mallows</p>
+							<p><span class="maincolor">10</span> Solved <span class="maincolor">950</span> pts</p>
+						</div>
+											</div>
+					<div class="row mt-5">
+						<div class="col-12">
+				      <div id="scoreboard_tbl0_wrapper" class="dataTables_wrapper no-footer"><table class="table table-hover ranktbl dataTable no-footer" id="scoreboard_tbl0" style="width: 100%; border-bottom: 0px;">
+				          <thead>
+				              <tr><th class="sorting_disabled sorting_asc" rowspan="1" colspan="1" style="width: 182px;" aria-label="Rank">Rank</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 182px;" aria-label="Team name">Team name</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl0" rowspan="1" colspan="1" style="width: 182px;" aria-label="Solved: activate to sort column ascending">Solved</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl0" rowspan="1" colspan="1" style="width: 182px;" aria-label="Points: activate to sort column ascending">Points</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl0" rowspan="1" colspan="1" style="width: 182px;" aria-label="Updated: activate to sort column ascending">Updated</th></tr>
+				          </thead>
+				          <tbody>
+				          <tr class="odd"><td class="sorting_1">1</td><td>NUS Greyhats</td><td>11</td><td>1050</td><td>11/06/2025, 4:00:38 pm</td></tr><tr class="even"><td class="sorting_1">2</td><td>wulixuebucunzai</td><td>11</td><td>1050</td><td>11/06/2025, 5:18:57 pm</td></tr><tr class="odd"><td class="sorting_1">3</td><td>mallows</td><td>10</td><td>950</td><td>11/06/2025, 4:33:59 pm</td></tr><tr class="even"><td class="sorting_1">4</td><td>youtiaos</td><td>9</td><td>900</td><td>11/06/2025, 5:12:04 pm</td></tr><tr class="odd"><td class="sorting_1">5</td><td>aglio olio</td><td>9</td><td>875</td><td>11/06/2025, 5:03:23 pm</td></tr><tr class="even"><td class="sorting_1">6</td><td>eidooheerfmaet</td><td>9</td><td>875</td><td>11/06/2025, 5:22:09 pm</td></tr><tr class="odd"><td class="sorting_1">7</td><td>OrchidMutation</td><td>9</td><td>875</td><td>11/06/2025, 5:25:00 pm</td></tr><tr class="even"><td class="sorting_1">8</td><td>slightsmile</td><td>9</td><td>850</td><td>11/06/2025, 5:23:51 pm</td></tr><tr class="odd"><td class="sorting_1">9</td><td>TheGout</td><td>8</td><td>775</td><td>11/06/2025, 4:56:31 pm</td></tr><tr class="even"><td class="sorting_1">10</td><td>Jess Fan Club</td><td>8</td><td>750</td><td>11/06/2025, 4:35:27 pm</td></tr><tr class="odd"><td class="sorting_1">11</td><td>rwandi</td><td>8</td><td>750</td><td>11/06/2025, 5:08:58 pm</td></tr><tr class="even"><td class="sorting_1">12</td><td>Untitled Group</td><td>8</td><td>750</td><td>11/06/2025, 5:15:43 pm</td></tr><tr class="odd"><td class="sorting_1">13</td><td>NUS Greycaps</td><td>7</td><td>700</td><td>11/06/2025, 4:08:52 pm</td></tr><tr class="even"><td class="sorting_1">14</td><td>JapaneseFrenchLoaf</td><td>7</td><td>700</td><td>11/06/2025, 4:54:09 pm</td></tr><tr class="odd"><td class="sorting_1">15</td><td>BunkyoWesterns</td><td>7</td><td>700</td><td>11/06/2025, 5:02:17 pm</td></tr><tr class="even"><td class="sorting_1">16</td><td>SNI</td><td>7</td><td>700</td><td>11/06/2025, 5:15:23 pm</td></tr><tr class="odd"><td class="sorting_1">17</td><td>elio</td><td>7</td><td>675</td><td>11/06/2025, 4:16:55 pm</td></tr><tr class="even"><td class="sorting_1">18</td><td>NUS Greycats</td><td>7</td><td>675</td><td>11/06/2025, 5:22:09 pm</td></tr><tr class="odd"><td class="sorting_1">19</td><td>capr3sun</td><td>7</td><td>625</td><td>11/06/2025, 4:39:03 pm</td></tr><tr class="even"><td class="sorting_1">20</td><td>Lost Kids</td><td>6</td><td>600</td><td>11/06/2025, 4:10:54 pm</td></tr><tr class="odd"><td class="sorting_1">21</td><td>Alternative for Knights</td><td>6</td><td>600</td><td>11/06/2025, 5:24:16 pm</td></tr><tr class="even"><td class="sorting_1">22</td><td>Bogos Binted</td><td>6</td><td>575</td><td>11/06/2025, 5:07:43 pm</td></tr><tr class="odd"><td class="sorting_1">23</td><td>Scuwn</td><td>5</td><td>500</td><td>11/06/2025, 3:50:53 pm</td></tr><tr class="even"><td class="sorting_1">24</td><td>CookieZ</td><td>5</td><td>500</td><td>11/06/2025, 5:10:49 pm</td></tr><tr class="odd"><td class="sorting_1">25</td><td>flintandsteel</td><td>5</td><td>500</td><td>11/06/2025, 5:14:36 pm</td></tr><tr class="even"><td class="sorting_1">26</td><td>greynekos</td><td>5</td><td>475</td><td>11/06/2025, 5:10:42 pm</td></tr><tr class="odd"><td class="sorting_1">27</td><td>ikiagtspmofrvro</td><td>5</td><td>475</td><td>11/06/2025, 5:11:44 pm</td></tr><tr class="even"><td class="sorting_1">28</td><td>char kway teow</td><td>4</td><td>400</td><td>11/06/2025, 3:02:49 pm</td></tr><tr class="odd"><td class="sorting_1">29</td><td>The Chill Guys</td><td>4</td><td>400</td><td>11/06/2025, 3:38:51 pm</td></tr><tr class="even"><td class="sorting_1">30</td><td>Team Seoul</td><td>4</td><td>400</td><td>11/06/2025, 3:54:42 pm</td></tr><tr class="odd"><td class="sorting_1">31</td><td>tststspmopmo</td><td>4</td><td>400</td><td>11/06/2025, 4:10:43 pm</td></tr><tr class="even"><td class="sorting_1">32</td><td>NTH</td><td>4</td><td>400</td><td>11/06/2025, 4:21:54 pm</td></tr><tr class="odd"><td class="sorting_1">33</td><td>PACKCAT</td><td>4</td><td>400</td><td>11/06/2025, 4:22:48 pm</td></tr><tr class="even"><td class="sorting_1">34</td><td>LeJeans</td><td>4</td><td>400</td><td>11/06/2025, 4:23:42 pm</td></tr><tr class="odd"><td class="sorting_1">35</td><td>AtFinalsWeWantPekingDuck</td><td>4</td><td>400</td><td>11/06/2025, 4:26:08 pm</td></tr><tr class="even"><td class="sorting_1">36</td><td>sesamw syrip</td><td>4</td><td>400</td><td>11/06/2025, 4:26:39 pm</td></tr><tr class="odd"><td class="sorting_1">37</td><td>ABCDenialE</td><td>4</td><td>400</td><td>11/06/2025, 4:39:17 pm</td></tr><tr class="even"><td class="sorting_1">38</td><td>C</td><td>4</td><td>400</td><td>11/06/2025, 4:55:36 pm</td></tr><tr class="odd"><td class="sorting_1">39</td><td>Buffet Overflow</td><td>4</td><td>400</td><td>11/06/2025, 5:03:02 pm</td></tr><tr class="even"><td class="sorting_1">40</td><td>Curry Linux</td><td>4</td><td>400</td><td>11/06/2025, 5:07:39 pm</td></tr><tr class="odd"><td class="sorting_1">41</td><td>Team WSS</td><td>4</td><td>400</td><td>11/06/2025, 5:19:42 pm</td></tr><tr class="even"><td class="sorting_1">42</td><td>colonthree</td><td>4</td><td>400</td><td>11/06/2025, 5:21:33 pm</td></tr><tr class="odd"><td class="sorting_1">43</td><td>Team Name</td><td>4</td><td>400</td><td>11/06/2025, 5:24:13 pm</td></tr><tr class="even"><td class="sorting_1">44</td><td>MeowTheFlag</td><td>4</td><td>400</td><td>11/06/2025, 5:24:41 pm</td></tr><tr class="odd"><td class="sorting_1">45</td><td>lelele</td><td>4</td><td>395</td><td>11/06/2025, 3:24:49 pm</td></tr><tr class="even"><td class="sorting_1">46</td><td>CDDC24</td><td>4</td><td>395</td><td>11/06/2025, 4:34:21 pm</td></tr><tr class="odd"><td class="sorting_1">47</td><td>greyhacks</td><td>4</td><td>395</td><td>11/06/2025, 5:22:40 pm</td></tr><tr class="even"><td class="sorting_1">48</td><td>0Division</td><td>4</td><td>375</td><td>11/06/2025, 4:14:50 pm</td></tr><tr class="odd"><td class="sorting_1">49</td><td>ByteBusters</td><td>4</td><td>375</td><td>11/06/2025, 4:58:18 pm</td></tr><tr class="even"><td class="sorting_1">50</td><td>skibidi sigmas</td><td>3</td><td>300</td><td>11/06/2025, 3:02:57 pm</td></tr><tr class="odd"><td class="sorting_1">51</td><td>CIPHER KING</td><td>3</td><td>300</td><td>11/06/2025, 3:10:33 pm</td></tr><tr class="even"><td class="sorting_1">52</td><td>r3dW473RM310N5</td><td>3</td><td>300</td><td>11/06/2025, 3:13:30 pm</td></tr><tr class="odd"><td class="sorting_1">53</td><td>ecoBins</td><td>3</td><td>300</td><td>11/06/2025, 3:20:00 pm</td></tr><tr class="even"><td class="sorting_1">54</td><td>moggers</td><td>3</td><td>300</td><td>11/06/2025, 3:42:09 pm</td></tr><tr class="odd"><td class="sorting_1">55</td><td>griffin pretzels</td><td>3</td><td>300</td><td>11/06/2025, 3:55:58 pm</td></tr><tr class="even"><td class="sorting_1">56</td><td>ExceptionHandlers</td><td>3</td><td>300</td><td>11/06/2025, 3:56:28 pm</td></tr><tr class="odd"><td class="sorting_1">57</td><td>youhuanlo</td><td>3</td><td>300</td><td>11/06/2025, 4:09:05 pm</td></tr><tr class="even"><td class="sorting_1">58</td><td>DJUNGELSKOG</td><td>3</td><td>300</td><td>11/06/2025, 4:25:57 pm</td></tr><tr class="odd"><td class="sorting_1">59</td><td>cocktail fruit sorters</td><td>3</td><td>300</td><td>11/06/2025, 4:33:17 pm</td></tr><tr class="even"><td class="sorting_1">60</td><td>Kikurisbeerpacket</td><td>3</td><td>300</td><td>11/06/2025, 4:33:31 pm</td></tr><tr class="odd"><td class="sorting_1">61</td><td>Thinking Tinkerers</td><td>3</td><td>300</td><td>11/06/2025, 4:38:13 pm</td></tr><tr class="even"><td class="sorting_1">62</td><td>Petta Payload</td><td>3</td><td>300</td><td>11/06/2025, 4:55:30 pm</td></tr><tr class="odd"><td class="sorting_1">63</td><td>ZeroPointer</td><td>3</td><td>300</td><td>11/06/2025, 5:03:57 pm</td></tr><tr class="even"><td class="sorting_1">64</td><td>Jay Chao</td><td>3</td><td>300</td><td>11/06/2025, 5:10:43 pm</td></tr><tr class="odd"><td class="sorting_1">65</td><td>See De DC</td><td>3</td><td>300</td><td>11/06/2025, 5:11:15 pm</td></tr><tr class="even"><td class="sorting_1">66</td><td>rootkittens</td><td>3</td><td>300</td><td>11/06/2025, 5:11:55 pm</td></tr><tr class="odd"><td class="sorting_1">67</td><td>Nijika</td><td>3</td><td>300</td><td>11/06/2025, 5:23:11 pm</td></tr><tr class="even"><td class="sorting_1">68</td><td>UglyDucklings</td><td>3</td><td>295</td><td>11/06/2025, 3:23:46 pm</td></tr><tr class="odd"><td class="sorting_1">69</td><td>fellasinparis</td><td>3</td><td>295</td><td>11/06/2025, 3:44:01 pm</td></tr><tr class="even"><td class="sorting_1">70</td><td>I got reincarnated as an S rank CTF Adventurer</td><td>2</td><td>200</td><td>11/06/2025, 2:03:20 pm</td></tr><tr class="odd"><td class="sorting_1">71</td><td>MZFH</td><td>2</td><td>200</td><td>11/06/2025, 2:03:42 pm</td></tr><tr class="even"><td class="sorting_1">72</td><td>Byte Bandits</td><td>2</td><td>200</td><td>11/06/2025, 2:21:04 pm</td></tr><tr class="odd"><td class="sorting_1">73</td><td>dreamy creamy</td><td>2</td><td>200</td><td>11/06/2025, 2:23:11 pm</td></tr><tr class="even"><td class="sorting_1">74</td><td>Pratawala</td><td>2</td><td>200</td><td>11/06/2025, 2:29:20 pm</td></tr><tr class="odd"><td class="sorting_1">75</td><td>Hackers and slashers</td><td>2</td><td>200</td><td>11/06/2025, 2:31:42 pm</td></tr><tr class="even"><td class="sorting_1">76</td><td>Team Jeju</td><td>2</td><td>200</td><td>11/06/2025, 2:32:06 pm</td></tr><tr class="odd"><td class="sorting_1">77</td><td>Cyber Duckies</td><td>2</td><td>200</td><td>11/06/2025, 2:33:44 pm</td></tr><tr class="even"><td class="sorting_1">78</td><td>CDDC9</td><td>2</td><td>200</td><td>11/06/2025, 2:34:41 pm</td></tr><tr class="odd"><td class="sorting_1">79</td><td>deeno</td><td>2</td><td>200</td><td>11/06/2025, 2:36:00 pm</td></tr><tr class="even"><td class="sorting_1">80</td><td>GemTopFan</td><td>2</td><td>200</td><td>11/06/2025, 2:50:08 pm</td></tr><tr class="odd"><td class="sorting_1">81</td><td>eejonDoesNotShower</td><td>2</td><td>200</td><td>11/06/2025, 2:51:47 pm</td></tr><tr class="even"><td class="sorting_1">82</td><td>Bananna</td><td>2</td><td>200</td><td>11/06/2025, 2:53:18 pm</td></tr><tr class="odd"><td class="sorting_1">83</td><td>Ba Fang Lai Cai</td><td>2</td><td>200</td><td>11/06/2025, 2:56:06 pm</td></tr><tr class="even"><td class="sorting_1">84</td><td>SENTI</td><td>2</td><td>200</td><td>11/06/2025, 3:05:18 pm</td></tr><tr class="odd"><td class="sorting_1">85</td><td>Password</td><td>2</td><td>200</td><td>11/06/2025, 3:53:58 pm</td></tr><tr class="even"><td class="sorting_1">86</td><td>yingxuangang</td><td>2</td><td>200</td><td>11/06/2025, 3:55:18 pm</td></tr><tr class="odd"><td class="sorting_1">87</td><td>ZeroDayHunters</td><td>2</td><td>200</td><td>11/06/2025, 4:25:39 pm</td></tr><tr class="even"><td class="sorting_1">88</td><td>SansWitch</td><td>2</td><td>200</td><td>11/06/2025, 4:31:15 pm</td></tr><tr class="odd"><td class="sorting_1">89</td><td>assassino cyberccino</td><td>2</td><td>200</td><td>11/06/2025, 4:54:13 pm</td></tr><tr class="even"><td class="sorting_1">90</td><td>PWN Stars</td><td>2</td><td>200</td><td>11/06/2025, 5:02:49 pm</td></tr><tr class="odd"><td class="sorting_1">91</td><td>CyberNubs</td><td>2</td><td>200</td><td>11/06/2025, 5:03:20 pm</td></tr><tr class="even"><td class="sorting_1">92</td><td>NUS Helix Kitten</td><td>2</td><td>200</td><td>11/06/2025, 5:05:25 pm</td></tr><tr class="odd"><td class="sorting_1">93</td><td>Capture the CTF</td><td>2</td><td>200</td><td>11/06/2025, 5:10:07 pm</td></tr><tr class="even"><td class="sorting_1">94</td><td>IGotThePOWER</td><td>2</td><td>195</td><td>11/06/2025, 2:54:11 pm</td></tr><tr class="odd"><td class="sorting_1">95</td><td>Cyberpirates</td><td>2</td><td>195</td><td>11/06/2025, 3:01:20 pm</td></tr><tr class="even"><td class="sorting_1">96</td><td>ayampenyatlovers</td><td>2</td><td>195</td><td>11/06/2025, 3:35:00 pm</td></tr><tr class="odd"><td class="sorting_1">97</td><td>rockyoutxt</td><td>2</td><td>190</td><td>11/06/2025, 3:45:41 pm</td></tr><tr class="even"><td class="sorting_1">98</td><td>Surfing Pikachu</td><td>1</td><td>100</td><td>11/06/2025, 1:40:29 pm</td></tr><tr class="odd"><td class="sorting_1">99</td><td>UTI</td><td>1</td><td>100</td><td>11/06/2025, 1:54:30 pm</td></tr><tr class="even"><td class="sorting_1">100</td><td>ICBM</td><td>1</td><td>100</td><td>11/06/2025, 3:25:16 pm</td></tr></tbody>
+				      </table><div class="dataTables_paginate paging_simple_numbers" id="scoreboard_tbl0_paginate"><a class="paginate_button previous disabled" aria-controls="scoreboard_tbl0" data-dt-idx="0" tabindex="-1" id="scoreboard_tbl0_previous">&lt;</a><span><a class="paginate_button current" aria-controls="scoreboard_tbl0" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="scoreboard_tbl0" data-dt-idx="2" tabindex="-1" id="scoreboard_tbl0_next">&gt;</a></div></div>
+						</div>
+					</div>
+			</div>
+							<div id="rank1" class="tab-pane ">
+                                        <div class="row mb-5">
+                        <div class="col-12 mt-3">
+                            <h3 class="font-weight-bold">Top 10 Teams</h3>
+                        </div>
+                    </div>
+                    					<div class="row mt-5">
+																		<div class="col-4 text-center">
+							<p class="headex" style="font-size:20px;">2nd</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank1.png"></p>
+							<p style="font-size:20px;">youtiaos</p>
+							<p><span class="maincolor">9</span> Solved <span class="maincolor">900</span> pts</p>
+						</div>
+												<div class="col-4 text-center">
+							<p class="headex" style="font-size:30px;">1st</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank2.png"></p>
+							<p style="font-size:20px;">NUS Greyhats</p>
+							<p><span class="maincolor">11</span> Solved <span class="maincolor">1050</span> pts</p>
+						</div>
+												<div class="col-4 text-center">
+							<p class="headex" style="font-size:20px;">3rd</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank3.png"></p>
+							<p style="font-size:20px;">OrchidMutation</p>
+							<p><span class="maincolor">9</span> Solved <span class="maincolor">875</span> pts</p>
+						</div>
+											</div>
+					<div class="row mt-5">
+						<div class="col-12">
+				      <div id="scoreboard_tbl1_wrapper" class="dataTables_wrapper no-footer"><table class="table table-hover ranktbl dataTable no-footer" id="scoreboard_tbl1" style="width: 100%; border-bottom: 0px;">
+				          <thead>
+				              <tr><th class="sorting_disabled sorting_asc" rowspan="1" colspan="1" style="width: 0px;" aria-label="Rank">Rank</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label="Team name">Team name</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl1" rowspan="1" colspan="1" style="width: 0px;" aria-label="Solved: activate to sort column ascending">Solved</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl1" rowspan="1" colspan="1" style="width: 0px;" aria-label="Points: activate to sort column ascending">Points</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl1" rowspan="1" colspan="1" style="width: 0px;" aria-label="Updated: activate to sort column ascending">Updated</th></tr>
+				          </thead>
+				          <tbody>
+				          <tr class="odd"><td class="sorting_1">1</td><td>NUS Greyhats</td><td>11</td><td>1050</td><td>11/06/2025, 4:00:38 pm</td></tr><tr class="even"><td class="sorting_1">2</td><td>youtiaos</td><td>9</td><td>900</td><td>11/06/2025, 5:12:04 pm</td></tr><tr class="odd"><td class="sorting_1">3</td><td>OrchidMutation</td><td>9</td><td>875</td><td>11/06/2025, 5:25:00 pm</td></tr><tr class="even"><td class="sorting_1">4</td><td>NUS Greycaps</td><td>7</td><td>700</td><td>11/06/2025, 4:08:52 pm</td></tr><tr class="odd"><td class="sorting_1">5</td><td>BunkyoWesterns</td><td>7</td><td>700</td><td>11/06/2025, 5:02:17 pm</td></tr><tr class="even"><td class="sorting_1">6</td><td>SNI</td><td>7</td><td>700</td><td>11/06/2025, 5:15:23 pm</td></tr><tr class="odd"><td class="sorting_1">7</td><td>NUS Greycats</td><td>7</td><td>675</td><td>11/06/2025, 5:22:09 pm</td></tr><tr class="even"><td class="sorting_1">8</td><td>capr3sun</td><td>7</td><td>625</td><td>11/06/2025, 4:39:03 pm</td></tr><tr class="odd"><td class="sorting_1">9</td><td>Lost Kids</td><td>6</td><td>600</td><td>11/06/2025, 4:10:54 pm</td></tr><tr class="even"><td class="sorting_1">10</td><td>Alternative for Knights</td><td>6</td><td>600</td><td>11/06/2025, 5:24:16 pm</td></tr><tr class="odd"><td class="sorting_1">11</td><td>Bogos Binted</td><td>6</td><td>575</td><td>11/06/2025, 5:07:43 pm</td></tr><tr class="even"><td class="sorting_1">12</td><td>CookieZ</td><td>5</td><td>500</td><td>11/06/2025, 5:10:49 pm</td></tr><tr class="odd"><td class="sorting_1">13</td><td>greynekos</td><td>5</td><td>475</td><td>11/06/2025, 5:10:42 pm</td></tr><tr class="even"><td class="sorting_1">14</td><td>The Chill Guys</td><td>4</td><td>400</td><td>11/06/2025, 3:38:51 pm</td></tr><tr class="odd"><td class="sorting_1">15</td><td>Team Seoul</td><td>4</td><td>400</td><td>11/06/2025, 3:54:42 pm</td></tr><tr class="even"><td class="sorting_1">16</td><td>NTH</td><td>4</td><td>400</td><td>11/06/2025, 4:21:54 pm</td></tr><tr class="odd"><td class="sorting_1">17</td><td>PACKCAT</td><td>4</td><td>400</td><td>11/06/2025, 4:22:48 pm</td></tr><tr class="even"><td class="sorting_1">18</td><td>LeJeans</td><td>4</td><td>400</td><td>11/06/2025, 4:23:42 pm</td></tr><tr class="odd"><td class="sorting_1">19</td><td>AtFinalsWeWantPekingDuck</td><td>4</td><td>400</td><td>11/06/2025, 4:26:08 pm</td></tr><tr class="even"><td class="sorting_1">20</td><td>ABCDenialE</td><td>4</td><td>400</td><td>11/06/2025, 4:39:17 pm</td></tr><tr class="odd"><td class="sorting_1">21</td><td>Buffet Overflow</td><td>4</td><td>400</td><td>11/06/2025, 5:03:02 pm</td></tr><tr class="even"><td class="sorting_1">22</td><td>colonthree</td><td>4</td><td>400</td><td>11/06/2025, 5:21:33 pm</td></tr><tr class="odd"><td class="sorting_1">23</td><td>Team Name</td><td>4</td><td>400</td><td>11/06/2025, 5:24:13 pm</td></tr><tr class="even"><td class="sorting_1">24</td><td>MeowTheFlag</td><td>4</td><td>400</td><td>11/06/2025, 5:24:41 pm</td></tr><tr class="odd"><td class="sorting_1">25</td><td>greyhacks</td><td>4</td><td>395</td><td>11/06/2025, 5:22:40 pm</td></tr><tr class="even"><td class="sorting_1">26</td><td>0Division</td><td>4</td><td>375</td><td>11/06/2025, 4:14:50 pm</td></tr><tr class="odd"><td class="sorting_1">27</td><td>ByteBusters</td><td>4</td><td>375</td><td>11/06/2025, 4:58:18 pm</td></tr><tr class="even"><td class="sorting_1">28</td><td>ecoBins</td><td>3</td><td>300</td><td>11/06/2025, 3:20:00 pm</td></tr><tr class="odd"><td class="sorting_1">29</td><td>griffin pretzels</td><td>3</td><td>300</td><td>11/06/2025, 3:55:58 pm</td></tr><tr class="even"><td class="sorting_1">30</td><td>ExceptionHandlers</td><td>3</td><td>300</td><td>11/06/2025, 3:56:28 pm</td></tr><tr class="odd"><td class="sorting_1">31</td><td>Thinking Tinkerers</td><td>3</td><td>300</td><td>11/06/2025, 4:38:13 pm</td></tr><tr class="even"><td class="sorting_1">32</td><td>Petta Payload</td><td>3</td><td>300</td><td>11/06/2025, 4:55:30 pm</td></tr><tr class="odd"><td class="sorting_1">33</td><td>ZeroPointer</td><td>3</td><td>300</td><td>11/06/2025, 5:03:57 pm</td></tr><tr class="even"><td class="sorting_1">34</td><td>See De DC</td><td>3</td><td>300</td><td>11/06/2025, 5:11:15 pm</td></tr><tr class="odd"><td class="sorting_1">35</td><td>rootkittens</td><td>3</td><td>300</td><td>11/06/2025, 5:11:55 pm</td></tr><tr class="even"><td class="sorting_1">36</td><td>UglyDucklings</td><td>3</td><td>295</td><td>11/06/2025, 3:23:46 pm</td></tr><tr class="odd"><td class="sorting_1">37</td><td>MZFH</td><td>2</td><td>200</td><td>11/06/2025, 2:03:42 pm</td></tr><tr class="even"><td class="sorting_1">38</td><td>dreamy creamy</td><td>2</td><td>200</td><td>11/06/2025, 2:23:11 pm</td></tr><tr class="odd"><td class="sorting_1">39</td><td>Hackers and slashers</td><td>2</td><td>200</td><td>11/06/2025, 2:31:42 pm</td></tr><tr class="even"><td class="sorting_1">40</td><td>Team Jeju</td><td>2</td><td>200</td><td>11/06/2025, 2:32:06 pm</td></tr><tr class="odd"><td class="sorting_1">41</td><td>Cyber Duckies</td><td>2</td><td>200</td><td>11/06/2025, 2:33:44 pm</td></tr><tr class="even"><td class="sorting_1">42</td><td>deeno</td><td>2</td><td>200</td><td>11/06/2025, 2:36:00 pm</td></tr><tr class="odd"><td class="sorting_1">43</td><td>GemTopFan</td><td>2</td><td>200</td><td>11/06/2025, 2:50:08 pm</td></tr><tr class="even"><td class="sorting_1">44</td><td>eejonDoesNotShower</td><td>2</td><td>200</td><td>11/06/2025, 2:51:47 pm</td></tr><tr class="odd"><td class="sorting_1">45</td><td>Ba Fang Lai Cai</td><td>2</td><td>200</td><td>11/06/2025, 2:56:06 pm</td></tr><tr class="even"><td class="sorting_1">46</td><td>Password</td><td>2</td><td>200</td><td>11/06/2025, 3:53:58 pm</td></tr><tr class="odd"><td class="sorting_1">47</td><td>yingxuangang</td><td>2</td><td>200</td><td>11/06/2025, 3:55:18 pm</td></tr><tr class="even"><td class="sorting_1">48</td><td>ZeroDayHunters</td><td>2</td><td>200</td><td>11/06/2025, 4:25:39 pm</td></tr><tr class="odd"><td class="sorting_1">49</td><td>SansWitch</td><td>2</td><td>200</td><td>11/06/2025, 4:31:15 pm</td></tr><tr class="even"><td class="sorting_1">50</td><td>CyberNubs</td><td>2</td><td>200</td><td>11/06/2025, 5:03:20 pm</td></tr><tr class="odd"><td class="sorting_1">51</td><td>NUS Helix Kitten</td><td>2</td><td>200</td><td>11/06/2025, 5:05:25 pm</td></tr><tr class="even"><td class="sorting_1">52</td><td>Capture the CTF</td><td>2</td><td>200</td><td>11/06/2025, 5:10:07 pm</td></tr><tr class="odd"><td class="sorting_1">53</td><td>IGotThePOWER</td><td>2</td><td>195</td><td>11/06/2025, 2:54:11 pm</td></tr><tr class="even"><td class="sorting_1">54</td><td>Cyberpirates</td><td>2</td><td>195</td><td>11/06/2025, 3:01:20 pm</td></tr><tr class="odd"><td class="sorting_1">55</td><td>ayampenyatlovers</td><td>2</td><td>195</td><td>11/06/2025, 3:35:00 pm</td></tr><tr class="even"><td class="sorting_1">56</td><td>rockyoutxt</td><td>2</td><td>190</td><td>11/06/2025, 3:45:41 pm</td></tr><tr class="odd"><td class="sorting_1">57</td><td>Surfing Pikachu</td><td>1</td><td>100</td><td>11/06/2025, 1:40:29 pm</td></tr><tr class="even"><td class="sorting_1">58</td><td>UTI</td><td>1</td><td>100</td><td>11/06/2025, 1:54:30 pm</td></tr></tbody>
+				      </table><div class="dataTables_paginate paging_simple_numbers" id="scoreboard_tbl1_paginate"><a class="paginate_button previous disabled" aria-controls="scoreboard_tbl1" data-dt-idx="0" tabindex="-1" id="scoreboard_tbl1_previous">&lt;</a><span><a class="paginate_button current" aria-controls="scoreboard_tbl1" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="scoreboard_tbl1" data-dt-idx="2" tabindex="-1" id="scoreboard_tbl1_next">&gt;</a></div></div>
+						</div>
+					</div>
+			</div>
+							<div id="rank2" class="tab-pane ">
+                                        <div class="row mb-5">
+                        <div class="col-12 mt-3">
+                            <h3 class="font-weight-bold">Top 10 Teams</h3>
+                        </div>
+                    </div>
+                    					<div class="row mt-5">
+																		<div class="col-4 text-center">
+							<p class="headex" style="font-size:20px;">2nd</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank1.png"></p>
+							<p style="font-size:20px;">mallows</p>
+							<p><span class="maincolor">10</span> Solved <span class="maincolor">950</span> pts</p>
+						</div>
+												<div class="col-4 text-center">
+							<p class="headex" style="font-size:30px;">1st</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank2.png"></p>
+							<p style="font-size:20px;">wulixuebucunzai</p>
+							<p><span class="maincolor">11</span> Solved <span class="maincolor">1050</span> pts</p>
+						</div>
+												<div class="col-4 text-center">
+							<p class="headex" style="font-size:20px;">3rd</p>
+							<p class="text-center" style="height:60px;"><img src="./files/rank3.png"></p>
+							<p style="font-size:20px;">aglio olio</p>
+							<p><span class="maincolor">9</span> Solved <span class="maincolor">875</span> pts</p>
+						</div>
+											</div>
+					<div class="row mt-5">
+						<div class="col-12">
+				      <div id="scoreboard_tbl2_wrapper" class="dataTables_wrapper no-footer"><table class="table table-hover ranktbl dataTable no-footer" id="scoreboard_tbl2" style="width: 100%; border-bottom: 0px;">
+				          <thead>
+				              <tr><th class="sorting_disabled sorting_asc" rowspan="1" colspan="1" style="width: 0px;" aria-label="Rank">Rank</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label="Team name">Team name</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl2" rowspan="1" colspan="1" style="width: 0px;" aria-label="Solved: activate to sort column ascending">Solved</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl2" rowspan="1" colspan="1" style="width: 0px;" aria-label="Points: activate to sort column ascending">Points</th><th class="sorting" tabindex="0" aria-controls="scoreboard_tbl2" rowspan="1" colspan="1" style="width: 0px;" aria-label="Updated: activate to sort column ascending">Updated</th></tr>
+				          </thead>
+				          <tbody>
+				          <tr class="odd"><td class="sorting_1">1</td><td>wulixuebucunzai</td><td>11</td><td>1050</td><td>11/06/2025, 5:18:57 pm</td></tr><tr class="even"><td class="sorting_1">2</td><td>mallows</td><td>10</td><td>950</td><td>11/06/2025, 4:33:59 pm</td></tr><tr class="odd"><td class="sorting_1">3</td><td>aglio olio</td><td>9</td><td>875</td><td>11/06/2025, 5:03:23 pm</td></tr><tr class="even"><td class="sorting_1">4</td><td>eidooheerfmaet</td><td>9</td><td>875</td><td>11/06/2025, 5:22:09 pm</td></tr><tr class="odd"><td class="sorting_1">5</td><td>slightsmile</td><td>9</td><td>850</td><td>11/06/2025, 5:23:51 pm</td></tr><tr class="even"><td class="sorting_1">6</td><td>TheGout</td><td>8</td><td>775</td><td>11/06/2025, 4:56:31 pm</td></tr><tr class="odd"><td class="sorting_1">7</td><td>Jess Fan Club</td><td>8</td><td>750</td><td>11/06/2025, 4:35:27 pm</td></tr><tr class="even"><td class="sorting_1">8</td><td>rwandi</td><td>8</td><td>750</td><td>11/06/2025, 5:08:58 pm</td></tr><tr class="odd"><td class="sorting_1">9</td><td>Untitled Group</td><td>8</td><td>750</td><td>11/06/2025, 5:15:43 pm</td></tr><tr class="even"><td class="sorting_1">10</td><td>JapaneseFrenchLoaf</td><td>7</td><td>700</td><td>11/06/2025, 4:54:09 pm</td></tr><tr class="odd"><td class="sorting_1">11</td><td>elio</td><td>7</td><td>675</td><td>11/06/2025, 4:16:55 pm</td></tr><tr class="even"><td class="sorting_1">12</td><td>Scuwn</td><td>5</td><td>500</td><td>11/06/2025, 3:50:53 pm</td></tr><tr class="odd"><td class="sorting_1">13</td><td>flintandsteel</td><td>5</td><td>500</td><td>11/06/2025, 5:14:36 pm</td></tr><tr class="even"><td class="sorting_1">14</td><td>ikiagtspmofrvro</td><td>5</td><td>475</td><td>11/06/2025, 5:11:44 pm</td></tr><tr class="odd"><td class="sorting_1">15</td><td>char kway teow</td><td>4</td><td>400</td><td>11/06/2025, 3:02:49 pm</td></tr><tr class="even"><td class="sorting_1">16</td><td>tststspmopmo</td><td>4</td><td>400</td><td>11/06/2025, 4:10:43 pm</td></tr><tr class="odd"><td class="sorting_1">17</td><td>sesamw syrip</td><td>4</td><td>400</td><td>11/06/2025, 4:26:39 pm</td></tr><tr class="even"><td class="sorting_1">18</td><td>C</td><td>4</td><td>400</td><td>11/06/2025, 4:55:36 pm</td></tr><tr class="odd"><td class="sorting_1">19</td><td>Curry Linux</td><td>4</td><td>400</td><td>11/06/2025, 5:07:39 pm</td></tr><tr class="even"><td class="sorting_1">20</td><td>Team WSS</td><td>4</td><td>400</td><td>11/06/2025, 5:19:42 pm</td></tr><tr class="odd"><td class="sorting_1">21</td><td>lelele</td><td>4</td><td>395</td><td>11/06/2025, 3:24:49 pm</td></tr><tr class="even"><td class="sorting_1">22</td><td>CDDC24</td><td>4</td><td>395</td><td>11/06/2025, 4:34:21 pm</td></tr><tr class="odd"><td class="sorting_1">23</td><td>skibidi sigmas</td><td>3</td><td>300</td><td>11/06/2025, 3:02:57 pm</td></tr><tr class="even"><td class="sorting_1">24</td><td>CIPHER KING</td><td>3</td><td>300</td><td>11/06/2025, 3:10:33 pm</td></tr><tr class="odd"><td class="sorting_1">25</td><td>r3dW473RM310N5</td><td>3</td><td>300</td><td>11/06/2025, 3:13:30 pm</td></tr><tr class="even"><td class="sorting_1">26</td><td>moggers</td><td>3</td><td>300</td><td>11/06/2025, 3:42:09 pm</td></tr><tr class="odd"><td class="sorting_1">27</td><td>youhuanlo</td><td>3</td><td>300</td><td>11/06/2025, 4:09:05 pm</td></tr><tr class="even"><td class="sorting_1">28</td><td>DJUNGELSKOG</td><td>3</td><td>300</td><td>11/06/2025, 4:25:57 pm</td></tr><tr class="odd"><td class="sorting_1">29</td><td>cocktail fruit sorters</td><td>3</td><td>300</td><td>11/06/2025, 4:33:17 pm</td></tr><tr class="even"><td class="sorting_1">30</td><td>Kikurisbeerpacket</td><td>3</td><td>300</td><td>11/06/2025, 4:33:31 pm</td></tr><tr class="odd"><td class="sorting_1">31</td><td>Jay Chao</td><td>3</td><td>300</td><td>11/06/2025, 5:10:43 pm</td></tr><tr class="even"><td class="sorting_1">32</td><td>Nijika</td><td>3</td><td>300</td><td>11/06/2025, 5:23:11 pm</td></tr><tr class="odd"><td class="sorting_1">33</td><td>fellasinparis</td><td>3</td><td>295</td><td>11/06/2025, 3:44:01 pm</td></tr><tr class="even"><td class="sorting_1">34</td><td>I got reincarnated as an S rank CTF Adventurer</td><td>2</td><td>200</td><td>11/06/2025, 2:03:20 pm</td></tr><tr class="odd"><td class="sorting_1">35</td><td>Byte Bandits</td><td>2</td><td>200</td><td>11/06/2025, 2:21:04 pm</td></tr><tr class="even"><td class="sorting_1">36</td><td>Pratawala</td><td>2</td><td>200</td><td>11/06/2025, 2:29:20 pm</td></tr><tr class="odd"><td class="sorting_1">37</td><td>CDDC9</td><td>2</td><td>200</td><td>11/06/2025, 2:34:41 pm</td></tr><tr class="even"><td class="sorting_1">38</td><td>Bananna</td><td>2</td><td>200</td><td>11/06/2025, 2:53:18 pm</td></tr><tr class="odd"><td class="sorting_1">39</td><td>SENTI</td><td>2</td><td>200</td><td>11/06/2025, 3:05:18 pm</td></tr><tr class="even"><td class="sorting_1">40</td><td>assassino cyberccino</td><td>2</td><td>200</td><td>11/06/2025, 4:54:13 pm</td></tr><tr class="odd"><td class="sorting_1">41</td><td>PWN Stars</td><td>2</td><td>200</td><td>11/06/2025, 5:02:49 pm</td></tr><tr class="even"><td class="sorting_1">42</td><td>ICBM</td><td>1</td><td>100</td><td>11/06/2025, 3:25:16 pm</td></tr></tbody>
+				      </table><div class="dataTables_paginate paging_simple_numbers" id="scoreboard_tbl2_paginate"><a class="paginate_button previous disabled" aria-controls="scoreboard_tbl2" data-dt-idx="0" tabindex="-1" id="scoreboard_tbl2_previous">&lt;</a><span><a class="paginate_button current" aria-controls="scoreboard_tbl2" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="scoreboard_tbl2" data-dt-idx="2" tabindex="-1" id="scoreboard_tbl2_next">&gt;</a></div></div>
+						</div>
+					</div>
+			</div>
+					</div>
+
+
+
+	</div>
+</div>
+
+
+</div>
+
+<style>
+    #scoreboard_tbl th{
+        text-align:center;
+    }
+    #scoreboard_tbl td{
+        text-align:center;
+        color: #767171;
+    }
+    .medal {
+        position:absolute;
+        top:-30px;
+        right:-250px;
+    }
+
+		.scoretopbox {
+			border: 2px solid #00F9FF;
+			box-shadow: 0px 1px 10px #00F9FF;
+			border-radius: 10px;
+		}
+
+		.scoretopbox h4 {
+			color: #00f9ff;
+		}
+
+		.ranktabs .nav-item, .ranktabs .nav-link {
+			background:transparent !important;
+		}
+		.ranktabs .nav-link {
+			border:0 !important;
+		}
+		.ranktabs .nav-tabs .nav-item {
+			width: 33.3% !important;
+			text-align:center !important;
+		}
+
+        .ranktbl tr:hover td{
+            color:white !important;
+        }
+
+		.ranktbl tr {
+			background:transparent !important;
+			color: white;
+			text-align: center;
+		}
+        .ranktbl thead tr th {
+            border-bottom:1px solid #fff;
+        }
+
+        div.introbox {
+        	margin-top:150px;
+        	padding:30px;
+        	box-shadow: 0px 1px 10px #00F9FF;
+        }
+        h1.userCount {
+            font-size: 2.6em;
+            line-height:44px;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+        p.p2 {
+            font-size: 17px;
+        }
+        .p3 {
+            padding-top: 2rem;
+            padding-right: 3rem;
+            padding-bottom:1rem;
+            padding-left:3rem;
+        }
+        .ranktabs a {
+            font-size:19px !important;
+            font-weight:bold !important;
+        }
+</style>
+
+<script>
+    var tmp = [];
+    function createScoreboardTbl(){
+        $.post({
+            type: "POST",
+            url: "./api/?c=getRankInfo",
+            dataType: "JSON",
+            success: function(d){
+                var datas = [
+                    d,
+                    d.filter(o => o.grp == "Uni"),
+                    d.filter(o => o.grp != "Uni"),
+                    // d.filter(o => o.grp == "JC/IP")
+                ];
+                for(i=0; i<3; i++){
+                    $('#scoreboard_tbl' + i).DataTable({
+                        "info" : false,
+                        "lengthChange" : false,
+                        "searching" : false,
+                        "language" : datatable_language,
+                        "pageLength" : 100,
+                        "data" : datas[i],
+                        "serverSide" : false,
+                        "columns" : [
+                            {"data" : null, "orderable" : false, "render": function(d,t,f,m){return m.row+1;}},
+                                                    {"data" : "teamname", "orderable" : false, "render": function(d,t,f,m){return d.replaceAll("<","&lt;");}},
+                                                    {"data" : "solved", "name":"solved", "orderable" : true},
+                            {"data" : "point", "name":"point", "orderable" : true},
+                            {"data" : "lastUpdate", "name":"lastUpdate", "orderable" : true, render: (d,t,f,m) => new Date(d).toLocaleString('en-SG')},
+                        ],
+                    });
+                }
+            }
+        })
+    }
+
+        function createChartA(rankType){
+        if (document.querySelector('canvas[grp="'+rankType+'"]').height != 150){
+            return;
+        }
+        $.post({
+            type: "POST",
+            url: "./api/?c=getChartData",
+            data: {rt:rankType},
+            dataType: "JSON",
+            success: function(d){
+                createChartB(d, rankType);
+            }
+        });
+    }
+
+    function createChartB(chartData, rt){
+        var rc = () => { return "#" + Math.round(Math.random() * 0xffffff).toString(16); }
+        let teams = chartData[0];
+        let teamnames = chartData[1];
+
+        if (teams.length == 0){
+            $('.chartLoading').html("Empty")
+            return;
+        }
+
+        let sDt = new Date(teams.reduce((p,c) => p['regDt']<c['regDt']?p:c)['regDt']).getTime()/1000;
+        let eDt = new Date(teams.reduce((p,c) => p['regDt']>c['regDt']?p:c)['regDt']).getTime()/1000;
+        let step = parseInt((eDt - sDt) / 9)+10;
+
+        const TI = teams.reduce((acc, cur) => {
+            const {tidx} = cur;
+            acc[tidx] = acc[tidx] ?? [];
+            acc[tidx].push(cur);
+            return acc;
+        }, {});
+
+        let datasets = [];
+        let labels = [];
+        for (let i in TI){
+            let data = [];
+            for (let j=0; j<10; j++){
+                let time = (sDt + (step * j)) * 1000;
+                value = TI[i].reduce((acc, cur) => {
+                    if (new Date(cur.regDt).getTime() > time) {
+                        acc = acc;
+                    } else {
+                        acc = cur;
+                    }
+                    return acc;
+                }).point
+                data.push(value);
+            }
+            datasets.push({
+                label: teamnames[TI[i][0].tidx],
+                data : data,
+                borderColor: rc(),
+                fill: false
+            });
+        }
+        datasets.sort((a,b) => {
+            let chk = b.data.slice(-1)[0] - a.data.slice(-1)[0]
+            if (chk == 0) {
+                let al = Object.keys(teamnames).find(key=>teamnames[key]==a.label);
+                let bl = Object.keys(teamnames).find(key=>teamnames[key]==b.label);
+                return new Date(TI[al].slice(-1)[0].regDt) - new Date(TI[bl].slice(-1)[0].regDt);
+            }
+            return chk;
+        });
+        for (let j=0; j<10; j++){
+            let d = new Date((sDt + (step*j)) * 1000)
+            const dateString = d.toLocaleDateString('en-SG');
+            const timeString = d.toLocaleTimeString('en-SG');
+                        labels.push(`${timeString}`);
+                    }
+
+
+        $('.chartLoading').hide();
+        var myBarChart = new Chart(document.querySelector('canvas.topteams[grp="'+rt+'"]'), {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: datasets,
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontColor: "white",
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: 'white'
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            fontColor: 'white',
+                            min: 0
+                        }
+                    }],
+
+                }
+            }
+
+        });
+    }
+    
+    ol.push(function(){
+                    createScoreboardTbl();
+                            createChartA('All');
+                        });
+
+    
+    let TDTime = new Date("2025-06-11 17:25:47");
+
+    let clientNow = new Date();
+    let serverOffset = TDTime.getTime() - clientNow.getTime(); // 밀리초 차이
+
+    function updateCountdown() {
+        let now = new Date();
+        let serverNow = new Date(now.getTime() + serverOffset); // 현재 시점 기준 서버 시간
+
+        let remaining = endt.getTime() - serverNow.getTime(); // 남은 시간 (밀리초)
+
+        if (remaining <= 0) {
+            document.querySelector("#hidetime").innerHTML = "00:00:00";
+            setTimeout(() => {window.location.href='/';}, 2500)
+            return; // 종료 시각 도달
+        }
+
+        let hours = Math.floor(remaining / (1000 * 60 * 60));
+        let minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+
+        // 두 자리 숫자 포맷
+        const pad = n => n.toString().padStart(2, '0');
+
+        document.querySelector("#hidetime").innerHTML = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+
+        requestAnimationFrame(updateCountdown); // 다음 프레임에 다시 호출
+    }
+</script>
+			</div>
+			<footer id="footer" class="mt-5">
+				<div class="container">
+				</div>
+				<div class="footer-copyright footer-copyright-style-2">
+					<div class="container py-2">
+						<div class="row py-4">
+							<div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mb-2 mb-lg-0">
+								<p>© Copyright CDDC. All Rights Reserved.</p>
+							</div>
+							<div class="col-md-8 d-flex align-items-center justify-content-center justify-content-md-end mb-4 mb-lg-0">
+								<ul class="footer-social-icons social-icons social-icons-clean social-icons-icon-light ms-3">
+									<li class="social-icons-facebook"><a href="https://www.facebook.com/SingaporeDSTA" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f text-2"></i></a></li>
+									<li class="social-icons-instagram"><a href="https://www.instagram.com/singaporedsta/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram text-2"></i></a></li>
+									<li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/dsta/" target="_blank" rel="noopener noreferrer" title="Linkedin"><i class="fab fa-linkedin-in text-2"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+									<div class="modal" id="promptModal" tabindex="-1" role="dialog" aria-labelledby="promptModalLabel" aria-hidden="true">
+										<div class="modal-dialog" style="width:450px;">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="promptModalLabel"></h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">×</button>
+												</div>
+												<div class="modal-body" id="promptModalBody">
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-light" data-bs-dismiss="modal">No</button>
+													<button type="button" class="btn btn-light" data-bs-dismiss="modal">Yes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+										<div class="modal-dialog" style="width:450px;">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="alertModalLabel"></h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">×</button>
+												</div>
+												<div class="modal-body" id="alertModalBody">
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary" data-bs-dismiss="modal">xOK</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+<!-- -->
+<!-- -->
+
+
+
+		<!-- Vendor -->
+    <script src="./files/jquery.min.js.download"></script>		
+    <script src="./files/jquery.appear.min.js.download"></script>		
+    <script src="./files/jquery.easing.min.js.download"></script>		
+    <script src="./files/jquery.cookie.min.js.download"></script>		
+    <script src="./files/popper.min.js.download"></script>
+    <script src="./files/bootstrap.bundle.min.js.download"></script>		
+    <script src="./files/jquery.validate.min.js.download"></script>		
+    <script src="./files/jquery.easypiechart.min.js.download"></script>		
+    <script src="./files/jquery.gmap.min.js.download"></script>		
+    <script src="./files/lazysizes.min.js.download"></script>		
+    <script src="./files/jquery.isotope.min.js.download"></script>		
+    <script src="./files/owl.carousel.min.js.download"></script>		
+    <script src="./files/jquery.magnific-popup.min.js.download"></script>		
+    <script src="./files/jquery.vide.min.js.download"></script>		
+    <script src="./files/vivus.min.js.download"></script>
+    <script src="./files/jquery.dataTables.min.js.download" integrity="sha384-ficRBwtap/VLzILv81vIvgp30PoJYnlCm96tPpNYHXAf+h9SIThOZxxIzRUzbpAh" crossorigin="anonymous"></script>
+    <script src="./files/Chart.min.js.download" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+		<!-- Theme Base, Components and Settings -->
+		<script src="./files/theme.js.download"></script>
+
+		<!-- Theme Custom -->
+    <script src="./files/custom.js.download"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="./files/theme.init.js.download"></script>
+
+    <script src="./files/main.js.download"></script>
+    <script>
+        $(function(){
+            for (i in ol){
+                ol[i]();
+            }
+        })
+    </script>
+		<style>
+            .toast-header {
+                color: #ffffff;
+            }
+            .toast-body a:hover {
+                color: white;
+                text-decoration: none;
+            }
+			.modal-content, .modal-title {
+				color:white !important;
+				background-color: #262B49 !important;
+			}
+			.modal-footer {
+				border-top: 0 !important;
+			}
+            .dataTables_wrapper .dataTables_paginate span.ellipsis{
+                color:white;
+            }
+            #footer, .footer-copyright {
+                border: 0 !important;
+            }
+            .paginate_button.current{
+                font-weight:800;
+                background:none!important;
+                border:none!important;
+            }
+
+			.modal button.btn-close{
+				background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+			}
+		</style>
+
+	
+
+</div><a class="scroll-to-top hidden-mobile" href="./scoreboard.html#"><i class="fas fa-chevron-up"></i></a><a class="scroll-to-top hidden-mobile" href="./scoreboard.html#"><i class="fas fa-chevron-up"></i></a></body></html>

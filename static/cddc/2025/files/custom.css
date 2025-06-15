@@ -1,0 +1,53 @@
+.headex {
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+/* identical to box height */
+
+text-align: center;
+
+/* Theme/White */
+
+color: #FFFFFF !important;
+
+/* Text Blur */
+
+text-shadow: 0px 1px 15px #00F9FF;
+}
+
+.maininput, .distinput {
+	background-color:#262B49;
+	color:white;
+}
+
+.maincolor {
+	color:#00F9FF;
+}
+
+.mainbox {
+	background-color:#262B49;
+	padding:20px;
+	margin-top:20px;
+	color:#fff;
+}
+
+.bcactive {
+    color:#00F9FF;
+    border-color:#00F9FF !important;
+}
+
+.bcactiveFixed {
+    color:#00F9FF;
+    border-color:#00F9FF !important;
+}
+
+.tblBorC td {
+    font-weight:bold;
+    padding-bottom:15px;
+}
+
+.bgprimary {
+    background-color:#1B1F38;
+}
