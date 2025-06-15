@@ -135,6 +135,14 @@ div.body, #header .header-body, #footer, div.footer-copyright{
 		td img {
 			max-width:800px;
 		}
+
+		@media (max-width: 767px) {
+			.challenge-grid {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+			}
+		}
 		</style>
 
 		<!-- Vendor CSS -->	
@@ -176,7 +184,7 @@ div.body, #header .header-body, #footer, div.footer-copyright{
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo" style="width: 60px; height: 60px;">
-										<a href="#">
+										<a href="./index.html">
 											<img alt="cddc" width="60" height="60" src="./files/CDDC_logo_WHITE.png">
 										</a>
 									</div>
@@ -308,8 +316,8 @@ right: -5px;
 						<div class="col-12" style="margin-top:3rem;">
 							<!-- -->
 
-							<div class="row">
-								<div class="col-4">
+							<div class="row challenge-grid">
+								<div class="col-lg-4 col-md-6 col-12">
 									<div class="text-center p-4" style="cursor:pointer;" onclick="$(&#39;#challAccordion0&#39;).toggle(); $(this).find(&#39;.carrow&#39;).toggle();">
 										<div class="rounded pt-2" style="background-color:#262B49;" onclick=" openPrologue(&#39;Welcome&#39;, this);" isopen="0">
 											<h4 class="mb-0" style="letter-spacing:0.1px;">Welcome</h4>
@@ -332,7 +340,7 @@ right: -5px;
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-lg-4 col-md-6 col-12">
 									<div class="text-center p-4" style="cursor:pointer;" onclick="$(&#39;#challAccordion1&#39;).toggle(); $(this).find(&#39;.carrow&#39;).toggle();">
 										<div class="rounded pt-2" style="background-color:#262B49;" onclick=" openPrologue(&#39;Flash&#39;, this);" isopen="0">
 											<h4 class="mb-0" style="letter-spacing:0.1px;">Flash</h4>
@@ -411,7 +419,7 @@ right: -5px;
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-lg-4 col-md-6 col-12">
 									<div class="text-center p-4" style="cursor:pointer;" onclick="$(&#39;#challAccordion2&#39;).toggle(); $(this).find(&#39;.carrow&#39;).toggle();">
 										<div class="rounded pt-2" style="background-color:#262B49;" onclick=" openPrologue(&#39;Back&#39;, this);" isopen="0">
 											<h4 class="mb-0" style="letter-spacing:0.1px;">Back</h4>
@@ -466,7 +474,7 @@ right: -5px;
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-lg-4 col-md-6 col-12">
 									<div class="text-center p-4" style="cursor:pointer;" onclick="$(&#39;#challAccordion3&#39;).toggle(); $(this).find(&#39;.carrow&#39;).toggle();">
 										<div class="rounded pt-2" style="background-color:#262B49;" onclick=" openPrologue(&#39;ECU1&#39;, this);" isopen="0">
 											<h4 class="mb-0" style="letter-spacing:0.1px;">ECU1</h4>
@@ -521,7 +529,7 @@ right: -5px;
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-lg-4 col-md-6 col-12">
 									<div class="text-center p-4" style="cursor:pointer;" onclick="$(&#39;#challAccordion4&#39;).toggle(); $(this).find(&#39;.carrow&#39;).toggle();">
 										<div class="rounded pt-2" style="background-color:#262B49;" onclick=" openPrologue(&#39;ECU2&#39;, this);" isopen="0">
 											<h4 class="mb-0" style="letter-spacing:0.1px;">ECU2</h4>
@@ -576,7 +584,7 @@ right: -5px;
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-lg-4 col-md-6 col-12">
 									<div class="text-center p-4" style="cursor:pointer;" onclick="$(&#39;#challAccordion5&#39;).toggle(); $(this).find(&#39;.carrow&#39;).toggle();">
 										<div class="rounded pt-2" style="background-color:#262B49;" onclick=" openPrologue(&#39;IVI1&#39;, this);" isopen="0">
 											<h4 class="mb-0" style="letter-spacing:0.1px;">IVI1</h4>
@@ -623,7 +631,7 @@ right: -5px;
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-lg-4 col-md-6 col-12">
 									<div class="text-center p-4" style="cursor:pointer;" onclick="$(&#39;#challAccordion6&#39;).toggle(); $(this).find(&#39;.carrow&#39;).toggle();">
 										<div class="rounded pt-2" style="background-color:#262B49;" onclick=" openPrologue(&#39;IVI2&#39;, this);" isopen="0">
 											<h4 class="mb-0" style="letter-spacing:0.1px;">IVI2</h4>
@@ -670,7 +678,7 @@ right: -5px;
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-lg-4 col-md-6 col-12">
 									<div class="text-center p-4" style="cursor:pointer;" onclick="$(&#39;#challAccordion7&#39;).toggle(); $(this).find(&#39;.carrow&#39;).toggle();">
 										<div class="rounded pt-2" style="background-color:#262B49;" onclick=" openPrologue(&#39;Engine&#39;, this);" isopen="0">
 											<h4 class="mb-0" style="letter-spacing:0.1px;">Engine</h4>
