@@ -73,6 +73,7 @@ const challengeData = {676: {'tags': '',
   'stat': 'open',
   'writeups': [
 	  {"url": "https://iscaraca.github.io/2025/06/14/cddc-2025/#Logshell", "author": "Isaac"},
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#log4shell", "author": "Aloysius"}
   ]},
  648: {'tags': 'misc',
   'ctftype': 'f',
@@ -89,6 +90,7 @@ const challengeData = {676: {'tags': '',
   'stat': 'open',
   'writeups': [
 	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#py-js-jail", "author": "Terence"},
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#pyjsjail", "author": "Aloysius"}
   ]},
  651: {'tags': 'pwn',
   'ctftype': 'f',
@@ -199,7 +201,8 @@ const challengeData = {676: {'tags': '',
   'hint': '0',
   'stat': 'open',
   'writeups': [
-	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#tower-crane", "author": "Terence"}
+	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#tower-crane", "author": "Terence"},
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#tower-crane", "author": "Aloysius"}
   ]},
  675: {'tags': 'OT',
   'ctftype': 'f',
@@ -231,7 +234,8 @@ const challengeData = {676: {'tags': '',
   'hint': '0',
   'stat': 'open',
   'writeups': [
-	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#ecu-1", "author": "Terence"}
+	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#ecu-1", "author": "Terence"},
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#ecu1", "author": "Aloysius"}
   ]},
  664: {'tags': 'misc',
   'ctftype': 'f',
@@ -305,7 +309,8 @@ const challengeData = {676: {'tags': '',
   'hint': '0',
   'stat': 'open',
   'writeups': [
-	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#ecu-2", "author": "Terence"}
+	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#ecu-2", "author": "Terence"},
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#ecu2", "author": "Aloysius"}
   ]},
  665: {'tags': 'misc',
   'ctftype': 'f',
