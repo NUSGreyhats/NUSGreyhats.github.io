@@ -124,11 +124,11 @@ team:
     roles:
       - ctf
       - events
-      - web
       - skill issue
     desc: skill issue
-    linkedin: https://www.linkedin.com/in/aloysius-goo/
+    linkedin: https://www.linkedin.com/in/aloysius-goo
     github: https://github.com/mug1wara26
+    personal: https://aloysius.dev
 
   - name: Lee Kai Xuan
     major: C Major
