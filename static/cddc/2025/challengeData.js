@@ -42,7 +42,7 @@ const challengeData = {676: {'tags': '',
   'hint': '0',
   'stat': 'open',
   'writeups': [
-	  {"url":"https://blog.elmo.sg/posts/cddc-2025-finals/#pwn---u-boot", "author": "Jin Kai"},
+	  {"url":"https://blog.elmo.sg/posts/cddc-2025/#pwn---u-boot", "author": "Jin Kai"},
   ]},
  653: {'tags': 'web',
   'ctftype': 'f',
@@ -75,7 +75,7 @@ const challengeData = {676: {'tags': '',
   'stat': 'open',
   'writeups': [
 	  {"url": "https://iscaraca.github.io/2025/06/14/cddc-2025/#Logshell", "author": "Isaac"},
-	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#log4shell", "author": "Aloysius"}
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025.html#log4shell", "author": "Aloysius"}
   ]},
  648: {'tags': 'misc',
   'ctftype': 'f',
@@ -92,7 +92,7 @@ const challengeData = {676: {'tags': '',
   'stat': 'open',
   'writeups': [
 	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#py-js-jail", "author": "Terence"},
-	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#pyjsjail", "author": "Aloysius"}
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025.html#pyjsjail", "author": "Aloysius"}
   ]},
  651: {'tags': 'pwn',
   'ctftype': 'f',
@@ -190,7 +190,7 @@ const challengeData = {676: {'tags': '',
   'stat': 'open',
   'writeups': [
 	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#ballast-water-management-system", "author": "Terence"},
-	  {"url": "https://blog.elmo.sg/posts/cddc-2025-finals/#ot---balast-water-management-system", "author": "Jin Kai"},
+	  {"url": "https://blog.elmo.sg/posts/cddc-2025/#ot---balast-water-management-system", "author": "Jin Kai"},
   ]},
  658: {'tags': 'RF',
   'ctftype': 'f',
@@ -207,7 +207,7 @@ const challengeData = {676: {'tags': '',
   'stat': 'open',
   'writeups': [
 	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#tower-crane", "author": "Terence"},
-	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#tower-crane", "author": "Aloysius"}
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025.html#tower-crane", "author": "Aloysius"}
   ]},
  675: {'tags': 'OT',
   'ctftype': 'f',
@@ -240,7 +240,7 @@ const challengeData = {676: {'tags': '',
   'stat': 'open',
   'writeups': [
 	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#ecu-1", "author": "Terence"},
-	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#ecu1", "author": "Aloysius"}
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025.html#ecu1", "author": "Aloysius"}
   ]},
  664: {'tags': 'misc',
   'ctftype': 'f',
@@ -286,7 +286,7 @@ const challengeData = {676: {'tags': '',
   'hint': '1',
   'stat': 'open',
   'writeups': [
-	  {"url": "https://blog.elmo.sg/posts/cddc-2025-finals/#pwn---escape-room", "author": "Jin Kai"},
+	  {"url": "https://blog.elmo.sg/posts/cddc-2025/#pwn---escape-room", "author": "Jin Kai"},
   ]},
  657: {'tags': 'pwn',
   'ctftype': 'f',
@@ -302,7 +302,7 @@ const challengeData = {676: {'tags': '',
   'hint': '1',
   'stat': 'open',
   'writeups': [
-	  {"url": "https://blog.elmo.sg/posts/cddc-2025-finals/#pwn---virtual-llama", "author": "Jin Kai"},
+	  {"url": "https://blog.elmo.sg/posts/cddc-2025/#pwn---virtual-llama", "author": "Jin Kai"},
   ]},
  671: {'tags': 'OT',
   'ctftype': 'f',
@@ -319,7 +319,7 @@ const challengeData = {676: {'tags': '',
   'stat': 'open',
   'writeups': [
 	  {"url": "https://hackin7-blog.vercel.app/posts/2025/2025-06-12-cddc-finals-writeups/#ecu-2", "author": "Terence"},
-	  {"url": "https://aloysius.dev/blogs/002-cddc-2025-finals.html#ecu2", "author": "Aloysius"}
+	  {"url": "https://aloysius.dev/blogs/002-cddc-2025.html#ecu2", "author": "Aloysius"}
   ]},
  665: {'tags': 'misc',
   'ctftype': 'f',
@@ -365,7 +365,7 @@ const challengeData = {676: {'tags': '',
   'hint': '0',
   'stat': 'open',
   'writeups': [
-	  {"url": "https://blog.elmo.sg/posts/cddc-2025-finals/#reverse---flag-checker", "author": "Jin Kai"},
+	  {"url": "https://blog.elmo.sg/posts/cddc-2025/#reverse---flag-checker", "author": "Jin Kai"},
   ]},
  660: {'tags': 'crypto',
   'ctftype': 'f',
@@ -455,7 +455,7 @@ const challengeData = {676: {'tags': '',
   'hint': '0',
   'stat': 'open',
   'writeups': [
-	  {"url": "https://blog.elmo.sg/posts/cddc-2025-finals/#ot---ivi2", "author": "Jin Kai"},
+	  {"url": "https://blog.elmo.sg/posts/cddc-2025/#ot---ivi2", "author": "Jin Kai"},
   ]},
  661: {'tags': 'pwn',
   'ctftype': 'f',
@@ -471,7 +471,7 @@ const challengeData = {676: {'tags': '',
   'hint': '1',
   'stat': 'open',
   'writeups': [
-	  {"url": "https://blog.elmo.sg/posts/cddc-2025-finals/#pwn---eclipse", "author": "Jin Kai"}
+	  {"url": "https://blog.elmo.sg/posts/cddc-2025/#pwn---eclipse", "author": "Jin Kai"}
   ]},
  670: {'tags': 'misc',
   'ctftype': 'f',
