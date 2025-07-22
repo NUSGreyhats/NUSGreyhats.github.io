@@ -286,6 +286,7 @@ const challengeData = {676: {'tags': '',
   'hint': '1',
   'stat': 'open',
   'writeups': [
+	  {"url": "https://jro.sg/CTFs/CDDC%20Finals%202025/Escape%20Room.html", "author": "Jun Rong"},
   ]},
  657: {'tags': 'pwn',
   'ctftype': 'f',
