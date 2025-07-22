@@ -11,7 +11,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ctf</title>
+      <link>https://nusgreyhats.org/tags/ctf/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://nusgreyhats.org/tags/ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cve</title>
+      <link>https://nusgreyhats.org/tags/cve/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://nusgreyhats.org/tags/cve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writeups</title>
+      <link>https://nusgreyhats.org/tags/writeups/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://nusgreyhats.org/tags/writeups/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Secweds</title>
       <link>https://nusgreyhats.org/tags/secweds/</link>
@@ -27,24 +54,6 @@
       <pubDate>Tue, 17 Oct 2023 00:00:00 +0800</pubDate>
       
       <guid>https://nusgreyhats.org/tags/crypto/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ctf</title>
-      <link>https://nusgreyhats.org/tags/ctf/</link>
-      <pubDate>Tue, 17 Oct 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://nusgreyhats.org/tags/ctf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Writeups</title>
-      <link>https://nusgreyhats.org/tags/writeups/</link>
-      <pubDate>Tue, 17 Oct 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://nusgreyhats.org/tags/writeups/</guid>
       <description></description>
     </item>
     

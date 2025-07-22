@@ -11,7 +11,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nusgreyhats.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://nusgreyhats.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[CDDC 2025 Finals] Heartbleed</title>
+      <link>https://nusgreyhats.org/posts/writeups/cddc/2025/heartbleed/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/writeups/cddc/2025/heartbleed/</guid>
+      <description>Heartbleed writeup from CDDC Finals</description>
+    </item>
+    
+    <item>
+      <title>CDDC Finals Writeups 2025</title>
+      <link>https://nusgreyhats.org/posts/writeups/cddc/cddc_2025/</link>
+      <pubDate>Sun, 15 Jun 2025 16:00:00 +0800</pubDate>
+      
+      <guid>https://nusgreyhats.org/posts/writeups/cddc/cddc_2025/</guid>
+      <description>Collective writeup for CDDC 2025 Finals challenges</description>
+    </item>
+    
     <item>
       <title>SecWed #151123</title>
       <link>https://nusgreyhats.org/posts/secweds/ay2324s1/sw1511/</link>
