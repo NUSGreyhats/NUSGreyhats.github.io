@@ -809,6 +809,27 @@ right: -5px;
 
 							<script src="challengeData.js"></script>
 							<script>
+								function groupByCategory(arr) {
+									return arr.reduce((acc, obj) => {
+										const category = obj.cate2;
+										if (!acc[category]) {
+											acc[category] = [];
+										}
+										acc[category].push(obj);
+										return acc;
+									}, {});
+								}
+								function countChallengesWithWriteups(data) {
+									return Object.values(data).filter(obj => Array.isArray(obj.writeups) && obj.writeups.length > 0).length;
+								}
+
+								const groupedChallenges = groupByCategory(Object.values(challengeData));
+
+								for (const categoryHeader of document.querySelectorAll("h4.mb-0")){
+									const categoryName = categoryHeader.textContent.trim();
+									const nextSibling = categoryHeader.nextElementSibling;
+									nextSibling.querySelector("span.maincolor").textContent = `${countChallengesWithWriteups(groupedChallenges[categoryName])}`;
+								}
 
 								function gotorel(e){
 									window.location.href="?p=lecture&t="+$(e).attr('t2')[0]+"&c=" + $(e).attr('t');
