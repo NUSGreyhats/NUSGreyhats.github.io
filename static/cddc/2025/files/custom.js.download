@@ -1,0 +1,10 @@
+function changecc(o){
+  //$(o).css("color", "#00F9FF").css("border-color", "#00F9FF");
+  $(o).addClass("bcactive")
+
+}
+function changecc2(o){
+  //$(o).css("color", "#fff").css("border-color", "#fff");
+  $(o).removeClass("bcactive")
+}
+
