@@ -83,7 +83,7 @@ params:
         - name: twitter
           url: "https://twitter.com/NUSGreyhats"
         - name: telegram
-          url: "https://t.me/joinchat/-TUu64PBAHExY2Jl"
+          url: "https://t.me/nusgreyhats"
         - name: youtube
           url: "https://www.youtube.com/channel/UCjD-uF4XXFiKUTx_gh9W5gA"
         - name: github
