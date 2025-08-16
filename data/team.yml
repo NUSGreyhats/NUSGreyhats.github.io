@@ -135,8 +135,8 @@ team:
     desc: 1 + 1 = 10
     linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
     github: https://github.com/xihzs
-
-- name: Reanee Chua
+    
+  - name: Reanee Chua
     major: Computer Science
     roles:
       - pubs4lyfe
