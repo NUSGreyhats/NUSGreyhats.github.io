@@ -1,14 +1,4 @@
 team:
-  - name: Verity Lim
-    major: Information Security
-    roles:
-      - exco
-      - noob
-      - sysadmin
-      - 📢
-    desc: 1 + 1 = 10
-    linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
-    github: https://github.com/xihzs
 
   - name: Jin Kai
     major: Information Security
@@ -22,10 +12,33 @@ team:
     github: https://github.com/caprinux
     personal: https://blog.elmo.sg/
 
+  - name: Wu Yuewei
+    major: Information Securityz
+    roles:
+      - exco
+      - backpack
+      - master napper
+    desc: munch and toh
+    linkedin: https://www.linkedin.com/in/wu-yuewei/
+    github: https://github.com/sunshinefactoryyy
+    personal: coming soon (procrastinating)
+
+  - name: Elijah Chia
+    major: Computer Science
+    roles:
+      - exco
+      - ctf
+      - pwn
+      - rev
+      - crypto
+    desc: from pwn import *
+    linkedin: https://www.linkedin.com/in/elijah-chia
+    github: https://github.com/Elijah5399
+    personal: https://elijahchia.gitbook.io/ctf-blog
+
   - name: Daniel Goh
     major: Information Security
     roles:
-      - exco
       - noober
       - meow
     desc: huh?
@@ -35,7 +48,6 @@ team:
   - name: Jonathan Loh
     major: Computer Science
     roles:
-      - exco
       - guesser
       - dev
       - 🐋
@@ -44,30 +56,6 @@ team:
     github: https://github.com/jloh02
     personal: https://blog.jloh02.dev/ctf/
 
-  - name: Devesh Logendran
-    major: Information Security
-    roles:
-      - web
-      - sleep
-    desc: I hate when SHELLS die
-    linkedin: https://www.linkedin.com/in/devesh-logendran/
-    personal: https://deveshl.github.io/
-
-  - name: Ariana Goh
-    major: Communications & New Media
-    roles:
-      - 🍸
-    desc: who free wednesday night
-    personal: https://ariana1729.github.io/
-
-  - name: Arnav Aggarwal
-    major: Computer Science
-    roles:
-      - web
-    desc: Due today, do today.
-    linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
-    github: https://github.com/arnav-ag
-
   - name: Chua Yao Xuan
     major: Computer Science
     roles:
@@ -75,38 +63,6 @@ team:
       - noob
     desc: I like cats
     github: https://github.com/cyaoxuan
-
-  - name: Chandrasekaran Akash
-    major: Computer Science
-    roles:
-      - pwn
-      - cant-guess
-    desc: why sleep when u can pwn?
-    twitter: https://twitter.com/Enigmatrix2000
-    linkedin: https://www.linkedin.com/in/chandrasekaran-akash-50aa34ba/
-    github: https://github.com/Enigmatrix
-    personal: https://enigmatrix.me
-
-  - name: Jules Poon
-    major: beep boop
-    roles:
-      - crypto
-      - resident ghost
-    desc: "Remember: it's memcpy(src, dst, sz)"
-    github: https://github.com/JuliaPoo/
-    personal: https://juliapoo.github.io/
-
-  - name: Elijah Chia
-    major: Computer Science
-    roles:
-      - ctf
-      - pwn
-      - rev
-      - crypto
-    desc: from pwn import *
-    linkedin: https://www.linkedin.com/in/elijah-chia
-    github: https://github.com/Elijah5399
-    personal: https://elijahchia.gitbook.io/ctf-blog
 
   - name: Jovan Tan
     major: Computer Science
@@ -170,14 +126,13 @@ team:
     linkedin: https://www.linkedin.com/in/chuen-yang-beh-27545b201/
     github: https://github.com/N00bcak
     personal: https://github.com/N00bcak
-  
-  - name: Wu Yuewei
-    major: Information Securityz
+
+  - name: Verity Lim
+    major: Information Security
     roles:
-      - exco
-      - backpack
-      - master napper
-    desc: munch and toh
-    linkedin: https://www.linkedin.com/in/wu-yuewei/
-    github: https://github.com/sunshinefactoryyy
-    personal: coming soon (procrastinating)
+      - noob
+      - sysadmin
+      - 📢
+    desc: 1 + 1 = 10
+    linkedin: https://www.linkedin.com/in/verity-lim-a324321a0/
+    github: https://github.com/xihzs
