@@ -207,3 +207,47 @@ team:
     desc: 7b 53 4c 45 45 50 49 4e 47 2e 2e 2e 53 4c 45 45 50 49 4e 47 2e 2e 2e 7d
     linkedin: https://www.linkedin.com/in/yongliangang/
     github: https://github.com/yl-ang
+
+  - name: Devesh Logendran
+    major: Information Security
+    roles:
+      - web
+      - sleep
+    desc: I hate when SHELLS die
+    linkedin: https://www.linkedin.com/in/devesh-logendran/
+    personal: https://deveshl.github.io/
+
+  - name: Ariana Goh
+    major: Communications & New Media
+    roles:
+      - 🍸
+    desc: who free wednesday night
+    personal: https://ariana1729.github.io/
+
+  - name: Arnav Aggarwal
+    major: Computer Science
+    roles:
+      - web
+    desc: Due today, do today.
+    linkedin: https://www.linkedin.com/in/arnav-aggarwal-82120019b/
+    github: https://github.com/arnav-ag
+
+  - name: Chandrasekaran Akash
+    major: Computer Science
+    roles:
+      - pwn
+      - cant-guess
+    desc: why sleep when u can pwn?
+    twitter: https://twitter.com/Enigmatrix2000
+    linkedin: https://www.linkedin.com/in/chandrasekaran-akash-50aa34ba/
+    github: https://github.com/Enigmatrix
+    personal: https://enigmatrix.me
+
+  - name: Jules Poon
+    major: beep boop
+    roles:
+      - crypto
+      - resident ghost
+    desc: "Remember: it's memcpy(src, dst, sz)"
+    github: https://github.com/JuliaPoo/
+    personal: https://juliapoo.github.io/
