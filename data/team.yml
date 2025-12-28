@@ -120,11 +120,11 @@ team:
     roles:
       - GPT-finetuned-on-COMPLAINING
       - Reinforcement Learning (RL) Enjoyer
-      - crypto noob
+      - noob (cat)
     desc: RL MENTIONED LET'S GO!!!111
     linkedin: https://www.linkedin.com/in/chuen-yang-beh-27545b201/
     github: https://github.com/N00bcak
-    personal: https://github.com/N00bcak
+    personal: https://n00bcak.github.io
 
   - name: Verity Lim
     major: Information Security
