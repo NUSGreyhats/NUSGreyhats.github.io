@@ -120,11 +120,11 @@ team:
     roles:
       - GPT-finetuned-on-COMPLAINING
       - Reinforcement Learning (RL) Enjoyer
-      - crypto noob
+      - noob (cat)
     desc: RL MENTIONED LET'S GO!!!111
     linkedin: https://www.linkedin.com/in/chuen-yang-beh-27545b201/
     github: https://github.com/N00bcak
-    personal: https://github.com/N00bcak
+    personal: https://n00bcak.github.io
 
   - name: Verity Lim
     major: Information Security
@@ -165,3 +165,13 @@ team:
     linkedin: https://www.linkedin.com/in/tngwenxin/
     github: https://github.com/wenxin-pto
     
+  - name: Chan Zun Mun Terence
+    major: Clown Engineer
+    roles:
+      - rusted web player
+      - budget abuser #badgelife
+      - COM 1 Level 2
+    desc: where my hardware slaves
+    linkedin: https://www.linkedin.com/in/terence-chan-zun-mun/
+    github: https://github.com/Hackin7
+    personal: https://hackin7.com/
