@@ -1,4 +1,15 @@
 team:
+  - name: Vincent Yeo
+    major: Information Security
+    roles:
+      - mr president
+      - lao ban
+      - call me pres yeo
+    desc: the past, the present, the president vincent yeo
+    twitter: x.com/goatmilkkk
+    linkedin: https://www.linkedin.com/in/yeo-beng-jun-vincent/
+    github: github.com/goatmilkkk
+    personal: https://goatmilkk.notion.site/Website-7364808a08ed4c4180ca43bedd41a0a3
 
   - name: Jin Kai
     major: Information Security
