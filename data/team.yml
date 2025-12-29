@@ -24,7 +24,7 @@ team:
     personal: https://blog.elmo.sg/
 
   - name: Wu Yuewei
-    major: Information Securityz
+    major: Information Security
     roles:
       - exco
       - backpack
@@ -32,6 +32,7 @@ team:
     desc: munch and toh
     linkedin: https://www.linkedin.com/in/wu-yuewei/
     github: https://github.com/sunshinefactoryyy
+    personal: https://sunshinefactoryyy.github.io/
 
   - name: Elijah Chia
     major: Computer Science
