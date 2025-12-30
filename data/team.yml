@@ -187,3 +187,13 @@ team:
     linkedin: https://www.linkedin.com/in/terence-chan-zun-mun/
     github: https://github.com/Hackin7
     personal: https://hackin7.com/
+
+  - name: Dylan Liew
+    major: Computer Science
+    roles:
+      - real noob
+      - rev
+      - ctf
+    desc: debugging
+    linkedin: https://www.linkedin.com/in/dylan-liew/
+    github: https://github.com/dylan-liew
