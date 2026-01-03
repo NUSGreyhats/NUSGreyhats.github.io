@@ -197,3 +197,13 @@ team:
     desc: debugging
     linkedin: https://www.linkedin.com/in/dylan-liew/
     github: https://github.com/dylan-liew
+    
+  - name: Ge Shuqing
+    major: Computer Science
+    roles:
+      - greycat doodler
+      - retiring noob
+    desc: i draw cats
+    linkedin: https://www.linkedin.com/in/shuqing-ge/
+    github: https://github.com/getsquared
+    
