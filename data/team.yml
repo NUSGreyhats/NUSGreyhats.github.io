@@ -187,6 +187,7 @@ team:
     linkedin: https://www.linkedin.com/in/terence-chan-zun-mun/
     github: https://github.com/Hackin7
     personal: https://hackin7.com/
+    
   - name: Jess Kwek
     major: Computer Science
     roles:
@@ -195,3 +196,23 @@ team:
       - pikachu cosplayer
     desc: mimikyu is confused! mimikyu hurt itself from its confusionn!
     github: https://github.com/Blahblahlolhahaha
+
+  - name: Dylan Liew
+    major: Computer Science
+    roles:
+      - real noob
+      - rev
+      - ctf
+    desc: debugging
+    linkedin: https://www.linkedin.com/in/dylan-liew/
+    github: https://github.com/dylan-liew
+    
+  - name: Ge Shuqing
+    major: Computer Science
+    roles:
+      - greycat doodler
+      - retiring noob
+    desc: i draw cats
+    linkedin: https://www.linkedin.com/in/shuqing-ge/
+    github: https://github.com/getsquared
+    
