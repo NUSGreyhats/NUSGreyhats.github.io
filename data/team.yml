@@ -234,3 +234,15 @@ team:
     desc: 404 not found
     linkedin: https://www.linkedin.com/in/chua-jia-rong-717b59279/
     github: https://github.com/jrong-404
+
+  - name: Lin Zewei
+    major: Computer Science
+    roles:
+      - ctf
+      - rev
+      - pwn
+      - buffet hoarding
+    desc: my homework's dog ate me
+    linkedin: https://www.linkedin.com/in/zewei-lin-sg/
+    github: https://github.com/cewau
+    personal: https://blog.cewau.dev
