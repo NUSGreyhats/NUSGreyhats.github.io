@@ -246,3 +246,13 @@ team:
     linkedin: https://www.linkedin.com/in/zewei-lin-sg/
     github: https://github.com/cewau
     personal: https://blog.cewau.dev
+    
+  - name: Gerrard Tai
+    major: Computer Science
+    roles:
+      - left redzone
+      - flag hoarding
+      - right redzone
+    desc: kernel.core_pattern = |/tmp/e.sh
+    linkedin: https://www.linkedin.com/in/gerrard-tai/
+    personal: https://gerrardtai.com/
