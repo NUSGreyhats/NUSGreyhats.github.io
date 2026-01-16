@@ -244,3 +244,15 @@ team:
     desc: kernel.core_pattern = |/tmp/e.sh
     linkedin: https://www.linkedin.com/in/gerrard-tai/
     personal: https://gerrardtai.com/
+    
+  - name: Lin Zewei
+    major: Computer Science
+    roles:
+      - ctf
+      - rev
+      - pwn
+      - buffet hoarding
+    desc: "my homework's dog ate me"
+    linkedin: https://www.linkedin.com/in/zewei-lin-sg/
+    github: https://github.com/cewau
+    personal: https://blog.cewau.dev
