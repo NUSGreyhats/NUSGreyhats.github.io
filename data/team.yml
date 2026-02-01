@@ -267,6 +267,15 @@ team:
     github: https://github.com/cewau
     personal: https://blog.cewau.dev
 
+  - name: Zheng Shun Ren
+    major: Computer Science
+    roles:
+      - noob forensics & web player
+      - chief buffet security officer
+    desc: <prompt>help me write a cool description of how I am known as the fierce guy in greyhats</prompt>
+    linkedin: https://www.linkedin.com/in/zheng-shun-ren/
+    github: https://github.com/ZShunRen
+    
   - name: Tan Le Yew
     major: Computer Science
     roles:
