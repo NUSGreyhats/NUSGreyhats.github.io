@@ -275,3 +275,24 @@ team:
     desc: <prompt>help me write a cool description of how I am known as the fierce guy in greyhats</prompt>
     linkedin: https://www.linkedin.com/in/zheng-shun-ren/
     github: https://github.com/ZShunRen
+    
+  - name: Tan Le Yew
+    major: Computer Science
+    roles:
+      - hardware/sysadmin slave
+      - noob (llm abuser)
+      - resident cat enjoyer
+    desc: pipx install uv
+    linkedin: https://www.linkedin.com/in/leyewtan/
+    github: https://github.com/itsme-zeix
+
+  - name: Tan Ze Jian
+    major: Information Security
+    roles:
+      - ctf
+      - rev
+      - ????
+    desc: huhhh
+    linkedin: https://www.linkedin.com/in/tanzejian/
+    github: https://github.com/onetw0three
+    personal: https://onetw0three.github.io/
