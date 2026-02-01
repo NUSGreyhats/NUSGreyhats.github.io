@@ -3,3 +3,8 @@ public/
 
 # Others
 .DS_Store
+
+# Hugo binary and build artifacts
+hugo
+hugo_*
+LICENSE
