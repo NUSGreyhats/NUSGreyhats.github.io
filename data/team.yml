@@ -289,10 +289,10 @@ team:
   - name: Tan Le Yew
     major: Computer Science
     roles:
-      - hardware/sysadmin slave
-      - noob (llm abuser)
-      - resident cat enjoyer
-    desc: pipx install uv
+      - infra
+      - hardware
+      - greycafe
+    desc: resident cat enjoyer
     linkedin: https://www.linkedin.com/in/leyewtan/
     github: https://github.com/itsme-zeix
 
