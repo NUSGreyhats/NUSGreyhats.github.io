@@ -16,7 +16,6 @@
       <title>Simple ML models to predict CVSS scores</title>
       <link>https://nusgreyhats.org/posts/writeups/simple-ml-models-to-predict-cvss-scores/</link>
       <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://nusgreyhats.org/posts/writeups/simple-ml-models-to-predict-cvss-scores/</guid>
       <description>An simple exploration on predicting CVSS scores using CVE descriptions</description>
     </item>
