@@ -306,3 +306,12 @@ team:
     linkedin: https://www.linkedin.com/in/tanzejian/
     github: https://github.com/onetw0three
     personal: https://onetw0three.github.io/
+
+  - name: Isaac Chen
+    major: Information Security
+    roles:
+      - royce
+    desc: I am the only person in Greyhats that knows how to ride a bike.
+    linkedin: https://www.linkedin.com/in/isaaccjd/
+    github: https://github.com/Iscaraca
+    personal: https://iscaraca.github.io/
