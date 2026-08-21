@@ -137,7 +137,7 @@ On the left is an image downloaded from a challenge. On the right is the same im
 
  ### Metadata
 
-Instead of data being hidden inside the image, they might be hidden in the metadata. By viewing the properties of the file or by using an online tool such as [Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi), we will be able to see these information.
+Instead of data being hidden inside the image, it might be stored in the metadata. View the file's properties or inspect a local copy with [Metadata Viewer](https://metadataremover.ai/metadata-viewer) to check EXIF, GPS, IPTC, and XMP fields in the browser. Keep the original file unchanged and corroborate important findings with a second parser such as [ExifTool](https://exiftool.org/).
 
  
 ### Hidden strings
