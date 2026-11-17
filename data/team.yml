@@ -299,3 +299,13 @@ team:
     linkedin: https://www.linkedin.com/in/neoshaoray/
     github: https://github.com/sr-magicturtle
   
+  - name: Tan Rui Yang 
+    major: Information Security
+    roles: 
+      - greycafe
+      - infra
+      - ctf
+    desc: i pour coffee on the servers 
+    linkedin: https://www.linkedin.com/in/ruiyang-sg/
+    github: https://github.com/ThinkerPal
+  
