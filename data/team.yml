@@ -315,3 +315,13 @@ team:
     linkedin: https://www.linkedin.com/in/isaaccjd/
     github: https://github.com/Iscaraca
     personal: https://iscaraca.github.io/
+
+  - name: David Lim
+  major: Information Security
+  roles:
+    - ctf
+    - rev
+    - crypto
+  desc: greyhats semester workshop man
+  linkedin: https://www.linkedin.com/in/warriii/
+  github: https://github.com/warriii
