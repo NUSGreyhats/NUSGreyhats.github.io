@@ -266,6 +266,13 @@ team:
     github: https://github.com/Iscaraca
     personal: https://iscaraca.github.io/
 
+  - name: River Koh
+    major: Computer Science
+    roles:
+      - food critic
+    desc: I know how to ride a bike.
+    linkedin: https://www.linkedin.com/in/river-koh/
+
   - name: Benley Kway
     major: Information Security
     roles:
