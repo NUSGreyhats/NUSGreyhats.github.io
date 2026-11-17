@@ -34,19 +34,6 @@ team:
     github: https://github.com/sunshinefactoryyy
     personal: https://sunshinefactoryyy.github.io/
 
-  - name: Elijah Chia
-    major: Computer Science
-    roles:
-      - exco
-      - ctf
-      - pwn
-      - rev
-      - crypto
-    desc: from pwn import *
-    linkedin: https://www.linkedin.com/in/elijah-chia
-    github: https://github.com/Elijah5399
-    personal: https://elijahchia.gitbook.io/ctf-blog
-
   - name: Tan Athan
     major: Computer Science
     roles:
@@ -56,15 +43,6 @@ team:
     desc: LF> money
     linkedin: https://www.linkedin.com/in/tan-athan
     github: https://github.com/tathan08
-
-  - name: Daniel Goh
-    major: Information Security
-    roles:
-      - noober
-      - meow
-    desc: huh?
-    linkedin: https://www.linkedin.com/in/daniel-goh-chin-hao-013149167/
-    github: https://github.com/danplatypus30
 
   - name: Jonathan Loh
     major: Computer Science
@@ -76,25 +54,6 @@ team:
     linkedin: https://www.linkedin.com/in/jonathan-loh-junhao/
     github: https://github.com/jloh02
     personal: https://blog.jloh02.dev/ctf/
-
-  - name: Chua Yao Xuan
-    major: Computer Science
-    roles:
-      - publicity
-      - noob
-    desc: I like cats
-    github: https://github.com/cyaoxuan
-
-  - name: Jovan Tan
-    major: Computer Science
-    roles:
-      - forensics
-      - network
-      - web?
-    desc: sudo systemctl poweroff
-    linkedin: https://www.linkedin.com/in/jovan-tan-07b387176/
-    github: https://github.com/jovantanyk
-    personal: https://jovantanyk.dev
 
   - name: Aloysius Goo
     major: Computer Science
@@ -217,15 +176,6 @@ team:
     linkedin: https://www.linkedin.com/in/dylan-liew/
     github: https://github.com/x44ylan
     
-  - name: Ge Shuqing
-    major: Computer Science
-    roles:
-      - greycat doodler
-      - retiring noob
-    desc: i draw cats
-    linkedin: https://www.linkedin.com/in/shuqing-ge/
-    github: https://github.com/getsquared
-
   - name: Chua Jia Rong
     major: Information Security
     roles:

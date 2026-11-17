@@ -1,4 +1,54 @@
 team:
+  - name: Elijah Chia
+    major: Computer Science
+    roles:
+      - exco
+      - ctf
+      - pwn
+      - rev
+      - crypto
+    desc: from pwn import *
+    linkedin: https://www.linkedin.com/in/elijah-chia
+    github: https://github.com/Elijah5399
+    personal: https://elijahchia.gitbook.io/ctf-blog
+
+  - name: Daniel Goh
+    major: Information Security
+    roles:
+      - noober
+      - meow
+    desc: huh?
+    linkedin: https://www.linkedin.com/in/daniel-goh-chin-hao-013149167/
+    github: https://github.com/danplatypus30
+
+  - name: Chua Yao Xuan
+    major: Computer Science
+    roles:
+      - publicity
+      - noob
+    desc: I like cats
+    github: https://github.com/cyaoxuan
+
+  - name: Jovan Tan
+    major: Computer Science
+    roles:
+      - forensics
+      - network
+      - web?
+    desc: sudo systemctl poweroff
+    linkedin: https://www.linkedin.com/in/jovan-tan-07b387176/
+    github: https://github.com/jovantanyk
+    personal: https://jovantanyk.dev
+
+  - name: Ge Shuqing
+    major: Computer Science
+    roles:
+      - greycat doodler
+      - retiring noob
+    desc: i draw cats
+    linkedin: https://www.linkedin.com/in/shuqing-ge/
+    github: https://github.com/getsquared
+
   - name: Daniel Lim Wee Soong
     major: Computer Engineering
     roles:
@@ -9,7 +59,7 @@ team:
     linkedin: https://www.linkedin.com/feed/
     github: https://github.com/daniellimws
     personal: https://daniao.ws
-    
+
   - name: Wen Junhua
     major: Computer Science
     roles:
