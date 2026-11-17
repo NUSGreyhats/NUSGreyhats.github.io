@@ -322,3 +322,13 @@ team:
       - events
     desc: no, i do not drive a Bentley... yet
     linkedin: https://www.linkedin.com/in/benleykway
+
+  - name: David Lim
+    major: Information Security
+    roles:
+      - ctf
+      - rev
+      - crypto
+    desc: greyhats semester workshop man
+    linkedin: https://www.linkedin.com/in/warriii/
+    github: https://github.com/warriii
