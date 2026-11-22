@@ -1,16 +1,4 @@
 team:
-  - name: Vincent Yeo
-    major: Information Security
-    roles:
-      - mr president
-      - lao ban
-      - call me pres yeo
-    desc: the past, the present, the president vincent yeo
-    twitter: https://x.com/goatmilkkk
-    linkedin: https://www.linkedin.com/in/yeo-beng-jun-vincent/
-    github: https://github.com/goatmilkkk
-    personal: https://goatmilkk.notion.site/Website-7364808a08ed4c4180ca43bedd41a0a3
-
   - name: Jin Kai
     major: Information Security
     roles:
@@ -272,6 +260,16 @@ team:
       - food critic
     desc: I know how to ride a bike.
     linkedin: https://www.linkedin.com/in/river-koh/
+    
+  - name: Vincent Yeo
+    major: Information Security
+    roles:
+      - jungle/support
+    desc: I hold the bike while they pedal.
+    twitter: https://x.com/goatmilkkk
+    linkedin: https://www.linkedin.com/in/yeo-beng-jun-vincent/
+    github: https://github.com/goatmilkkk
+    personal: https://goatmilkk.notion.site/Website-7364808a08ed4c4180ca43bedd41a0a3
 
   - name: Benley Kway
     major: Information Security
