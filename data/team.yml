@@ -328,7 +328,6 @@ team:
     desc: I wear multiple h4ts
     linkedin: https://www.linkedin.com/in/vernonlim03/
 
-
   - name: Nicholas Soh
     major: Information Security
     roles:
@@ -338,4 +337,14 @@ team:
     desc: help la
     linkedin: https://www.linkedin.com/in/nicholas-soh/
     personal: https://sohnotnick.com/
-    
+
+  - name: Holden Han
+    major: Information Security
+    roles:
+      - larp
+      - machine enthusiast
+    desc: straight into the lights
+    linkedin: https://www.linkedin.com/in/holden-han/
+    github: https://github.com/Divsonar
+    personal: https://divsonar.dev/
+      
